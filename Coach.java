@@ -1,4 +1,3 @@
-
 public class Coach extends Person{
   protected int winS; //Regular season wins
 	protected int loseS; //Regular season loses
@@ -10,6 +9,9 @@ public class Coach extends Person{
 	protected int stanleyN; //Number of Stanley Cups
 	protected String coachType; //The type of coach (head, assistant or goaltender)
 	
+	public Coach(String name, int age, boolean gender, double height, double weight, int month, int day, int year, String place, String mStatus) {//+more 
+		super(name, age, gender, height, weight, month, day, year, place, mStatus);
+	}
 	//Accessor Methods
 	/**
 	 * Returns regular season wins
