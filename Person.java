@@ -4,10 +4,30 @@ public class Person {
 	protected boolean gender; //True if male 
 	protected double height; //Height in centimetres
 	protected double weight; //Weight in kg
-	protected String birthDate; //Date of Birth Format: yyyy/mm/dd
+	protected int birthMonth; //Month of birth 
+	protected int birthDay; //Day of birth
+	protected int birthYear; //Year of birth
 	protected String birthPlace; //Integer represents what country person is born from (based on IIHF's Top 20 International Mens Hockey Countries)
 	protected String maritalStatus; //Single, Married, Divorced, Widowed etc.
 	
+	/**
+	 * Constructor that creates an object of type person with parameters sent in
+	 * @param 
+	 * @author MK, AV, CH, PJ
+	*/
+	public Person(String name, int age, boolean gender, double height, double weight, int month, int day, int year, String place, String mStatus) {
+		
+		this.name = name;
+		this.age = age;
+		this.gender = gender;
+		this.height = height;
+		this.weight = weight;
+		this.birthMonth = month;
+		this.birthDay = day;
+		this.birthYear = year;
+		this.birthPlace = place;
+		this.maritalStatus = mStatus;
+	}
 	
 	//Accessors
 	/**
@@ -63,13 +83,33 @@ public class Person {
 	}
 	
 	/**
-	 * Returns birthdate in format (yyyy/mm/dd)
-	 * @return birthDate
+	 * Returns day of birth
+	 * @return birthDay
 	 * @author MK, AV, CH, PJ
 	*/
 	
-	public String getBirthdate (){
-		return birthDate;
+	public int getBirthDay (){
+		return birthDay;
+	}
+	
+	/**
+	 * Returns month of birth
+	 * @return birthDay
+	 * @author MK, AV, CH, PJ
+	*/
+	
+	public int getBirthMonth (){
+		return birthMonth;
+	}
+	
+	/**
+	 * Returns year of birth
+	 * @return birthYear
+	 * @author MK, AV, CH, PJ
+	*/
+	
+	public int getBirthYear (){
+		return birthYear;
 	}
 	
 	/**
@@ -140,7 +180,7 @@ public class Person {
 			birthPlace="United States";
 			break;
 		default:
-			birthPlace="X";
+			birthPlace="X"; //Unknown birthplace
 			break;
 		}
 	}
@@ -225,13 +265,43 @@ public class Person {
 	}
 	
 	/**
-	 * Stores parameter to birthDate
+	 * Stores parameter to birthDay
+	 * @param x of type int
+	 * @author MK, AV, CH, PJ
+	*/
+	
+	public void putBirthday (int x){
+		birthDay = x;
+	}
+	
+	/**
+	 * Stores parameter to birthMonth
+	 * @param x of type int
+	 * @author MK, AV, CH, PJ
+	*/
+	
+	public void putBirthMonth (int x){
+		birthMonth = x;
+	}
+	
+	/**
+	 * Stores parameter to birthDay
+	 * @param x of type int
+	 * @author MK, AV, CH, PJ
+	*/
+	
+	public void putBirthYear (int x){
+		birthYear = x;
+	}
+	
+	/**
+	 * Stores parameter to birthPlace
 	 * @param x of type String
 	 * @author MK, AV, CH, PJ
 	*/
 	
-	public void putBirthdate (String x){
-		birthDate = x;
+	public void putBirthplace (String x){
+		birthPlace = x;
 	}
 	
 	/**
