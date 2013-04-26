@@ -1,4 +1,3 @@
-
 public class Defense extends Player{
   
 	private int plusMinus; //Holds +/- for each player
@@ -13,6 +12,10 @@ public class Defense extends Player{
 	private int gwGoals; //Number of game-winning goals
 	private int ppGoals; //Number of power play goals
 	private int soGoals; //Number of shoot-out goals
+	
+	public Defense(String name, int age, boolean gender, double height, double weight, int month, int day, int year, String place, String mStatus) {//+more 
+		super(name, age, gender, height, weight, month, day, year, place, mStatus);
+	}
 	
 	//Accessor Methods
 	
