@@ -1,4 +1,3 @@
-
 public class Goalie extends Player {
   private int wins; //Number of wins
 	private int loses; //Number of losses
@@ -14,6 +13,10 @@ public class Goalie extends Player {
 	private double savePercent; //Percentage of total shots faced the goalie saved (dividing the number of saves by the total number of shots on goal)
 	private int shutouts; //Number of games where goalie had no goals against him and only goalie to play in game
 	private int emptyNG; //Number of goals scored against while off ice for extra attack player
+	
+	public Goalie(String name, int age, boolean gender, double height, double weight, int month, int day, int year, String place, String mStatus) {//+more 
+		super(name, age, gender, height, weight, month, day, year, place, mStatus);
+	}
 	
 	//Accessor Methods
 	/**
