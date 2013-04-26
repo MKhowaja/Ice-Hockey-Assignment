@@ -1,4 +1,3 @@
-
 public class Player extends Person {
   private double salaryPY; //Salary per year
 	private int contractR; //# of years remaining of contract 
