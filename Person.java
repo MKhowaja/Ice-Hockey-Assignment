@@ -1,4 +1,4 @@
-public class Person {
+abstract class Person {
   protected String name; //Name
 	protected int age; //Age
 	protected boolean gender; //True if male 
