@@ -10,6 +10,11 @@ public class Player extends Person {
 	private boolean arm; //Shooting arm: True if right arm
 	private int number; //Jersey number
 	
+	//Comments here
+	public Player(String name, int age, boolean gender, double height, double weight, int month, int day, int year, String place, String mStatus) {//+more 
+		super(name, age, gender, height, weight, month, day, year, place, mStatus);
+	}
+	
 	//Accessors
 	
 	/**
