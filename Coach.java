@@ -1,5 +1,5 @@
 public class Coach extends Person{
-  protected int winS; //Regular season wins
+	protected int winS; //Regular season wins
 	protected int loseS; //Regular season loses
 	protected int gameCS; //Regular season games coached
 	protected double pointPS; //Regular season Points percentage (number of points team earned divided by total possible points)
