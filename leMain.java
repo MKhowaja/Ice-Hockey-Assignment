@@ -37,7 +37,6 @@ public class leMain {
 		int winS; //Regular season wins
 		int loseS; //Regular season loses
 		int gameCS; //Regular season games coached
-		double pointPS; //Regular season Points percentage (number of points team earned divided by total possible points)
 		int winP; //Playoff wins
 		int loseP; //Playoff loses
 		int gameCP; //Playoff games coached
