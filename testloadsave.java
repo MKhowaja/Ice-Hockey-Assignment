@@ -1,6 +1,6 @@
 import java.io.*;
 
-public class testloadsave {
+public class testloadandsave {
 
   /**
 	 * Loads the data from a text file onto the array of the team in the program
@@ -18,21 +18,21 @@ public class testloadsave {
 		String classType;
 		while ((x=br.readLine()) != null) {
 			classType = x;
-			
+
 			x = br.readLine(); //name
 			team[c].name = x.substring(x.indexOf("Name: "+6,x.length()));
-			
-			
+
+
 		}
-		
-		
-		
+
+
+
 	}
-	
+
 	public static void save(String file, ) {
-		FileWriter fw = new FileWriter("g:\\Sample.txt");    //FileWriter 
+		FileWriter fw = new FileWriter(file);    //FileWriter 
 		PrintWriter pw = new PrintWriter (fw);     //PrintWriter
-		
+
 		pw.println("231231");    // 3) Write to file
 		pw.println("world2");
 		pw.close();     
