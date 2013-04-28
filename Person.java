@@ -9,7 +9,7 @@ abstract class Person {
 	protected int birthYear; //Year of birth
 	protected String birthPlace; //Integer represents what country person is born from (based on IIHF's Top 20 International Mens Hockey Countries)
 	protected String maritalStatus; //Single, Married, Divorced, Widowed etc.
-	
+
 	/**
 	 * Constructor that creates an object of type person with parameters sent in
 	 * @param 
@@ -27,28 +27,28 @@ abstract class Person {
 		this.birthPlace = place;
 		this.maritalStatus = mStatus;
 	}
-	
+
 	//Accessors
 	/**
 	 * Returns name
 	 * @return name
 	 * @author MK, AV, CH, PJ
 	*/
-	
+
 	public String getName(){
 		return name;
 	}
-	
+
 	/**
 	 * Returns age
 	 * @return age
 	 * @author MK, AV, CH, PJ
 	*/
-	
+
 	public int getAge(){
 		return age;
 	}
-	
+
 	/**
 	 * Returns gender
 	 * <p>
@@ -56,67 +56,82 @@ abstract class Person {
 	 * @return gender
 	 * @author MK, AV, CH, PJ
 	*/
-	
+
 	public boolean getGender (){
 		return gender;
 	}
-	
+
 	/**
 	 * Returns height in centimetres
 	 * @return height
 	 * @author MK, AV, CH, PJ
 	*/
-	
+
 	public double getHeight (){
 		return height;
 	}
-	
+
 	/**
 	 * Returns weight in kg
 	 * @return weight
 	 * @author MK, AV, CH, PJ
 	*/
-	
+
 	public double getWeight (){
 		return weight;
 	}
-	
+
 	/**
 	 * Returns day of birth
 	 * @return birthDay
 	 * @author MK, AV, CH, PJ
 	*/
-	
+
 	public int getBirthDay (){
 		return birthDay;
 	}
-	
+
 	/**
 	 * Returns month of birth
 	 * @return birthDay
 	 * @author MK, AV, CH, PJ
 	*/
-	
+
 	public int getBirthMonth (){
 		return birthMonth;
 	}
-	
+
 	/**
 	 * Returns year of birth
 	 * @return birthYear
 	 * @author MK, AV, CH, PJ
 	*/
-	
+
 	public int getBirthYear (){
 		return birthYear;
 	}
-	
+
 	/**
 	 * Returns the country using field birthPlace based on IIHF's Top 20 International Men's Hockey Countries 
 	 * @return nationality/country of birth
 	 * @author MK, AV, CH, PJ
 	 */
-	public void getBirthPlace(){
+	public String getBirthPlace(){
+		return birthPlace;
+	}
+	
+	/**
+	 * Returns Marital status
+	 * <p>
+	 * Single, Married, Divorced or Widowed.
+	 * @return maritalStatus
+	 * @author MK, AV, CH, PJ
+	*/
+	public String getMaritalStatus(){
+		return maritalStatus;
+	}
+	
+	public void setBirthPlace(){
 		switch(Integer.parseInt(birthPlace)){
 		case 1:
 			birthPlace="Austria";
@@ -183,15 +198,9 @@ abstract class Person {
 			break;
 		}
 	}
+
 	
-	/**
-	 * Returns Marital status
-	 * <p>
-	 * Single, Married, Divorced or Widowed.
-	 * @return maritalStatus
-	 * @author MK, AV, CH, PJ
-	*/
-	public void getMaritalStatus (){
+	public void setMaritalStatus (){
 		switch (Integer.parseInt(maritalStatus)){
 		case 1:
 			maritalStatus="Divorced";
@@ -210,25 +219,25 @@ abstract class Person {
 			break;
 		}
 	}
-	
+
 	//Mutators
-	
+
 	/**
 	 * Stores parameter to name
 	 * @param x of type String 
 	 * @author MK, AV, CH, PJ
 	*/
-	
+
 	public void putName(String x){
 		name = x;
 	}
-	
+
 	/**
 	 * Stores parameter to age
 	 * @param x of type int 
 	 * @author MK, AV, CH, PJ
 	*/
-	
+
 	public void putAge(int x){
 		age = x;
 	}
@@ -238,77 +247,77 @@ abstract class Person {
 	 * @param x of type boolean
 	 * @author MK, AV, CH, PJ
 	*/
-	
+
 	public void putGender (boolean x){
 		gender = x;
 	}
-	
+
 	/**
 	 * Stores parameter to height
 	 * @param x of type double
 	 * @author MK, AV, CH, PJ
 	*/
-	
+
 	public void putHeight (double x){
 		height = x;
 	}
-	
+
 	/**
 	 * Stores parameter to weight
 	 * @param x of type double
 	 * @author MK, AV, CH, PJ
 	*/
-	
+
 	public void putWeight (double x){
 		weight = x;
 	}
-	
+
 	/**
 	 * Stores parameter to birthDay
 	 * @param x of type int
 	 * @author MK, AV, CH, PJ
 	*/
-	
+
 	public void putBirthday (int x){
 		birthDay = x;
 	}
-	
+
 	/**
 	 * Stores parameter to birthMonth
 	 * @param x of type int
 	 * @author MK, AV, CH, PJ
 	*/
-	
+
 	public void putBirthMonth (int x){
 		birthMonth = x;
 	}
-	
+
 	/**
 	 * Stores parameter to birthDay
 	 * @param x of type int
 	 * @author MK, AV, CH, PJ
 	*/
-	
+
 	public void putBirthYear (int x){
 		birthYear = x;
 	}
-	
+
 	/**
 	 * Stores parameter to birthPlace
 	 * @param x of type String
 	 * @author MK, AV, CH, PJ
 	*/
-	
+
 	public void putBirthplace (String x){
 		birthPlace = x;
 	}
-	
+
 	/**
 	 * Stores parameter to maritalStatus
 	 * @param x of type String
 	 * @author MK, AV, CH, PJ
 	*/
-	
+
 	public void putMaritalStatus (String x){
 		maritalStatus = x;
 	}
