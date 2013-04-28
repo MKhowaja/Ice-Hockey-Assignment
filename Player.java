@@ -1,13 +1,13 @@
 public class Player extends Person {
-	protected double salaryPY; //Salary per year
-	protected int contractR; //# of years remaining of contract 
-	protected double tSalary; //Total salary over entire contract length
-	protected int rating; //Temp for something awesome
-	protected int gp; //Games played
-	protected double penaltyT; //Time spent in penalties
-	protected int penaltyN; //Number of penalties
-	protected boolean arm; //Shooting arm: True if right arm
-	protected int number; //Jersey number
+	private double salaryPY; //Salary per year
+	private int contractR; //# of years remaining of contract 
+	private double tSalary; //Total salary over entire contract length
+	private int rating; //Temp for something awesome
+	private int gp; //Games played
+	private double penaltyT; //Time spent in penalties
+	private int penaltyN; //Number of penalties
+	private boolean arm; //Shooting arm: True if right arm
+	private int number; //Jersey number
 
 	//Comments here
 	public Player(String name, int age, boolean gender, double height, double weight, int month, int day, int year, String place, String mStatus) {//+more 
