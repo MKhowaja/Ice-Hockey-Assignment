@@ -1,5 +1,5 @@
 abstract class Person {
-  protected String name; //Name
+  	protected String name; //Name
 	protected int age; //Age
 	protected boolean gender; //True if male 
 	protected double height; //Height in centimetres
@@ -16,7 +16,6 @@ abstract class Person {
 	 * @author MK, AV, CH, PJ
 	*/
 	public Person(String name, int age, boolean gender, double height, double weight, int month, int day, int year, String place, String mStatus) {
-		
 		this.name = name;
 		this.age = age;
 		this.gender = gender;
