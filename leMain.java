@@ -18,8 +18,8 @@ public class leMain {
 		int birthMonth; //Month of birth 
 		int birthDay; //Day of birth
 		int birthYear; //Year of birth
-		String birthPlace; //City, Province/State of birth; Province/State in short notation
-		String martialStatus; //Single, Married, Divorced, Widowed etc.
+		int birthPlace; //City, Province/State of birth; Province/State in short notation
+		int martialStatus; //Single, Married, Divorced, Widowed etc.
 
 		//temporary fields for player
 		double salaryPY; //Salary per year
@@ -108,13 +108,13 @@ public class leMain {
 				
 				do {
 					System.out.println("Enter birth place based on list: "); //Show list
-					birthPlace = in.next();
-				} while (Integer.parseInt(birthPlace) <= 0 || Integer.parseInt(birthPlace) > 21); //ensures birth place selection is in the list
+					birthPlace = in.nextInt();
+				} while (birthPlace < 1 || birthPlace > 21); //ensures birth place selection is in the list
 				
 				do {
 					System.out.println("Enter martial status based on list: "); //Show list
-					martialStatus = in.next();
-				} while (Integer.parseInt(martialStatus) <= 0 || Integer.parseInt(martialStatus) > 21); //ensures martial status selection is in the list
+					martialStatus = in.nextInt();
+				} while (martialStatus < 1 || martialStatus > 21); //ensures martial status selection is in the list
 				
 				do {
 					//prompt for coach/player
@@ -171,10 +171,7 @@ public class leMain {
 								System.out.println("Enter the player's jersey number: ");
 								number=in.nextInt();
 							}while (number<0); //Ensures the player doesn't have a negative jersey number
-							
-							System.out.println("Select whether person is a coach or player (c/p): ");
-							playerType = in.next();
-							if ()
+					
 						}
 						
 						else if (personType == "c") {
@@ -220,7 +217,7 @@ public class leMain {
 								coachType = in.next();
 							} while (Integer.parseInt(coachType) <= 0 || Integer.parseInt(coachType) > 3); //ensures birth place selection is in the list
 						} 
-					} while (!type.equals("p") && !type.equals("c"));
+					} while (!personType.equals("p") && !personType.equals("c"));
 				} while (true);
 			}
 			else if (option == 2) {
