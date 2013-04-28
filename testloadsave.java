@@ -1,6 +1,6 @@
 import java.io.*;
 
-public class testloadandsave {
+public class testloadsave {
 
   /**
 	 * Loads the data from a text file onto the array of the team in the program
