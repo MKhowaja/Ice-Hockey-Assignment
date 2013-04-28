@@ -49,6 +49,10 @@ public class leMain {
 		//temporary fields for defense
 
 		//temporary fields for forward
+		int gwGoals; //Number of game-winning goals
+		int ppGoals; //Number of power play goals
+		int soGoals; //Number of shoot-out goals
+		
 		do {
 			do {
 				//outputs menu and prompts for an option
@@ -171,10 +175,29 @@ public class leMain {
 								System.out.println("Enter the player's jersey number: ");
 								number=in.nextInt();
 							}while (number<0); //Ensures the player doesn't have a negative jersey number
+							
+							System.out.println("Select whether player is forward, defence or goalie: ");
+							playerType = in.next();
+							if (playerType.equals("forward")){
+								do{
+									System.out.println("Enter the number of game-winning goals");
+									gwGoals=in.nextInt();
+								}while (gwGoals<0); //Ensure the player doesn't have negative game-winning goals
+								
+								do{
+									System.out.println("Enter the number of power-play goals");
+									ppGoals=in.nextInt();
+								}while (ppGoals<0); //Ensure the player doesn't have negative power-play goals
+								
+								do{
+									System.out.println("Enter the number of shootout goals");
+									soGoals=in.nextInt();
+								}while (soGoals<0); //Ensure the player doesn't have negative shootout goals
+							}
 					
 						}
 						
-						else if (personType == "c") {
+						else if (personType.equals("c")) {
 							//person[c] = (Coach)person[c];
 							//prompt for coach fields
 							do{
