@@ -9,7 +9,7 @@ public class leMain {
 		int option; //specifies the option that the user selects from the menu
 		Scanner in = new Scanner(System.in);
 		String type;
-		
+
 		//temporary fields for person
 		String name; //Name
 		int age; //Age
@@ -21,16 +21,26 @@ public class leMain {
 		int birthDay; //Day of birth
 		int birthYear; //Year of birth
 		String birthPlace; //City, Province/State of birth; Province/State in short notation
-		String maritalStatus; //Single, Married, Divorced, Widowed etc.
-		
+		String martialStatus; //Single, Married, Divorced, Widowed etc.
+
 		//temporary fields for player
-		
+		double salaryPY; //Salary per year
+		int contractR; //# of years remaining of contract 
+		double tSalary; //Total salary over entire contract length
+		int rating; //Temp for something awesome
+		int gp; //Games played
+		double penaltyT; //Time spent in penalties
+		int penaltyN; //Number of penalties
+		boolean arm; //Shooting arm: True if right arm
+		String tempArm;
+		int number; //Jersey number
+
 		//temporary fields for coach
-		
+
 		//temporary fields for goalie
-		
+
 		//temporary fields for defense
-		
+
 		//temporary fields for forward
 		do {
 			do {
@@ -49,12 +59,12 @@ public class leMain {
 					name = in.nextLine();
 					in.nextLine();
 				} while (name.equals("")); //ensures that something is entered
-				
+
 				do {
 					System.out.println("Enter age: ");
 					age = in.nextInt();
 				} while (age <= 0); //ensures age is greater than 0
-				
+
 				do {
 					System.out.println("Enter gender (m/f): ");
 					tempGender = in.next();
@@ -63,26 +73,65 @@ public class leMain {
 					gender = true;
 				else
 					gender = false;
-				
+
 				do {
 					System.out.println("Enter height: ");
 					height = in.nextDouble();
 				} while (height <= 0); //ensures height is greater than 0
-				
+
 				do {
 					System.out.println("Enter weight: ");
 					weight = in.nextDouble();
 				} while (weight <= 0); //ensures weight is greater than 0
 				
 				do {
+					System.out.println("Enter birth month: ");
+					birthMonth = in.nextInt();
+				} while (birthMonth <= 0 || birthMonth >12); //ensures birth month is between January and Decemeber
 				
+				do {
+					System.out.println("Enter birth day: ");
+					birthDay = in.nextInt();
+				} while (birthDay <= 0 || birthDay >31); //ensures birth day is between 1 and 31
+				
+				do {
+					System.out.println("Enter birth year: ");
+					birthYear = in.nextInt();
+				} while (birthYear <= 0); //ensures birth month is greater than 0
+				
+				do {
+					System.out.println("Enter birth place based on list: "); //Show list
+					birthPlace = in.next();
+				} while (Integer.parseInt(birthPlace) <= 0 || Integer.parseInt(birthPlace) > 21); //ensures birth place selection is in the list
+				
+				do {
+					System.out.println("Enter martial status based on list: "); //Show list
+					martialStatus = in.next();
+				} while (Integer.parseInt(martialStatus) <= 0 || Integer.parseInt(martialStatus) > 21); //ensures martial status selection is in the list
+				
+				Person p=new Player(name, age, gender, height, weight, birthMonth, birthDay, birthYear, birthPlace, martialStatus);
+				p.setBirthPlace();
+				p.setMaritalStatus();
+				
+				do {
+
 					//prompt for coach/player
 					do {
 						System.out.println("Select whether person is a coach or player (c/p): ");
 						type = in.next();
 						if (type == "p") {
 							//prompt for player stuff
-							System.out.println("Enter player's shooting arm: ");
+							do {
+								System.out.println("Enter player's shooting arm (R/L): ");
+								tempArm = in.next();
+							} while (!tempArm.equals('R') && !tempArm.equals('L'));
+							if (tempArm.equals("R"))
+								arm=true;
+							else
+								arm=false;
+							
+							
+							
 						}
 						else if (type == "c") {
 							person[c] = (Coach)person[c];
@@ -92,15 +141,15 @@ public class leMain {
 				} while (true);
 			}
 			else if (option == 2) {
-				
+
 			}
 			else if (option == 3) {
-				
+
 			}
 			else {
-				
+
 			}
 		} while (option != 4);
-		
+
 	}
 }
