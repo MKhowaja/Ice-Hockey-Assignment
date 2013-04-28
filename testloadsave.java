@@ -29,7 +29,7 @@ public class testloadandsave {
 
 	}
 
-	public static void save(String file, ) {
+	public static void save(String file) throws IOException {
 		FileWriter fw = new FileWriter(file);    //FileWriter 
 		PrintWriter pw = new PrintWriter (fw);     //PrintWriter
 
