@@ -29,8 +29,13 @@ public class testloadsave {
 		
 	}
 	
-	public static void save() {
+	public static void save(String file, ) {
+		FileWriter fw = new FileWriter("g:\\Sample.txt");    //FileWriter 
+		PrintWriter pw = new PrintWriter (fw);     //PrintWriter
 		
+		pw.println("231231");    // 3) Write to file
+		pw.println("world2");
+		pw.close();     
 	}
 	public static void main(String[] args) {
 
