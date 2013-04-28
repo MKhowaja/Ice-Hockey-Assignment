@@ -15,7 +15,7 @@ abstract class Person {
 	 * @param 
 	 * @author MK, AV, CH, PJ
 	*/
-	public Person(String name, int age, boolean gender, double height, double weight, int month, int day, int year, String place, String mStatus) {
+	Person(String name, int age, boolean gender, double height, double weight, int month, int day, int year, String place, String mStatus) {
 		this.name = name;
 		this.age = age;
 		this.gender = gender;
@@ -35,9 +35,7 @@ abstract class Person {
 	 * @author MK, AV, CH, PJ
 	*/
 
-	public String getName(){
-		return name;
-	}
+	abstract String getName();
 
 	/**
 	 * Returns age
@@ -45,9 +43,7 @@ abstract class Person {
 	 * @author MK, AV, CH, PJ
 	*/
 
-	public int getAge(){
-		return age;
-	}
+	abstract int getAge();
 
 	/**
 	 * Returns gender
@@ -57,9 +53,7 @@ abstract class Person {
 	 * @author MK, AV, CH, PJ
 	*/
 
-	public boolean getGender (){
-		return gender;
-	}
+	abstract boolean getGender ();
 
 	/**
 	 * Returns height in centimetres
@@ -67,9 +61,7 @@ abstract class Person {
 	 * @author MK, AV, CH, PJ
 	*/
 
-	public double getHeight (){
-		return height;
-	}
+	abstract double getHeight ();
 
 	/**
 	 * Returns weight in kg
@@ -77,9 +69,7 @@ abstract class Person {
 	 * @author MK, AV, CH, PJ
 	*/
 
-	public double getWeight (){
-		return weight;
-	}
+	abstract double getWeight ();
 
 	/**
 	 * Returns day of birth
@@ -87,9 +77,7 @@ abstract class Person {
 	 * @author MK, AV, CH, PJ
 	*/
 
-	public int getBirthDay (){
-		return birthDay;
-	}
+	abstract int getBirthDay ();
 
 	/**
 	 * Returns month of birth
@@ -97,9 +85,7 @@ abstract class Person {
 	 * @author MK, AV, CH, PJ
 	*/
 
-	public int getBirthMonth (){
-		return birthMonth;
-	}
+	abstract int getBirthMonth ();
 
 	/**
 	 * Returns year of birth
@@ -107,18 +93,14 @@ abstract class Person {
 	 * @author MK, AV, CH, PJ
 	*/
 
-	public int getBirthYear (){
-		return birthYear;
-	}
+	abstract int getBirthYear ();
 
 	/**
 	 * Returns the country using field birthPlace based on IIHF's Top 20 International Men's Hockey Countries 
 	 * @return nationality/country of birth
 	 * @author MK, AV, CH, PJ
 	 */
-	public String getBirthPlace(){
-		return birthPlace;
-	}
+	abstract String getBirthPlace();
 	
 	/**
 	 * Returns Marital status
@@ -127,98 +109,11 @@ abstract class Person {
 	 * @return maritalStatus
 	 * @author MK, AV, CH, PJ
 	*/
-	public String getMaritalStatus(){
-		return maritalStatus;
-	}
+	abstract String getMaritalStatus();
 	
-	public void setBirthPlace(){
-		switch(Integer.parseInt(birthPlace)){
-		case 1:
-			birthPlace="Austria";
-			break;
-		case 2:
-			birthPlace="Balarus";
-			break;
-		case 3:
-			birthPlace="Canada";
-			break;
-		case 4:
-			birthPlace="Czeck Republic";
-			break;
-		case 5:
-			birthPlace="Denmark";
-			break;
-		case 6:
-			birthPlace="Finland";
-			break;
-		case 7:
-			birthPlace="France";
-			break;
-		case 8:
-			birthPlace="Germany";
-			break;
-		case 9:
-			birthPlace="Hungary";
-			break;
-		case 10:
-			birthPlace="Italy";
-			break;
-		case 11:
-			birthPlace="Kazakhstan";
-			break;
-		case 12:
-			birthPlace="Latvia";
-			break;
-		case 13:
-			birthPlace="Norway";
-			break;
-		case 14:
-			birthPlace="Russia";
-			break;
-		case 15:
-			birthPlace="Slovakia";
-			break;
-		case 16:
-			birthPlace="Slovenia";
-			break;
-		case 17:
-			birthPlace="Sweden";
-			break;
-		case 18:
-			birthPlace="Switzerland";
-			break;
-		case 19:
-			birthPlace="Ukraine";
-			break;
-		case 20:
-			birthPlace="United States";
-			break;
-		default:
-			birthPlace="X"; //Unknown birthplace
-			break;
-		}
-	}
+	protected abstract void setBirthPlace();
 
-	
-	public void setMaritalStatus (){
-		switch (Integer.parseInt(maritalStatus)){
-		case 1:
-			maritalStatus="Divorced";
-			break;
-		case 2:
-			maritalStatus="Married";
-			break;
-		case 3:
-			maritalStatus="Single";
-			break;
-		case 4:
-			maritalStatus="Widowed";
-			break;
-		default:
-			maritalStatus="x";
-			break;
-		}
-	}
+	protected abstract void setMaritalStatus ();
 
 	//Mutators
 
@@ -228,9 +123,7 @@ abstract class Person {
 	 * @author MK, AV, CH, PJ
 	*/
 
-	public void putName(String x){
-		name = x;
-	}
+	protected abstract void putName(String x);
 
 	/**
 	 * Stores parameter to age
@@ -238,9 +131,7 @@ abstract class Person {
 	 * @author MK, AV, CH, PJ
 	*/
 
-	public void putAge(int x){
-		age = x;
-	}
+	protected abstract void putAge(int x);
 
 	/**
 	 * Stores parameter to gender
@@ -248,9 +139,7 @@ abstract class Person {
 	 * @author MK, AV, CH, PJ
 	*/
 
-	public void putGender (boolean x){
-		gender = x;
-	}
+	protected abstract void putGender (boolean x);
 
 	/**
 	 * Stores parameter to height
@@ -258,9 +147,7 @@ abstract class Person {
 	 * @author MK, AV, CH, PJ
 	*/
 
-	public void putHeight (double x){
-		height = x;
-	}
+	protected abstract void putHeight (double x);
 
 	/**
 	 * Stores parameter to weight
@@ -268,9 +155,7 @@ abstract class Person {
 	 * @author MK, AV, CH, PJ
 	*/
 
-	public void putWeight (double x){
-		weight = x;
-	}
+	protected abstract void putWeight (double x);
 
 	/**
 	 * Stores parameter to birthDay
@@ -278,9 +163,7 @@ abstract class Person {
 	 * @author MK, AV, CH, PJ
 	*/
 
-	public void putBirthday (int x){
-		birthDay = x;
-	}
+	protected abstract void putBirthday (int x);
 
 	/**
 	 * Stores parameter to birthMonth
@@ -288,9 +171,7 @@ abstract class Person {
 	 * @author MK, AV, CH, PJ
 	*/
 
-	public void putBirthMonth (int x){
-		birthMonth = x;
-	}
+	protected abstract void putBirthMonth (int x);
 
 	/**
 	 * Stores parameter to birthDay
@@ -298,9 +179,7 @@ abstract class Person {
 	 * @author MK, AV, CH, PJ
 	*/
 
-	public void putBirthYear (int x){
-		birthYear = x;
-	}
+	protected abstract void putBirthYear (int x);
 
 	/**
 	 * Stores parameter to birthPlace
@@ -308,9 +187,7 @@ abstract class Person {
 	 * @author MK, AV, CH, PJ
 	*/
 
-	public void putBirthplace (String x){
-		birthPlace = x;
-	}
+	protected abstract void putBirthplace (String x);
 
 	/**
 	 * Stores parameter to maritalStatus
@@ -318,8 +195,6 @@ abstract class Person {
 	 * @author MK, AV, CH, PJ
 	*/
 
-	public void putMaritalStatus (String x){
-		maritalStatus = x;
-	}
+	protected abstract void putMaritalStatus (String x);
 
 }
