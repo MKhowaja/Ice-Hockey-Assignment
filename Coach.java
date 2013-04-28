@@ -92,16 +92,17 @@ public class Coach extends Person{
 	 * @return type of coach
 	 * @author MK, AV, CH, PJ
 	 */
-	public String getCoach(){
+	public void getCoach(){
 		switch(Integer.parseInt(coachType)){
 		case 1:
-			return "head";
+			coachType="head";
+			break;
 		case 2:
-			return "assistant";
+			coachType="assistant";
+			break;
 		case 3:
-			return "goaltender";
-		default:
-			return "x";
+			coachType="goaltender";
+			break;
 		}
 	}
 
