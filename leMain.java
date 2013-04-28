@@ -1,14 +1,12 @@
 import java.util.Scanner;
-
-
-
 public class leMain {
   public static void main(String []args) {
-		Person[] person = new Person[46]; //one roster is 23 players
+		//Person[] person = new Person[46]; //one roster is 23 players
 		int c = 0; //tracks the index of the person in being added into the array
 		int option; //specifies the option that the user selects from the menu
 		Scanner in = new Scanner(System.in);
-		String type;
+		String personType;
+		String playerType;
 
 		//temporary fields for person
 		String name; //Name
@@ -36,6 +34,15 @@ public class leMain {
 		int number; //Jersey number
 
 		//temporary fields for coach
+		int winS; //Regular season wins
+		int loseS; //Regular season loses
+		int gameCS; //Regular season games coached
+		double pointPS; //Regular season Points percentage (number of points team earned divided by total possible points)
+		int winP; //Playoff wins
+		int loseP; //Playoff loses
+		int gameCP; //Playoff games coached
+		int stanleyN; //Number of Stanley Cups
+		String coachType; //The type of coach (head, assistant or goaltender)
 
 		//temporary fields for goalie
 
@@ -109,18 +116,48 @@ public class leMain {
 					martialStatus = in.next();
 				} while (Integer.parseInt(martialStatus) <= 0 || Integer.parseInt(martialStatus) > 21); //ensures martial status selection is in the list
 				
-				Person p=new Player(name, age, gender, height, weight, birthMonth, birthDay, birthYear, birthPlace, martialStatus);
-				p.setBirthPlace();
-				p.setMaritalStatus();
-				
 				do {
-
 					//prompt for coach/player
 					do {
 						System.out.println("Select whether person is a coach or player (c/p): ");
-						type = in.next();
-						if (type == "p") {
+						personType = in.next();
+						if (personType.equals("p")) {
 							//prompt for player stuff
+							do{
+								System.out.println("Enter the player's salary per year: ");
+								salaryPY=in.nextDouble();
+							}while (salaryPY<0); //Ensures the player does have a salary per year
+							
+							do{
+								System.out.println("Enter the player's number of years remaining in the contract: ");
+								contractR=in.nextInt();
+							}while (contractR<0); //Ensures the player has number of years in the contract
+							
+							do{
+								System.out.println("Enter the player's total salary over the entire contract: ");
+								tSalary=in.nextDouble();
+							}while (tSalary<0); //Ensures the player has number of years in the contract
+							
+							do{
+								System.out.println("Enter the player's rating: ");
+								rating=in.nextInt();
+							}while (rating<0); //Ensures the player's rating isn't zero
+							
+							do{
+								System.out.println("Enter the number of games the player has played: ");
+								gp=in.nextInt();
+							}while (gp<0); //Ensures the player has at least player 0 games
+							
+							do{
+								System.out.println("Enter the time spent in penalty box for the player: ");
+								penaltyT=in.nextDouble();
+							}while (penaltyT<0); //Ensures the player has at least spent 0 seconds in the penalty box
+							
+							do{
+								System.out.println("Enter the number times spent in the penalty box: ");
+								penaltyN=in.nextInt();
+							}while (penaltyN<0); //Ensures the player has at least been in the penalty box once
+							
 							do {
 								System.out.println("Enter player's shooting arm (R/L): ");
 								tempArm = in.next();
@@ -130,12 +167,58 @@ public class leMain {
 							else
 								arm=false;
 							
+							do{
+								System.out.println("Enter the player's jersey number: ");
+								number=in.nextInt();
+							}while (number<0); //Ensures the player doesn't have a negative jersey number
 							
-							
+							System.out.println("Select whether person is a coach or player (c/p): ");
+							playerType = in.next();
+							if ()
 						}
-						else if (type == "c") {
-							person[c] = (Coach)person[c];
+						
+						else if (personType == "c") {
+							//person[c] = (Coach)person[c];
 							//prompt for coach fields
+							do{
+								System.out.println("Enter the coach's wins for the regular season: ");
+								winS=in.nextInt();
+							}while (winS<0); //Ensures the the coach doesn't have negative wins
+							
+							do{
+								System.out.println("Enter the coach's loses for the regular season: ");
+								loseS=in.nextInt();
+							}while (loseS<0); //Ensures the the coach doesn't have negative loses
+							
+							do{
+								System.out.println("Enter the coach's games coached for the regular season: ");
+								gameCS=in.nextInt();
+							}while (gameCS<0); //Ensures the the coach doesn't have negative games coached
+							
+							do{
+								System.out.println("Enter the coach's wins for the playoffs: ");
+								winP=in.nextInt();
+							}while (winP<0); //Ensures the the coach doesn't have negative wins
+							
+							do{
+								System.out.println("Enter the coach's loses for the playoffs: ");
+								loseP=in.nextInt();
+							}while (loseP<0); //Ensures the the coach doesn't have negative loses
+							
+							do{
+								System.out.println("Enter the coach's games coached for the playoffs: ");
+								gameCP=in.nextInt();
+							}while (gameCP<0); //Ensures the the coach doesn't have negative games coached
+							
+							do{
+								System.out.println("Enter the number of times the coach has won Stanley Cups: ");
+								stanleyN=in.nextInt();
+							}while (gameCP<0); //Ensures the the coach doesn't have negative number of times the coach wins Stanley Cups
+							
+							do {
+								System.out.println("Enter the type of coach the coach is: "); //Show list
+								coachType = in.next();
+							} while (Integer.parseInt(coachType) <= 0 || Integer.parseInt(coachType) > 3); //ensures birth place selection is in the list
 						} 
 					} while (!type.equals("p") && !type.equals("c"));
 				} while (true);
