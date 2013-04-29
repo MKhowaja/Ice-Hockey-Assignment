@@ -12,6 +12,7 @@ public class Forward extends Player {
 	private int gwGoals; //Number of game-winning goals
 	private int ppGoals; //Number of power play goals
 	private int soGoals; //Number of shoot-out goals
+	private int position //position of forward player: -1 = left wing; 0 = centre; 1 = right wing
 	
 	public Forward(String name, int age, boolean gender, double height, double weight, int month, int day, int year, String place, String mStatus) {//+more 
 		super(name, age, gender, height, weight, month, day, year, place, mStatus);
@@ -93,6 +94,26 @@ public class Forward extends Player {
 	public int getgwGoals() {
 		return gwGoals;
 	}
+		/**
+	 * Returns position of a player
+	 * @return position in the form of a string: left, centre or right
+	 * @author MK, AV, CH, PJ
+	 */
+	public String getPosition (){
+		if (position = -1){
+			return "left"
+		}
+		else if (position = 0){
+			return "centre"
+		}
+		else if (position = 1{
+			return "right"
+		}
+		else{
+			return "error"
+		}
+	}
+	
 	//Mutator methods
 	/**
 	 * stores parameter to plusMinus
@@ -165,5 +186,9 @@ public class Forward extends Player {
 	 */
 	public void putavgSOGoalsPS(double x) {
 		avgSOGoalsPS = x;
+	}
+	
+	public void putPosition (int x){
+		position = x
 	}
 }
