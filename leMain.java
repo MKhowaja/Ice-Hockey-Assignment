@@ -1,4 +1,7 @@
 import java.util.Scanner;
+
+
+
 public class leMain {
   public static void main(String []args) {
 		//Person[] person = new Person[46]; //one roster is 23 players
@@ -18,8 +21,8 @@ public class leMain {
 		int birthMonth; //Month of birth 
 		int birthDay; //Day of birth
 		int birthYear; //Year of birth
-		int birthPlace; //City, Province/State of birth; Province/State in short notation
-		int martialStatus; //Single, Married, Divorced, Widowed etc.
+		String birthPlace; //City, Province/State of birth; Province/State in short notation
+		String martialStatus; //Single, Married, Divorced, Widowed etc.
 
 		//temporary fields for player
 		double salaryPY; //Salary per year
@@ -37,11 +40,12 @@ public class leMain {
 		int winS; //Regular season wins
 		int loseS; //Regular season loses
 		int gameCS; //Regular season games coached
+		double pointPS; //Regular season Points percentage (number of points team earned divided by total possible points)
 		int winP; //Playoff wins
 		int loseP; //Playoff loses
 		int gameCP; //Playoff games coached
 		int stanleyN; //Number of Stanley Cups
-		String coachType; //The type of coach (head, assistant or goaltender)
+		int coachType; //The type of coach (head, assistant or goaltender)
 
 		//temporary fields for goalie
 
@@ -51,7 +55,6 @@ public class leMain {
 		int gwGoals; //Number of game-winning goals
 		int ppGoals; //Number of power play goals
 		int soGoals; //Number of shoot-out goals
-		
 		do {
 			do {
 				//outputs menu and prompts for an option
@@ -111,13 +114,13 @@ public class leMain {
 				
 				do {
 					System.out.println("Enter birth place based on list: "); //Show list
-					birthPlace = in.nextInt();
-				} while (birthPlace < 1 || birthPlace > 21); //ensures birth place selection is in the list
+					birthPlace = in.next();
+				} while (Integer.parseInt(birthPlace) <= 0 || Integer.parseInt(birthPlace) > 21); //ensures birth place selection is in the list
 				
 				do {
 					System.out.println("Enter martial status based on list: "); //Show list
-					martialStatus = in.nextInt();
-				} while (martialStatus < 1 || martialStatus > 21); //ensures martial status selection is in the list
+					martialStatus = in.next();
+				} while (Integer.parseInt(martialStatus) <= 0 || Integer.parseInt(martialStatus) > 21); //ensures martial status selection is in the list
 				
 				do {
 					//prompt for coach/player
@@ -140,11 +143,6 @@ public class leMain {
 								System.out.println("Enter the player's total salary over the entire contract: ");
 								tSalary=in.nextDouble();
 							}while (tSalary<0); //Ensures the player has number of years in the contract
-							
-							do{
-								System.out.println("Enter the player's rating: ");
-								rating=in.nextInt();
-							}while (rating<0); //Ensures the player's rating isn't zero
 							
 							do{
 								System.out.println("Enter the number of games the player has played: ");
@@ -192,8 +190,11 @@ public class leMain {
 									System.out.println("Enter the number of shootout goals");
 									soGoals=in.nextInt();
 								}while (soGoals<0); //Ensure the player doesn't have negative shootout goals
+								
+								Forward forward=new Forward(name, age, gender, height, weight, birthMonth, birthDay, birthYear, birthPlace, martialStatus);
+								forward.getAge();
+								forward.putSalaryPY(salaryPY);
 							}
-					
 						}
 						
 						else if (personType.equals("c")) {
@@ -236,8 +237,8 @@ public class leMain {
 							
 							do {
 								System.out.println("Enter the type of coach the coach is: "); //Show list
-								coachType = in.next();
-							} while (Integer.parseInt(coachType) <= 0 || Integer.parseInt(coachType) > 3); //ensures birth place selection is in the list
+								coachType = in.nextInt();
+							} while (coachType <= 0 || coachType > 3); //ensures coach type selection is in the list
 						} 
 					} while (!personType.equals("p") && !personType.equals("c"));
 				} while (true);
