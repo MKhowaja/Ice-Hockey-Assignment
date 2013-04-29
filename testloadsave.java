@@ -30,6 +30,7 @@ public class testloadsave {
 		person.age = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
 		
 		x = br.readLine();
+		x = x.substring(x.indexOf(": ")+2,x.length());
 		if (x.equals("male"))
 			person.gender = true;
 		else
@@ -109,6 +110,7 @@ public class testloadsave {
 			((Player)person).penaltyN = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
 			
 			x = br.readLine();
+			x = x.substring(x.indexOf(": ")+2,x.length());
 			if (x.equals("right arm"))
 				((Player)person).arm = true;
 			else
@@ -121,6 +123,7 @@ public class testloadsave {
 			((Player)person).numMin = Double.parseDouble(x.substring(x.indexOf(": ")+2,x.length()));
 			
 			x = br.readLine();
+			x = x.substring(x.indexOf(": ")+2,x.length());
 			if (x.equals("true")) 
 				((Player)person).rookie = true;
 			else
@@ -301,7 +304,10 @@ public class testloadsave {
 		pw.println("First name: "+p.getFName());
 		pw.println("Last name: "+p.getLName());
 		pw.println("Age: "+p.getAge());
-		pw.println("Gender: "+p.getGender());
+		if (p.getGender()==true)
+			pw.println("Gender: male");
+		else
+			pw.println("Gender: female");
 		pw.println("Height: "+p.getHeight());
 		pw.println("Weight: "+p.getWeight());
 		pw.println("Birth month: "+p.getBirthMonth());
@@ -415,7 +421,7 @@ public class testloadsave {
 	
 	public static void main(String[] args) throws IOException {
 		Person p = new Coach(null, null, 0, false, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-		load("C:\\Users\\Clement\\Desktop\\sample.txt",p);
-		save("C:\\Users\\Clement\\Desktop\\plzwork.txt",p);
+		load("G:\\Computer Science\\workspace\\Inheritance Assignment\\sample.txt",p);
+		save("G:\\Computer Science\\workspace\\Inheritance Assignment\\plzwork.txt",p);
 	}
 }
