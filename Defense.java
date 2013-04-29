@@ -131,28 +131,19 @@ public class Defense extends Player{
 
 	/**
 	 * Returns the number of power-play goals
-	 * @return gwGoals
+	 * @return ppGoals
 	 * @author MK, AV, CH, PJ
 	 */
 	public int getPPGoals() {
 		return ppGoals;
 	}
-	
+
 	/**
-	 * Returns the number of shootout goals
+	 * Returns the number of shoot-out goals
 	 * @return soGoals
 	 * @author MK, AV, CH, PJ
 	 */
 	public int getSOGoals() {
-		return soGoals;
-	}
-
-	/**
-	 * Returns the number of shoot-out goals
-	 * @return gwGoals
-	 * @author MK, AV, CH, PJ
-	 */
-	public int getAOGoals() {
 		return soGoals;
 	}
 
