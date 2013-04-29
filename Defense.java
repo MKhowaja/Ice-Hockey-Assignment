@@ -137,6 +137,15 @@ public class Defense extends Player{
 	public int getPPGoals() {
 		return ppGoals;
 	}
+	
+	/**
+	 * Returns the number of shootout goals
+	 * @return soGoals
+	 * @author MK, AV, CH, PJ
+	 */
+	public int getSOGoals() {
+		return soGoals;
+	}
 
 	/**
 	 * Returns the number of shoot-out goals
