@@ -1,6 +1,6 @@
 public class Forward extends Player {
   
-	protected int plusMinus;
+	protected int plusMinus; // +/-  
 	protected double avgGoalsPS; //Average goals per season
 	protected double avgGoalPercentagePS; //Average goal percentage per season
 	protected double avgShotsPS; //Average shots taken per season
