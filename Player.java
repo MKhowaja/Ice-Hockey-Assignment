@@ -113,6 +113,15 @@ public class Player extends Person {
 	public int getNumber() {
 		return number;
 	}
+	
+	/**
+	 * Returns total number of minutes the player has been on ice
+	 * @return the number of minutes
+	 * @author MK, AV, CH, PJ
+	 */
+	public double getNumMin(){
+		return numMin;
+	}
 
 	//Mutators
 
@@ -201,5 +210,14 @@ public class Player extends Person {
 	 */
 	public void putNumber(int x) {
 		number = x;
+	}
+	
+	/**
+	 * Assigns number the value of x, representing the total number of minutes the player has been on ice
+	 * @param x of type double
+	 * @author MK, AV, CH, PJ
+	 */
+	public void putNumMin(double x){
+		numMin=x;
 	}
 }
