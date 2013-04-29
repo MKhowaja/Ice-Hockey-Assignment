@@ -17,7 +17,7 @@ public class Goalie extends Player {
 			double salaryPY, int contractR, double tSalary, int rating, int gp, double penaltyT, int penaltyN, boolean arm, int number, //player fields
 			int wins, int loses, int winsP, int losesP, int losesOT, int gameStart, double numMin, int goalA, double goalAA, int shotsOG, int saves, double savePercent, int shutouts, int emptyNG) { //goalie fields
 		super(name, age, gender, height, weight, month, day, year, place, mStatus,//person fields
-				salaryPY, contractR, tSalary, rating, gp, penaltyT, penaltyN, arm, number); //player fields
+				salaryPY, contractR, tSalary, rating, gp, penaltyT, penaltyN, arm, number, numMIn); //player fields
 		
 		this.wins = wins;
 		this.loses = loses;
@@ -88,15 +88,6 @@ public class Goalie extends Player {
 	 */
 	public int getGameStart(){
 		return gameStart;
-	}
-	
-	/**
-	 * Returns total number of minutes goalie is on ice
-	 * @return numMin
-	 * @author MK, AV, CH, PJ
-	 */
-	public double getNumMin(){
-		return numMin;
 	}
 	
 	/**
@@ -215,15 +206,6 @@ public class Goalie extends Player {
 	 */
 	public void putGameStart(int x){
 		gameStart=x;
-	}
-	
-	/**
-	 * Stores parameter to numMin
-	 * @param x of type double
-	 * @author MK, AV, CH, PJ
-	 */
-	public void putNumMin(double x){
-		numMin=x;
 	}
 	
 	/**
