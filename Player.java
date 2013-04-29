@@ -294,7 +294,7 @@ public class Player extends Person {
 	 * @param x of type boolean
 	 * @author MK, AV, CH, PJ
 	 */
-	public void getRookie(boolean x) {
+	public void putRookie(boolean x) {
 		rookie = x;
 	}
 	
@@ -303,7 +303,7 @@ public class Player extends Person {
 	 * @param x of type int
 	 * @author MK, AV, CH, PJ
 	 */
-	public void getPenaltyMinor(int x) {
+	public void putPenaltyMinor(int x) {
 		penaltyMinor = x;
 	}
 	
@@ -312,7 +312,7 @@ public class Player extends Person {
 	 * @param x of type int
 	 * @author MK, AV, CH, PJ
 	 */
-	public void getPenaltyMajor(int x) {
+	public void putPenaltyMajor(int x) {
 		penaltyMajor = x;
 	}
 	
@@ -321,7 +321,7 @@ public class Player extends Person {
 	 * @param x of type int
 	 * @author MK, AV, CH, PJ
 	 */
-	public void getPenaltyMisc(int x) {
+	public void putPenaltyMisc(int x) {
 		penaltyMisc = x;
 	}
 	
@@ -330,7 +330,7 @@ public class Player extends Person {
 	 * @param x of type int
 	 * @author MK, AV, CH, PJ
 	 */
-	public void getPenaltyGMisc(int x) {
+	public void putPenaltyGMisc(int x) {
 		penaltyGMisc = x;
 	}
 	
@@ -339,7 +339,7 @@ public class Player extends Person {
 	 * @param x of type int
 	 * @author MK, AV, CH, PJ
 	 */
-	public void getMatch(int x) {
+	public void putMatch(int x) {
 		match = x;
 	}
 }
