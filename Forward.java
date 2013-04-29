@@ -14,9 +14,9 @@ public class Forward extends Player {
 	private int soGoals; //Number of shoot-out goals
 	/*added field*/private double avgNShifts; //Average number of shifts per game
 	/*added field*/private int otGoals; //Number of overtime goals
-	/*added field*/private double FaceoffPercentage //Face off win percentage
+	/*added field*/private double faceoffPercentage; //Face off win percentage
 	/*added field*/private double points; //Points (don't know what this means)
-	/*added field*/private double ShootPercentage //Shooting Percentage
+	/*added field*/private double shootPercentage; //Shooting Percentage
 	
 	public Forward(String name, int age, boolean gender, double height, double weight, int month, int day, int year, int place, int mStatus,//person fields
 			double salaryPY, int contractR, double tSalary, int rating, int gp, double penaltyT, int penaltyN, boolean arm, int number, //player fields
@@ -35,10 +35,15 @@ public class Forward extends Player {
 		this.avgAssistsPS = avgAssistsPS;
 		this.avgPenaltyPS = avgPenaltyPS;
 		this.avgPPGoalsPS = avgPPGoalsPS;
-		this. avgSOGoalsPS = avgSOGoalsPS;
+		this.avgSOGoalsPS = avgSOGoalsPS;
+		this.avgNShift = avgnShift;
 		this.gwGoals = gwGoals;
 		this.ppGoals = ppGoals;
 		this.soGoals = soGoals;
+		this.otGoals = otGoals;
+		this.faceoffPercentage = faceoffPercentage;
+		this.points = points;
+		this.shootPercentage = shootPercentage;
 	}
 	
 	//Accessor Methods
@@ -50,6 +55,7 @@ public class Forward extends Player {
 	public int getplusMinus() {
 		return plusMinus;
 	}
+	
 	/**
 	 * Returns average goals per season of a player
 	 * @return avgGoalsPS
@@ -58,6 +64,7 @@ public class Forward extends Player {
 	public double getavgGoalsPS() {
 		return avgGoalsPS;
 	}
+	
 	/**
 	 * Returns average goal percentage per season of a player
 	 * @return avgGoalPercentagePS
@@ -66,6 +73,7 @@ public class Forward extends Player {
 	public double getavgGoalPercentagePS() {
 		return avgGoalPercentagePS;
 	}
+	
 	/**
 	 * Returns average number of shots per season of a player
 	 * @return avgShotsPS
@@ -74,6 +82,7 @@ public class Forward extends Player {
 	public double getavgShotsPS() {
 		return avgShotsPS;
 	}
+	
 	/**
 	 * Returns z-score of goal percentage of a player
 	 * @return zsGoalPercentage
@@ -82,6 +91,7 @@ public class Forward extends Player {
 	public double getzsGoalPercentage() {
 		return zsGoalPercentage;
 	}
+	
 	/**
 	 * Returns average assists per season of a player
 	 * @return avgAssistsPS
@@ -90,6 +100,7 @@ public class Forward extends Player {
 	public double getavgAssistsPS() {
 		return avgAssistsPS;
 	}
+	
 	/**
 	 * Returns average penalty minutes per season of a player
 	 * @return avgPenaltyPS
@@ -98,6 +109,7 @@ public class Forward extends Player {
 	public double getavgPenaltyPS() {
 		return avgPenaltyPS;
 	}
+	
 	/**
 	 * Returns average power play goals per season of a player
 	 * @return avgPPGoalsPS
@@ -106,6 +118,7 @@ public class Forward extends Player {
 	public double getavgPPGoalsPS() {
 		return avgPPGoalsPS;
 	}
+	
 	/**
 	 * Returns average shoot-out goals per season of a player
 	 * @return avgSOGoalsPS
@@ -114,9 +127,79 @@ public class Forward extends Player {
 	public double getavgSOGoalsPS() {
 		return avgSOGoalsPS;
 	}
-	public int getgwGoals() {
+	
+	/**
+	 * Returns the average number of shifts per game
+	 * @return avgNShifts
+	 * @author MK, AV, CH, PJ
+	 */
+	public double getAvgNShifts() {
+		return avgNShifts;
+	}
+	
+	/**
+	 * Returns the number of game-winning goals
+	 * @return gwGoals
+	 * @author MK, AV, CH, PJ
+	 */
+	public int getGWGoals() {
 		return gwGoals;
 	}
+	
+	/**
+	 * Returns the number of power-play goals
+	 * @return gwGoals
+	 * @author MK, AV, CH, PJ
+	 */
+	public int getPPGoals() {
+		return ppGoals;
+	}
+	
+	/**
+	 * Returns the number of shoot-out goals
+	 * @return gwGoals
+	 * @author MK, AV, CH, PJ
+	 */
+	public int getAOGoals() {
+		return soGoals;
+	}
+	
+	/**
+	 * Returns the number of overtime goals
+	 * @return otGoals
+	 * @author MK, AV, CH, PJ
+	 */
+	public int getOTGoals() {
+		return otGoals;
+	}
+	
+	/**
+	 * Returns faceoff percentage
+	 * @return faceoffPercentage
+	 * @author MK, AV, CH, PJ
+	 */
+	public double getFaceoffPercentage() {
+		return faceoffPercentage;
+	}
+	
+	/**
+	 * Returns points
+	 * @return points
+	 * @author MK, AV, CH, PJ
+	 */
+	public double getPoints() {
+		return points;
+	}
+	
+	/**
+	 * Returns shooting percentage
+	 * @return shootPercentage
+	 * @author MK, AV, CH, PJ
+	 */
+	public double getShootPercentage() {
+		return shootPercentage;
+	}
+	
 	//Mutator methods
 	/**
 	 * stores parameter to plusMinus
@@ -126,6 +209,7 @@ public class Forward extends Player {
 	public void putplusMinus(int x) {
 		plusMinus = x;
 	}
+	
 	/**
 	 * stores parameter to avgGoalsPS
 	 * @param x of type double
@@ -134,6 +218,7 @@ public class Forward extends Player {
 	public void putavgGoalsPS(double x) {
 		avgGoalsPS = x;
 	}
+	
 	/**
 	 * stores parameter to avgGoalPercentagePS
 	 * @param x of type double
@@ -142,6 +227,7 @@ public class Forward extends Player {
 	public void putavgGoalPercentagePS(double x) {
 		avgGoalPercentagePS = x;
 	}
+	
 	/**
 	 * stores parameter to avgShotsPS
 	 * @param x of type double
@@ -150,6 +236,7 @@ public class Forward extends Player {
 	public void putavgShotsPS(double x) {
 		avgShotsPS = x;
 	}
+	
 	/**
 	 * stores parameter to zsGoalPercentage
 	 * @param x of type double
@@ -158,6 +245,7 @@ public class Forward extends Player {
 	public void putzsGoalPercentage(double x) {
 		zsGoalPercentage = x;
 	}
+	
 	/**
 	 * stores parameter to avgAssistsPS
 	 * @param x of type double
@@ -166,6 +254,7 @@ public class Forward extends Player {
 	public void putavgAssistsPS(double x) {
 		avgAssistsPS = x;
 	}
+	
 	/**
 	 * stores parameter to avgPenaltyPS
 	 * @param x of type double
@@ -174,6 +263,7 @@ public class Forward extends Player {
 	public void putavgPenaltyPS(double x) {
 		avgPenaltyPS = x;
 	}
+	
 	/**
 	 * stores parameter to avgPPGoalsPS
 	 * @param x of type double
@@ -182,6 +272,7 @@ public class Forward extends Player {
 	public void putavgPPGoalsPS(double x) {
 		avgPPGoalsPS = x;
 	}
+	
 	/**
 	 * stores parameter to avgSOGoalsPS
 	 * @param x of type double
@@ -189,5 +280,77 @@ public class Forward extends Player {
 	 */
 	public void putavgSOGoalsPS(double x) {
 		avgSOGoalsPS = x;
+	}
+	
+	/**
+	 * stores parameter to avgNShifts
+	 * @param x of type double
+	 * @author MK, AV, CH, PJ
+	 */
+	public void putAvgNshifts(int x){
+		avgNShifts = x;
+	}
+	
+	/**
+	 * stores parameter to gwGoals
+	 * @param x of type int
+	 * @author MK, AV, CH, PJ
+	 */
+	public void putGWGoals(int x){
+		gwGoals = x;
+	}
+	
+	/**
+	 * stores parameter to ppGoals
+	 * @param x of type int
+	 * @author MK, AV, CH, PJ
+	 */
+	public void putPPGoals(int x){
+		ppGoals = x;
+	}
+	
+	/**
+	 * stores parameter to soGoals
+	 * @param x of type int
+	 * @author MK, AV, CH, PJ
+	 */
+	public void putSOGoals(int x){
+		soGoals = x;
+	}
+	
+	/**
+	 * stores parameter to otGoals
+	 * @param x of type int
+	 * @author MK, AV, CH, PJ
+	 */
+	public void getOTGoals(int x) {
+		otGoals = x;
+	}
+	
+	/**
+	 * stores parameter to faceoffPercentage
+	 * @param x of type double
+	 * @author MK, AV, CH, PJ
+	 */
+	public void getFaceoffPercentage(double x) {
+		faceoffPercentage = x;
+	}
+	
+	/**
+	 * stores parameter to points
+	 * @param x of type double
+	 * @author MK, AV, CH, PJ
+	 */
+	public void getPoints(double x) {
+		points = x;
+	}
+	
+	/**
+	 * stores parameter to shootPercentage
+	 * @param x of type double
+	 * @author MK, AV, CH, PJ
+	 */
+	public void getShootPercentage(double x) {
+		shootPercentage = x;
 	}
 }
