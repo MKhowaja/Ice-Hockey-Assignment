@@ -8,6 +8,7 @@ public class Player extends Person {
 	protected int penaltyN; //Number of penalties
 	protected boolean arm; //Shooting arm: True if right arm
 	protected int number; //Jersey number
+	/*added field*/protected double numMin; //Total number of minutes the player has been on ice
 
 	public Player(String name, int age, boolean gender, double height, double weight, int month, int day, int year, int place, int mStatus,//person fields
 			double salaryPY, int contractR, double tSalary, int rating, int gp, double penaltyT, int penaltyN, boolean arm, int number) {//player fields
