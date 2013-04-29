@@ -344,12 +344,7 @@ public class testloadsave {
 			}
 			pw.println("Jersey number: "+((Player) p).getNumber());
 			pw.println("Total number of minutes on ice: "+((Player) p).getNumMin());
-			if (((Player)p).getRookie()==true){
-				pw.println("Rookie: true");
-			}
-			else{
-				pw.println("Rookie: false");
-			}
+			pw.println("Rookie: "+((Player)p).getRookie());
 			pw.println("Number of minor penalties: "+((Player) p).getPenaltyMinor());
 			pw.println("Number of major penalties: "+((Player) p).getPenaltyMajor());
 			pw.println("Number of misconduct penalties: "+((Player) p).getPenaltyMisc());
@@ -420,8 +415,7 @@ public class testloadsave {
 	}
 	
 	public static void main(String[] args) throws IOException {
-		Person p = new Coach(null, null, 0, false, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-		load("G:\\Computer Science\\workspace\\Inheritance Assignment\\sample.txt",p);
-		save("G:\\Computer Science\\workspace\\Inheritance Assignment\\plzwork.txt",p);
+		Person p = new Forward("clement", "hoang", 17, true, 178, 78, 6, 24, 1995, 4, 2, 0, 0, 0, 0, 0, 0, 0, false, 0, 0, false, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+		save("G:\\Computer Science\\workspace\\Inheritance Assignment\\sampleforward.txt",p);
 	}
 }
