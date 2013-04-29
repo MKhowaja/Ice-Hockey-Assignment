@@ -12,11 +12,11 @@ public class Forward extends Player {
 	protected int gwGoals; //Number of game-winning goals
 	protected int ppGoals; //Number of power play goals
 	protected int soGoals; //Number of shoot-out goals
-	/*added field*/protected double avgNShifts; //Average number of shifts per game
-	/*added field*/protected int otGoals; //Number of overtime goals
-	/*added field*/protected double faceoffPercentage; //Face off win percentage
-	/*added field*/protected double points; //Points (Goals + Assists)
-	/*added field*/protected double shootPercentage; //Shooting Percentage
+	protected double avgNShifts; //Average number of shifts per game
+	protected int otGoals; //Number of overtime goals
+	protected double faceoffPercentage; //Face off win percentage
+	protected double points; //Points (Goals + Assists)
+	protected double shootPercentage; //Shooting Percentage
 	
 	public Forward(String fname, String lname, int age, boolean gender, double height, double weight, int month, int day, int year, int place, int mStatus,//person fields
 			double salaryPY, int contractR, double tSalary, int rating, int gp, double penaltyT, int penaltyN, boolean arm, int number, //player fields
