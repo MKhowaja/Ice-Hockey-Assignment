@@ -10,6 +10,7 @@ public abstract class Person {
 	protected int birthYear; //Year of birth
 	protected int birthPlace; //Integer represents what country person is born from (based on IIHF's Top 20 International Mens Hockey Countries)
 	protected int maritalStatus; //Single, Married, Divorced, Widowed etc.
+	protected final int CURRENTYR = 2013; //Represents the current year
 
 	/**
 	 * Constructor that creates an object of type person with parameters sent in
@@ -19,7 +20,7 @@ public abstract class Person {
 	Person(String fname, String lname, int age, boolean gender, double height, double weight, int month, int day, int year, int place, int mStatus) {
 		this.fname = fname;
 		this.lname = lname;
-		this.age = age;
+		this.age = age; //Change this to reflect constant variable addition
 		this.gender = gender;
 		this.height = height;
 		this.weight = weight;
@@ -261,7 +262,7 @@ public abstract class Person {
 	 * @author MK, AV, CH, PJ
 	 */
 	public static String convertBirthPlaceToString(int birthPlace){
-		String x;
+		String x;//string that holds country or origin/birthplace
 		switch(birthPlace){
 			case 1:
 				x = "Austria";
@@ -336,7 +337,7 @@ public abstract class Person {
 	 * @author MK, AV, CH, PJ
 	 */
 	public static int convertBirthPlaceToInt(String birthPlace){
-		int x;
+		int x; // Represents option chosen by user
 		if (birthPlace.equals("Austria"))
 			x = 1;
 		else if (birthPlace.equals("Balarus"))
@@ -389,7 +390,7 @@ public abstract class Person {
 	 * @author MK, AV, CH, PJ
 	 */
 	public static String convertMaritalStatusToString (int maritalStatus){
-		String x;
+		String x; //String to hold marital status
 		switch (maritalStatus) {
 			case 1:
 				x = "divorced";
@@ -416,7 +417,7 @@ public abstract class Person {
 	 * @author MK, AV, CH, PJ
 	 */
 	public static int convertMaritalStatusToInt (String maritalStatus){
-		int x;
+		int x; //Represents option for marital status chosen by user
 		if (maritalStatus.equals("divorced"))
 			x = 1;
 		else if (maritalStatus.equals("married"))
