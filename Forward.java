@@ -15,7 +15,7 @@ public class Forward extends Player {
 	/*added field*/private double avgNShifts; //Average number of shifts per game
 	/*added field*/private int otGoals; //Number of overtime goals
 	/*added field*/private double faceoffPercentage; //Face off win percentage
-	/*added field*/private double points; //Points (don't know what this means)
+	/*added field*/private double points; //Points (Goals + Assists)
 	/*added field*/private double shootPercentage; //Shooting Percentage
 	
 	public Forward(String fname, String lname, int age, boolean gender, double height, double weight, int month, int day, int year, int place, int mStatus,//person fields
@@ -23,7 +23,7 @@ public class Forward extends Player {
 			double numMin, boolean rookie, int penaltyMinor, int penaltyMajor, int penaltyMisc, int penaltyGMisc, int match, //more player fields
 			int plusMinus, double avgGoalsPS, double avgGoalPercentagePS, double avgShotsPS, double zsGoalPercentage, double avgAssistsPS, //forward fields
 			double avgPenaltyPS, double avgPPGoalsPS, double avgSOGoalsPS, int gwGoals, int ppGoals, int soGoals,//more forward fields
-			double avgNShifts, int otGoals, double faceoffPercentage, double points, double shootPercentage) {//more forward fields
+			double avgNShifts, int otGoals, double faceoffPercentage, double shootPercentage) {//more forward fields
 		
 		super(fname, lname, age, gender, height, weight, month, day, year, place, mStatus,//person fields
 				salaryPY, contractR, tSalary, rating, gp, penaltyT, penaltyN, arm, number, //player fields
@@ -44,7 +44,7 @@ public class Forward extends Player {
 		this.soGoals = soGoals;
 		this.otGoals = otGoals;
 		this.faceoffPercentage = faceoffPercentage;
-		this.points = points;
+		this.points = avgGoalsPS + avgAssistsPS;
 		this.shootPercentage = shootPercentage;
 	}
 	
