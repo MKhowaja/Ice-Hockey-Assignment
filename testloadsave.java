@@ -2,10 +2,10 @@ import java.io.*;
 
 public class testloadsave {
 
-  /**
+	/**
 	 * Loads the data from a text file onto an object of type person in the program
 	 * @param String filepath
-	 * @param Object of type person
+	 * @param Object of type person, Note: this object must be initialized already
 	 * @author MK, AV, CH, PJ
 	 */
 	
@@ -14,19 +14,211 @@ public class testloadsave {
 		FileReader fr = new FileReader(file);
 		BufferedReader br = new BufferedReader(fr);
 		String classType;
-		while ((x=br.readLine()) != null) {
-			classType = x;
-
-			x = br.readLine(); //name
-			person.fname = x.substring(x.indexOf(": ")+2,x.length());
-
-
+		x = br.readLine();
+		classType = x.substring(x.indexOf(": ")+2,x.length());
+			
+		x = br.readLine();
+		person.fname = x.substring(x.indexOf(": ")+2,x.length());
+		
+		x = br.readLine();
+		person.lname = x.substring(x.indexOf(": ")+2,x.length());
+		
+		x = br.readLine();
+		person.age = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+		
+		x = br.readLine();
+		if (x.equals("male"))
+			person.gender = true;
+		else
+			person.gender = false;
+		
+		x = br.readLine();
+		person.height = Double.parseDouble(x.substring(x.indexOf(": ")+2,x.length()));
+		
+		x = br.readLine();
+		person.weight = Double.parseDouble(x.substring(x.indexOf(": ")+2,x.length()));
+		
+		x = br.readLine();
+		person.birthMonth = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+		
+		x = br.readLine();
+		person.birthDay = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+		
+		x = br.readLine();
+		person.birthYear = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+		
+		x = br.readLine();
+		person.birthPlace = Person.convertBirthPlaceToInt(x.substring(x.indexOf(": ")+2,x.length()));
+		
+		x = br.readLine();
+		person.maritalStatus = Person.convertMaritalStatusToInt(x.substring(x.indexOf(": ")+2,x.length()));
+		
+		if (classType.equals("coach")) {
+			x = br.readLine();
+			((Coach)person).winS = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+			
+			x = br.readLine();
+			((Coach)person).loseS = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+			
+			x = br.readLine();
+			((Coach)person).gameCS = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+			
+			x = br.readLine();
+			((Coach)person).pointPS = Double.parseDouble(x.substring(x.indexOf(": ")+2,x.length()));
+			
+			x = br.readLine();
+			((Coach)person).winP = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+			
+			x = br.readLine();
+			((Coach)person).loseP = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+			
+			x = br.readLine();
+			((Coach)person).gameCP = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+			
+			x = br.readLine();
+			((Coach)person).stanleyN = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+			
+			x = br.readLine();
+			((Coach)person).coachType = Coach.convertCoachTypeToInt(x.substring(x.indexOf(": ")+2,x.length()));
 		}
-
-
-
+		else if (classType.equals("forward")) {
+			x = br.readLine();
+			((Forward)person).plusMinus = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+			
+			x = br.readLine();
+			((Forward)person).avgGoalsPS = Double.parseDouble(x.substring(x.indexOf(": ")+2,x.length()));
+			
+			x = br.readLine();
+			((Forward)person).avgGoalPercentagePS = Double.parseDouble(x.substring(x.indexOf(": ")+2,x.length()));
+			
+			x = br.readLine();
+			((Forward)person).avgShotsPS = Double.parseDouble(x.substring(x.indexOf(": ")+2,x.length()));
+			
+			x = br.readLine();
+			((Forward)person).zsGoalPercentage = Double.parseDouble(x.substring(x.indexOf(": ")+2,x.length()));
+			
+			x = br.readLine();
+			((Forward)person).avgAssistsPS = Double.parseDouble(x.substring(x.indexOf(": ")+2,x.length()));
+			
+			x = br.readLine();
+			((Forward)person).avgPenaltyPS = Double.parseDouble(x.substring(x.indexOf(": ")+2,x.length()));
+			
+			x = br.readLine();
+			((Forward)person).avgPPGoalsPS = Double.parseDouble(x.substring(x.indexOf(": ")+2,x.length()));
+			
+			x = br.readLine();
+			((Forward)person).avgSOGoalsPS = Double.parseDouble(x.substring(x.indexOf(": ")+2,x.length()));
+			
+			x = br.readLine();
+			((Forward)person).gwGoals = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+			
+			x = br.readLine();
+			((Forward)person).ppGoals = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+			
+			x = br.readLine();
+			((Forward)person).soGoals = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+			
+			x = br.readLine();
+			((Forward)person).avgNShifts = Double.parseDouble(x.substring(x.indexOf(": ")+2,x.length()));
+			
+			x = br.readLine();
+			((Forward)person).otGoals = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+			
+			x = br.readLine();
+			((Forward)person).faceoffPercentage = Double.parseDouble(x.substring(x.indexOf(": ")+2,x.length()));
+			
+			x = br.readLine();
+			((Forward)person).points = Double.parseDouble(x.substring(x.indexOf(": ")+2,x.length()));
+			
+			x = br.readLine();
+			((Forward)person).shootPercentage = Double.parseDouble(x.substring(x.indexOf(": ")+2,x.length()));
+		}
+		else if (classType.equals("defense")) {
+			x = br.readLine();
+			((Defense)person).plusMinus = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+			
+			x = br.readLine();
+			((Defense)person).avgGoalsPS = Double.parseDouble(x.substring(x.indexOf(": ")+2,x.length()));
+			
+			x = br.readLine();
+			((Defense)person).avgGoalPercentagePS = Double.parseDouble(x.substring(x.indexOf(": ")+2,x.length()));
+			
+			x = br.readLine();
+			((Defense)person).avgShotsPS = Double.parseDouble(x.substring(x.indexOf(": ")+2,x.length()));
+			
+			x = br.readLine();
+			((Defense)person).zsGoalPercentage = Double.parseDouble(x.substring(x.indexOf(": ")+2,x.length()));
+			
+			x = br.readLine();
+			((Defense)person).avgAssistsPS = Double.parseDouble(x.substring(x.indexOf(": ")+2,x.length()));
+			
+			x = br.readLine();
+			((Defense)person).avgPenaltyPS = Double.parseDouble(x.substring(x.indexOf(": ")+2,x.length()));
+			
+			x = br.readLine();
+			((Defense)person).avgPPGoalsPS = Double.parseDouble(x.substring(x.indexOf(": ")+2,x.length()));
+			
+			x = br.readLine();
+			((Defense)person).avgSOGoalsPS = Double.parseDouble(x.substring(x.indexOf(": ")+2,x.length()));
+			
+			x = br.readLine();
+			((Defense)person).gwGoals = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+			
+			x = br.readLine();
+			((Defense)person).ppGoals = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+			
+			x = br.readLine();
+			((Defense)person).soGoals = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+		}
+		else if (classType.equals("goalie")) {
+			x = br.readLine();
+			((Goalie)person).wins = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+			
+			x = br.readLine();
+			((Goalie)person).loses = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+			
+			x = br.readLine();
+			((Goalie)person).winsP = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+			
+			x = br.readLine();
+			((Goalie)person).losesP = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+			
+			x = br.readLine();
+			((Goalie)person).losesOT = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+			
+			x = br.readLine();
+			((Goalie)person).gameStart = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+			
+			x = br.readLine();
+			((Goalie)person).goalA = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+			
+			x = br.readLine();
+			((Goalie)person).goalAA = Double.parseDouble(x.substring(x.indexOf(": ")+2,x.length()));
+			
+			x = br.readLine();
+			((Goalie)person).shotsOG = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+			
+			x = br.readLine();
+			((Goalie)person).saves = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+			
+			x = br.readLine();
+			((Goalie)person).savePercent = Double.parseDouble(x.substring(x.indexOf(": ")+2,x.length()));
+			
+			x = br.readLine();
+			((Goalie)person).shutouts = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+			
+			x = br.readLine();
+			((Goalie)person).emptyNG = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+		}
+				
 	}
-
+	
+	/**
+	 * Saves the data of a Person object onto a text file
+	 * @param String filepath
+	 * @param Object of type person
+	 * @author MK, AV, CH, PJ
+	 */
 	public static void save(String file, Person p) throws IOException {
 		FileWriter fw = new FileWriter(file);    //FileWriter 
 		PrintWriter pw = new PrintWriter (fw);     //PrintWriter
