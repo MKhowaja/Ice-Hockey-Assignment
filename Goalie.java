@@ -5,7 +5,6 @@ public class Goalie extends Player {
 	//Perhaps playoff wins here?
 
 	private int gameStart; //The number of games started
-	private double numMin; //Total number of minutes the goalie has been on ice
 	private int goalA; //Number of goals scored against goalie
 	private double goalAA; //Mean goals-per-60 minutes scored on the goalie
 	private int shotsOG; //Total number of shots on goal the goalie faced
