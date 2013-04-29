@@ -274,7 +274,7 @@ public abstract class Person {
 				x = "Canada";
 				break;
 			case 4:
-				x = "Czeck Republic";
+				x = "Czech Republic";
 				break;
 			case 5:
 				x = "Denmark";
@@ -344,7 +344,7 @@ public abstract class Person {
 			x = 2;
 		else if (birthPlace.equals("Canada"))
 			x = 3;
-		else if (birthPlace.equals("Czeck Republic"))
+		else if (birthPlace.equals("Czech Republic"))
 			x = 4;
 		else if (birthPlace.equals("Denmark"))
 			x = 5;
