@@ -119,7 +119,7 @@ public abstract class Person {
 	 * @author MK, AV, CH, PJ
 	*/
 
-	public int getBrithYear(){
+	public int getBirthYear(){
 		return birthYear;
 	}
 

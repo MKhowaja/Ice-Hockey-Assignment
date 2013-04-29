@@ -8,13 +8,13 @@ public class Player extends Person {
 	protected int penaltyN; //Number of penalties
 	protected boolean arm; //Shooting arm: True if right arm
 	protected int number; //Jersey number
-	/*added field*/protected double numMin; //Total number of minutes the player has been on ice
-	/*added field*/protected boolean rookie; //If the player is a rookie (true if he/she is)
-	/*added field*/protected int penaltyMinor; //Number of minor penalties
-	/*added field*/protected int penaltyMajor; //Number of major penalties
-	/*added field*/protected int penaltyMisc; //Number of misconduct penalties
-	/*added field*/protected int penaltyGMisc; //Number of game misconduct penalties
-	/*added field*/protected int match; //Match penalties
+	protected double numMin; //Total number of minutes the player has been on ice
+	protected boolean rookie; //If the player is a rookie (true if he/she is)
+	protected int penaltyMinor; //Number of minor penalties
+	protected int penaltyMajor; //Number of major penalties
+	protected int penaltyMisc; //Number of misconduct penalties
+	protected int penaltyGMisc; //Number of game misconduct penalties
+	protected int match; //Match penalties
 
 	public Player(String fname, String lname, int age, boolean gender, double height, double weight, int month, int day, int year, int place, int mStatus,//person fields
 			double salaryPY, int contractR, double tSalary, int rating, int gp, double penaltyT, int penaltyN, boolean arm, int number, double numMin,
