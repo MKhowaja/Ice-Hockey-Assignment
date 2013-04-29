@@ -9,9 +9,16 @@ public class Player extends Person {
 	protected boolean arm; //Shooting arm: True if right arm
 	protected int number; //Jersey number
 	/*added field*/protected double numMin; //Total number of minutes the player has been on ice
+	/*added field*/protected boolean rookie; //If the player is a rookie (true if he/she is)
+	/*added field*/protected int penaltyMinor; //Number of minor penalties
+	/*added field*/protected int penaltyMajor; //Number of major penalties
+	/*added field*/protected int penaltyMisc; //Number of misconduct penalties
+	/*added field*/protected int penaltyGMisc; //Number of game misconduct penalties
+	/*added field*/protected int match; //Match penalties
 
 	public Player(String name, int age, boolean gender, double height, double weight, int month, int day, int year, int place, int mStatus,//person fields
-			double salaryPY, int contractR, double tSalary, int rating, int gp, double penaltyT, int penaltyN, boolean arm, int number, double numMin) {//player fields
+			double salaryPY, int contractR, double tSalary, int rating, int gp, double penaltyT, int penaltyN, boolean arm, int number, double numMin,
+			boolean rookie, int penaltyMinor, int penaltyMajor, int penaltyMisc, int penaltyGMisc, int match) {//player fields
 		super(name, age, gender, height, weight, month, day, year, place, mStatus);
 		this.salaryPY = salaryPY;
 		this.contractR = contractR;
@@ -23,6 +30,12 @@ public class Player extends Person {
 		this.arm = arm;
 		this.number = number;
 		this.numMin = numMin;
+		this.rookie = rookie;
+		this.penaltyMinor = penaltyMinor;
+		this.penaltyMajor = penaltyMajor;
+		this.penaltyMisc = penaltyMisc;
+		this.penaltyGMisc = penaltyGMisc;
+		this.match = match;
 	}
 
 	//Accessors
@@ -106,7 +119,7 @@ public class Player extends Person {
 	}
 
 	/**
-	 * Returns Jersey number
+	 * Returns jersey number
 	 * @return the number
 	 * @author MK, AV, CH, PJ
 	 */
@@ -122,9 +135,63 @@ public class Player extends Person {
 	public double getNumMin(){
 		return numMin;
 	}
+	
+	/**
+	 * Returns if the player is rookie or not
+	 * @return rookie
+	 * @author MK, AV, CH, PJ
+	 */
+	public boolean getRookie() {
+		return rookie;
+	}
+	
+	
+	/**
+	 * Returns the number of minor penalties
+	 * @return penaltyMinor
+	 * @author MK, AV, CH, PJ
+	 */
+	public int getPenaltyMinor() {
+		return penaltyMinor;
+	}
+	
+	/**
+	 * Returns the number of major penalties
+	 * @return penaltyMajor
+	 * @author MK, AV, CH, PJ
+	 */
+	public int getPenaltyMajor() {
+		return penaltyMajor;
+	}
+	
+	/**
+	 * Returns the number of misconduct penalities
+	 * @return penaltyMisc
+	 * @author MK, AV, CH, PJ
+	 */
+	public int getPenaltyMisc() {
+		return penaltyMisc;
+	}
+	
+	/**
+	 * Returns the number of game misconduct penalities
+	 * @return penaltyGMisc
+	 * @author MK, AV, CH, PJ
+	 */
+	public int getPenaltyGMisc() {
+		return penaltyGMisc;
+	}
+	
+	/**
+	 * Returns the number of match penalities
+	 * @return match
+	 * @author MK, AV, CH, PJ
+	 */
+	public int getMatch() {
+		return match;
+	}
 
 	//Mutators
-
 	/**
 	 * Stores salary per year
 	 * @param x of type double
@@ -219,5 +286,59 @@ public class Player extends Person {
 	 */
 	public void putNumMin(double x){
 		numMin=x;
+	}
+	
+	/**
+	 * Assigns number the value of x, representing if the player is a rookie
+	 * @param x of type boolean
+	 * @author MK, AV, CH, PJ
+	 */
+	public void getRookie(boolean x) {
+		rookie = x;
+	}
+	
+	/**
+	 * Assigns number the value of x, representing the number of minor penalties
+	 * @param x of type int
+	 * @author MK, AV, CH, PJ
+	 */
+	public void getPenaltyMinor(int x) {
+		penaltyMinor = x;
+	}
+	
+	/**
+	 * Assigns number the value of x, representing the number of major penalties
+	 * @param x of type int
+	 * @author MK, AV, CH, PJ
+	 */
+	public void getPenaltyMajor(int x) {
+		penaltyMajor = x;
+	}
+	
+	/**
+	 * Assigns number the value of x, representing the number of misconduct penalities
+	 * @param x of type int
+	 * @author MK, AV, CH, PJ
+	 */
+	public void getPenaltyMisc(int x) {
+		penaltyMisc = x;
+	}
+	
+	/**
+	 * Assigns number the value of x, representing the number of game misconduct penalities
+	 * @param x of type int
+	 * @author MK, AV, CH, PJ
+	 */
+	public void getPenaltyGMisc(int x) {
+		penaltyGMisc = x;
+	}
+	
+	/**
+	 * Assigns number the value of x, representing the number of match penalities
+	 * @param x of type int
+	 * @author MK, AV, CH, PJ
+	 */
+	public void getMatch(int x) {
+		match = x;
 	}
 }
