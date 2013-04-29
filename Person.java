@@ -255,7 +255,7 @@ public abstract class Person {
 		maritalStatus = x;
 	}
 	
-	public String convertBirthPlace(){
+	public String convertBirthPlace(int birthPlace){
 		String x;
 		switch(birthPlace){
 			case 1:
@@ -325,7 +325,7 @@ public abstract class Person {
 		return x;
 	}
 
-	public String convertMaritalStatus (){
+	public String convertMaritalStatus (int maritalStatus){
 		String x;
 		switch (maritalStatus) {
 			case 1:
