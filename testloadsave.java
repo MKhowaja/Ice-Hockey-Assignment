@@ -19,6 +19,11 @@ public class testloadsave {
 		//loads person fields into the object
 		x = br.readLine();
 		classType = x.substring(x.indexOf(": ")+2,x.length());
+		
+		if (classType.equals("coach")) {
+			x = br.readLine();
+			((Coach)person).coachType = Coach.convertCoachTypeToInt(x.substring(x.indexOf(": ")+2,x.length()));
+		}
 			
 		x = br.readLine();
 		person.fname = x.substring(x.indexOf(": ")+2,x.length());
@@ -82,9 +87,6 @@ public class testloadsave {
 			
 			x = br.readLine();
 			((Coach)person).stanleyN = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
-			
-			x = br.readLine();
-			((Coach)person).coachType = Coach.convertCoachTypeToInt(x.substring(x.indexOf(": ")+2,x.length()));
 		}
 		else if (classType.equals("forward")||classType.equals("defense")||classType.equals("goalie")) {
 			//load player fields into object
@@ -291,8 +293,11 @@ public class testloadsave {
 		FileWriter fw = new FileWriter(file);    //FileWriter 
 		PrintWriter pw = new PrintWriter (fw);     //PrintWriter
 		
-		if (p instanceof Coach)
+		if (p instanceof Coach) {
 			pw.println("Class: coach");
+			pw.println("Coach type: "+(Coach.convertCoachTypeToString(((Coach)p).getcoachType())));
+		}
+		
 		else if (p instanceof Forward)
 			pw.println("Class: forward");
 		else if (p instanceof Defense)
@@ -326,7 +331,6 @@ public class testloadsave {
 			pw.println("Playoff losses: "+((Coach) p).getLoseP());
 			pw.println("Playoff games coached: "+((Coach) p).getGameCP());
 			pw.println("Number of Stanley Cups won: "+((Coach) p).getStanleyN());
-			pw.println("Coach type: "+(Coach.convertCoachTypeToString(((Coach)p).getcoachType())));
 		}
 		else if ((p instanceof Forward) || (p instanceof Defense) || (p instanceof Goalie)){
 			//Writes all the player fields onto text file
@@ -415,7 +419,9 @@ public class testloadsave {
 	}
 	
 	public static void main(String[] args) throws IOException {
+		Person q = new Coach("clem", null, 0, false, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1);
+		save("G:\\Computer Science\\workspace\\Inheritance Assignment\\samplecoach.txt",q);
 		Person p = new Goalie("clement", "hoang", 17, true, 178, 78, 6, 24, 1995, 4, 2, 0, 0, 0, 0, 0, 0, 0, false, 0, 0, false, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-		save("G:\\Computer Science\\workspace\\Inheritance Assignment\\samplegoalie.txt",p);
+		
 	}
 }
