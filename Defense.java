@@ -9,10 +9,10 @@ public class Defense extends Player{
 	private double avgPenaltyPS; //Average penalty minutes per season
 	private double avgPPGoalsPS; //Average power play goals per season (double)
 	private double avgSOGoalsPS; //Average shoot-out goals per season
+	/*added field*/private double avgNShifts; //Average number of shifts per game
 	private int gwGoals; //Number of game-winning goals
 	private int ppGoals; //Number of power play goals
 	private int soGoals; //Number of shoot-out goals
-	/*added field*/private double avgNShifts; //Average number of shifts per game
 	/*added field*/private int otGoals; //Number of overtime goals
 	/*added field*/private double faceoffPercentage; //Face off win percentage
 	/*added field*/private double points; //Points (don't know what this means)
