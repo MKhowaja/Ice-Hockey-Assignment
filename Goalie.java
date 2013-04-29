@@ -1,9 +1,9 @@
 public class Goalie extends Player {
 	private int wins; //Number of wins
 	private int loses; //Number of losses
-	
-	//Perhaps playoff wins here?
-
+	/*added field*/private int winsP; //Number of wins during playoffs
+	/*added field*/private int losesP; //Number of loses during playoffs
+	/*added field*/private int losesOT; //Number of loses during overtime
 	private int gameStart; //The number of games started
 	private int goalA; //Number of goals scored against goalie
 	private double goalAA; //Mean goals-per-60 minutes scored on the goalie
@@ -15,10 +15,15 @@ public class Goalie extends Player {
 	
 	public Goalie(String name, int age, boolean gender, double height, double weight, int month, int day, int year, int place, int mStatus,//person fields
 			double salaryPY, int contractR, double tSalary, int rating, int gp, double penaltyT, int penaltyN, boolean arm, int number, //player fields
-			int gameStart, double numMin, int goalA, double goalAA, int shotsOG, int saves, double savePercent, int shutouts, int emptyNG) { //goalie fields
+			int wins, int loses, int winsP, int losesP, int losesOT, int gameStart, double numMin, int goalA, double goalAA, int shotsOG, int saves, double savePercent, int shutouts, int emptyNG) { //goalie fields
 		super(name, age, gender, height, weight, month, day, year, place, mStatus,//person fields
 				salaryPY, contractR, tSalary, rating, gp, penaltyT, penaltyN, arm, number); //player fields
 		
+		this.wins = wins;
+		this.loses = loses;
+		this.winsP = winsP;
+		this.losesP = losesP;
+		this.losesOT = losesOT;
 		this.gameStart = gameStart;
 		this.numMin = numMin;
 		this.goalA = goalA;
@@ -33,10 +38,10 @@ public class Goalie extends Player {
 	//Accessor Methods
 	/**
 	 * Returns number of games won
-	 * @return won
+	 * @return wins
 	 * @author MK, AV, CH, PJ
 	 */
-	public int getWin(){
+	public int getWins(){
 		return wins;
 	}
 	
@@ -47,6 +52,33 @@ public class Goalie extends Player {
 	 */
 	public int getLoses(){
 		return loses;
+	}
+	
+	/**
+	 * Returns number of games won during playoffs
+	 * @return winsP
+	 * @author MK, AV, CH, PJ
+	 */
+	public int getWinsP(){
+		return winsP;
+	}
+	
+	/**
+	 * Returns number of games loses during playoffa
+	 * @return losesP
+	 * @author MK, AV, CH, PJ
+	 */
+	public int getLosesP(){
+		return losesP;
+	}
+	
+	/**
+	 * Returns number of games loses during overtime
+	 * @return losesOT
+	 * @author MK, AV, CH, PJ
+	 */
+	public int getLosesOT(){
+		return losesOT;
 	}
 	
 	/**
@@ -147,6 +179,33 @@ public class Goalie extends Player {
 	 */
 	public void putLoses(int x){
 		loses=x;
+	}
+	
+	/**
+	 * Stores parameter to winsP
+	 * @param x of type int
+	 * @author MK, AV, CH, PJ
+	 */
+	public void putWinsP(int x){
+		winsP=x;
+	}
+	
+	/**
+	 * Stores parameter to losesP
+	 * @param x of type int
+	 * @author MK, AV, CH, PJ
+	 */
+	public void putLosesP(int x){
+		losesP=x;
+	}
+	
+	/**
+	 * Stores parameter to losesOT
+	 * @param x of type int
+	 * @author MK, AV, CH, PJ
+	 */
+	public void putLosesOT(int x){
+		losesOT=x;
 	}
 	
 	/**
