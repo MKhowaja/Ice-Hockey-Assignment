@@ -145,14 +145,25 @@ public class Person {
 	}
 
 	//Mutators
+	
 	/**
-	 * Stores parameter to name
+	 * Stores parameter to fname
 	 * @param x of type String 
 	 * @author MK, AV, CH, PJ
 	*/
 
-	public void putName(String x){
-		name = x;
+	public void putFName(String x){
+		fname = x;
+	}
+	
+	/**
+	 * Stores parameter to lname
+	 * @param x of type String 
+	 * @author MK, AV, CH, PJ
+	*/
+
+	public void putLName(String x){
+		lname = x;
 	}
 
 	/**
