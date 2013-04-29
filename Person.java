@@ -260,7 +260,7 @@ public abstract class Person {
 	 * @return int birthPlace
 	 * @author MK, AV, CH, PJ
 	 */
-	public String convertBirthPlaceToString(int birthPlace){
+	public static String convertBirthPlaceToString(int birthPlace){
 		String x;
 		switch(birthPlace){
 			case 1:
@@ -335,7 +335,7 @@ public abstract class Person {
 	 * @return String birthPlace
 	 * @author MK, AV, CH, PJ
 	 */
-	public int convertBirthPlaceToInt(String birthPlace){
+	public static int convertBirthPlaceToInt(String birthPlace){
 		int x;
 		if (birthPlace.equals("Austria"))
 			x = 1;
@@ -388,7 +388,7 @@ public abstract class Person {
 	 * @return int maritalStatus
 	 * @author MK, AV, CH, PJ
 	 */
-	public String convertMaritalStatusToString (int maritalStatus){
+	public static String convertMaritalStatusToString (int maritalStatus){
 		String x;
 		switch (maritalStatus) {
 			case 1:
@@ -415,7 +415,7 @@ public abstract class Person {
 	 * @return String maritalStatus
 	 * @author MK, AV, CH, PJ
 	 */
-	public int convertMaritalStatusToInt (String maritalStatus){
+	public static int convertMaritalStatusToInt (String maritalStatus){
 		int x;
 		if (maritalStatus.equals("Divorced"))
 			x = 1;

@@ -184,7 +184,7 @@ public class Coach extends Person{
 	 * @return String coach type
 	 * @author MK, AV, CH, PJ
 	 */
-	public String convertCoachTypeToString(int coachType) {
+	public static String convertCoachTypeToString(int coachType) {
 		String x; //temporary variable to hold the name of the coach type
 		switch (coachType) {
 			case 1:
@@ -207,7 +207,7 @@ public class Coach extends Person{
 	 * @return int coach type
 	 * @author MK, AV, CH, PJ
 	 */
-	public int convertCoachTypeToInt(String coachType) {
+	public static int convertCoachTypeToInt(String coachType) {
 		int x;
 		if (coachType.equals("head"))
 			x = 1;
