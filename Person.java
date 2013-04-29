@@ -392,16 +392,16 @@ public abstract class Person {
 		String x;
 		switch (maritalStatus) {
 			case 1:
-				x = "Divorced";
+				x = "divorced";
 				break;
 			case 2:
-				x = "Married";
+				x = "married";
 				break;
 			case 3:
-				x = "Single";
+				x = "single";
 				break;
 			case 4:
-				x = "Widowed";
+				x = "widowed";
 				break;
 			default:
 				x = "n/a";
@@ -417,13 +417,13 @@ public abstract class Person {
 	 */
 	public static int convertMaritalStatusToInt (String maritalStatus){
 		int x;
-		if (maritalStatus.equals("Divorced"))
+		if (maritalStatus.equals("divorced"))
 			x = 1;
-		else if (maritalStatus.equals("Married"))
+		else if (maritalStatus.equals("married"))
 			x = 2;
-		else if (maritalStatus.equals("Single"))
+		else if (maritalStatus.equals("single"))
 			x = 3;
-		else if (maritalStatus.equals("Widowed"))
+		else if (maritalStatus.equals("widowed"))
 			x = 3;
 		else
 			x = 0;
