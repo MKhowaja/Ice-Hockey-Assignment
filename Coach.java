@@ -9,9 +9,9 @@ public class Coach extends Person{
 	protected int stanleyN; //Number of Stanley Cups
 	protected int coachType; //The type of coach (1 - head, 2 - assistant or 3 - goaltender)
 
-	public Coach(String name, int age, boolean gender, double height, double weight, int month, int day, int year, int place, int mStatus,//person fields
+	public Coach(String fname, String lname, int age, boolean gender, double height, double weight, int month, int day, int year, int place, int mStatus,//person fields
 			int winS, int loseS, int gameCS, double pointPS, int winP, int loseP, int gameCP, int stanleyN, int coachType) {//coach fields
-		super(name, age, gender, height, weight, month, day, year, place, mStatus);
+		super(fname, lname, age, gender, height, weight, month, day, year, place, mStatus);
 		this.winS = winS;
 		this.loseS = loseS;
 		this.gameCS = gameCS;

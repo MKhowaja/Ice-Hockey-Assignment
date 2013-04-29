@@ -18,14 +18,16 @@ public class Forward extends Player {
 	/*added field*/private double points; //Points (don't know what this means)
 	/*added field*/private double shootPercentage; //Shooting Percentage
 	
-	public Forward(String name, int age, boolean gender, double height, double weight, int month, int day, int year, int place, int mStatus,//person fields
+	public Forward(String fname, String lname, int age, boolean gender, double height, double weight, int month, int day, int year, int place, int mStatus,//person fields
 			double salaryPY, int contractR, double tSalary, int rating, int gp, double penaltyT, int penaltyN, boolean arm, int number, //player fields
+			double numMin, boolean rookie, int penaltyMinor, int penaltyMajor, int penaltyMisc, int penaltyGMisc, int match, //more player fields
 			int plusMinus, double avgGoalsPS, double avgGoalPercentagePS, double avgShotsPS, double zsGoalPercentage, double avgAssistsPS, //forward fields
-			double avgPenaltyPS, double avgPPGoalsPS, double avgSOGoalsPS, double avgNShifts, int gwGoals, int ppGoals, int soGoals, int otGoals, 
-			double FaceoffPercentage, double points, double ShootPercentage) {
+			double avgPenaltyPS, double avgPPGoalsPS, double avgSOGoalsPS, int gwGoals, int ppGoals, int soGoals,//more forward fields
+			double avgNShifts, int otGoals, double faceoffPercentage, double points, double shootPercentage) {//more forward fields
 		
-		super(name, age, gender, height, weight, month, day, year, place, mStatus, //person fields
-				salaryPY, contractR, tSalary, rating, gp, penaltyT, penaltyN, arm, number); //player fields
+		super(fname, lname, age, gender, height, weight, month, day, year, place, mStatus,//person fields
+				salaryPY, contractR, tSalary, rating, gp, penaltyT, penaltyN, arm, number, //player fields
+				numMin, rookie, penaltyMinor, penaltyMajor, penaltyMisc, penaltyGMisc, match); //more player fields
 		
 		this.plusMinus = plusMinus;
 		this.avgGoalsPS = avgGoalsPS;
@@ -36,7 +38,7 @@ public class Forward extends Player {
 		this.avgPenaltyPS = avgPenaltyPS;
 		this.avgPPGoalsPS = avgPPGoalsPS;
 		this.avgSOGoalsPS = avgSOGoalsPS;
-		this.avgNShift = avgnShift;
+		this.avgNShifts = avgNShifts;
 		this.gwGoals = gwGoals;
 		this.ppGoals = ppGoals;
 		this.soGoals = soGoals;

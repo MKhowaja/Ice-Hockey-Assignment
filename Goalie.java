@@ -13,11 +13,14 @@ public class Goalie extends Player {
 	private int shutouts; //Number of games where goalie had no goals against him and only goalie to play in game
 	private int emptyNG; //Number of goals scored against while off ice for extra attack player
 	
-	public Goalie(String name, int age, boolean gender, double height, double weight, int month, int day, int year, int place, int mStatus,//person fields
-			double salaryPY, int contractR, double tSalary, int rating, int gp, double penaltyT, int penaltyN, boolean arm, int number, //player fields
-			int wins, int loses, int winsP, int losesP, int losesOT, int gameStart, double numMin, int goalA, double goalAA, int shotsOG, int saves, double savePercent, int shutouts, int emptyNG) { //goalie fields
-		super(name, age, gender, height, weight, month, day, year, place, mStatus,//person fields
-				salaryPY, contractR, tSalary, rating, gp, penaltyT, penaltyN, arm, number, numMIn); //player fields
+	public Goalie(String fname, String lname, int age, boolean gender, double height, double weight, int month, int day, int year, int place, int mStatus,//person fields
+			double salaryPY, int contractR, double tSalary, int rating, int gp, double penaltyT, int penaltyN, boolean arm, int number, double numMin, //player fields
+			boolean rookie, int penaltyMinor, int penaltyMajor, int penaltyMisc, int penaltyGMisc, int match, //more player fields
+			int wins, int loses, int winsP, int losesP, int losesOT, int gameStart, int goalA, double goalAA, int shotsOG, int saves, double savePercent, int shutouts, int emptyNG) { //goalie fields
+		
+		super(fname, lname, age, gender, height, weight, month, day, year, place, mStatus,//person fields
+				salaryPY, contractR, tSalary, rating, gp, penaltyT, penaltyN, arm, number, //player fields
+				numMin, rookie, penaltyMinor, penaltyMajor, penaltyMisc, penaltyGMisc, match); //more player fields
 		
 		this.wins = wins;
 		this.loses = loses;
@@ -137,7 +140,7 @@ public class Goalie extends Player {
 	
 	/**
 	 * Returns number of games where goalie had no goals against him and only goalie to play in game 
-	 * @return shoutouts
+	 * @return shutouts
 	 * @author MK, AV, CH, PJ
 	 */
 	public int getShutouts(){

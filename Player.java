@@ -16,10 +16,11 @@ public class Player extends Person {
 	/*added field*/protected int penaltyGMisc; //Number of game misconduct penalties
 	/*added field*/protected int match; //Match penalties
 
-	public Player(String name, int age, boolean gender, double height, double weight, int month, int day, int year, int place, int mStatus,//person fields
+	public Player(String fname, String lname, int age, boolean gender, double height, double weight, int month, int day, int year, int place, int mStatus,//person fields
 			double salaryPY, int contractR, double tSalary, int rating, int gp, double penaltyT, int penaltyN, boolean arm, int number, double numMin,
 			boolean rookie, int penaltyMinor, int penaltyMajor, int penaltyMisc, int penaltyGMisc, int match) {//player fields
-		super(name, age, gender, height, weight, month, day, year, place, mStatus);
+		
+		super(fname, lname, age, gender, height, weight, month, day, year, place, mStatus);
 		this.salaryPY = salaryPY;
 		this.contractR = contractR;
 		this.tSalary = tSalary;
