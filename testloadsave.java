@@ -336,6 +336,7 @@ public class testloadsave {
 			//Writes all the player fields onto text file
 			pw.println("Salary per year: "+((Player) p).getSalaryPY());
 			pw.println("Number of years remaining in contract: "+((Player) p).getcontractR());
+			pw.println("Total salary over entire contract length: "+((Player) p).getTSalary());
 			pw.println("Rating: "+((Player) p).getRating());
 			pw.println("Games played: "+((Player) p).getGP());
 			pw.println("Time spent in penalties: "+((Player) p).getPenaltyT());
@@ -361,9 +362,8 @@ public class testloadsave {
 				pw.println("Average goals per season: "+((Forward) p).getavgGoalsPS());
 				pw.println("Average goal percentage per season: "+((Forward) p).getavgGoalPercentagePS());
 				pw.println("Average shots taken per season: "+((Forward) p).getavgShotsPS());
-				pw.println("Z=score of goal percentage: "+((Forward) p).getzsGoalPercentage());
+				pw.println("Z-score of goal percentage: "+((Forward) p).getzsGoalPercentage());
 				pw.println("Average assists per season: "+((Forward) p).getavgAssistsPS());
-				pw.println("Average penalty minutes per season: "+((Forward) p).getavgAssistsPS());
 				pw.println("Average penalty minutes per season: "+((Forward) p).getavgPenaltyPS());
 				pw.println("Average power play goals per season: "+((Forward) p).getavgPPGoalsPS());
 				pw.println("Average shoot-out goals per season: "+((Forward) p).getavgSOGoalsPS());
@@ -384,7 +384,6 @@ public class testloadsave {
 				pw.println("Average shots taken per season: "+((Defense) p).getavgShotsPS());
 				pw.println("Z=score of goal percentage: "+((Defense) p).getzsGoalPercentage());
 				pw.println("Average assists per season: "+((Defense) p).getavgAssistsPS());
-				pw.println("Average penalty minutes per season: "+((Defense) p).getavgAssistsPS());
 				pw.println("Average penalty minutes per season: "+((Defense) p).getavgPenaltyPS());
 				pw.println("Average power play goals per season: "+((Defense) p).getavgPPGoalsPS());
 				pw.println("Average shoot-out goals per season: "+((Defense) p).getavgSOGoalsPS());
