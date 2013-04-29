@@ -12,10 +12,27 @@ public class Forward extends Player {
 	private int gwGoals; //Number of game-winning goals
 	private int ppGoals; //Number of power play goals
 	private int soGoals; //Number of shoot-out goals
-	private int position //position of forward player: -1 = left wing; 0 = centre; 1 = right wing
 	
-	public Forward(String name, int age, boolean gender, double height, double weight, int month, int day, int year, String place, String mStatus) {//+more 
-		super(name, age, gender, height, weight, month, day, year, place, mStatus);
+	public Forward(String name, int age, boolean gender, double height, double weight, int month, int day, int year, int place, int mStatus,//person fields
+			double salaryPY, int contractR, double tSalary, int rating, int gp, double penaltyT, int penaltyN, boolean arm, int number, //player fields
+			int plusMinus, double avgGoalsPS, double avgGoalPercentagePS, double avgShotsPS, double zsGoalPercentage, double avgAssistsPS, //forward fields
+			double avgPenaltyPS, double avgPPGoalsPS, double avgSOGoalsPS, int gwGoals, int ppGoals, int soGoals) {
+		
+		super(name, age, gender, height, weight, month, day, year, place, mStatus, //person fields
+				salaryPY, contractR, tSalary, rating, gp, penaltyT, penaltyN, arm, number); //player fields
+		
+		this.plusMinus = plusMinus;
+		this.avgGoalsPS = avgGoalsPS;
+		this.avgGoalPercentagePS = avgGoalPercentagePS;
+		this.avgShotsPS = avgShotsPS;
+		this.zsGoalPercentage = zsGoalPercentage;
+		this.avgAssistsPS = avgAssistsPS;
+		this.avgPenaltyPS = avgPenaltyPS;
+		this.avgPPGoalsPS = avgPPGoalsPS;
+		this. avgSOGoalsPS = avgSOGoalsPS;
+		this.gwGoals = gwGoals;
+		this.ppGoals = ppGoals;
+		this.soGoals = soGoals;
 	}
 	
 	//Accessor Methods
@@ -94,26 +111,6 @@ public class Forward extends Player {
 	public int getgwGoals() {
 		return gwGoals;
 	}
-		/**
-	 * Returns position of a player
-	 * @return position in the form of a string: left, centre or right
-	 * @author MK, AV, CH, PJ
-	 */
-	public String getPosition (){
-		if (position = -1){
-			return "left"
-		}
-		else if (position = 0){
-			return "centre"
-		}
-		else if (position = 1{
-			return "right"
-		}
-		else{
-			return "error"
-		}
-	}
-	
 	//Mutator methods
 	/**
 	 * stores parameter to plusMinus
@@ -186,13 +183,5 @@ public class Forward extends Player {
 	 */
 	public void putavgSOGoalsPS(double x) {
 		avgSOGoalsPS = x;
-	}
-	/**
-	 * stores parameter to position
-	 * @param x of type int
-	 * @author MK, AV, CH, PJ
-	 */
-	public void putPosition (int x){
-		position = x
 	}
 }

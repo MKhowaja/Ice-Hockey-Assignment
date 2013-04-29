@@ -1,16 +1,26 @@
 public class Coach extends Person{
 	protected int winS; //Regular season wins
-	protected int loseS; //Regular season loses
+	protected int loseS; //Regular season losses
 	protected int gameCS; //Regular season games coached
 	protected double pointPS; //Regular season Points percentage (number of points team earned divided by total possible points)
 	protected int winP; //Playoff wins
 	protected int loseP; //Playoff loses
 	protected int gameCP; //Playoff games coached
 	protected int stanleyN; //Number of Stanley Cups
-	protected String coachType; //The type of coach (head, assistant or goaltender)
+	protected int coachType; //The type of coach (1 - head, 2 - assistant or 3 - goaltender)
 
-	public Coach(String name, int age, boolean gender, double height, double weight, int month, int day, int year, String place, String mStatus) {//+more 
+	public Coach(String name, int age, boolean gender, double height, double weight, int month, int day, int year, int place, int mStatus,//person fields
+			int winS, int loseS, int gameCS, double pointPS, int winP, int loseP, int gameCP, int stanleyN, int coachType) {//coach fields
 		super(name, age, gender, height, weight, month, day, year, place, mStatus);
+		this.winS = winS;
+		this.loseS = loseS;
+		this.gameCS = gameCS;
+		this.pointPS = pointPS;
+		this.winP = winP;
+		this.loseP = loseP;
+		this.gameCP = gameCP;
+		this.stanleyN = stanleyN;
+		this.coachType = coachType;
 	}
 	//Accessor Methods
 	/**
@@ -92,18 +102,8 @@ public class Coach extends Person{
 	 * @return type of coach
 	 * @author MK, AV, CH, PJ
 	 */
-	public void getCoach(){
-		switch(Integer.parseInt(coachType)){
-		case 1:
-			coachType="head";
-			break;
-		case 2:
-			coachType="assistant";
-			break;
-		case 3:
-			coachType="goaltender";
-			break;
-		}
+	public int getcoachType(){
+		return coachType;
 	}
 
 	//Mutator Methods
@@ -177,5 +177,28 @@ public class Coach extends Person{
 	 */
 	public void putStanleyN(int x){
 		stanleyN=x;
+	}
+	
+	/**
+	 * Converts coachType to a meaningful string then returns it
+	 * @return String coach type
+	 * @author MK, AV, CH, PJ
+	 */
+	public String convertCoachType() {
+		String x; //temporary variable to hold the name of the coach type
+		switch (coachType) {
+			case 1:
+				x = "head";
+				break;
+			case 2:
+				x = "assistant";
+				break;
+			case 3:
+				x = "goaltender";
+				break;
+			default:
+				x = "n/a";
+		}
+		return x;
 	}
 }

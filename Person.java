@@ -1,6 +1,5 @@
 public class Person {
-  	protected String fname; //First name
-  	protected String lname; //Last name
+  	protected String name; //Name
 	protected int age; //Age
 	protected boolean gender; //True if male 
 	protected double height; //Height in centimetres
@@ -8,17 +7,16 @@ public class Person {
 	protected int birthMonth; //Month of birth 
 	protected int birthDay; //Day of birth
 	protected int birthYear; //Year of birth
-	protected String birthPlace; //Integer represents what country person is born from (based on IIHF's Top 20 International Mens Hockey Countries)
-	protected String maritalStatus; //Single, Married, Divorced, Widowed etc.
+	protected int birthPlace; //Integer represents what country person is born from (based on IIHF's Top 20 International Mens Hockey Countries)
+	protected int maritalStatus; //Single, Married, Divorced, Widowed etc.
 
 	/**
 	 * Constructor that creates an object of type person with parameters sent in
 	 * @param 
 	 * @author MK, AV, CH, PJ
 	*/
-	Person(String fname, String lname int age, boolean gender, double height, double weight, int month, int day, int year, String place, String mStatus) {
-		this.fname = fname;
-		this.lname = lname;
+	Person(String name, int age, boolean gender, double height, double weight, int month, int day, int year, int place, int mStatus) {
+		this.name = name;
 		this.age = age;
 		this.gender = gender;
 		this.height = height;
@@ -31,25 +29,14 @@ public class Person {
 	}
 
 	//Accessors
-	
 	/**
-	 * Returns First name
-	 * @return fname
+	 * Returns name
+	 * @return name
 	 * @author MK, AV, CH, PJ
 	*/
 
-	public String getFName(){
-		return fname;
-	}
-	
-	/**
-	 * Returns Last name
-	 * @return lname
-	 * @author MK, AV, CH, PJ
-	*/
-
-	public String getLName(){
-		return lname;
+	public String getName(){
+		return name;
 	}
 
 	/**
@@ -129,7 +116,7 @@ public class Person {
 	 * @return nationality/country of birth
 	 * @author MK, AV, CH, PJ
 	 */
-	public String getBirthPlace(){
+	public int getBirthPlace(){
 		return birthPlace;
 	}
 	
@@ -140,30 +127,19 @@ public class Person {
 	 * @return maritalStatus
 	 * @author MK, AV, CH, PJ
 	*/
-	public String getMaritalStatus(){
+	public int getMaritalStatus(){
 		return maritalStatus;
 	}
 
 	//Mutators
-	
 	/**
-	 * Stores parameter to fname
+	 * Stores parameter to name
 	 * @param x of type String 
 	 * @author MK, AV, CH, PJ
 	*/
 
-	public void putFName(String x){
-		fname = x;
-	}
-	
-	/**
-	 * Stores parameter to lname
-	 * @param x of type String 
-	 * @author MK, AV, CH, PJ
-	*/
-
-	public void putLName(String x){
-		lname = x;
+	public void putName(String x){
+		name = x;
 	}
 
 	/**
@@ -242,7 +218,7 @@ public class Person {
 	 * @author MK, AV, CH, PJ
 	*/
 
-	public void putBirthplace (String x){
+	public void putBirthplace (int x){
 		birthPlace = x;
 	}
 
@@ -252,95 +228,99 @@ public class Person {
 	 * @author MK, AV, CH, PJ
 	*/
 
-	public void putMaritalStatus (String x){
+	public void putMaritalStatus (int x){
 		maritalStatus = x;
 	}
 	
-	public void setBirthPlace(){
-		switch(Integer.parseInt(birthPlace)){
-		case 1:
-			birthPlace="Austria";
-			break;
-		case 2:
-			birthPlace="Balarus";
-			break;
-		case 3:
-			birthPlace="Canada";
-			break;
-		case 4:
-			birthPlace="Czeck Republic";
-			break;
-		case 5:
-			birthPlace="Denmark";
-			break;
-		case 6:
-			birthPlace="Finland";
-			break;
-		case 7:
-			birthPlace="France";
-			break;
-		case 8:
-			birthPlace="Germany";
-			break;
-		case 9:
-			birthPlace="Hungary";
-			break;
-		case 10:
-			birthPlace="Italy";
-			break;
-		case 11:
-			birthPlace="Kazakhstan";
-			break;
-		case 12:
-			birthPlace="Latvia";
-			break;
-		case 13:
-			birthPlace="Norway";
-			break;
-		case 14:
-			birthPlace="Russia";
-			break;
-		case 15:
-			birthPlace="Slovakia";
-			break;
-		case 16:
-			birthPlace="Slovenia";
-			break;
-		case 17:
-			birthPlace="Sweden";
-			break;
-		case 18:
-			birthPlace="Switzerland";
-			break;
-		case 19:
-			birthPlace="Ukraine";
-			break;
-		case 20:
-			birthPlace="United States";
-			break;
-		default:
-			birthPlace="X"; //Unknown birthplace
-			break;
+	public String convertBirthPlace(){
+		String x;
+		switch(birthPlace){
+			case 1:
+				x = "Austria";
+				break;
+			case 2:
+				x = "Balarus";
+				break;
+			case 3:
+				x = "Canada";
+				break;
+			case 4:
+				x = "Czeck Republic";
+				break;
+			case 5:
+				x = "Denmark";
+				break;
+			case 6:
+				x = "Finland";
+				break;
+			case 7:
+				x = "France";
+				break;
+			case 8:
+				x = "Germany";
+				break;
+			case 9:
+				x = "Hungary";
+				break;
+			case 10:
+				x = "Italy";
+				break;
+			case 11:
+				x = "Kazakhstan";
+				break;
+			case 12:
+				x = "Latvia";
+				break;
+			case 13:
+				x = "Norway";
+				break;
+			case 14:
+				x = "Russia";
+				break;
+			case 15:
+				x = "Slovakia";
+				break;
+			case 16:
+				x = "Slovenia";
+				break;
+			case 17:
+				x = "Sweden";
+				break;
+			case 18:
+				x = "Switzerland";
+				break;
+			case 19:
+				x = "Ukraine";
+				break;
+			case 20:
+				x = "United States";
+				break;
+			default:
+				x = "n/a"; //Unknown birthplace
+				break;
 		}
+		return x;
 	}
 
-	public void setMaritalStatus (){
-		switch (Integer.parseInt(maritalStatus)){
-		case 1:
-			maritalStatus="Divorced";
-			break;
-		case 2:
-			maritalStatus="Married";
-			break;
-		case 3:
-			maritalStatus="Single";
-			break;
-		case 4:
-			maritalStatus="Widowed";
-			break;
-		default:
-			maritalStatus="x";
-			break;
+	public String convertMaritalStatus (){
+		String x;
+		switch (maritalStatus) {
+			case 1:
+				x = "Divorced";
+				break;
+			case 2:
+				x = "Married";
+				break;
+			case 3:
+				x = "Single";
+				break;
+			case 4:
+				x = "Widowed";
+				break;
+			default:
+				x = "n/a";
+				break;
 		}
+		return x;
 	}
 }

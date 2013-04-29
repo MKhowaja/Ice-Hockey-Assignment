@@ -13,10 +13,26 @@ public class Defense extends Player{
 	private int ppGoals; //Number of power play goals
 	private int soGoals; //Number of shoot-out goals
 	
-	public Defense(String name, int age, boolean gender, double height, double weight, int month, int day, int year, String place, String mStatus) {//+more 
-		super(name, age, gender, height, weight, month, day, year, place, mStatus);
+	public Defense(String name, int age, boolean gender, double height, double weight, int month, int day, int year, int place, int mStatus,//person fields
+			double salaryPY, int contractR, double tSalary, int rating, int gp, double penaltyT, int penaltyN, boolean arm, int number, //player fields
+			int plusMinus, double avgGoalsPS, double avgGoalPercentagePS, double avgShotsPS, double zsGoalPercentage, double avgAssistsPS, //defense fields
+			double avgPenaltyPS, double avgPPGoalsPS, double avgSOGoalsPS, int gwGoals, int ppGoals, int soGoals) {
+		super(name, age, gender, height, weight, month, day, year, place, mStatus,//person fields
+			salaryPY, contractR, tSalary, rating, gp, penaltyT, penaltyN, arm, number); //player fields
+		
+		this.plusMinus = plusMinus;
+		this.avgGoalsPS = avgGoalsPS;
+		this.avgGoalPercentagePS = avgGoalPercentagePS;
+		this.avgShotsPS = avgShotsPS;
+		this.zsGoalPercentage = zsGoalPercentage;
+		this.avgAssistsPS = avgAssistsPS;
+		this.avgPenaltyPS = avgPenaltyPS;
+		this.avgPPGoalsPS = avgPPGoalsPS;
+		this. avgSOGoalsPS = avgSOGoalsPS;
+		this.gwGoals = gwGoals;
+		this.ppGoals = ppGoals;
+		this.soGoals = soGoals;
 	}
-	
 	//Accessor Methods
 	
 	/**

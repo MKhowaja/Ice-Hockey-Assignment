@@ -1,5 +1,5 @@
 public class Goalie extends Player {
-  private int wins; //Number of wins
+	private int wins; //Number of wins
 	private int loses; //Number of losses
 	
 	//Perhaps playoff wins here?
@@ -14,8 +14,21 @@ public class Goalie extends Player {
 	private int shutouts; //Number of games where goalie had no goals against him and only goalie to play in game
 	private int emptyNG; //Number of goals scored against while off ice for extra attack player
 	
-	public Goalie(String name, int age, boolean gender, double height, double weight, int month, int day, int year, String place, String mStatus) {//+more 
-		super(name, age, gender, height, weight, month, day, year, place, mStatus);
+	public Goalie(String name, int age, boolean gender, double height, double weight, int month, int day, int year, int place, int mStatus,//person fields
+			double salaryPY, int contractR, double tSalary, int rating, int gp, double penaltyT, int penaltyN, boolean arm, int number, //player fields
+			int gameStart, double numMin, int goalA, double goalAA, int shotsOG, int saves, double savePercent, int shutouts, int emptyNG) { //goalie fields
+		super(name, age, gender, height, weight, month, day, year, place, mStatus,//person fields
+				salaryPY, contractR, tSalary, rating, gp, penaltyT, penaltyN, arm, number); //player fields
+		
+		this.gameStart = gameStart;
+		this.numMin = numMin;
+		this.goalA = goalA;
+		this.goalAA = goalAA;
+		this.shotsOG = shotsOG;
+		this.saves = saves;
+		this.savePercent = savePercent;
+		this.shutouts = shutouts;
+		this.emptyNG = emptyNG;
 	}
 	
 	//Accessor Methods

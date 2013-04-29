@@ -8,11 +8,19 @@ public class Player extends Person {
 	protected int penaltyN; //Number of penalties
 	protected boolean arm; //Shooting arm: True if right arm
 	protected int number; //Jersey number
-	//protected double timeOI; //Average Time spent on ice per game in minutes
 
-	//Comments here
-	public Player(String name, int age, boolean gender, double height, double weight, int month, int day, int year, String place, String mStatus) {//+more 
+	public Player(String name, int age, boolean gender, double height, double weight, int month, int day, int year, int place, int mStatus,//person fields
+			double salaryPY, int contractR, double tSalary, int rating, int gp, double penaltyT, int penaltyN, boolean arm, int number) {//player fields
 		super(name, age, gender, height, weight, month, day, year, place, mStatus);
+		this.salaryPY = salaryPY;
+		this.contractR = contractR;
+		this.tSalary = tSalary;
+		this.rating = rating;
+		this.gp = gp;
+		this.penaltyT = penaltyT;
+		this.penaltyN = penaltyN;
+		this.arm = arm;
+		this.number = number;
 	}
 
 	//Accessors
