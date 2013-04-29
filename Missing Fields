@@ -25,6 +25,22 @@ assists road //ie away
 own division assists
 other division assists
 average assists per game
+//Some stuff is better suited to be just an average no? Adjust as required
+Dv GP
+Dv goals
+Dv Assists   
+Dv Points
+Dv +/- 	
+Other/O Division/D GP
+OD Goals
+OD Assists
+OD Points
+OD+/-
+Total/Ttl GP
+TtlG
+TtlA
+TtlP
+Ttl+/- 
 
 
 
