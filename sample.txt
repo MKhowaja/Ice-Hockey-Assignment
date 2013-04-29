@@ -1,0 +1,22 @@
+Class: coach
+First name: Clement
+Last name: Hoang
+Age: 17
+Gender: male
+Height: 173
+Weight: 70
+Birth month: 6
+Birth day: 24
+Birth year: 1995
+Birthplace: Canada
+Marital status: married
+Wins: 5
+Losses: 0
+Games Coached: 5
+Points Percentage: 100
+Playoff wins: 6
+Playoff losses: 1
+Playoff games coached: 6
+Number of Stanley Cups: 6
+Coach type: head
+

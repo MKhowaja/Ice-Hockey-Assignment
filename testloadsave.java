@@ -274,6 +274,8 @@ public class testloadsave {
 				((Goalie)person).emptyNG = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
 			}			
 		}
+		br.close();
+		fr.close();
 	}
 	
 	/**
@@ -305,8 +307,8 @@ public class testloadsave {
 		pw.println("Birth month: "+p.getBirthMonth());
 		pw.println("Birth day: "+p.getBirthDay());
 		pw.println("Birth year: "+p.getBirthYear());
-		pw.println("BirthPlace: "+p.getBirthPlace());
-		pw.println("Marital status: "+p.getMaritalStatus());
+		pw.println("BirthPlace: "+Person.convertBirthPlaceToString(p.getBirthPlace()));
+		pw.println("Marital status: "+Person.convertMaritalStatusToString(p.getMaritalStatus()));
 
 		if (p instanceof Coach){
 			//Writes all the fields that coach has onto text file
@@ -406,12 +408,14 @@ public class testloadsave {
 				pw.println("Number of games where goalie had no goals aginst him/her and only goalie to play in game: "+((Goalie) p).getShutouts());
 				pw.println("Number of goals scored against while off ice for extra attack player: "+((Goalie) p).getEmptyNG());
 			}
-		}	  
+		}	
+		fw.close();
+		pw.close();
 	}
 	
 	public static void main(String[] args) throws IOException {
 		Person p = new Coach(null, null, 0, false, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-		load("C:\\Users\\Clement\\Desktop\\test.txt",p);
+		load("C:\\Users\\Clement\\Desktop\\sample.txt",p);
 		save("C:\\Users\\Clement\\Desktop\\plzwork.txt",p);
 	}
 }
