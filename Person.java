@@ -1,5 +1,6 @@
 public class Person {
-  	protected String name; //Name
+  	protected String fname; //First name
+  	protected String lname; //Last name
 	protected int age; //Age
 	protected boolean gender; //True if male 
 	protected double height; //Height in centimetres
@@ -15,8 +16,9 @@ public class Person {
 	 * @param 
 	 * @author MK, AV, CH, PJ
 	*/
-	Person(String name, int age, boolean gender, double height, double weight, int month, int day, int year, String place, String mStatus) {
-		this.name = name;
+	Person(String fname, String lname int age, boolean gender, double height, double weight, int month, int day, int year, String place, String mStatus) {
+		this.fname = fname;
+		this.lname = lname;
 		this.age = age;
 		this.gender = gender;
 		this.height = height;
@@ -29,14 +31,25 @@ public class Person {
 	}
 
 	//Accessors
+	
 	/**
-	 * Returns name
-	 * @return name
+	 * Returns First name
+	 * @return fname
 	 * @author MK, AV, CH, PJ
 	*/
 
-	public String getName(){
-		return name;
+	public String getFName(){
+		return fname;
+	}
+	
+	/**
+	 * Returns Last name
+	 * @return lname
+	 * @author MK, AV, CH, PJ
+	*/
+
+	public String getLName(){
+		return lname;
 	}
 
 	/**
