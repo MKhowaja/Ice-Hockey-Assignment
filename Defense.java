@@ -9,14 +9,14 @@ public class Defense extends Player{
 	protected double avgPenaltyPS; //Average penalty minutes per season
 	protected double avgPPGoalsPS; //Average power play goals per season (double)
 	protected double avgSOGoalsPS; //Average shoot-out goals per season
-	/*added field*/protected double avgNShifts; //Average number of shifts per game
+	protected double avgNShifts; //Average number of shifts per game
 	protected int gwGoals; //Number of game-winning goals
 	protected int ppGoals; //Number of power play goals
 	protected int soGoals; //Number of shoot-out goals
-	/*added field*/protected int otGoals; //Number of overtime goals
-	/*added field*/protected double faceoffPercentage; //Face off win percentage
-	/*added field*/protected double points; //Points (don't know what this means)
-	/*added field*/protected double shootPercentage; //Shooting Percentage
+	protected int otGoals; //Number of overtime goals
+	protected double faceoffPercentage; //Face off win percentage
+	protected double points; //Points (don't know what this means)
+	protected double shootPercentage; //Shooting Percentage
 
 	public Defense(String fname, String lname, int age, boolean gender, double height, double weight, int month, int day, int year, int place, int mStatus,//person fields
 			double salaryPY, int contractR, double tSalary, int rating, int gp, double penaltyT, int penaltyN, boolean arm, int number, //player fields
