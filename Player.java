@@ -11,7 +11,7 @@ public class Player extends Person {
 	/*added field*/protected double numMin; //Total number of minutes the player has been on ice
 
 	public Player(String name, int age, boolean gender, double height, double weight, int month, int day, int year, int place, int mStatus,//person fields
-			double salaryPY, int contractR, double tSalary, int rating, int gp, double penaltyT, int penaltyN, boolean arm, int number) {//player fields
+			double salaryPY, int contractR, double tSalary, int rating, int gp, double penaltyT, int penaltyN, boolean arm, int number, double numMin) {//player fields
 		super(name, age, gender, height, weight, month, day, year, place, mStatus);
 		this.salaryPY = salaryPY;
 		this.contractR = contractR;
@@ -22,6 +22,7 @@ public class Player extends Person {
 		this.penaltyN = penaltyN;
 		this.arm = arm;
 		this.number = number;
+		this.numMin = numMin;
 	}
 
 	//Accessors
