@@ -193,6 +193,7 @@ public class Player extends Person {
 	}
 
 	//Mutators
+	
 	/**
 	 * Stores salary per year
 	 * @param x of type double
