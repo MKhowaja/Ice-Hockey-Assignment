@@ -12,13 +12,20 @@ public class Defense extends Player{
 	private int gwGoals; //Number of game-winning goals
 	private int ppGoals; //Number of power play goals
 	private int soGoals; //Number of shoot-out goals
+	/*added field*/private double avgNShifts; //Average number of shifts per game
+	/*added field*/private int otGoals; //Number of overtime goals
+	/*added field*/private double faceoffPercentage; //Face off win percentage
+	/*added field*/private double points; //Points (don't know what this means)
+	/*added field*/private double shootPercentage; //Shooting Percentage
 	
 	public Defense(String name, int age, boolean gender, double height, double weight, int month, int day, int year, int place, int mStatus,//person fields
 			double salaryPY, int contractR, double tSalary, int rating, int gp, double penaltyT, int penaltyN, boolean arm, int number, //player fields
-			int plusMinus, double avgGoalsPS, double avgGoalPercentagePS, double avgShotsPS, double zsGoalPercentage, double avgAssistsPS, //defense fields
-			double avgPenaltyPS, double avgPPGoalsPS, double avgSOGoalsPS, int gwGoals, int ppGoals, int soGoals) {
-		super(name, age, gender, height, weight, month, day, year, place, mStatus,//person fields
+			int plusMinus, double avgGoalsPS, double avgGoalPercentagePS, double avgShotsPS, double zsGoalPercentage, double avgAssistsPS, //forward fields
+			double avgPenaltyPS, double avgPPGoalsPS, double avgSOGoalsPS, double avgNShifts, int gwGoals, int ppGoals, int soGoals, int otGoals, 
+			double FaceoffPercentage, double points, double ShootPercentage) 
+		super(name, age, gender, height, weight, month, day, year, place, mStatus, //person fields
 			salaryPY, contractR, tSalary, rating, gp, penaltyT, penaltyN, arm, number); //player fields
+		
 		
 		this.plusMinus = plusMinus;
 		this.avgGoalsPS = avgGoalsPS;
@@ -28,10 +35,15 @@ public class Defense extends Player{
 		this.avgAssistsPS = avgAssistsPS;
 		this.avgPenaltyPS = avgPenaltyPS;
 		this.avgPPGoalsPS = avgPPGoalsPS;
-		this. avgSOGoalsPS = avgSOGoalsPS;
+		this.avgSOGoalsPS = avgSOGoalsPS;
+		this.avgNShift = avgnShift;
 		this.gwGoals = gwGoals;
 		this.ppGoals = ppGoals;
 		this.soGoals = soGoals;
+		this.otGoals = otGoals;
+		this.faceoffPercentage = faceoffPercentage;
+		this.points = points;
+		this.shootPercentage = shootPercentage;
 	}
 	//Accessor Methods
 	
@@ -100,15 +112,75 @@ public class Defense extends Player{
 		return avgPPGoalsPS;
 	}
 	/**
-	 * Returns average shoot-out goals per season of a player
-	 * @return avgSOGoalsPS
+	 * Returns the average number of shifts per game
+	 * @return avgNShifts
 	 * @author MK, AV, CH, PJ
 	 */
-	public double getavgSOGoalsPS() {
-		return avgSOGoalsPS;
+	public double getAvgNShifts() {
+		return avgNShifts;
 	}
-	public int getgwGoals() {
+	
+	/**
+	 * Returns the number of game-winning goals
+	 * @return gwGoals
+	 * @author MK, AV, CH, PJ
+	 */
+	public int getGWGoals() {
 		return gwGoals;
+	}
+	
+	/**
+	 * Returns the number of power-play goals
+	 * @return gwGoals
+	 * @author MK, AV, CH, PJ
+	 */
+	public int getPPGoals() {
+		return ppGoals;
+	}
+	
+	/**
+	 * Returns the number of shoot-out goals
+	 * @return gwGoals
+	 * @author MK, AV, CH, PJ
+	 */
+	public int getAOGoals() {
+		return soGoals;
+	}
+	
+	/**
+	 * Returns the number of overtime goals
+	 * @return otGoals
+	 * @author MK, AV, CH, PJ
+	 */
+	public int getOTGoals() {
+		return otGoals;
+	}
+	
+	/**
+	 * Returns faceoff percentage
+	 * @return faceoffPercentage
+	 * @author MK, AV, CH, PJ
+	 */
+	public double getFaceoffPercentage() {
+		return faceoffPercentage;
+	}
+	
+	/**
+	 * Returns points
+	 * @return points
+	 * @author MK, AV, CH, PJ
+	 */
+	public double getPoints() {
+		return points;
+	}
+	
+	/**
+	 * Returns shooting percentage
+	 * @return shootPercentage
+	 * @author MK, AV, CH, PJ
+	 */
+	public double getShootPercentage() {
+		return shootPercentage;
 	}
 	
 	//Mutator methods
@@ -184,5 +256,77 @@ public class Defense extends Player{
 	 */
 	public void putavgSOGoalsPS(double x) {
 		avgSOGoalsPS = x;
+	}
+	
+	/**
+	 * stores parameter to avgNShifts
+	 * @param x of type double
+	 * @author MK, AV, CH, PJ
+	 */
+	public void putAvgNshifts(int x){
+		avgNShifts = x;
+	}
+	
+	/**
+	 * stores parameter to gwGoals
+	 * @param x of type int
+	 * @author MK, AV, CH, PJ
+	 */
+	public void putGWGoals(int x){
+		gwGoals = x;
+	}
+	
+	/**
+	 * stores parameter to ppGoals
+	 * @param x of type int
+	 * @author MK, AV, CH, PJ
+	 */
+	public void putPPGoals(int x){
+		ppGoals = x;
+	}
+	
+	/**
+	 * stores parameter to soGoals
+	 * @param x of type int
+	 * @author MK, AV, CH, PJ
+	 */
+	public void putSOGoals(int x){
+		soGoals = x;
+	}
+	
+	/**
+	 * stores parameter to otGoals
+	 * @param x of type int
+	 * @author MK, AV, CH, PJ
+	 */
+	public void getOTGoals(int x) {
+		otGoals = x;
+	}
+	
+	/**
+	 * stores parameter to faceoffPercentage
+	 * @param x of type double
+	 * @author MK, AV, CH, PJ
+	 */
+	public void getFaceoffPercentage(double x) {
+		faceoffPercentage = x;
+	}
+	
+	/**
+	 * stores parameter to points
+	 * @param x of type double
+	 * @author MK, AV, CH, PJ
+	 */
+	public void getPoints(double x) {
+		points = x;
+	}
+	
+	/**
+	 * stores parameter to shootPercentage
+	 * @param x of type double
+	 * @author MK, AV, CH, PJ
+	 */
+	public void getShootPercentage(double x) {
+		shootPercentage = x;
 	}
 }
