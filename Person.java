@@ -255,7 +255,12 @@ public abstract class Person {
 		maritalStatus = x;
 	}
 	
-	public String convertBirthPlace(int birthPlace){
+	/**
+	 * Converts a string representing coachType into an int, then returns it
+	 * @return int birthPlace
+	 * @author MK, AV, CH, PJ
+	 */
+	public String convertBirthPlaceToString(int birthPlace){
 		String x;
 		switch(birthPlace){
 			case 1:
@@ -324,8 +329,66 @@ public abstract class Person {
 		}
 		return x;
 	}
+	
+	/**
+	 * Converts birthPlace into a meaningful string, then returns it
+	 * @return String birthPlace
+	 * @author MK, AV, CH, PJ
+	 */
+	public int convertBirthPlaceToInt(String birthPlace){
+		int x;
+		if (birthPlace.equals("Austria"))
+			x = 1;
+		else if (birthPlace.equals("Balarus"))
+			x = 2;
+		else if (birthPlace.equals("Canada"))
+			x = 3;
+		else if (birthPlace.equals("Czeck Republic"))
+			x = 4;
+		else if (birthPlace.equals("Denmark"))
+			x = 5;
+		else if (birthPlace.equals("Finland"))
+			x = 6;
+		else if (birthPlace.equals("France"))
+			x = 7;
+		else if (birthPlace.equals("Germany"))
+			x = 8;
+		else if (birthPlace.equals("Hungary"))
+			x = 9;
+		else if (birthPlace.equals("Italy"))
+			x = 10;
+		else if (birthPlace.equals("Kazakhstan"))
+			x = 11;
+		else if (birthPlace.equals("Latvia"))
+			x = 12;
+		else if (birthPlace.equals("Norway"))
+			x = 13;
+		else if (birthPlace.equals("Russia"))
+			x = 14;
+		else if (birthPlace.equals("Slovakia"))
+			x = 15;
+		else if (birthPlace.equals("Slovenia"))
+			x = 16;
+		else if (birthPlace.equals("Sweden"))
+			x = 17;
+		else if (birthPlace.equals("Switzerland"))
+			x = 18;
+		else if (birthPlace.equals("Ukraine"))
+			x = 19;
+		else if (birthPlace.equals("United States"))
+			x = 20;
+		else 
+			x = 0;
+		
+		return x;
+	}
 
-	public String convertMaritalStatus (int maritalStatus){
+	/**
+	 * Converts a string representing maritalStatus into an int, then returns it
+	 * @return int maritalStatus
+	 * @author MK, AV, CH, PJ
+	 */
+	public String convertMaritalStatusToString (int maritalStatus){
 		String x;
 		switch (maritalStatus) {
 			case 1:
@@ -346,4 +409,25 @@ public abstract class Person {
 		}
 		return x;
 	}
+	
+	/**
+	 * Converts maritalStatus into a meaningful string, then returns it
+	 * @return String maritalStatus
+	 * @author MK, AV, CH, PJ
+	 */
+	public int convertMaritalStatusToInt (String maritalStatus){
+		int x;
+		if (maritalStatus.equals("Divorced"))
+			x = 1;
+		else if (maritalStatus.equals("Married"))
+			x = 2;
+		else if (maritalStatus.equals("Single"))
+			x = 3;
+		else if (maritalStatus.equals("Widowed"))
+			x = 3;
+		else
+			x = 0;
+		return x;			
+	}
+	
 }
