@@ -150,7 +150,7 @@ public class Forward extends Player {
 	
 	/**
 	 * Returns the number of power-play goals
-	 * @return gwGoals
+	 * @return ppGoals
 	 * @author MK, AV, CH, PJ
 	 */
 	public int getPPGoals() {
@@ -159,10 +159,10 @@ public class Forward extends Player {
 	
 	/**
 	 * Returns the number of shoot-out goals
-	 * @return gwGoals
+	 * @return soGoals
 	 * @author MK, AV, CH, PJ
 	 */
-	public int getAOGoals() {
+	public int getSOGoals() {
 		return soGoals;
 	}
 	
