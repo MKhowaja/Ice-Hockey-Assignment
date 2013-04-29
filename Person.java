@@ -1,4 +1,4 @@
-public class Person {
+abstract class Person {
   	protected String fname; //First name
   	protected String lname; //Last name
 	protected int age; //Age
@@ -16,7 +16,7 @@ public class Person {
 	 * @param 
 	 * @author MK, AV, CH, PJ
 	*/
-	public Person(String fname, String lname, int age, boolean gender, double height, double weight, int month, int day, int year, int place, int mStatus) {
+	Person(String fname, String lname, int age, boolean gender, double height, double weight, int month, int day, int year, int place, int mStatus) {
 		this.fname = fname;
 		this.lname = lname;
 		this.age = age;
