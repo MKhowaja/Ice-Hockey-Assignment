@@ -331,7 +331,7 @@ public class testloadsave {
 		else if ((p instanceof Forward) || (p instanceof Defense) || (p instanceof Goalie)){
 			//Writes all the player fields onto text file
 			pw.println("Salary per year: "+((Player) p).getSalaryPY());
-			pw.println("Number of years remaing in contract: "+((Player) p).getcontractR());
+			pw.println("Number of years remaining in contract: "+((Player) p).getcontractR());
 			pw.println("Rating: "+((Player) p).getRating());
 			pw.println("Games played: "+((Player) p).getGP());
 			pw.println("Time spent in penalties: "+((Player) p).getPenaltyT());
@@ -395,10 +395,10 @@ public class testloadsave {
 			else if (p instanceof Goalie){
 				//Writes all the fields that goalie has onto text file
 				pw.println("Wins: "+((Goalie) p).getWins());
-				pw.println("Loses: "+((Goalie) p).getLoses());
+				pw.println("Losses: "+((Goalie) p).getLoses());
 				pw.println("Number of wins during playoffs: "+((Goalie) p).getWinsP());
-				pw.println("Number of loses during playoffs: "+((Goalie) p).getLosesP());
-				pw.println("Number of loses during overtime: "+((Goalie) p).getLosesOT());
+				pw.println("Number of losses during playoffs: "+((Goalie) p).getLosesP());
+				pw.println("Number of losses during overtime: "+((Goalie) p).getLosesOT());
 				pw.println("Bumber of games started: "+((Goalie) p).getGameStart());
 				pw.println("Number of goals scored against: "+((Goalie) p).getGameStart());
 				pw.println("Mean goals scored against goalie: "+((Goalie) p).getGoalA());
@@ -415,7 +415,7 @@ public class testloadsave {
 	}
 	
 	public static void main(String[] args) throws IOException {
-		Person p = new Forward("clement", "hoang", 17, true, 178, 78, 6, 24, 1995, 4, 2, 0, 0, 0, 0, 0, 0, 0, false, 0, 0, false, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-		save("G:\\Computer Science\\workspace\\Inheritance Assignment\\sampleforward.txt",p);
+		Person p = new Goalie("clement", "hoang", 17, true, 178, 78, 6, 24, 1995, 4, 2, 0, 0, 0, 0, 0, 0, 0, false, 0, 0, false, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+		save("G:\\Computer Science\\workspace\\Inheritance Assignment\\samplegoalie.txt",p);
 	}
 }
