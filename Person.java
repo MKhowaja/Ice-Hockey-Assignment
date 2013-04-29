@@ -1,4 +1,4 @@
-abstract class Person {
+public abstract class Person {
   	protected String fname; //First name
   	protected String lname; //Last name
 	protected int age; //Age
