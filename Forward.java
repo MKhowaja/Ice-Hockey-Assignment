@@ -12,11 +12,17 @@ public class Forward extends Player {
 	private int gwGoals; //Number of game-winning goals
 	private int ppGoals; //Number of power play goals
 	private int soGoals; //Number of shoot-out goals
+	/*added field*/private double avgNShifts; //Average number of shifts per game
+	/*added field*/private int otGoals; //Number of overtime goals
+	/*added field*/private double FaceoffPercentage //Face off win percentage
+	/*added field*/private double points; //Points (don't know what this means)
+	/*added field*/private double ShootPercentage //Shooting Percentage
 	
 	public Forward(String name, int age, boolean gender, double height, double weight, int month, int day, int year, int place, int mStatus,//person fields
 			double salaryPY, int contractR, double tSalary, int rating, int gp, double penaltyT, int penaltyN, boolean arm, int number, //player fields
 			int plusMinus, double avgGoalsPS, double avgGoalPercentagePS, double avgShotsPS, double zsGoalPercentage, double avgAssistsPS, //forward fields
-			double avgPenaltyPS, double avgPPGoalsPS, double avgSOGoalsPS, int gwGoals, int ppGoals, int soGoals) {
+			double avgPenaltyPS, double avgPPGoalsPS, double avgSOGoalsPS, double avgNShifts, int gwGoals, int ppGoals, int soGoals, int otGoals, 
+			double FaceoffPercentage, double points, double ShootPercentage) {
 		
 		super(name, age, gender, height, weight, month, day, year, place, mStatus, //person fields
 				salaryPY, contractR, tSalary, rating, gp, penaltyT, penaltyN, arm, number); //player fields
