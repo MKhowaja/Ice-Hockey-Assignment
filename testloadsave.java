@@ -305,7 +305,7 @@ public class testloadsave {
 			pw.println("Shooting percentage: "+((Forward) p).getShootPercentage());
 		}else if (p instanceof Defense){
 			//Writes all the fields that defense has onto text file
-			pw.println("Class: Coach");
+			pw.println("Class: Defense");
 			pw.println("First name: "+p.getFName());
 			pw.println("Last name: "+p.getLName());
 			pw.println("Age: "+p.getAge());
@@ -361,7 +361,7 @@ public class testloadsave {
 			pw.println("Points: "+((Defense) p).getPoints());
 		}else if (p instanceof Goalie){
 			//Writes all the fields that coach has onto text file
-			pw.println("Class: Coach");
+			pw.println("Class: Gaolie");
 			pw.println("First name: "+p.getFName());
 			pw.println("Last name: "+p.getLName());
 			pw.println("Age: "+p.getAge());
