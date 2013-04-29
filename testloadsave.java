@@ -419,9 +419,17 @@ public class testloadsave {
 	}
 	
 	public static void main(String[] args) throws IOException {
-		Person q = new Coach("clem", null, 0, false, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1);
-		save("G:\\Computer Science\\workspace\\Inheritance Assignment\\samplecoach.txt",q);
-		Person p = new Goalie("clement", "hoang", 17, true, 178, 78, 6, 24, 1995, 4, 2, 0, 0, 0, 0, 0, 0, 0, false, 0, 0, false, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+		Person p1 = new Coach("clem", null, 0, false, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1);
+		save("G:\\Computer Science\\workspace\\Inheritance Assignment\\samplecoach.txt",p1);//save test for coach
+		Person p2 = new Goalie("clement", "hoang", 17, true, 178, 78, 6, 24, 1995, 4, 2, 0, 0, 0, 0, 0, 0, 0, false, 0, 0, false, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+		save("G:\\Computer Science\\workspace\\Inheritance Assignment\\samplegoalie.txt",p2);//save test for goalie
+		Person p3 = new Forward("clement", "hoang", 17, true, 178, 78, 6, 24, 1995, 4, 2, 0, 0, 0, 0, 0, 0, 0, false, 0, 0, false, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+		save("G:\\Computer Science\\workspace\\Inheritance Assignment\\sampleforward.txt",p3);//save test for forward
+		Person p4 = new Defense("clement", "hoang", 17, true, 178, 78, 6, 24, 1995, 4, 2, 0, 0, 0, 0, 0, 0, 0, false, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+		save("G:\\Computer Science\\workspace\\Inheritance Assignment\\samplegoalie.txt",p4);//save test for defense
 		
+		Person loadguy = new Coach(null, null, 0, false, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);//temporary coach person
+		load("G:\\Computer Science\\workspace\\Inheritance Assignment\\sample.txt", loadguy);//reads file named "sample" which holds all the data
+		save("G:\\Computer Science\\workspace\\Inheritance Assignment\\saveloadguy.txt",loadguy);//saves the file onto separate file named "saveloadguy"
 	}
 }
