@@ -367,10 +367,10 @@ public class testloadsave {
 				pw.println("Average penalty minutes per season: "+((Forward) p).getavgPenaltyPS());
 				pw.println("Average power play goals per season: "+((Forward) p).getavgPPGoalsPS());
 				pw.println("Average shoot-out goals per season: "+((Forward) p).getavgSOGoalsPS());
-				pw.println("Average number of shifts per game: "+((Forward) p).getAvgNShifts());
 				pw.println("Number of game-winning goals: "+((Forward) p).getGWGoals());
 				pw.println("Number of power play goals: "+((Forward) p).getPPGoals());
 				pw.println("Number of shootout goals: "+((Forward) p).getSOGoals());
+				pw.println("Average number of shifts per game: "+((Forward) p).getAvgNShifts());
 				pw.println("Number of overtime goals: "+((Forward) p).getOTGoals());
 				pw.println("Faceoff win percentage: "+((Forward) p).getFaceoffPercentage());
 				pw.println("Points: "+((Forward) p).getPoints());
@@ -387,10 +387,10 @@ public class testloadsave {
 				pw.println("Average penalty minutes per season: "+((Defense) p).getavgPenaltyPS());
 				pw.println("Average power play goals per season: "+((Defense) p).getavgPPGoalsPS());
 				pw.println("Average shoot-out goals per season: "+((Defense) p).getavgSOGoalsPS());
-				pw.println("Average number of shifts per game: "+((Defense) p).getAvgNShifts());
 				pw.println("Number of game-winning goals: "+((Defense) p).getGWGoals());
 				pw.println("Number of power play goals: "+((Defense) p).getPPGoals());
 				pw.println("Number of shootout goals: "+((Defense) p).getSOGoals());
+				pw.println("Average number of shifts per game: "+((Defense) p).getAvgNShifts());
 				pw.println("Number of overtime goals: "+((Defense) p).getOTGoals());
 				pw.println("Faceoff win percentage: "+((Defense) p).getFaceoffPercentage());
 				pw.println("Points: "+((Defense) p).getPoints());
