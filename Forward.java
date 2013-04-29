@@ -187,7 +187,11 @@ public class Forward extends Player {
 	public void putavgSOGoalsPS(double x) {
 		avgSOGoalsPS = x;
 	}
-	
+	/**
+	 * stores parameter to position
+	 * @param x of type int
+	 * @author MK, AV, CH, PJ
+	 */
 	public void putPosition (int x){
 		position = x
 	}
