@@ -1,17 +1,17 @@
 public class Goalie extends Player {
-	private int wins; //Number of wins
-	private int loses; //Number of losses
-	/*added field*/private int winsP; //Number of wins during playoffs
-	/*added field*/private int losesP; //Number of loses during playoffs
-	/*added field*/private int losesOT; //Number of loses during overtime
-	private int gameStart; //The number of games started
-	private int goalA; //Number of goals scored against goalie
-	private double goalAA; //Mean goals-per-60 minutes scored on the goalie
-	private int shotsOG; //Total number of shots on goal the goalie faced
-	private int saves; //Number of saves goalie made
-	private double savePercent; //Percentage of total shots faced the goalie saved (dividing the number of saves by the total number of shots on goal)
-	private int shutouts; //Number of games where goalie had no goals against him and only goalie to play in game
-	private int emptyNG; //Number of goals scored against while off ice for extra attack player
+	protected int wins; //Number of wins
+	protected int loses; //Number of losses
+	protected int winsP; //Number of wins during playoffs
+	protected int losesP; //Number of loses during playoffs
+	protected int losesOT; //Number of loses during overtime
+	protected int gameStart; //The number of games started
+	protected int goalA; //Number of goals scored against goalie
+	protected double goalAA; //Mean goals-per-60 minutes scored on the goalie
+	protected int shotsOG; //Total number of shots on goal the goalie faced
+	protected int saves; //Number of saves goalie made
+	protected double savePercent; //Percentage of total shots faced the goalie saved (dividing the number of saves by the total number of shots on goal)
+	protected int shutouts; //Number of games where goalie had no goals against him and only goalie to play in game
+	protected int emptyNG; //Number of goals scored against while off ice for extra attack player
 	
 	public Goalie(String fname, String lname, int age, boolean gender, double height, double weight, int month, int day, int year, int place, int mStatus,//person fields
 			double salaryPY, int contractR, double tSalary, int rating, int gp, double penaltyT, int penaltyN, boolean arm, int number, double numMin, //player fields
