@@ -22,7 +22,7 @@ public class Defense extends Player{
 			double salaryPY, int contractR, double tSalary, int rating, int gp, double penaltyT, int penaltyN, boolean arm, int number, //player fields
 			int plusMinus, double avgGoalsPS, double avgGoalPercentagePS, double avgShotsPS, double zsGoalPercentage, double avgAssistsPS, //forward fields
 			double avgPenaltyPS, double avgPPGoalsPS, double avgSOGoalsPS, double avgNShifts, int gwGoals, int ppGoals, int soGoals, int otGoals, 
-			double FaceoffPercentage, double points, double ShootPercentage, double faceoffPercentage, double shootPercentage) {
+			double FaceoffPercentage, double ShootPercentage, double faceoffPercentage, double shootPercentage) {
 		super(fname, lname, age, gender, height, weight, month, day, year, place, mStatus, //person fields
 			salaryPY, contractR, tSalary, rating, gp, penaltyT, penaltyN, arm, number, ShootPercentage, arm, otGoals, otGoals, otGoals, otGoals, otGoals); //player fields
 
@@ -42,7 +42,7 @@ public class Defense extends Player{
 		this.soGoals = soGoals;
 		this.otGoals = otGoals;
 		this.faceoffPercentage = faceoffPercentage;
-		this.points = points;
+		this.points = avgGoalsPS + avgAssistsPS;
 		this.shootPercentage = shootPercentage;
 	}
 	//Accessor Methods
