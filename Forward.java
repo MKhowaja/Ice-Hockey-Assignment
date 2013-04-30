@@ -343,8 +343,8 @@ public class Forward extends Player {
 	 * @param x of type double
 	 * @author MK, AV, CH, PJ
 	 */
-	public void putPoints() {
-		points = avgGoalsPS + avgAssistsPS;
+	public void putPoints(double x) {
+		points = x;
 	}
 	
 	/**
