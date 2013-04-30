@@ -1,0 +1,45 @@
+Class: forward
+First name: Clement
+Last name: Hoang
+Age: 17
+Gender: male
+Height: 178.0
+Weight: 78.0
+Birth month: 6
+Birth day: 24
+Birth year: 1995
+BirthPlace: Canada
+Marital status: married
+Salary per year: 120000.0
+Number of years remaining in contract: 7
+Total salary over entire contract length: 999999.0
+Rating: 10
+Games played: 9001
+Time spent in penalties: 12.0
+Number of penalties: 1
+Arm: right arm
+Jersey number: 7
+Total number of minutes on ice: 899.0
+Rookie: true
+Number of minor penalties: 1
+Number of major penalties: 0
+Number of misconduct penalties: 0
+Number of game misconduct penalties: 0
+Match penalties: 0
+Plus/Minus: 30
+Average goals per season: 70.0
+Average goal percentage per season: 70.0
+Average shots taken per season: 100.0
+Z-score of goal percentage: 1.3
+Average assists per season: 10.0
+Average penalty minutes per season: 0.0
+Average power play goals per season: 10.0
+Average shoot-out goals per season: 60.0
+Number of game-winning goals: 5
+Number of power play goals: 10
+Number of shootout goals: 55
+Average number of shifts per game: 0.0
+Number of overtime goals: 80
+Faceoff win percentage: 0.0
+Points: 80.0
+Shooting percentage: 80.0
