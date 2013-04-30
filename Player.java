@@ -4,7 +4,7 @@ public class Player extends Person {
 	protected double tSalary; //Total salary over entire contract length
 	protected int rating; //Temp for something awesome
 	protected int gp; //Games played
-	protected double penaltyT; //Time spent in penalties
+	protected double penaltyT; //Time spent in penalties in minutes
 	protected int penaltyN; //Number of penalties
 	protected boolean arm; //Shooting arm: True if right arm
 	protected int number; //Jersey number
