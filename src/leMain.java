@@ -1,5 +1,8 @@
 import java.util.Scanner;
 
+/*
+Note: this class is incomplete.
+*/
 
 
 public class leMain {
