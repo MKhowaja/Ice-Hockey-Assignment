@@ -1,4 +1,4 @@
 Ice-Hockey-Assignment
 =====================
 
-Sabermetrics, except for hockey
+Sabermetrics, except for hockey.
