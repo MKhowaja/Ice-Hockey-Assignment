@@ -14,17 +14,20 @@ public class Defense extends Player{
 	protected int ppGoals; //Number of power play goals
 	protected int soGoals; //Number of shoot-out goals
 	protected int otGoals; //Number of overtime goals
-	protected double faceoffPercentage; //Face off win percentage
 	protected double points; //Points (Goals + Assists)
+	protected double faceoffPercentage; //Face off win percentage
 	protected double shootPercentage; //Shooting Percentage
 
 	public Defense(String fname, String lname, int age, boolean gender, double height, double weight, int month, int day, int year, int place, int mStatus,//person fields
 			double salaryPY, int contractR, double tSalary, int rating, int gp, double penaltyT, int penaltyN, boolean arm, int number, //player fields
-			int plusMinus, double avgGoalsPS, double avgGoalPercentagePS, double avgShotsPS, double zsGoalPercentage, double avgAssistsPS, //forward fields
-			double avgPenaltyPS, double avgPPGoalsPS, double avgSOGoalsPS, double avgNShifts, int gwGoals, int ppGoals, int soGoals, int otGoals, 
-			double FaceoffPercentage, double ShootPercentage, double faceoffPercentage, double shootPercentage) {
-		super(fname, lname, age, gender, height, weight, month, day, year, place, mStatus, //person fields
-			salaryPY, contractR, tSalary, rating, gp, penaltyT, penaltyN, arm, number, ShootPercentage, arm, otGoals, otGoals, otGoals, otGoals, otGoals); //player fields
+			double numMin, boolean rookie, int penaltyMinor, int penaltyMajor, int penaltyMisc, int penaltyGMisc, int match, //more player fields
+			int plusMinus, double avgGoalsPS, double avgGoalPercentagePS, double avgShotsPS, double zsGoalPercentage, double avgAssistsPS, //defense fields
+			double avgPenaltyPS, double avgPPGoalsPS, double avgSOGoalsPS, int gwGoals, int ppGoals, int soGoals,//more defense fields
+			double avgNShifts, int otGoals, double faceoffPercentage, double shootPercentage) {//more defense fields
+		
+		super(fname, lname, age, gender, height, weight, month, day, year, place, mStatus,//person fields
+				salaryPY, contractR, tSalary, rating, gp, penaltyT, penaltyN, arm, number, //player fields
+				numMin, rookie, penaltyMinor, penaltyMajor, penaltyMisc, penaltyGMisc, match); //more player fields
 
 
 		this.plusMinus = plusMinus;
