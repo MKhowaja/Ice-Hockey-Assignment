@@ -15,7 +15,8 @@ public class leMain {
 		String playerType;
 
 		//temporary fields for person
-		String name; //Name
+		String fname; //Name
+		String lname;
 		int age; //Age
 		String tempGender;
 		boolean gender; //True if male 
@@ -71,10 +72,13 @@ public class leMain {
 			if (option == 1) {
 				//prompt for all person fields
 				do {
-					System.out.println("Enter name: ");
-					name = in.nextLine();
+					System.out.println("Enter first name: ");
+					fname = in.nextLine();
 					in.nextLine();
-				} while (name.equals("")); //ensures that something is entered
+					System.out.println("Enter last name: ");
+					lname = in.nextLine();
+					in.nextLine();
+				} while (fname.equals("")&&lname.equals("")); //ensures that something is entered
 
 				do {
 					System.out.println("Enter age: ");
@@ -194,7 +198,7 @@ public class leMain {
 									soGoals=in.nextInt();
 								}while (soGoals<0); //Ensure the player doesn't have negative shootout goals
 								
-								Forward forward=new Forward(name, age, gender, height, weight, birthMonth, birthDay, birthYear, birthPlace, martialStatus);
+								Forward forward=new Forward(fname, lname, age, gender, height, weight, birthMonth, birthDay, birthYear, birthPlace, martialStatus);
 								forward.getAge();
 								forward.putSalaryPY(salaryPY);
 							}
