@@ -9,10 +9,10 @@ public class Forward extends Player {
 	protected double avgPenaltyPS; //Average penalty minutes per season
 	protected double avgPPGoalsPS; //Average power play goals per season (double)
 	protected double avgSOGoalsPS; //Average shoot-out goals per season
+	protected double avgNShifts; //Average number of shifts per game
 	protected int gwGoals; //Number of game-winning goals
 	protected int ppGoals; //Number of power play goals
 	protected int soGoals; //Number of shoot-out goals
-	protected double avgNShifts; //Average number of shifts per game
 	protected int otGoals; //Number of overtime goals
 	protected double faceoffPercentage; //Face off win percentage
 	protected double points; //Points (Goals + Assists)
