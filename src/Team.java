@@ -1,44 +1,13 @@
+
 public abstract class Team {
-  protected String name; //Name of team (Documenting required)
+	protected String name; //Name of team (Documenting required)
 	protected String division; // that the division belongs to
 	protected String conference; // that the conference belongs to
-	protected String [] coachingstaff;  // coaches, assistants, trainers, etc.
-	protected String [] players;  // a structure that will contain the maximum number of roster spots allowed for a team
+	protected Coach [] coachingstaff;  // coaches, assistants, trainers, etc.
+	protected Player [] players;  // a structure that will contain the maximum number of roster spots allowed for a team
 	protected double payroll;   //how much the team is paying its players currently for the season
 	protected final double salarycap = 64.3;   // set by the league. It is the same for all teams (in millions)
 	//Team stats here (research required)
-	
-	/**
-	 * Loads the data from a text file the object team
-	 * @param String filepath
-	 * @author MK, AV, CH, PJ
-	 * @throws FileNotFoundException 
-	 */
-	/*
-	public void loadfromText(String filepath) throws FileNotFoundException {
-		String x;
-		FileReader fr = new FileReader(filepath);
-		BufferedReader br = new BufferedReader(fr);
-		
-		x = br.readLine();
-		this.name = x.substring(x.indexOf(": ")+2,x.length());
-		
-		x = br.readLine();
-		this.division = x.substring(x.indexOf(": ")+2,x.length());
-		
-		x = br.readLine();
-		this.conference = x.substring(x.indexOf(": ")+2,x.length());
-		
-		//load coaches
-		
-		//load players
-		
-		//load rest
-		
-		
-		
-	}
-	*/
 		
 	/**
 	 * Returns name
@@ -54,7 +23,7 @@ public abstract class Team {
 	 * @return the coachingstaff
 	 * @author MK, AV, CH, PJ
 	 */
-	public String[] getCoachingstaff() {
+	public Coach [] getCoachingstaff() {
 		return coachingstaff;
 	}
 
@@ -63,11 +32,12 @@ public abstract class Team {
 	 * @return the players
 	 * @author MK, AV, CH, PJ
 	 */
-	public String[] getPlayers() {
+	public Player[] getPlayers() {
 		return players;
 	}
 
 	/**
+	 * Returns the total payroll of the team
 	 * @return the payroll
 	 * @author MK, AV, CH, PJ
 	 */
@@ -76,18 +46,21 @@ public abstract class Team {
 	}
 
 	/**
-	 * @param name the name to set
+	 * Assigns the field name the name of the team
+	 * @param x the name of the team
 	 * @author MK, AV, CH, PJ
 	 */
-	public void setName(String name) {
-		this.name = name;
+	public void putName(String x) {
+		name = x;
 	}
 
 	/**
-	 * @param coachingstaff the coachingstaff to set
+	 * Assigns the field coachingstaff with the array of coaches
+	 * @param x an array of coaches to set
+	 * @author MK, AV, CH, PJ
 	 */
-	public void setCoachingstaff(String[] coachingstaff) {
-		this.coachingstaff = coachingstaff;
+	public void setCoachingstaff(Coach [] x) {
+		coachingstaff = x;
 	}
 
 	/**
