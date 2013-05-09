@@ -1,4 +1,3 @@
-
 public class Team {
 	protected String name; //Name of team (Documenting required)
 	protected String division; // that the division belongs to
@@ -88,5 +87,33 @@ public class Team {
 	public void putConference (int division){
 		
 	}
-
+	
+	 
+ /**
+  * Loads the data from a text file the object team
+  * @param String filepath
+  * @author MK, AV, CH, PJ
+  * @throws FileNotFoundException 
+  */
+  
+  /*
+  public void loadfromText(String filepath) throws FileNotFoundException {
+  	String x;
+    	FileReader fr = new FileReader(filepath);
+    	BufferedReader br = new BufferedReader(fr);
+    	
+    	x = br.readLine();
+    	this.name = x.substring(x.indexOf(": ")+2,x.length());
+    	x = br.readLine();
+    	this.division = x.substring(x.indexOf(": ")+2,x.length());
+        x = br.readLine();
+    	this.conference = x.substring(x.indexOf(": ")+2,x.length());
+    
+	//load coaches
+    
+    	//load players
+    
+    	//load rest
+  }
+  */
 }
