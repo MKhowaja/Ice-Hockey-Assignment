@@ -15,7 +15,7 @@ public class Defense extends Player{
 	protected int soGoals; //Number of shoot-out goals
 	protected int otGoals; //Number of overtime goals
 	protected double faceoffPercentage; //Face off win percentage
-	protected double points; //Points (don't know what this means)
+	protected double points; //Points (Goals + Assists)
 	protected double shootPercentage; //Shooting Percentage
 
 	public Defense(String fname, String lname, int age, boolean gender, double height, double weight, int month, int day, int year, int place, int mStatus,//person fields
