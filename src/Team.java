@@ -1,11 +1,11 @@
 
-public abstract class Team {
+public class Team {
 	protected String name; //Name of team (Documenting required)
 	protected String division; // that the division belongs to
 	protected String conference; // that the conference belongs to
 	protected Coach [] coachingstaff;  // coaches, assistants, trainers, etc.
 	protected Player [] players;  // a structure that will contain the maximum number of roster spots allowed for a team
-	protected double payroll;   //how much the team is paying its players currently for the season
+	protected double payroll;   //how much the team is paying its players currently for the season (in millions)
 	protected final double salarycap = 64.3;   // set by the league. It is the same for all teams (in millions)
 	//Team stats here (research required)
 		
@@ -59,26 +59,34 @@ public abstract class Team {
 	 * @param x an array of coaches to set
 	 * @author MK, AV, CH, PJ
 	 */
-	public void setCoachingstaff(Coach [] x) {
+	public void putCoachingstaff(Coach [] x) {
 		coachingstaff = x;
 	}
 
 	/**
-	 * @param players the players to set
+	 * Assigns the field players with the array of players
+	 * @param x an array of coaches to set
+	 * @author MK, AV, CH, PJ
 	 */
-	public void setPlayers(String[] players) {
-		this.players = players;
+	public void putPlayers(Player [] x) {
+		players = x;
 	}
 
 	/**
-	 * @param payroll the payroll to set
+	 * Assigns payroll with the amount of expenses the team 
+	 * incurres annually (in millions)
+	 * @param x of type double, the amount of payroll for the team (in millions)
 	 */
-	public void setPayroll(double payroll) {
-		this.payroll = payroll;
+	public void putPayroll(double x) {
+		payroll = x;
 	}
 
-	abstract void putDivision (String name);
+	public void putDivision (String name){
+		
+	}
 	
-	abstract void putConference (int division);
+	public void putConference (int division){
+		
+	}
 
 }
