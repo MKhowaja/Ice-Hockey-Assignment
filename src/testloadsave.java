@@ -424,7 +424,7 @@ public class testloadsave {
 		save("G:\\Computer Science\\workspace\\Inheritance Assignment\\samplegoalie.txt",p2);//save test for goalie
 		Person p3 = new Forward("clement", "hoang", 17, true, 178, 78, 6, 24, 1995, 4, 2, 0, 0, 0, 0, 0, 0, 0, false, 0, 0, false, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
 		save("G:\\Computer Science\\workspace\\Inheritance Assignment\\sampleforward.txt",p3);//save test for forward
-		Person p4 = new Defense("clement", "hoang", 17, true, 178, 78, 6, 24, 1995, 4, 2, 0, 0, 0, 0, 0, 0, 0, false, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+		Person p4 = new Defense("clement", "hoang", 17, true, 178, 78, 6, 24, 1995, 4, 2, 0, 0, 0, 0, 0, 0, 0, false, 0, 0, false, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
 		save("G:\\Computer Science\\workspace\\Inheritance Assignment\\samplegoalie.txt",p4);//save test for defense
 		
 		Person loadguy = new Coach(null, null, 0, false, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);//temporary coach person
