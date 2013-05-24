@@ -42,7 +42,6 @@ public class Goalie extends Player {
 	/**
 	 * Returns number of games won
 	 * @return wins
-	 * @author MK, AV, CH, PJ
 	 */
 	public int getWins(){
 		return wins;
@@ -51,7 +50,6 @@ public class Goalie extends Player {
 	/**
 	 * Returns number of games loses
 	 * @return loses
-	 * @author MK, AV, CH, PJ
 	 */
 	public int getLoses(){
 		return loses;
@@ -60,7 +58,6 @@ public class Goalie extends Player {
 	/**
 	 * Returns number of games won during playoffs
 	 * @return winsP
-	 * @author MK, AV, CH, PJ
 	 */
 	public int getWinsP(){
 		return winsP;
@@ -69,7 +66,6 @@ public class Goalie extends Player {
 	/**
 	 * Returns number of games loses during playoffa
 	 * @return losesP
-	 * @author MK, AV, CH, PJ
 	 */
 	public int getLosesP(){
 		return losesP;
@@ -78,7 +74,6 @@ public class Goalie extends Player {
 	/**
 	 * Returns number of games loses during overtime
 	 * @return losesOT
-	 * @author MK, AV, CH, PJ
 	 */
 	public int getLosesOT(){
 		return losesOT;
@@ -87,7 +82,6 @@ public class Goalie extends Player {
 	/**
 	 * Returns number of games started
 	 * @return gameStart
-	 * @author MK, AV, CH, PJ
 	 */
 	public int getGameStart(){
 		return gameStart;
@@ -96,7 +90,6 @@ public class Goalie extends Player {
 	/**
 	 * Returns number of goals scored against the goalie
 	 * @return goalAA
-	 * @author MK, AV, CH, PJ
 	 */
 	public int getGoalA(){
 		return goalA;
@@ -105,7 +98,6 @@ public class Goalie extends Player {
 	/**
 	 * Returns mean goals-per-60 minutes scored on the goalie
 	 * @return goalAA
-	 * @author MK, AV, CH, PJ
 	 */
 	public double getgoalAA(){
 		return goalAA;
@@ -114,7 +106,6 @@ public class Goalie extends Player {
 	/**
 	 * Returns total number of shots on goal the goalie faced
 	 * @return shotsOG
-	 * @author MK, AV, CH, PJ
 	 */
 	public int getShotsOG(){
 		return shotsOG;
@@ -123,7 +114,6 @@ public class Goalie extends Player {
 	/**
 	 * Returns number of saves goalie has made
 	 * @return saves
-	 * @author MK, AV, CH, PJ
 	 */
 	public int getSaves(){
 		return saves;
@@ -132,7 +122,6 @@ public class Goalie extends Player {
 	/**
 	 * Returns percentage of total shots faced the goalie saved
 	 * @return savePercent
-	 * @author MK, AV, CH, PJ
 	 */
 	public double getSavePercent(){
 		return savePercent;
@@ -141,7 +130,6 @@ public class Goalie extends Player {
 	/**
 	 * Returns number of games where goalie had no goals against him and only goalie to play in game 
 	 * @return shutouts
-	 * @author MK, AV, CH, PJ
 	 */
 	public int getShutouts(){
 		return shutouts;
@@ -150,7 +138,6 @@ public class Goalie extends Player {
 	/**
 	 * Returns number of goals scored against while off ice for extra attack player
 	 * @return emptyNG
-	 * @author MK, AV, CH, PJ
 	 */
 	public int getEmptyNG(){
 		return emptyNG;
@@ -160,7 +147,6 @@ public class Goalie extends Player {
 	/**
 	 * Stores parameter to wins
 	 * @param x of type int
-	 * @author MK, AV, CH, PJ
 	 */
 	public void putWins(int x){
 		wins=x;
@@ -169,7 +155,6 @@ public class Goalie extends Player {
 	/**
 	 * Stores parameter to loses
 	 * @param x of type int
-	 * @author MK, AV, CH, PJ
 	 */
 	public void putLoses(int x){
 		loses=x;
@@ -178,7 +163,6 @@ public class Goalie extends Player {
 	/**
 	 * Stores parameter to winsP
 	 * @param x of type int
-	 * @author MK, AV, CH, PJ
 	 */
 	public void putWinsP(int x){
 		winsP=x;
@@ -187,7 +171,6 @@ public class Goalie extends Player {
 	/**
 	 * Stores parameter to losesP
 	 * @param x of type int
-	 * @author MK, AV, CH, PJ
 	 */
 	public void putLosesP(int x){
 		losesP=x;
@@ -196,7 +179,6 @@ public class Goalie extends Player {
 	/**
 	 * Stores parameter to losesOT
 	 * @param x of type int
-	 * @author MK, AV, CH, PJ
 	 */
 	public void putLosesOT(int x){
 		losesOT=x;
@@ -205,7 +187,6 @@ public class Goalie extends Player {
 	/**
 	 * Stores parameter to gameStart
 	 * @param x of type int
-	 * @author MK, AV, CH, PJ
 	 */
 	public void putGameStart(int x){
 		gameStart=x;
@@ -214,7 +195,6 @@ public class Goalie extends Player {
 	/**
 	 * Stores parameter to goalA
 	 * @param x of type int
-	 * @author MK, AV, CH, PJ
 	 */
 	public void putGoalA(int x){
 		goalA=x;
@@ -223,7 +203,6 @@ public class Goalie extends Player {
 	/**
 	 * Stores parameter to goalAA
 	 * @param x of type double
-	 * @author MK, AV, CH, PJ
 	 */
 	public void putGoalAA(double x){
 		goalAA=x;
@@ -232,7 +211,6 @@ public class Goalie extends Player {
 	/**
 	 * Stores parameter to shotsOG
 	 * @param x of type int
-	 * @author MK, AV, CH, PJ
 	 */
 	public void putShotsOG(int x){
 		shotsOG=x;
@@ -241,7 +219,6 @@ public class Goalie extends Player {
 	/**
 	 * Stores parameter to saves
 	 * @param x of type int
-	 * @author MK, AV, CH, PJ
 	 */
 	public void putSaves(int x){
 		saves=x;
@@ -250,7 +227,6 @@ public class Goalie extends Player {
 	/**
 	 * Stores parameter to savePercent
 	 * @param x of type double
-	 * @author MK, AV, CH, PJ
 	 */
 	public void putSavePercent(double x){
 		savePercent=x;
@@ -259,7 +235,6 @@ public class Goalie extends Player {
 	/**
 	 * Stores parameter to shutouts
 	 * @param x of type int
-	 * @author MK, AV, CH, PJ
 	 */
 	public void putShutouts(int x){
 		shutouts=x;
@@ -268,7 +243,6 @@ public class Goalie extends Player {
 	/**
 	 * Stores parameter to emptyNG
 	 * @param x of type int
-	 * @author MK, AV, CH, PJ
 	 */
 	public void putEmptyNG(int x){
 		emptyNG=x;
