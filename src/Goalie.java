@@ -8,7 +8,7 @@ public class Goalie extends Player {
 	protected int goalA; //Number of goals scored against goalie
 	protected int shotsOG; //Total number of shots faced by goalie
 	protected int saves; //Number of saves by goalie
-	protected double savePercent; //Percentage of total shots faced that were saved (dividing the number of saves by the total number of shots on goal)
+	protected double savePercent; //Percentage of total shots faced that were saved (dividing the number of saves by the total number of shots on goal), calculated
 	protected int shutouts; //Number of games where all the goals were blocked by the goalie and the goalie was playing for the entire duration of the game
 	protected int emptyNG; //Number of goals scored against while off ice for extra attack player
 	
