@@ -5,7 +5,7 @@ public class Conference {
 	//Accessor Methods
 		/**
 		 * Returns the conference name 
-		 * @return divName
+		 * @return confname
 		 */
 		public String getconfName() {
 			return confName;
@@ -13,7 +13,7 @@ public class Conference {
 
 		/**
 		 * Returns the division name
-		 * @return conference
+		 * @return divisions
 		 */
 		public Division [] getdivisions() {
 			return divisions;
