@@ -15,7 +15,6 @@ public abstract class Person {
 	/**
 	 * Constructor that creates an object of type person with parameters sent in
 	 * @param String fname, String lname, int age, boolean gender, double height, double weight, int month, int day, int year, int place, int mStatus
-	 * @author MK, AV, CH, PJ
 	*/
 	Person(String fname, String lname, int age, boolean gender, double height, double weight, int month, int day, int year, int place, int mStatus) {
 		this.fname = fname;
@@ -36,7 +35,6 @@ public abstract class Person {
 	/**
 	 * Returns First name
 	 * @return fname
-	 * @author MK, AV, CH, PJ
 	 */
 	 public String getFName(){
 	 	return fname;
@@ -45,7 +43,6 @@ public abstract class Person {
 	/**
 	* Returns Last name
 	* @return lname
-	* @author MK, AV, CH, PJ
 	*/
 
 	public String getLName(){
@@ -55,7 +52,6 @@ public abstract class Person {
 	/**
 	 * Returns age
 	 * @return age
-	 * @author MK, AV, CH, PJ
 	*/
 
 	public int getAge(){
@@ -67,7 +63,6 @@ public abstract class Person {
 	 * <p>
 	 * True if male and false if female.
 	 * @return gender
-	 * @author MK, AV, CH, PJ
 	*/
 
 	public boolean getGender(){
@@ -77,7 +72,6 @@ public abstract class Person {
 	/**
 	 * Returns height in centimetres
 	 * @return height
-	 * @author MK, AV, CH, PJ
 	*/
 
 	public double getHeight(){
@@ -87,7 +81,6 @@ public abstract class Person {
 	/**
 	 * Returns weight in kg
 	 * @return weight
-	 * @author MK, AV, CH, PJ
 	*/
 
 	public double getWeight(){
@@ -97,7 +90,6 @@ public abstract class Person {
 	/**
 	 * Returns day of birth
 	 * @return birthDay
-	 * @author MK, AV, CH, PJ
 	*/
 
 	public int getBirthDay(){
@@ -107,7 +99,6 @@ public abstract class Person {
 	/**
 	 * Returns month of birth
 	 * @return birthDay
-	 * @author MK, AV, CH, PJ
 	*/
 
 	public int getBirthMonth(){
@@ -117,7 +108,6 @@ public abstract class Person {
 	/**
 	 * Returns year of birth
 	 * @return birthYear
-	 * @author MK, AV, CH, PJ
 	*/
 
 	public int getBirthYear(){
@@ -127,7 +117,6 @@ public abstract class Person {
 	/**
 	 * Returns the country using field birthPlace based on IIHF's Top 20 International Men's Hockey Countries 
 	 * @return nationality/country of birth
-	 * @author MK, AV, CH, PJ
 	 */
 	public int getBirthPlace(){
 		return birthPlace;
@@ -138,7 +127,6 @@ public abstract class Person {
 	 * <p>
 	 * Single, Married, Divorced or Widowed.
 	 * @return maritalStatus
-	 * @author MK, AV, CH, PJ
 	*/
 	public int getMaritalStatus(){
 		return maritalStatus;
@@ -149,7 +137,6 @@ public abstract class Person {
 	/**
 	* Stores parameter to fname
 	* @param x of type String
-	* @author MK, AV, CH, PJ
 	*/
 
 	public void putFName(String x){
@@ -159,7 +146,6 @@ public abstract class Person {
 	/**
 	* Stores parameter to lname
 	* @param x of type String
-	* @author MK, AV, CH, PJ
 	*/
 
 	public void putLName(String x){
@@ -169,7 +155,6 @@ public abstract class Person {
 	/**
 	 * Stores parameter to age
 	 * @param x of type int 
-	 * @author MK, AV, CH, PJ
 	*/
 
 	public void putAge(int x){
@@ -179,7 +164,6 @@ public abstract class Person {
 	/**
 	 * Stores parameter to gender
 	 * @param x of type boolean
-	 * @author MK, AV, CH, PJ
 	*/
 
 	public void putGender (boolean x){
@@ -189,7 +173,6 @@ public abstract class Person {
 	/**
 	 * Stores parameter to height
 	 * @param x of type double
-	 * @author MK, AV, CH, PJ
 	*/
 
 	public void putHeight (double x){
@@ -199,7 +182,6 @@ public abstract class Person {
 	/**
 	 * Stores parameter to weight
 	 * @param x of type double
-	 * @author MK, AV, CH, PJ
 	*/
 
 	public void putWeight (double x){
@@ -209,7 +191,6 @@ public abstract class Person {
 	/**
 	 * Stores parameter to birthDay
 	 * @param x of type int
-	 * @author MK, AV, CH, PJ
 	*/
 
 	public void putBirthday (int x){
@@ -219,8 +200,7 @@ public abstract class Person {
 	/**
 	 * Stores parameter to birthMonth
 	 * @param x of type int
-	 * @author MK, AV, CH, PJ
-	*/
+	 */
 
 	public void putBirthMonth (int x){
 		birthMonth = x;
@@ -229,7 +209,6 @@ public abstract class Person {
 	/**
 	 * Stores parameter to birthDay
 	 * @param x of type int
-	 * @author MK, AV, CH, PJ
 	*/
 
 	public void putBirthYear (int x){
@@ -239,7 +218,6 @@ public abstract class Person {
 	/**
 	 * Stores parameter to birthPlace
 	 * @param x of type String
-	 * @author MK, AV, CH, PJ
 	*/
 
 	public void putBirthplace (int x){
@@ -249,7 +227,6 @@ public abstract class Person {
 	/**
 	 * Stores parameter to maritalStatus
 	 * @param x of type String
-	 * @author MK, AV, CH, PJ
 	*/
 
 	public void putMaritalStatus (int x){
@@ -259,7 +236,6 @@ public abstract class Person {
 	/**
 	 * Converts a string representing coachType into an int, then returns it
 	 * @return int birthPlace
-	 * @author MK, AV, CH, PJ
 	 */
 	public static String convertBirthPlaceToString(int birthPlace){
 		String x;//string that holds country or origin/birthplace
@@ -334,7 +310,6 @@ public abstract class Person {
 	/**
 	 * Converts birthPlace into a meaningful string, then returns it
 	 * @return String birthPlace
-	 * @author MK, AV, CH, PJ
 	 */
 	public static int convertBirthPlaceToInt(String birthPlace){
 		int x; // Represents option chosen by user
@@ -387,7 +362,6 @@ public abstract class Person {
 	/**
 	 * Converts a string representing maritalStatus into an int, then returns it
 	 * @return int maritalStatus
-	 * @author MK, AV, CH, PJ
 	 */
 	public static String convertMaritalStatusToString (int maritalStatus){
 		String x; //String to hold marital status
@@ -414,7 +388,6 @@ public abstract class Person {
 	/**
 	 * Converts maritalStatus into a meaningful string, then returns it
 	 * @return String maritalStatus
-	 * @author MK, AV, CH, PJ
 	 */
 	public static int convertMaritalStatusToInt (String maritalStatus){
 		int x; //Represents option for marital status chosen by user
@@ -429,6 +402,5 @@ public abstract class Person {
 		else
 			x = 0;
 		return x;			
-	}
-	
+	}	
 }
