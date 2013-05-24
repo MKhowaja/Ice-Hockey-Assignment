@@ -8,7 +8,7 @@ public class Coach extends Person{
 	protected int gameCP; //Playoff games coached
 	protected int stanleyN; //Number of Stanley Cups
 	protected int coachType; //The type of coach (1 - head, 2 - assistant or 3 - goaltender)
-	protected int totalGamesCoached; //Total number of games coached
+	protected int totalGamesCoached; //Total number of games coached, calculated
 
 	public Coach(String fname, String lname, boolean gender, double height, double weight, int month, int day, int year, int place, int mStatus,//person fields
 			int winS, int loseS, int gameCS, double pointPS, int winP, int loseP, int gameCP, int stanleyN, int coachType) {//coach fields
