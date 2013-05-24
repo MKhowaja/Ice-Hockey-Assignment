@@ -3,7 +3,7 @@ import java.util.Calendar;
 public abstract class Person {
   	protected String fname; //First name
   	protected String lname; //Last name
-	protected int age; //Age
+	protected int age; //Age, calculated
 	protected boolean gender; //True if male 
 	protected double height; //Height in centimetres
 	protected double weight; //Weight in kg
@@ -12,7 +12,6 @@ public abstract class Person {
 	protected int birthYear; //Year of birth
 	protected int birthPlace; //Integer represents what country person is born from (based on IIHF's Top 20 International Mens Hockey Countries)
 	protected int maritalStatus; //Single, Married, Divorced, Widowed etc.
-	protected final int CURRENTYR = 2013; //Represents the current year
 
 	/**
 	 * Constructor that creates an object of type person with parameters sent in
