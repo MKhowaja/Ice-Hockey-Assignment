@@ -37,23 +37,6 @@ public class Division{
 	 * @param x of type String
 	 * @author MK, AV, CH, PJ
 	 */
-	public void putDivName(int x) {
-		if (x>=1 && x<=5)
-			divName="Alantic";
-		else if (x>=6 && x<=10)
-			divName="Northeast";
-		else if (x>=11 && x<=15)
-			divName="Southeast";
-		else if (x>=16 && x<=20)
-			divName="Central";
-		else if (x>=21 && x<=25)
-			divName="Northwest";
-		else if (x>=26 && x<=30)
-			divName="Southeast";
-	}
-	
-	/*
-	how about this for putDivName:
 	
 	public void putDivName(int x) {
 		if (x>=26 && x<=30)
@@ -69,9 +52,6 @@ public class Division{
 		else if (x>=1)
 			divName="Alantic";
 	}
-	
-	i remember mr. chen saying how he doesnt like this kind of selection in the very beginning of the course
-	*/
 	
 	/**
 	 * Stores parameter to conference
