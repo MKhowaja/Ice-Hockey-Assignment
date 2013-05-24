@@ -52,6 +52,27 @@ public class Division{
 			divName="Southeast";
 	}
 	
+	/*
+	how about this for putDivName:
+	
+	public void putDivName(int x) {
+		if (x>=26 && x<=30)
+			divName="Southeast";
+		else if (x>=21)
+			divName="Northwest";
+		else if (x>=16)
+			divName="Central";
+		else if (x>=11)
+			divName="Southeast";
+		else if (x>=6)
+			divName="Northeast";
+		else if (x>=1)
+			divName="Alantic";
+	}
+	
+	i remember mr. chen saying how he doesnt like this kind of selection in the very beginning of the course
+	*/
+	
 	/**
 	 * Stores parameter to conference
 	 * @param x of type String
