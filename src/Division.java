@@ -1,6 +1,5 @@
-
-public class Division extends Conference{
-  protected String divName;
+public class Division{
+  	protected String divName;
 	protected String conference;
 	protected Team team[];
 	
