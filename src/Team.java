@@ -1,4 +1,3 @@
-
 public class Team {
 	protected String name; //Name of team (Documenting required)
 	protected String division; // that the division belongs to
@@ -22,13 +21,13 @@ public class Team {
 	protected int shotsfor; //total shots
 	protected int shotsagainst; //total shots against
 	protected int saves; //total saves
-	protected double avgGPG; //average goals per game scored
-	protected double avgGAPG; //average goals per game against
-	protected double avgSPG; //average shots per game 
-	protected double avgSAPG; //average shots per game against
-	protected double shPercent; //The total goals scored divided by the total number of shots taken
-	protected double savePercent; //The total saves divided by the total shots faced.
-	protected double ppPercent; //Power play percent: Power-play goals divided by power-play opportunites or power-play goals allowed divided by times short-handed. 
+	protected double avgGPG; //average goals per game scored, calculated
+	protected double avgGAPG; //average goals per game against, calculated
+	protected double avgSPG; //average shots per game, calculated
+	protected double avgSAPG; //average shots per game against, calculated
+	protected double shPercent; //The total goals scored divided by the total number of shots taken, calculated
+	protected double savePercent; //The total saves divided by the total shots faced, calculated
+	protected double ppPercent; //Power play percent: Power-play goals divided by power-play opportunites or power-play goals allowed divided by times short-handed, calculated
 	
 		
 	/**
