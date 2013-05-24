@@ -1,3 +1,5 @@
+import java.util.Calendar;
+
 public abstract class Person {
   	protected String fname; //First name
   	protected String lname; //Last name
@@ -16,10 +18,9 @@ public abstract class Person {
 	 * Constructor that creates an object of type person with parameters sent in
 	 * @param String fname, String lname, int age, boolean gender, double height, double weight, int month, int day, int year, int place, int mStatus
 	*/
-	Person(String fname, String lname, int age, boolean gender, double height, double weight, int month, int day, int year, int place, int mStatus) {
+	Person(String fname, String lname, boolean gender, double height, double weight, int month, int day, int year, int place, int mStatus) {
 		this.fname = fname;
 		this.lname = lname;
-		this.age = age; //Change this to reflect constant variable addition
 		this.gender = gender;
 		this.height = height;
 		this.weight = weight;
@@ -29,6 +30,7 @@ public abstract class Person {
 		this.birthPlace = place;
 		this.maritalStatus = mStatus;
 	}
+	
 
 	//Accessors
 	
@@ -55,6 +57,7 @@ public abstract class Person {
 	*/
 
 	public int getAge(){
+		updateAge();
 		return age;
 	}
 
@@ -150,15 +153,6 @@ public abstract class Person {
 
 	public void putLName(String x){
 	lname = x;
-	}
-
-	/**
-	 * Stores parameter to age
-	 * @param x of type int 
-	*/
-
-	public void putAge(int x){
-		age = x;
 	}
 
 	/**
@@ -403,4 +397,19 @@ public abstract class Person {
 			x = 0;
 		return x;			
 	}	
+	
+	/**
+	 * Updates age based on birthday and current date
+	 */
+	public void updateAge() {
+		Calendar now = Calendar.getInstance();
+		age = now.get(Calendar.YEAR) - birthYear;
+		if (now.get(Calendar.MONTH)<birthMonth) { //if birthday has not occurred yet, then subtract age by 1
+			age -= 1;
+		}
+		else if (now.get(Calendar.MONTH)==birthMonth) {
+			if (now.get(Calendar.DAY_OF_MONTH)<birthDay)
+				age -= 1;
+		}
+	}
 }

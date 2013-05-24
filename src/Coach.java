@@ -8,10 +8,11 @@ public class Coach extends Person{
 	protected int gameCP; //Playoff games coached
 	protected int stanleyN; //Number of Stanley Cups
 	protected int coachType; //The type of coach (1 - head, 2 - assistant or 3 - goaltender)
+	protected int totalGamesCoached; //Total number of games coached
 
-	public Coach(String fname, String lname, int age, boolean gender, double height, double weight, int month, int day, int year, int place, int mStatus,//person fields
+	public Coach(String fname, String lname, boolean gender, double height, double weight, int month, int day, int year, int place, int mStatus,//person fields
 			int winS, int loseS, int gameCS, double pointPS, int winP, int loseP, int gameCP, int stanleyN, int coachType) {//coach fields
-		super(fname, lname, age, gender, height, weight, month, day, year, place, mStatus);
+		super(fname, lname, gender, height, weight, month, day, year, place, mStatus);
 		
 		this.winS = winS;
 		this.loseS = loseS;
@@ -22,7 +23,10 @@ public class Coach extends Person{
 		this.gameCP = gameCP;
 		this.stanleyN = stanleyN;
 		this.coachType = coachType;
+		updatetotalGamesCoached();
 	}
+	
+	
 	//Accessor Methods
 	/**
 	 * Returns regular season wins
@@ -96,6 +100,14 @@ public class Coach extends Person{
 	 */
 	public int getcoachType(){
 		return coachType;
+	}
+	
+	/**
+	 * Returns total games coached
+	 * @return totalGamesCoached
+	 */
+	public int gettotalGamesCoached() {
+		return totalGamesCoached;
 	}
 
 	//Mutator Methods
@@ -200,6 +212,14 @@ public class Coach extends Person{
 		else 
 			x = 0;
 		return x;
+	}
+	
+	//Update Methods
+	/**
+	 * updates totalGames Coached
+	 */
+	public void updatetotalGamesCoached() {
+		totalGamesCoached = gameCP + gameCS;
 	}
 	
 }

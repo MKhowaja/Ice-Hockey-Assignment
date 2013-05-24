@@ -10,17 +10,12 @@ public class Player extends Person {
 	protected int number; //Jersey number
 	protected double numMin; //Total number of minutes the player has been on ice
 	protected boolean rookie; //If the player is a rookie (true if he/she is)
-	protected int penaltyMinor; //Number of minor penalties
-	protected int penaltyMajor; //Number of major penalties
-	protected int penaltyMisc; //Number of misconduct penalties
-	protected int penaltyGMisc; //Number of game misconduct penalties
-	protected int match; //Match penalties
 
-	public Player(String fname, String lname, int age, boolean gender, double height, double weight, int month, int day, int year, int place, int mStatus,//person fields
+	public Player(String fname, String lname, boolean gender, double height, double weight, int month, int day, int year, int place, int mStatus,//person fields
 			double salaryPY, int contractR, double tSalary, int rating, int gp, double penaltyT, int penaltyN, boolean arm, int number, double numMin,
-			boolean rookie, int penaltyMinor, int penaltyMajor, int penaltyMisc, int penaltyGMisc, int match) {//player fields
+			boolean rookie) {//player fields
 		
-		super(fname, lname, age, gender, height, weight, month, day, year, place, mStatus);
+		super(fname, lname, gender, height, weight, month, day, year, place, mStatus);
 		this.salaryPY = salaryPY;
 		this.contractR = contractR;
 		this.tSalary = tSalary;
@@ -32,11 +27,6 @@ public class Player extends Person {
 		this.number = number;
 		this.numMin = numMin;
 		this.rookie = rookie;
-		this.penaltyMinor = penaltyMinor;
-		this.penaltyMajor = penaltyMajor;
-		this.penaltyMisc = penaltyMisc;
-		this.penaltyGMisc = penaltyGMisc;
-		this.match = match;
 	}
 
 	//Accessors
@@ -134,47 +124,6 @@ public class Player extends Person {
 	public boolean getRookie() {
 		return rookie;
 	}
-	
-	
-	/**
-	 * Returns the number of minor penalties
-	 * @return penaltyMinor
-	 */
-	public int getPenaltyMinor() {
-		return penaltyMinor;
-	}
-	
-	/**
-	 * Returns the number of major penalties
-	 * @return penaltyMajor
-	 */
-	public int getPenaltyMajor() {
-		return penaltyMajor;
-	}
-	
-	/**
-	 * Returns the number of misconduct penalities
-	 * @return penaltyMisc
-	 */
-	public int getPenaltyMisc() {
-		return penaltyMisc;
-	}
-	
-	/**
-	 * Returns the number of game misconduct penalities
-	 * @return penaltyGMisc
-	 */
-	public int getPenaltyGMisc() {
-		return penaltyGMisc;
-	}
-	
-	/**
-	 * Returns the number of match penalities
-	 * @return match
-	 */
-	public int getMatch() {
-		return match;
-	}
 
 	//Mutators
 	
@@ -270,45 +219,5 @@ public class Player extends Person {
 	 */
 	public void putRookie(boolean x) {
 		rookie = x;
-	}
-	
-	/**
-	 * Assigns number the value of x, representing the number of minor penalties
-	 * @param x of type int
-	 */
-	public void putPenaltyMinor(int x) {
-		penaltyMinor = x;
-	}
-	
-	/**
-	 * Assigns number the value of x, representing the number of major penalties
-	 * @param x of type int
-	 */
-	public void putPenaltyMajor(int x) {
-		penaltyMajor = x;
-	}
-	
-	/**
-	 * Assigns number the value of x, representing the number of misconduct penalities
-	 * @param x of type int
-	 */
-	public void putPenaltyMisc(int x) {
-		penaltyMisc = x;
-	}
-	
-	/**
-	 * Assigns number the value of x, representing the number of game misconduct penalities
-	 * @param x of type int
-	 */
-	public void putPenaltyGMisc(int x) {
-		penaltyGMisc = x;
-	}
-	
-	/**
-	 * Assigns number the value of x, representing the number of match penalities
-	 * @param x of type int
-	 */
-	public void putMatch(int x) {
-		match = x;
 	}
 }

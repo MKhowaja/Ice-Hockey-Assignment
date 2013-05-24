@@ -4,23 +4,25 @@ public class Goalie extends Player {
 	protected int winsP; //Number of wins during playoffs
 	protected int losesP; //Number of loses during playoffs
 	protected int losesOT; //Number of loses during overtime
-	protected int gameStart; //The number of games started
+	protected int gameStart; //The number of games started by goalie
 	protected int goalA; //Number of goals scored against goalie
-	protected double goalAA; //Mean goals-per-60 minutes scored on the goalie
-	protected int shotsOG; //Total number of shots on goal the goalie faced
-	protected int saves; //Number of saves goalie made
-	protected double savePercent; //Percentage of total shots faced the goalie saved (dividing the number of saves by the total number of shots on goal)
-	protected int shutouts; //Number of games where goalie had no goals against him and only goalie to play in game
+	protected int shotsOG; //Total number of shots faced by goalie
+	protected int saves; //Number of saves by goalie
+	protected double savePercent; //Percentage of total shots faced that were saved (dividing the number of saves by the total number of shots on goal)
+	protected int shutouts; //Number of games where all the goals were blocked by the goalie and the goalie was playing for the entire duration of the game
 	protected int emptyNG; //Number of goals scored against while off ice for extra attack player
 	
-	public Goalie(String fname, String lname, int age, boolean gender, double height, double weight, int month, int day, int year, int place, int mStatus,//person fields
-			double salaryPY, int contractR, double tSalary, int rating, int gp, double penaltyT, int penaltyN, boolean arm, int number, double numMin, //player fields
-			boolean rookie, int penaltyMinor, int penaltyMajor, int penaltyMisc, int penaltyGMisc, int match, //more player fields
-			int wins, int loses, int winsP, int losesP, int losesOT, int gameStart, int goalA, double goalAA, int shotsOG, int saves, double savePercent, int shutouts, int emptyNG) { //goalie fields
+	//for our scoring system, we can have the main ones (ex. savepercent, etc. decide on bulk of rating
+	//then things like emptyNG and shutouts that can imply good decision-making/other factors can be like an "AIF"
+	
+	public Goalie(String fname, String lname, boolean gender, double height, double weight, int month, int day, int year, int place, int mStatus,//person fields
+			double salaryPY, int contractR, double tSalary, int rating, int gp, double penaltyT, int penaltyN, boolean arm, int number, //player fields
+			double numMin, boolean rookie, //more player fields
+			int wins, int loses, int winsP, int losesP, int losesOT, int gameStart, int goalA, int shotsOG, int saves, int shutouts, int emptyNG) { //goalie fields
 		
-		super(fname, lname, age, gender, height, weight, month, day, year, place, mStatus,//person fields
+		super(fname, lname, gender, height, weight, month, day, year, place, mStatus,//person fields
 				salaryPY, contractR, tSalary, rating, gp, penaltyT, penaltyN, arm, number, //player fields
-				numMin, rookie, penaltyMinor, penaltyMajor, penaltyMisc, penaltyGMisc, match); //more player fields
+				numMin, rookie); //more player fields
 		
 		this.wins = wins;
 		this.loses = loses;
@@ -30,12 +32,12 @@ public class Goalie extends Player {
 		this.gameStart = gameStart;
 		this.numMin = numMin;
 		this.goalA = goalA;
-		this.goalAA = goalAA;
 		this.shotsOG = shotsOG;
 		this.saves = saves;
-		this.savePercent = savePercent;
 		this.shutouts = shutouts;
 		this.emptyNG = emptyNG;
+		
+		updateSavePercent();
 	}
 	
 	//Accessor Methods
@@ -48,7 +50,7 @@ public class Goalie extends Player {
 	}
 	
 	/**
-	 * Returns number of games loses
+	 * Returns number of games losses
 	 * @return loses
 	 */
 	public int getLoses(){
@@ -64,7 +66,7 @@ public class Goalie extends Player {
 	}
 	
 	/**
-	 * Returns number of games loses during playoffa
+	 * Returns number of games loses during playoffs
 	 * @return losesP
 	 */
 	public int getLosesP(){
@@ -96,14 +98,6 @@ public class Goalie extends Player {
 	}
 	
 	/**
-	 * Returns mean goals-per-60 minutes scored on the goalie
-	 * @return goalAA
-	 */
-	public double getgoalAA(){
-		return goalAA;
-	}
-	
-	/**
 	 * Returns total number of shots on goal the goalie faced
 	 * @return shotsOG
 	 */
@@ -124,6 +118,7 @@ public class Goalie extends Player {
 	 * @return savePercent
 	 */
 	public double getSavePercent(){
+		updateSavePercent();
 		return savePercent;
 	}
 	
@@ -201,14 +196,6 @@ public class Goalie extends Player {
 	}
 	
 	/**
-	 * Stores parameter to goalAA
-	 * @param x of type double
-	 */
-	public void putGoalAA(double x){
-		goalAA=x;
-	}
-	
-	/**
 	 * Stores parameter to shotsOG
 	 * @param x of type int
 	 */
@@ -225,14 +212,6 @@ public class Goalie extends Player {
 	}
 	
 	/**
-	 * Stores parameter to savePercent
-	 * @param x of type double
-	 */
-	public void putSavePercent(double x){
-		savePercent=x;
-	}
-	
-	/**
 	 * Stores parameter to shutouts
 	 * @param x of type int
 	 */
@@ -246,6 +225,15 @@ public class Goalie extends Player {
 	 */
 	public void putEmptyNG(int x){
 		emptyNG=x;
+	}
+	
+	//Update Methods
+	/**
+	 * Stores parameter to savePercent
+	 * @param x of type double
+	 */
+	public void updateSavePercent(){
+		savePercent=goalA/shotsOG;
 	}
 	
 	
