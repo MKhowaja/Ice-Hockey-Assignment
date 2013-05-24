@@ -34,7 +34,7 @@ public class Division{
 	//Mutator Methods
 	/**
 	 * Stores parameter to divName
-	 * @param x of type String
+	 * @param x of type Integer
 	 * @author MK, AV, CH, PJ
 	 */
 	
@@ -55,7 +55,7 @@ public class Division{
 	
 	/**
 	 * Stores parameter to conference
-	 * @param x of type String
+	 * @param x of type Integer
 	 * @author MK, AV, CH, PJ
 	 */
 
