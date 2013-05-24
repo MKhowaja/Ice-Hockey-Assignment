@@ -59,7 +59,7 @@ public class Division{
 	 * @author MK, AV, CH, PJ
 	 */
 
-	public void putConference(String x) {
+	public void putConference(int x) {
 		if (x>=4 && x<=6)
 			conference = "Western";
 		else if (x>=1)
