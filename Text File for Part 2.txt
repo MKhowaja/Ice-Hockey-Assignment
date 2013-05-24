@@ -1,0 +1,31 @@
+League: NHL
+
+Team 1:
+Conference: Eastern
+Division: Northeast
+Team Name: Hoang Royal Laguz
+Games played:5898
+Wins: 2570
+Losses: 2454
+//Ties: 773
+//OTL: 56
+//SOL: 451
+Payroll: 50.1
+Goals For: 17986
+Goals Against: 18357
+PPO: 14280
+TSH: 13957
+Power Play Goals: 2520
+Short Handed Goals: 105
+Power Play Goals Against: 1697
+Short Handed Goals Against: 252
+Shots For: 161876
+Shots Against: 174327
+Saves:
+Average Goals per game: 3.05
+Average Goals against per game: 3.11
+Average Shots per game: 27.45
+Average Shots against per game: 29.56
+Shooting Percent: 
+Save Percent: 
+Power Play Percent:
