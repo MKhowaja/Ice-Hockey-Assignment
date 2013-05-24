@@ -58,21 +58,14 @@ public class Division{
 	 * @param x of type String
 	 * @author MK, AV, CH, PJ
 	 */
-	public void putConference(String x) {
-		conference = x;
-	}
-	
-	/*
+
 	public void putConference(String x) {
 		if (x>=4 && x<=6)
 			conference = "Western";
 		else if (x>=1)
 			conference="Eastern";
 	}
-	
-	YES?
-	*/
-	
+		
 	/**
 	 * Stores parameter to team[]
 	 * @param x of type Team
