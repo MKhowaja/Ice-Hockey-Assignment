@@ -44,7 +44,6 @@ public class Player extends Person {
 	/**
 	 * Returns salary per year
 	 * @return salaryPY
-	 * @author MK, AV, CH, PJ
 	*/
 
 	public double getSalaryPY(){
@@ -54,7 +53,6 @@ public class Player extends Person {
 	/**
 	 * Returns remaining years in contract
 	 * @return contractR
-	 * @author MK, AV, CH, PJ
 	*/
 
 	public int getcontractR(){
@@ -64,7 +62,6 @@ public class Player extends Person {
 	/**
 	 * Returns total salary over entire contract length
 	 * @return tSalary
-	 * @author MK, AV, CH, PJ
 	*/
 
 	public double getTSalary(){
@@ -74,7 +71,6 @@ public class Player extends Person {
 	/**
 	 * Returns rating
 	 * @return rating
-	 * @author MK, AV, CH, PJ
 	*/
 
 	public int getRating(){
@@ -84,7 +80,6 @@ public class Player extends Person {
 	/**
 	 * Returns games played
 	 * @return gp
-	 * @author MK, AV, CH, PJ
 	*/
 
 	public int getGP(){
@@ -94,7 +89,6 @@ public class Player extends Person {
 	/**
 	 * Returns time spent in penalties in minutes
 	 * @return penaltyT
-	 * @author MK, AV, CH, PJ
 	*/
 
 	public double getPenaltyT (){
@@ -104,7 +98,6 @@ public class Player extends Person {
 	/**
 	 * Returns number of penalties
 	 * @return the penaltyN
-	 * @author MK, AV, CH, PJ
 	 */
 	public int getPenaltyN() {
 		return penaltyN;
@@ -113,7 +106,6 @@ public class Player extends Person {
 	/**
 	 * Returns true if right shooter and false if left shooter
 	 * @return arm of type boolean
-	 * @author MK, AV, CH, PJ
 	 */
 	public boolean getArm() {
 		return arm;
@@ -122,7 +114,6 @@ public class Player extends Person {
 	/**
 	 * Returns jersey number
 	 * @return the number
-	 * @author MK, AV, CH, PJ
 	 */
 	public int getNumber() {
 		return number;
@@ -131,7 +122,6 @@ public class Player extends Person {
 	/**
 	 * Returns total number of minutes the player has been on ice
 	 * @return the number of minutes
-	 * @author MK, AV, CH, PJ
 	 */
 	public double getNumMin(){
 		return numMin;
@@ -140,7 +130,6 @@ public class Player extends Person {
 	/**
 	 * Returns if the player is rookie or not
 	 * @return rookie
-	 * @author MK, AV, CH, PJ
 	 */
 	public boolean getRookie() {
 		return rookie;
@@ -150,7 +139,6 @@ public class Player extends Person {
 	/**
 	 * Returns the number of minor penalties
 	 * @return penaltyMinor
-	 * @author MK, AV, CH, PJ
 	 */
 	public int getPenaltyMinor() {
 		return penaltyMinor;
@@ -159,7 +147,6 @@ public class Player extends Person {
 	/**
 	 * Returns the number of major penalties
 	 * @return penaltyMajor
-	 * @author MK, AV, CH, PJ
 	 */
 	public int getPenaltyMajor() {
 		return penaltyMajor;
@@ -168,7 +155,6 @@ public class Player extends Person {
 	/**
 	 * Returns the number of misconduct penalities
 	 * @return penaltyMisc
-	 * @author MK, AV, CH, PJ
 	 */
 	public int getPenaltyMisc() {
 		return penaltyMisc;
@@ -177,7 +163,6 @@ public class Player extends Person {
 	/**
 	 * Returns the number of game misconduct penalities
 	 * @return penaltyGMisc
-	 * @author MK, AV, CH, PJ
 	 */
 	public int getPenaltyGMisc() {
 		return penaltyGMisc;
@@ -186,7 +171,6 @@ public class Player extends Person {
 	/**
 	 * Returns the number of match penalities
 	 * @return match
-	 * @author MK, AV, CH, PJ
 	 */
 	public int getMatch() {
 		return match;
@@ -197,7 +181,6 @@ public class Player extends Person {
 	/**
 	 * Stores salary per year
 	 * @param x of type double
-	 * @author MK, AV, CH, PJ
 	*/
 
 	public void putSalaryPY(double x){
@@ -207,7 +190,6 @@ public class Player extends Person {
 	/**
 	 * Stores years in contract
 	 * @param x of type int
-	 * @author MK, AV, CH, PJ
 	*/
 
 	public void putcontractR(int x){
@@ -217,7 +199,6 @@ public class Player extends Person {
 	/**
 	 * Stores total salary over entire contract length
 	 * @param x of type double
-	 * @author MK, AV, CH, PJ
 	*/
 
 	public void putTSalary(double x){
@@ -227,7 +208,6 @@ public class Player extends Person {
 	/**
 	 * Stores rating
 	 * @param x of type int
-	 * @author MK, AV, CH, PJ
 	*/
 
 	public void putRating(int x){
@@ -237,7 +217,6 @@ public class Player extends Person {
 	/**
 	 * Stores games played
 	 * @param x of type int
-	 * @author MK, AV, CH, PJ
 	*/
 
 	public void putGP(int x){
@@ -247,7 +226,6 @@ public class Player extends Person {
 	/**
 	 * Stores time spent in penalties 
 	 * @param x of type double
-	 * @author MK, AV, CH, PJ
 	 */
 	public void putPenaltyT(double x) {
 		penaltyT = x;
@@ -256,7 +234,6 @@ public class Player extends Person {
 	/**
 	 * Stores number of penalties
 	 * @param x of type int
-	 * @author MK, AV, CH, PJ
 	 */
 	public void putPenaltyN(int x) {
 		penaltyN = x;
@@ -266,7 +243,6 @@ public class Player extends Person {
 	 * Stores true in arm if right arm is the shooting arm
 	 * and false if left arm is shooting arm
 	 * @param x of type boolean
-	 * @author MK, AV, CH, PJ
 	 */
 	public void putArm(boolean x) {
 		arm = x;
@@ -275,7 +251,6 @@ public class Player extends Person {
 	/**
 	 * Assigns number the value of x, representing jersey number
 	 * @param x of type int
-	 * @author MK, AV, CH, PJ
 	 */
 	public void putNumber(int x) {
 		number = x;
@@ -284,7 +259,6 @@ public class Player extends Person {
 	/**
 	 * Assigns number the value of x, representing the total number of minutes the player has been on ice
 	 * @param x of type double
-	 * @author MK, AV, CH, PJ
 	 */
 	public void putNumMin(double x){
 		numMin=x;
@@ -293,7 +267,6 @@ public class Player extends Person {
 	/**
 	 * Assigns number the value of x, representing if the player is a rookie
 	 * @param x of type boolean
-	 * @author MK, AV, CH, PJ
 	 */
 	public void putRookie(boolean x) {
 		rookie = x;
@@ -302,7 +275,6 @@ public class Player extends Person {
 	/**
 	 * Assigns number the value of x, representing the number of minor penalties
 	 * @param x of type int
-	 * @author MK, AV, CH, PJ
 	 */
 	public void putPenaltyMinor(int x) {
 		penaltyMinor = x;
@@ -311,7 +283,6 @@ public class Player extends Person {
 	/**
 	 * Assigns number the value of x, representing the number of major penalties
 	 * @param x of type int
-	 * @author MK, AV, CH, PJ
 	 */
 	public void putPenaltyMajor(int x) {
 		penaltyMajor = x;
@@ -320,7 +291,6 @@ public class Player extends Person {
 	/**
 	 * Assigns number the value of x, representing the number of misconduct penalities
 	 * @param x of type int
-	 * @author MK, AV, CH, PJ
 	 */
 	public void putPenaltyMisc(int x) {
 		penaltyMisc = x;
@@ -329,7 +299,6 @@ public class Player extends Person {
 	/**
 	 * Assigns number the value of x, representing the number of game misconduct penalities
 	 * @param x of type int
-	 * @author MK, AV, CH, PJ
 	 */
 	public void putPenaltyGMisc(int x) {
 		penaltyGMisc = x;
@@ -338,7 +307,6 @@ public class Player extends Person {
 	/**
 	 * Assigns number the value of x, representing the number of match penalities
 	 * @param x of type int
-	 * @author MK, AV, CH, PJ
 	 */
 	public void putMatch(int x) {
 		match = x;
