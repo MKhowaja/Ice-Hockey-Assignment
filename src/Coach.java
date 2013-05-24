@@ -22,7 +22,6 @@ public class Coach extends Person{
 		this.loseP = loseP;
 		this.gameCP = gameCP;
 		this.stanleyN = stanleyN;
-		this.coachType = coachType;
 		updatetotalGamesCoached();
 	}
 	
@@ -183,13 +182,13 @@ public class Coach extends Person{
 		String x; //temporary variable to hold the name of the coach type
 		switch (coachType) {
 			case 1:
-				x = "head";
+				x = "Head";
 				break;
 			case 2:
-				x = "assistant";
+				x = "Assistant";
 				break;
 			case 3:
-				x = "goaltender";
+				x = "Goaltender";
 				break;
 			default:
 				x = "n/a";
@@ -203,11 +202,11 @@ public class Coach extends Person{
 	 */
 	public static int convertCoachTypeToInt(String coachType) {
 		int x;
-		if (coachType.equals("head"))
+		if (coachType.equals("Head"))
 			x = 1;
-		else if (coachType.equals("assistant"))
+		else if (coachType.equals("Assistant"))
 			x = 2;
-		else if (coachType.equals("goaltender"))
+		else if (coachType.equals("Goaltender"))
 			x = 3;
 		else 
 			x = 0;
