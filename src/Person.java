@@ -28,6 +28,7 @@ public abstract class Person {
 		this.birthYear = year;
 		this.birthPlace = place;
 		this.maritalStatus = mStatus;
+		updateAge();
 	}
 	
 
