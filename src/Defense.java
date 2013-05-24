@@ -53,7 +53,6 @@ public class Defense extends Player{
 	/**
 	 * Returns +/- of a player
 	 * @return plusMinus
-	 * @author MK, AV, CH, PJ
 	 */
 	public int getplusMinus() {
 		return plusMinus;
@@ -61,7 +60,6 @@ public class Defense extends Player{
 	/**
 	 * Returns average goals per season of a player
 	 * @return avgGoalsPS
-	 * @author MK, AV, CH, PJ
 	 */
 	public double getavgGoalsPS() {
 		return avgGoalsPS;
@@ -69,7 +67,6 @@ public class Defense extends Player{
 	/**
 	 * Returns average goal percentage per season of a player
 	 * @return avgGoalPercentagePS
-	 * @author MK, AV, CH, PJ
 	 */
 	public double getavgGoalPercentagePS() {
 		return avgGoalPercentagePS;
@@ -77,7 +74,6 @@ public class Defense extends Player{
 	/**
 	 * Returns average number of shots per season of a player
 	 * @return avgShotsPS
-	 * @author MK, AV, CH, PJ
 	 */
 	public double getavgShotsPS() {
 		return avgShotsPS;
@@ -85,7 +81,6 @@ public class Defense extends Player{
 	/**
 	 * Returns z-score of goal percentage of a player
 	 * @return zsGoalPercentage
-	 * @author MK, AV, CH, PJ
 	 */
 	public double getzsGoalPercentage() {
 		return zsGoalPercentage;
@@ -93,7 +88,6 @@ public class Defense extends Player{
 	/**
 	 * Returns average assists per season of a player
 	 * @return avgAssistsPS
-	 * @author MK, AV, CH, PJ
 	 */
 	public double getavgAssistsPS() {
 		return avgAssistsPS;
@@ -101,7 +95,6 @@ public class Defense extends Player{
 	/**
 	 * Returns average penalty minutes per season of a player
 	 * @return avgPenaltyPS
-	 * @author MK, AV, CH, PJ
 	 */
 	public double getavgPenaltyPS() {
 		return avgPenaltyPS;
@@ -110,7 +103,6 @@ public class Defense extends Player{
 	/**
 	 * Returns average power play goals per season of a player
 	 * @return avgPPGoalsPS
-	 * @author MK, AV, CH, PJ
 	 */
 	public double getavgPPGoalsPS() {
 		return avgPPGoalsPS;
@@ -119,7 +111,6 @@ public class Defense extends Player{
 	/**
 	 * Returns average shoot-out goals per season of a player
 	 * @return avgSOGoalsPS
-	 * @author MK, AV, CH, PJ
 	 */
 	public double getavgSOGoalsPS() {
 		return avgSOGoalsPS;
@@ -128,7 +119,6 @@ public class Defense extends Player{
 	/**
 	 * Returns the average number of shifts per game
 	 * @return avgNShifts
-	 * @author MK, AV, CH, PJ
 	 */
 	public double getAvgNShifts() {
 		return avgNShifts;
@@ -137,7 +127,6 @@ public class Defense extends Player{
 	/**
 	 * Returns the number of game-winning goals
 	 * @return gwGoals
-	 * @author MK, AV, CH, PJ
 	 */
 	public int getGWGoals() {
 		return gwGoals;
@@ -146,7 +135,6 @@ public class Defense extends Player{
 	/**
 	 * Returns the number of power-play goals
 	 * @return ppGoals
-	 * @author MK, AV, CH, PJ
 	 */
 	public int getPPGoals() {
 		return ppGoals;
@@ -155,7 +143,6 @@ public class Defense extends Player{
 	/**
 	 * Returns the number of shoot-out goals
 	 * @return soGoals
-	 * @author MK, AV, CH, PJ
 	 */
 	public int getSOGoals() {
 		return soGoals;
@@ -164,7 +151,6 @@ public class Defense extends Player{
 	/**
 	 * Returns the number of overtime goals
 	 * @return otGoals
-	 * @author MK, AV, CH, PJ
 	 */
 	public int getOTGoals() {
 		return otGoals;
@@ -173,7 +159,6 @@ public class Defense extends Player{
 	/**
 	 * Returns faceoff percentage
 	 * @return faceoffPercentage
-	 * @author MK, AV, CH, PJ
 	 */
 	public double getFaceoffPercentage() {
 		return faceoffPercentage;
@@ -182,7 +167,6 @@ public class Defense extends Player{
 	/**
 	 * Returns points
 	 * @return points
-	 * @author MK, AV, CH, PJ
 	 */
 	public double getPoints() {
 		return points;
@@ -191,7 +175,6 @@ public class Defense extends Player{
 	/**
 	 * Returns shooting percentage
 	 * @return shootPercentage
-	 * @author MK, AV, CH, PJ
 	 */
 	public double getShootPercentage() {
 		return shootPercentage;
@@ -202,7 +185,6 @@ public class Defense extends Player{
 	/**
 	 * stores parameter to plusMinus
 	 * @param x of type int
-	 * @author MK, AV, CH, PJ
 	 */
 	public void putplusMinus(int x) {
 		plusMinus = x;
@@ -210,7 +192,6 @@ public class Defense extends Player{
 	/**
 	 * stores parameter to avgGoalsPS
 	 * @param x of type double
-	 * @author MK, AV, CH, PJ
 	 */
 	public void putavgGoalsPS(double x) {
 		avgGoalsPS = x;
@@ -218,7 +199,6 @@ public class Defense extends Player{
 	/**
 	 * stores parameter to avgGoalPercentagePS
 	 * @param x of type double
-	 * @author MK, AV, CH, PJ
 	 */
 	public void putavgGoalPercentagePS(double x) {
 		avgGoalPercentagePS = x;
@@ -226,7 +206,6 @@ public class Defense extends Player{
 	/**
 	 * stores parameter to avgShotsPS
 	 * @param x of type double
-	 * @author MK, AV, CH, PJ
 	 */
 	public void putavgShotsPS(double x) {
 		avgShotsPS = x;
@@ -234,7 +213,6 @@ public class Defense extends Player{
 	/**
 	 * stores parameter to zsGoalPercentage
 	 * @param x of type double
-	 * @author MK, AV, CH, PJ
 	 */
 	public void putzsGoalPercentage(double x) {
 		zsGoalPercentage = x;
@@ -242,7 +220,6 @@ public class Defense extends Player{
 	/**
 	 * stores parameter to avgAssistsPS
 	 * @param x of type double
-	 * @author MK, AV, CH, PJ
 	 */
 	public void putavgAssistsPS(double x) {
 		avgAssistsPS = x;
@@ -250,7 +227,6 @@ public class Defense extends Player{
 	/**
 	 * stores parameter to avgPenaltyPS
 	 * @param x of type double
-	 * @author MK, AV, CH, PJ
 	 */
 	public void putavgPenaltyPS(double x) {
 		avgPenaltyPS = x;
@@ -258,7 +234,6 @@ public class Defense extends Player{
 	/**
 	 * stores parameter to avgPPGoalsPS
 	 * @param x of type double
-	 * @author MK, AV, CH, PJ
 	 */
 	public void putavgPPGoalsPS(double x) {
 		avgPPGoalsPS = x;
@@ -266,7 +241,6 @@ public class Defense extends Player{
 	/**
 	 * stores parameter to avgSOGoalsPS
 	 * @param x of type double
-	 * @author MK, AV, CH, PJ
 	 */
 	public void putavgSOGoalsPS(double x) {
 		avgSOGoalsPS = x;
@@ -275,7 +249,6 @@ public class Defense extends Player{
 	/**
 	 * stores parameter to avgNShifts
 	 * @param x of type double
-	 * @author MK, AV, CH, PJ
 	 */
 	public void putAvgNshifts(int x){
 		avgNShifts = x;
@@ -284,7 +257,6 @@ public class Defense extends Player{
 	/**
 	 * stores parameter to gwGoals
 	 * @param x of type int
-	 * @author MK, AV, CH, PJ
 	 */
 	public void putGWGoals(int x){
 		gwGoals = x;
@@ -293,7 +265,6 @@ public class Defense extends Player{
 	/**
 	 * stores parameter to ppGoals
 	 * @param x of type int
-	 * @author MK, AV, CH, PJ
 	 */
 	public void putPPGoals(int x){
 		ppGoals = x;
@@ -302,7 +273,6 @@ public class Defense extends Player{
 	/**
 	 * stores parameter to soGoals
 	 * @param x of type int
-	 * @author MK, AV, CH, PJ
 	 */
 	public void putSOGoals(int x){
 		soGoals = x;
@@ -311,7 +281,6 @@ public class Defense extends Player{
 	/**
 	 * stores parameter to otGoals
 	 * @param x of type int
-	 * @author MK, AV, CH, PJ
 	 */
 	public void putOTGoals(int x) {
 		otGoals = x;
@@ -320,7 +289,6 @@ public class Defense extends Player{
 	/**
 	 * stores parameter to faceoffPercentage
 	 * @param x of type double
-	 * @author MK, AV, CH, PJ
 	 */
 	public void putFaceoffPercentage(double x) {
 		faceoffPercentage = x;
@@ -329,7 +297,6 @@ public class Defense extends Player{
 	/**
 	 * stores parameter to points
 	 * @param x of type double
-	 * @author MK, AV, CH, PJ
 	 */
 	public void putPoints(double x) {
 		points = x;
@@ -338,7 +305,6 @@ public class Defense extends Player{
 	/**
 	 * stores parameter to shootPercentage
 	 * @param x of type double
-	 * @author MK, AV, CH, PJ
 	 */
 	public void putShootPercentage(double x) {
 		shootPercentage = x;
