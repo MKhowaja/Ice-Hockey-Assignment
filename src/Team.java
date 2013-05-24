@@ -1,33 +1,33 @@
 public class Team {
-	protected String name; //Name of team (Documenting required)
-	protected String division; // that the division belongs to
-	protected String conference; // that the conference belongs to
-	protected Coach [] coachingstaff;  // coaches, assistants, trainers, etc.
-	protected Player [] players;  // a structure that will contain the maximum number of roster spots allowed for a team
-	protected double payroll;   //how much the team is paying its players currently for the season (in millions)
-	protected final double salarycap = 64.3;   // put by the league. It is the same for all teams (in millions)
+	private String name; //Name of team (Documenting required)
+	private String division; // that the division belongs to
+	private String conference; // that the conference belongs to
+	private Coach [] coachingstaff;  // coaches, assistants, trainers, etc.
+	private Player [] players;  // a structure that will contain the maximum number of roster spots allowed for a team
+	private double payroll;   //how much the team is paying its players currently for the season (in millions)
+	private final double salarycap = 64.3;   // put by the league. It is the same for all teams (in millions)
 	//Team stats (Don't know if this is enough)
-	protected int gp; //games played
-	protected int wins; //games won
-	protected int losses; //games lost
-	protected int goalsfor; //total goals scored (including power-play, short-handed and empty-net goals)
-	protected int goalsagainst; //total goals scored against (including power-play, short-handed and empty-net goals)
-	protected int ppo; //number of power play opportunities
-	protected int tsh; //number of times short handed
-	protected int ppgoals; //total number of powerplay goals
-	protected int shgoals; //total number of shorthanded goals
-	protected int ppgoalsA; //total number of powerplay goals against
-	protected int shgoalsA; //total number of shorthanded goals against
-	protected int shotsfor; //total shots
-	protected int shotsagainst; //total shots against
-	protected int saves; //total saves
-	protected double avgGPG; //average goals per game scored, calculated
-	protected double avgGAPG; //average goals per game against, calculated
-	protected double avgSPG; //average shots per game, calculated
-	protected double avgSAPG; //average shots per game against, calculated
-	protected double shPercent; //The total goals scored divided by the total number of shots taken, calculated
-	protected double savePercent; //The total saves divided by the total shots faced, calculated
-	protected double ppPercent; //Power play percent: Power-play goals divided by power-play opportunites or power-play goals allowed divided by times short-handed, calculated
+	private int gp; //games played
+	private int wins; //games won
+	private int losses; //games lost
+	private int goalsfor; //total goals scored (including power-play, short-handed and empty-net goals)
+	private int goalsagainst; //total goals scored against (including power-play, short-handed and empty-net goals)
+	private int ppo; //number of power play opportunities
+	private int tsh; //number of times short handed
+	private int ppgoals; //total number of powerplay goals
+	private int shgoals; //total number of shorthanded goals
+	private int ppgoalsA; //total number of powerplay goals against
+	private int shgoalsA; //total number of shorthanded goals against
+	private int shotsfor; //total shots
+	private int shotsagainst; //total shots against
+	private int saves; //total saves
+	private double avgGPG; //average goals per game scored, calculated
+	private double avgGAPG; //average goals per game against, calculated
+	private double avgSPG; //average shots per game, calculated
+	private double avgSAPG; //average shots per game against, calculated
+	private double shPercent; //The total goals scored divided by the total number of shots taken, calculated
+	private double savePercent; //The total saves divided by the total shots faced, calculated
+	private double ppPercent; //Power play percent: Power-play goals divided by power-play opportunites or power-play goals allowed divided by times short-handed, calculated
 	
 		
 	/**
