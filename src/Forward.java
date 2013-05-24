@@ -1,6 +1,6 @@
 public class Forward extends Player {
   
-	protected int plusMinus; // +/-  
+	protected int plusMinus; //Holds +/- for each player
 	protected double avgGoalsPS; //Average goals per season
 	protected double avgGoalPercentagePS; //Average goal percentage per season
 	protected double avgShotsPS; //Average shots taken per season
@@ -14,16 +14,16 @@ public class Forward extends Player {
 	protected int ppGoals; //Number of power play goals
 	protected int soGoals; //Number of shoot-out goals
 	protected int otGoals; //Number of overtime goals
-	protected double faceoffPercentage; //Face off win percentage
 	protected double points; //Points (Goals + Assists)
+	protected double faceoffPercentage; //Face off win percentage
 	protected double shootPercentage; //Shooting Percentage
 	
 	public Forward(String fname, String lname, int age, boolean gender, double height, double weight, int month, int day, int year, int place, int mStatus,//person fields
 			double salaryPY, int contractR, double tSalary, int rating, int gp, double penaltyT, int penaltyN, boolean arm, int number, //player fields
 			double numMin, boolean rookie, int penaltyMinor, int penaltyMajor, int penaltyMisc, int penaltyGMisc, int match, //more player fields
 			int plusMinus, double avgGoalsPS, double avgGoalPercentagePS, double avgShotsPS, double zsGoalPercentage, double avgAssistsPS, //forward fields
-			double avgPenaltyPS, double avgPPGoalsPS, double avgSOGoalsPS, int gwGoals, int ppGoals, int soGoals,//more forward fields
-			double avgNShifts, int otGoals, double faceoffPercentage, double shootPercentage) {//more forward fields
+			double avgPenaltyPS, double avgPPGoalsPS, double avgSOGoalsPS, double avgNShifts, int gwGoals, int ppGoals, int soGoals,//more forward fields
+			int otGoals, /*points taken care of in constructor,*/double faceoffPercentage, double shootPercentage) {//more forward fields
 		
 		super(fname, lname, age, gender, height, weight, month, day, year, place, mStatus,//person fields
 				salaryPY, contractR, tSalary, rating, gp, penaltyT, penaltyN, arm, number, //player fields
@@ -43,8 +43,8 @@ public class Forward extends Player {
 		this.ppGoals = ppGoals;
 		this.soGoals = soGoals;
 		this.otGoals = otGoals;
+		this.points = avgGoalsPS + avgAssistsPS; //calculates points
 		this.faceoffPercentage = faceoffPercentage;
-		this.points = avgGoalsPS + avgAssistsPS;
 		this.shootPercentage = shootPercentage;
 	}
 	

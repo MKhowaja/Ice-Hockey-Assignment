@@ -22,13 +22,12 @@ public class Defense extends Player{
 			double salaryPY, int contractR, double tSalary, int rating, int gp, double penaltyT, int penaltyN, boolean arm, int number, //player fields
 			double numMin, boolean rookie, int penaltyMinor, int penaltyMajor, int penaltyMisc, int penaltyGMisc, int match, //more player fields
 			int plusMinus, double avgGoalsPS, double avgGoalPercentagePS, double avgShotsPS, double zsGoalPercentage, double avgAssistsPS, //defense fields
-			double avgPenaltyPS, double avgPPGoalsPS, double avgSOGoalsPS, int gwGoals, int ppGoals, int soGoals,//more defense fields
-			double avgNShifts, int otGoals, double faceoffPercentage, double shootPercentage) {//more defense fields
+			double avgPenaltyPS, double avgPPGoalsPS, double avgSOGoalsPS, double avgNShifts, int gwGoals, int ppGoals, int soGoals,//more defense fields
+			int otGoals, /*points taken care of in constructor,*/double faceoffPercentage, double shootPercentage) {//more defense fields
 		
 		super(fname, lname, age, gender, height, weight, month, day, year, place, mStatus,//person fields
 				salaryPY, contractR, tSalary, rating, gp, penaltyT, penaltyN, arm, number, //player fields
 				numMin, rookie, penaltyMinor, penaltyMajor, penaltyMisc, penaltyGMisc, match); //more player fields
-
 
 		this.plusMinus = plusMinus;
 		this.avgGoalsPS = avgGoalsPS;
@@ -44,8 +43,8 @@ public class Defense extends Player{
 		this.ppGoals = ppGoals;
 		this.soGoals = soGoals;
 		this.otGoals = otGoals;
+		this.points = avgGoalsPS + avgAssistsPS; //calculates points
 		this.faceoffPercentage = faceoffPercentage;
-		this.points = avgGoalsPS + avgAssistsPS;
 		this.shootPercentage = shootPercentage;
 	}
 	//Accessor Methods
