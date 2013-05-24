@@ -1,4 +1,3 @@
-
 public class assistantCoach extends Coach{
 
   public assistantCoach(String fname, String lname, boolean gender,
