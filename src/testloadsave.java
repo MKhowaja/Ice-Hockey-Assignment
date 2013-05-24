@@ -131,21 +131,6 @@ public class testloadsave {
 			else
 				((Player)person).rookie = false;
 			
-			x = br.readLine();
-			((Player)person).penaltyMinor = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
-			
-			x = br.readLine();
-			((Player)person).penaltyMajor = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
-			
-			x = br.readLine();
-			((Player)person).penaltyMisc = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
-			
-			x = br.readLine();
-			((Player)person).penaltyGMisc = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
-			
-			x = br.readLine();
-			((Player)person).match = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
-			
 			if (classType.equals("forward")) {
 				//load forward fields into object
 				x = br.readLine();
@@ -261,9 +246,6 @@ public class testloadsave {
 				((Goalie)person).goalA = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
 				
 				x = br.readLine();
-				((Goalie)person).goalAA = Double.parseDouble(x.substring(x.indexOf(": ")+2,x.length()));
-				
-				x = br.readLine();
 				((Goalie)person).shotsOG = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
 				
 				x = br.readLine();
@@ -350,11 +332,7 @@ public class testloadsave {
 			pw.println("Jersey number: "+((Player) p).getNumber());
 			pw.println("Total number of minutes on ice: "+((Player) p).getNumMin());
 			pw.println("Rookie: "+((Player)p).getRookie());
-			pw.println("Number of minor penalties: "+((Player) p).getPenaltyMinor());
-			pw.println("Number of major penalties: "+((Player) p).getPenaltyMajor());
-			pw.println("Number of misconduct penalties: "+((Player) p).getPenaltyMisc());
-			pw.println("Number of game misconduct penalties: "+((Player) p).getPenaltyGMisc());
-			pw.println("Match penalties: "+((Player) p).getMatch());
+
 			
 			if (p instanceof Forward) { 
 				//writes all forward fields onto text file
@@ -405,7 +383,6 @@ public class testloadsave {
 				pw.println("Bumber of games started: "+((Goalie) p).getGameStart());
 				pw.println("Number of goals scored against: "+((Goalie) p).getGameStart());
 				pw.println("Mean goals scored against goalie: "+((Goalie) p).getGoalA());
-				pw.println("Mean goals per 60 minutes scored on the goalie: "+((Goalie) p).getgoalAA());
 				pw.println("Total number of shots on goal the goalie faced: "+((Goalie) p).getShotsOG());
 				pw.println("Bymber of saves goalie made: "+((Goalie) p).getSaves());
 				pw.println("Percentage of total shots faced the goalie saved: "+((Goalie) p).getSavePercent());
@@ -418,16 +395,16 @@ public class testloadsave {
 	}
 	
 	public static void main(String[] args) throws IOException {
-		Person p1 = new Coach("clem", null, 0, false, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1);
+		Person p1 = new Coach("clem", null, false, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1);
 		save("G:\\Computer Science\\workspace\\Inheritance Assignment\\samplecoach.txt",p1);//save test for coach
-		Person p2 = new Goalie("clement", "hoang", 17, true, 178, 78, 6, 24, 1995, 4, 2, 0, 0, 0, 0, 0, 0, 0, false, 0, 0, false, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+		Person p2 = new Goalie("clement", "hoang", true, 178, 78, 6, 24, 1995, 4, 2, 0, 0, 0, 0, 0, 0, 0, false, 0, 0, false, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
 		save("G:\\Computer Science\\workspace\\Inheritance Assignment\\samplegoalie.txt",p2);//save test for goalie
-		Person p3 = new Forward("clement", "hoang", 17, true, 178, 78, 6, 24, 1995, 4, 2, 0, 0, 0, 0, 0, 0, 0, false, 0, 0, false, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+		Person p3 = new Forward("clement", "hoang", true, 178, 78, 6, 24, 1995, 4, 2, 0, 0, 0, 0, 0, 0, 0, false, 0, 0, false, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
 		save("G:\\Computer Science\\workspace\\Inheritance Assignment\\sampleforward.txt",p3);//save test for forward
-		Person p4 = new Defense("clement", "hoang", 17, true, 178, 78, 6, 24, 1995, 4, 2, 0, 0, 0, 0, 0, 0, 0, false, 0, 0, false, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+		Person p4 = new Defense("clement", "hoang", true, 178, 78, 6, 24, 1995, 4, 2, 0, 0, 0, 0, 0, 0, 0, false, 0, 0, false, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
 		save("G:\\Computer Science\\workspace\\Inheritance Assignment\\samplegoalie.txt",p4);//save test for defense
 		
-		Person loadguy = new Coach(null, null, 0, false, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);//temporary coach person
+		Person loadguy = new Coach("Mustaqeem", null, false, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);//temporary coach person
 		load("G:\\Computer Science\\workspace\\Inheritance Assignment\\sample.txt", loadguy);//reads file named "sample" which holds all the data
 		save("G:\\Computer Science\\workspace\\Inheritance Assignment\\saveloadguy.txt",loadguy);//saves the file onto separate file named "saveloadguy"
 	}
