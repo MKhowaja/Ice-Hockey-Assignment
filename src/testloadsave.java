@@ -20,7 +20,7 @@ public class testloadsave {
 		x = br.readLine();
 		classType = x.substring(x.indexOf(": ")+2,x.length());
 		
-		if (classType.equals("coach")) {
+		if (classType.equals("Coach")) {
 			x = br.readLine();
 			((Coach)person).coachType = Coach.convertCoachTypeToInt(x.substring(x.indexOf(": ")+2,x.length()));
 		}
@@ -62,7 +62,7 @@ public class testloadsave {
 		x = br.readLine();
 		person.maritalStatus = Person.convertMaritalStatusToInt(x.substring(x.indexOf(": ")+2,x.length()));
 		
-		if (classType.equals("coach")) {
+		if (classType.equals("Coach")) {
 			//loads coach fields into the object
 			x = br.readLine();
 			((Coach)person).winS = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
@@ -87,8 +87,11 @@ public class testloadsave {
 			
 			x = br.readLine();
 			((Coach)person).stanleyN = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+			
+			x = br.readLine();
+			((Coach)person).totalGamesCoached = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
 		}
-		else if (classType.equals("forward")||classType.equals("defense")||classType.equals("goalie")) {
+		else if (classType.equals("Forward")||classType.equals("Defense")||classType.equals("Goalie")) {
 			//load player fields into object
 			x = br.readLine();
 			((Player)person).salaryPY = Double.parseDouble(x.substring(x.indexOf(": ")+2,x.length()));
@@ -131,7 +134,7 @@ public class testloadsave {
 			else
 				((Player)person).rookie = false;
 			
-			if (classType.equals("forward")) {
+			if (classType.equals("Forward")) {
 				//load forward fields into object
 				x = br.readLine();
 				((Forward)person).plusMinus = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
@@ -161,6 +164,9 @@ public class testloadsave {
 				((Forward)person).avgSOGoalsPS = Double.parseDouble(x.substring(x.indexOf(": ")+2,x.length()));
 				
 				x = br.readLine();
+				((Forward)person).avgNShifts = Double.parseDouble(x.substring(x.indexOf(": ")+2,x.length()));
+				
+				x = br.readLine();
 				((Forward)person).gwGoals = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
 				
 				x = br.readLine();
@@ -170,21 +176,18 @@ public class testloadsave {
 				((Forward)person).soGoals = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
 				
 				x = br.readLine();
-				((Forward)person).avgNShifts = Double.parseDouble(x.substring(x.indexOf(": ")+2,x.length()));
-				
-				x = br.readLine();
 				((Forward)person).otGoals = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
-				
-				x = br.readLine();
-				((Forward)person).faceoffPercentage = Double.parseDouble(x.substring(x.indexOf(": ")+2,x.length()));
 				
 				x = br.readLine();
 				((Forward)person).points = Double.parseDouble(x.substring(x.indexOf(": ")+2,x.length()));
 				
 				x = br.readLine();
+				((Forward)person).faceoffPercentage = Double.parseDouble(x.substring(x.indexOf(": ")+2,x.length()));
+				
+				x = br.readLine();
 				((Forward)person).shootPercentage = Double.parseDouble(x.substring(x.indexOf(": ")+2,x.length()));
 			}
-			else if (classType.equals("defense")) {
+			else if (classType.equals("Defense")) {
 				//load defense fields into object
 				x = br.readLine();
 				((Defense)person).plusMinus = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
@@ -214,6 +217,9 @@ public class testloadsave {
 				((Defense)person).avgSOGoalsPS = Double.parseDouble(x.substring(x.indexOf(": ")+2,x.length()));
 				
 				x = br.readLine();
+				((Defense)person).avgNShifts = Double.parseDouble(x.substring(x.indexOf(": ")+2,x.length()));
+				
+				x = br.readLine();
 				((Defense)person).gwGoals = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
 				
 				x = br.readLine();
@@ -221,6 +227,18 @@ public class testloadsave {
 				
 				x = br.readLine();
 				((Defense)person).soGoals = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+				
+				x = br.readLine();
+				((Defense)person).otGoals = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+				
+				x = br.readLine();
+				((Defense)person).points = Double.parseDouble(x.substring(x.indexOf(": ")+2,x.length()));
+				
+				x = br.readLine();
+				((Defense)person).faceoffPercentage = Double.parseDouble(x.substring(x.indexOf(": ")+2,x.length()));
+				
+				x = br.readLine();
+				((Defense)person).shootPercentage = Double.parseDouble(x.substring(x.indexOf(": ")+2,x.length()));
 			}
 			else {
 				//load goalie fields into object
@@ -276,16 +294,16 @@ public class testloadsave {
 		PrintWriter pw = new PrintWriter (fw);     //PrintWriter
 		
 		if (p instanceof Coach) {
-			pw.println("Class: coach");
+			pw.println("Class: Coach");
 			pw.println("Coach type: "+(Coach.convertCoachTypeToString(((Coach)p).getcoachType())));
 		}
 		
 		else if (p instanceof Forward)
-			pw.println("Class: forward");
+			pw.println("Position: Forward");
 		else if (p instanceof Defense)
-			pw.println("Class: defense");
+			pw.println("Position: Defense");
 		else 
-			pw.println("Class: goalie");
+			pw.println("Position: Goalie");
 		
 		//Writes all person fields onto text file
 		pw.println("First name: "+p.getFName());
@@ -300,7 +318,7 @@ public class testloadsave {
 		pw.println("Birth month: "+p.getBirthMonth());
 		pw.println("Birth day: "+p.getBirthDay());
 		pw.println("Birth year: "+p.getBirthYear());
-		pw.println("BirthPlace: "+Person.convertBirthPlaceToString(p.getBirthPlace()));
+		pw.println("Birth place: "+Person.convertBirthPlaceToString(p.getBirthPlace()));
 		pw.println("Marital status: "+Person.convertMaritalStatusToString(p.getMaritalStatus()));
 
 		if (p instanceof Coach){
@@ -313,6 +331,7 @@ public class testloadsave {
 			pw.println("Playoff losses: "+((Coach) p).getLoseP());
 			pw.println("Playoff games coached: "+((Coach) p).getGameCP());
 			pw.println("Number of Stanley Cups won: "+((Coach) p).getStanleyN());
+			pw.println("Total Games Coached: "+((Coach) p).gettotalGamesCoached());
 		}
 		else if ((p instanceof Forward) || (p instanceof Defense) || (p instanceof Goalie)){
 			//Writes all the player fields onto text file
@@ -345,13 +364,13 @@ public class testloadsave {
 				pw.println("Average penalty minutes per season: "+((Forward) p).getavgPenaltyPS());
 				pw.println("Average power play goals per season: "+((Forward) p).getavgPPGoalsPS());
 				pw.println("Average shoot-out goals per season: "+((Forward) p).getavgSOGoalsPS());
+				pw.println("Average number of shifts per game: "+((Forward) p).getAvgNShifts());
 				pw.println("Number of game-winning goals: "+((Forward) p).getGWGoals());
 				pw.println("Number of power play goals: "+((Forward) p).getPPGoals());
 				pw.println("Number of shootout goals: "+((Forward) p).getSOGoals());
-				pw.println("Average number of shifts per game: "+((Forward) p).getAvgNShifts());
 				pw.println("Number of overtime goals: "+((Forward) p).getOTGoals());
-				pw.println("Faceoff win percentage: "+((Forward) p).getFaceoffPercentage());
 				pw.println("Points: "+((Forward) p).getPoints());
+				pw.println("Faceoff win percentage: "+((Forward) p).getFaceoffPercentage());
 				pw.println("Shooting percentage: "+((Forward) p).getShootPercentage());
 			}
 			else if (p instanceof Defense){
@@ -360,18 +379,19 @@ public class testloadsave {
 				pw.println("Average goals per season: "+((Defense) p).getavgGoalsPS());
 				pw.println("Average goal percentage per season: "+((Defense) p).getavgGoalPercentagePS());
 				pw.println("Average shots taken per season: "+((Defense) p).getavgShotsPS());
-				pw.println("Z=score of goal percentage: "+((Defense) p).getzsGoalPercentage());
+				pw.println("Z-score of goal percentage: "+((Defense) p).getzsGoalPercentage());
 				pw.println("Average assists per season: "+((Defense) p).getavgAssistsPS());
 				pw.println("Average penalty minutes per season: "+((Defense) p).getavgPenaltyPS());
 				pw.println("Average power play goals per season: "+((Defense) p).getavgPPGoalsPS());
 				pw.println("Average shoot-out goals per season: "+((Defense) p).getavgSOGoalsPS());
+				pw.println("Average number of shifts per game: "+((Defense) p).getAvgNShifts());
 				pw.println("Number of game-winning goals: "+((Defense) p).getGWGoals());
 				pw.println("Number of power play goals: "+((Defense) p).getPPGoals());
 				pw.println("Number of shootout goals: "+((Defense) p).getSOGoals());
-				pw.println("Average number of shifts per game: "+((Defense) p).getAvgNShifts());
 				pw.println("Number of overtime goals: "+((Defense) p).getOTGoals());
-				pw.println("Faceoff win percentage: "+((Defense) p).getFaceoffPercentage());
 				pw.println("Points: "+((Defense) p).getPoints());
+				pw.println("Faceoff win percentage: "+((Defense) p).getFaceoffPercentage());
+				pw.println("Shooting percentage: "+((Defense) p).getShootPercentage());
 			}
 			else if (p instanceof Goalie){
 				//Writes all the fields that goalie has onto text file
@@ -381,13 +401,12 @@ public class testloadsave {
 				pw.println("Number of losses during playoffs: "+((Goalie) p).getLosesP());
 				pw.println("Number of losses during overtime: "+((Goalie) p).getLosesOT());
 				pw.println("Bumber of games started: "+((Goalie) p).getGameStart());
-				pw.println("Number of goals scored against: "+((Goalie) p).getGameStart());
-				pw.println("Mean goals scored against goalie: "+((Goalie) p).getGoalA());
+				pw.println("Number of goals scored against: "+((Goalie) p).getGoalA());
 				pw.println("Total number of shots on goal the goalie faced: "+((Goalie) p).getShotsOG());
 				pw.println("Bymber of saves goalie made: "+((Goalie) p).getSaves());
 				pw.println("Percentage of total shots faced the goalie saved: "+((Goalie) p).getSavePercent());
 				pw.println("Number of games where goalie had no goals aginst him/her and only goalie to play in game: "+((Goalie) p).getShutouts());
-				pw.println("Number of goals scored against while off ice for extra attack player: "+((Goalie) p).getEmptyNG());
+				pw.println("Number of goals scored against while off ice: "+((Goalie) p).getEmptyNG());
 			}
 		}	
 		fw.close();
