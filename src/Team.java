@@ -29,7 +29,31 @@ public class Team {
 	private double savePercent; //The total saves divided by the total shots faced, calculated
 	private double ppPercent; //Power play percent: Power-play goals divided by power-play opportunites or power-play goals allowed divided by times short-handed, calculated
 	
-		
+	public Team(String name, String division, String conference, double payroll, int gpT,
+			int wins, int losses, int goalsfor, int goalsagainst, int ppo,
+			int tsh, int ppgoals, int shgoals, int ppgoalsA, int shgoalsA,
+			int shotsfor, int shotsagainst, int saves) {
+		super();
+		this.name = name;
+		this.division = division;
+		this.conference = conference;
+		this.payroll = payroll;
+		this.gp = gpT;
+		this.wins = wins;
+		this.losses = losses;
+		this.goalsfor = goalsfor;
+		this.goalsagainst = goalsagainst;
+		this.ppo = ppo;
+		this.tsh = tsh;
+		this.ppgoals = ppgoals;
+		this.shgoals = shgoals;
+		this.ppgoalsA = ppgoalsA;
+		this.shgoalsA = shgoalsA;
+		this.shotsfor = shotsfor;
+		this.shotsagainst = shotsagainst;
+		this.saves = saves;
+	}
+
 	/**
 	 * Returns name of team
 	 * @return the name

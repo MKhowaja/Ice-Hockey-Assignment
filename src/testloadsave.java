@@ -292,18 +292,25 @@ public class testloadsave {
 	public static void save(String file, Person p) throws IOException {
 		FileWriter fw = new FileWriter(file);    //FileWriter 
 		PrintWriter pw = new PrintWriter (fw);     //PrintWriter
+		String temp;
 		
 		if (p instanceof Coach) {
-			pw.println("Class: Coach");
-			pw.println("Coach type: "+(Coach.convertCoachTypeToString(((Coach)p).getcoachType())));
+			if (p instanceof head)
+				temp = "head";
+			else if (p instanceof assistant)
+				temp = "assistant";
+			else if (p instanceof goaltender)
+				temp = "goaltender";
+			else
+				temp = "trainer";
+			pw.println("Coach type: "+temp);
 		}
-		
 		else if (p instanceof Forward)
-			pw.println("Position: Forward");
+			pw.println("Position: forward");
 		else if (p instanceof Defense)
-			pw.println("Position: Defense");
+			pw.println("Position: defense");
 		else 
-			pw.println("Position: Goalie");
+			pw.println("Position: goalie");
 		
 		//Writes all person fields onto text file
 		pw.println("First name: "+p.getFName());
@@ -321,17 +328,17 @@ public class testloadsave {
 		pw.println("Birth place: "+Person.convertBirthPlaceToString(p.getBirthPlace()));
 		pw.println("Marital status: "+Person.convertMaritalStatusToString(p.getMaritalStatus()));
 
-		if (p instanceof Coach){
+		if (p instanceof head){
 			//Writes all the fields that coach has onto text file
-			pw.println("Season wins: "+((Coach) p).getWinS());
-			pw.println("Season losses: "+((Coach) p).getloseS());
-			pw.println("Season games coached: "+((Coach) p).getGameCS());
-			pw.println("Points percentage: "+((Coach) p).getPointPS());
-			pw.println("Playoff wins: "+((Coach) p).getWinP());
-			pw.println("Playoff losses: "+((Coach) p).getLoseP());
-			pw.println("Playoff games coached: "+((Coach) p).getGameCP());
-			pw.println("Number of Stanley Cups won: "+((Coach) p).getStanleyN());
-			pw.println("Total Games Coached: "+((Coach) p).gettotalGamesCoached());
+			pw.println("Season wins: "+((head) p).getWinS());
+			pw.println("Season losses: "+((head) p).getloseS());
+			pw.println("Season games coached: "+((head) p).getGameCS());
+			pw.println("Points percentage: "+((head) p).getPointPS());
+			pw.println("Playoff wins: "+((head) p).getWinP());
+			pw.println("Playoff losses: "+((head) p).getLoseP());
+			pw.println("Playoff games coached: "+((head) p).getGameCP());
+			pw.println("Number of Stanley Cups won: "+((head) p).getStanleyN());
+			pw.println("Total Games Coached: "+((head) p).gettotalGamesCoached());
 		}
 		else if ((p instanceof Forward) || (p instanceof Defense) || (p instanceof Goalie)){
 			//Writes all the player fields onto text file
