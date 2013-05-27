@@ -11,7 +11,7 @@ Note: this class is incomplete.
 */
 
 public class final_main {
-	/**
+  /**
 	 * Loads the data of a team from a textfile to this object
 	 * @param String filepath
 	 * @author MK, AV, CH, PJ
@@ -132,11 +132,11 @@ public class final_main {
 			else if (classType.equals("trainer"))
 				person[i] = new trainer(null, null, false, 0, 0, 0, 0, 0, 0, 0);
 			else if (classType.equals("forward"))
-				person[i] = new Forward(null, null, false, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, false, 0, 0, false, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+				person[i] = new Forward(null, null, false, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, false, 0, 0, false, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
 			else if (classType.equals("defense"))
-				person[i] = new Defense(null, null, false, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, false, 0, 0, false, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+				person[i] = new Defense(null, null, false, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, false, 0, 0, false, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
 			else
-				person[i] = new Goalie(null, null, false, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, false, 0, 0, false, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+				person[i] = new Goalie(null, null, false, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, false, 0, 0, false, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
 				
 			x = br.readLine();
 			person[i].fname = x.substring(x.indexOf(": ")+2,x.length());
@@ -542,7 +542,6 @@ public class final_main {
 		int c = 0; //Tracks the index of the person in being added into the array
 		int option; //Specifies the option that the user selects from the menu
 		int playerNum = 0; //Specifies the number of player the user wants to enter for a team
-		String personType;
 		String playerType;
 
 		//Temporary fields for person
@@ -556,8 +555,8 @@ public class final_main {
 		int birthMonth; //Month of birth 
 		int birthDay; //Day of birth
 		int birthYear; //Year of birth
-		String birthPlace; //City, Province/State of birth; Province/State in short notation
-		String martialStatus; //Single, Married, Divorced, Widowed etc.
+		int birthPlace; //City, Province/State of birth; Province/State in short notation
+		int martialStatus; //Single, Married, Divorced, Widowed etc.
 
 		//Temporary fields for player
 		double salaryPY; //Salary per year
@@ -570,6 +569,9 @@ public class final_main {
 		boolean arm; //Shooting arm: True if right arm
 		String tempArm;
 		int number; //Jersey number
+		double numMin; //Total number of minutes the player has been on ice
+		String temprookie;
+		boolean rookie; //If the player is a rookie (true if he/she is)
 
 		//Temporary fields for coach
 		int winS; //Regular season wins
@@ -595,29 +597,25 @@ public class final_main {
 		int emptyNG; //Number of goals scored against while off ice for extra attack player
 
 		//Temporary fields for forward or defense
-		int gwGoals; //Number of game-winning goals
-		int ppGoals; //Number of power play goals
-		int soGoals; //Number of shoot-out goals
+		  int plusMinus; //Holds +/- for each player
+		  double avgGoalsPS; //Average goals per season
+		  double avgGoalPercentagePS; //Average goal percentage per season
+		  double avgShotsPS; //Average shots taken per season
+		  double zsGoalPercentage; //Z-score of goal percentage 
+		  double avgAssistsPS; //Average assists per season
+		  double avgPenaltyPS; //Average penalty minutes per season
+		  double avgPPGoalsPS; //Average power play goals per season (double)
+		  double avgSOGoalsPS; //Average shoot-out goals per season
+		  double avgNShifts; //Average number of shifts per game
+		  int gwGoals; //Number of game-winning goals
+		  int ppGoals; //Number of power play goals
+		  int soGoals; //Number of shoot-out goals
+		  int otGoals; //Number of overtime goals
+		  double points; //Points (Goals + Assists)
+		  double faceoffPercentage; //Face off win percentage
+		  double shootPercentage; //Shooting Percentage
 		
-		//Temporary fields for team
-		String name; //Name of team (Documenting required)
-		String division;
-		String conference;
-		double payroll;  //How much the team is paying its players currently for the season (in millions)
-		int gpT; //Games played
-		int winsT; //Games won
-		int losesT; //Games lost
-		int goalsFor; //Total goals scored (including power-play, short-handed and empty-net goals)
-		int goalsAgainst; //Total goals scored against (including power-play, short-handed and empty-net goals)
-		int ppo; //Number of power play opportunities
-		int tsh; //Number of times short handed
-		int ppGoalsT; //Total number of powerplay goals
-		int shGoals; //Total number of shorthanded goals
-		int ppGoalsA; //Total number of powerplay goals against
-		int shGoalsA; //Total number of shorthanded goals against
-		int shotsFor; //Total shots
-		int shotsAgainst; //Total shots against
-		int savesT; //Total saves
+		
 		
 		Team[] team = new Team[2];
 		for ( int i = 0; i<team.length;i++) {
@@ -630,94 +628,7 @@ public class final_main {
 				if (option == 1) {
 					//Prompts for team stats
 					
-					System.out.print("Enter team's name: ");
-					name=in.nextLine();
 					
-					System.out.println("Enter name of divison the team is in: ");
-					division = in.next();
-					
-					System.out.println("Enter the name of the conference the team is in: ");
-					conference = in.next();
-					
-					do{
-						System.out.print("Enter "+name+"'s payroll for players: ");
-						payroll=in.nextDouble();
-					}while (payroll<0); //Ensures the payroll for the players isn't negative
-					
-					do{
-						System.out.print("Enter the number of games the "+name+" played: ");
-						gpT=in.nextInt();
-					}while(gpT<0); //Ensures the number of games played is above zero (valid)
-					
-					do{
-						System.out.print("Enter the number of games the "+name+" won: ");
-						winsT=in.nextInt();
-					}while(winsT<0); //Ensures the number of games won is above zero (valid)
-					
-					do{
-						System.out.print("Enter the number of games the "+name+" lost: ");
-						losesT=in.nextInt();
-					}while(losesT<0); //Ensures the number of games lost is above zero (valid)
-					
-					do{
-						System.out.print("Enter the total number of goals the "+name+" scored (including power-play, short-handed and empty-net goals): ");
-						goalsFor=in.nextInt();
-					}while(goalsFor<0); //Ensures the total goals scored is above zero (valid)
-					
-					do{
-						System.out.print("Enter the total goals scored against the "+name+" (including power-play, short-handed and empty-net goals): ");
-						goalsAgainst=in.nextInt();
-					}while(goalsAgainst<0); //Ensures the total goals scored against is above zero (valid)
-					
-					do{
-						System.out.print("Enter the number of power-play opportunities that the "+name+" have: ");
-						ppo=in.nextInt();
-					}while(ppo<0); //Ensures the number of power-play opportunities is above zero (valid)
-					
-					do{
-						System.out.print("Enter the number of times the "+name+" were short-handed: ");
-						tsh=in.nextInt();
-					}while(tsh<0); //Ensures the number of times short-handed is above zero (valid)
-					
-					do{
-						System.out.print("Enter the total number of power-play goals the "+name+" have: ");
-						ppGoalsT=in.nextInt();
-					}while(ppGoalsT<0); //Ensures the total number of power-play goals is above zero (valid)
-					
-					do{
-						System.out.print("Enter the total number of short-handed goals the "+name+" have: ");
-						shGoals=in.nextInt();
-					}while(shGoals<0); //Ensures the total number of short-handed goals is above zero (valid)
-					
-					do{
-						System.out.print("Enter the total number of power-play goals aganist the "+name+": ");
-						ppGoalsA=in.nextInt();
-					}while(ppGoalsA<0); //Ensures the total number of power-play goals against is above zero (valid)
-					
-					do{
-						System.out.print("Enter the total number of short-handed goals against the "+name+": ");
-						shGoalsA=in.nextInt();
-					}while(shGoalsA<0); //Ensures the total number of short-handed goals against is above zero (valid)
-					
-					do{
-						System.out.print("Enter the total number of shots on the "+name+"'s goal: "); //More info needed
-						shotsFor=in.nextInt();
-					}while(shotsFor<0); //Ensures the total shots on goal is above zero (valid)
-					
-					do{
-						System.out.print("Enter the total number of shots against the "+name+": ");
-						shotsAgainst=in.nextInt();
-					}while(shotsAgainst<0); //Ensures the total shots against is above zero (valid)
-					
-					do{
-						System.out.print("Enter the total number of saves for the "+name+": ");
-						savesT=in.nextInt();
-					}while(savesT<0); //Ensures the total saves is above zero (valid)
-					
-					do{
-						System.out.print("\nEnter the amount players you want to enter for the "+name+": ");
-						playerNum=in.nextInt();
-					}while (playerNum<0 || playerNum>23); //Ensures the amount of players is a valid amount players that can be on a team
 					team[i] = new Team(name, division, conference, payroll, gpT,
 							winsT, losesT, goalsFor, goalsAgainst, ppo,
 							tsh, ppGoalsT, shGoals, ppGoalsA, shGoalsA,
@@ -742,6 +653,7 @@ public class final_main {
 			
 			if (option == 1) {	
 				for (int j = 0;j<playerNum;j++) {
+					//person fields
 					do {
 						System.out.print("Enter first name: ");
 						fname = in.nextLine();
@@ -750,11 +662,6 @@ public class final_main {
 						lname = in.nextLine();
 						in.nextLine();
 					} while (fname.equals("")&&lname.equals("")); //Ensures that something is entered
-
-					do {
-						System.out.print("Enter age: ");
-						age = in.nextInt();
-					} while (age <= 0); //Ensures age is greater than 0
 
 					do {
 						System.out.print("Enter gender (m/f): ");
@@ -792,188 +699,100 @@ public class final_main {
 					
 					do {
 						System.out.print("Enter birth place based on list: "); //Show list
-						birthPlace = in.next();
-					} while (Integer.parseInt(birthPlace) <= 0 || Integer.parseInt(birthPlace) > 21); //Ensures birth place selection is in the list
+						birthPlace = in.nextInt();
+					} while (birthPlace <= 0 || birthPlace > 21); //Ensures birth place selection is in the list
 					
 					do {
 						System.out.print("Enter martial status based on list: "); //Show list
-						martialStatus = in.next();
-					} while (Integer.parseInt(martialStatus) <= 0 || Integer.parseInt(martialStatus) > 21); //Ensures martial status selection is in the list
+						martialStatus = in.nextInt();
+					} while (martialStatus <= 0 || martialStatus > 21); //Ensures martial status selection is in the list
 					
-					//prompt for coach/player
+					//player fields
+					do{
+						System.out.print("Enter the player's salary per year: ");
+						salaryPY=in.nextDouble();
+					}while (salaryPY<0); //Ensures the player does have a salary per year
+
+					do{
+						System.out.print("Enter the player's number of years remaining in the contract: ");
+						contractR=in.nextInt();
+					}while (contractR<0); //Ensures the player has number of years in the contract
+
+					do{
+						System.out.print("Enter the player's total salary over the entire contract: ");
+						tSalary=in.nextDouble();
+					}while (tSalary<0); //Ensures the player has number of years in the contract
+
+					do{
+						System.out.print("Enter the number of games the player has played: ");
+						gp=in.nextInt();
+					}while (gp<0); //Ensures the player has at least player 0 games
+
+					do{
+						System.out.print("Enter the time spent in penalty box for the player: ");
+						penaltyT=in.nextDouble();
+					}while (penaltyT<0); //Ensures the player has at least spent 0 seconds in the penalty box
+
+					do{
+						System.out.print("Enter the number times spent in the penalty box: ");
+						penaltyN=in.nextInt();
+					}while (penaltyN<0); //Ensures the player has at least been in the penalty box once
+
 					do {
-						System.out.print("Select whether person is a coach or player: "); //not needed, remove later
-						personType = in.next();
-						if (personType.equalsIgnoreCase("player")) {
-							//prompt for player stuff
-							do{
-								System.out.print("Enter the player's salary per year: ");
-								salaryPY=in.nextDouble();
-							}while (salaryPY<0); //Ensures the player does have a salary per year
-							
-							do{
-								System.out.print("Enter the player's number of years remaining in the contract: ");
-								contractR=in.nextInt();
-							}while (contractR<0); //Ensures the player has number of years in the contract
-							
-							do{
-								System.out.print("Enter the player's total salary over the entire contract: ");
-								tSalary=in.nextDouble();
-							}while (tSalary<0); //Ensures the player has number of years in the contract
-							
-							do{
-								System.out.print("Enter the number of games the player has played: ");
-								gp=in.nextInt();
-							}while (gp<0); //Ensures the player has at least player 0 games
-							
-							do{
-								System.out.print("Enter the time spent in penalty box for the player: ");
-								penaltyT=in.nextDouble();
-							}while (penaltyT<0); //Ensures the player has at least spent 0 seconds in the penalty box
-							
-							do{
-								System.out.print("Enter the number times spent in the penalty box: ");
-								penaltyN=in.nextInt();
-							}while (penaltyN<0); //Ensures the player has at least been in the penalty box once
-							
-							do {
-								System.out.print("Enter player's shooting arm (R/L): ");
-								tempArm = in.next();
-							} while (!tempArm.equalsIgnoreCase("R") && !tempArm.equalsIgnoreCase("L"));
-							if (tempArm.equalsIgnoreCase("R"))
-								arm=true;
-							else
-								arm=false;
-							
-							do{
-								System.out.print("Enter the player's jersey number: ");
-								number=in.nextInt();
-							}while (number<0); //Ensures the player doesn't have a negative jersey number
-							
-							System.out.print("Select whether player is forward, defense or goalie: ");
-							playerType = in.next();
-							if (playerType.equalsIgnoreCase("forward")||playerType.equalsIgnoreCase("defense")){
-								do{
-									System.out.print("Enter the number of game-winning goals: ");
-									gwGoals=in.nextInt();
-								}while (gwGoals<0); //Ensure the player doesn't have negative game-winning goals
-								
-								do{
-									System.out.print("Enter the number of power-play goals: ");
-									ppGoals=in.nextInt();
-								}while (ppGoals<0); //Ensure the player doesn't have negative power-play goals
-								
-								do{
-									System.out.print("Enter the number of shootout goals: ");
-									soGoals=in.nextInt();
-								}while (soGoals<0); //Ensure the player doesn't have negative shootout goals
-								
-							}else if (playerType.equalsIgnoreCase("goalie")){
-								do{
-									System.out.print("Enter the number of wins: ");
-									wins=in.nextInt();
-								}while (wins<0); //Ensures the number of wins is above zero (valid)
-								
-								do{
-									System.out.print("Enter the number of loses: ");
-									loses=in.nextInt();
-								}while(loses<0); //Ensures the number of loses is above zero (valid)
-								
-								do{
-									System.out.print("Enter the number of wins during playoffs: ");
-									winsP=in.nextInt();
-								}while(winsP<0); //Ensures the number of wins during playoffs is above zero (valid)
-								
-								do{
-									System.out.print("Enter the number of loses during playoffs: ");
-									losesP=in.nextInt();
-								}while(losesP<0); //Ensures the number of loses during playoffs is above zero (valid)
-								
-								do{
-									System.out.print("Enter the number of loses during overtime: ");
-									losesOT=in.nextInt();
-								}while(losesOT<0); //Ensures the number of loses during overtime is above zero (valid)
-								
-								do{
-									System.out.print("Enter the number of games started: ");
-									gameStart=in.nextInt();
-								}while(gameStart<0); //Ensures the number of games started is above zero (valid)
-								
-								do{
-									System.out.print("Enter the number of goals scored against: ");
-									goalA=in.nextInt();
-								}while(goalA<0); //Ensures the number of goals scored against is above zero (valid)
-								
-								do{
-									System.out.print("Enter the total number of shots on goal: ");
-									shotsOG=in.nextInt();
-								}while(shotsOG<0); //Ensures the total number of shots on goal is above zero (valid)
-								
-								do{
-									System.out.print("Enter the number of saves goalie made: ");
-									saves=in.nextInt();
-								}while(saves<0); //Ensures the number of saves goalie made is above zero (valid)
-								
-								do{
-									System.out.print("Enter the number of games where goalie had no goals against him and only goalie to play in game: ");
-									shutouts=in.nextInt();
-								}while(shutouts<0); //Ensures the number of shutouts is above zero (valid)
-								
-								do{
-									System.out.print("Enter the number of goals scored against while off ice for extra attack player: ");
-									emptyNG=in.nextInt();
-								}while(emptyNG<0); //Ensures the the number of empty net goals is above zero (valid)
-							}
-						}
-						else if (personType.equalsIgnoreCase("coach")) {
-							//prompt for coach fields
-							do{
-								System.out.print("Enter the coach's wins for the regular season: ");
-								winS=in.nextInt();
-							}while (winS<0); //Ensures the the coach doesn't have negative wins
-							
-							do{
-								System.out.print("Enter the coach's loses for the regular season: ");
-								loseS=in.nextInt();
-							}while (loseS<0); //Ensures the the coach doesn't have negative loses
-							
-							do{
-								System.out.print("Enter the coach's games coached for the regular season: ");
-								gameCS=in.nextInt();
-							}while (gameCS<0); //Ensures the the coach doesn't have negative games coached
-							
-							do{
-								System.out.print("Enter the coach's wins for the playoffs: ");
-								winP=in.nextInt();
-							}while (winP<0); //Ensures the the coach doesn't have negative wins
-							
-							do{
-								System.out.print("Enter the coach's loses for the playoffs: ");
-								loseP=in.nextInt();
-							}while (loseP<0); //Ensures the the coach doesn't have negative loses
-							
-							do{
-								System.out.print("Enter the coach's games coached for the playoffs: ");
-								gameCP=in.nextInt();
-							}while (gameCP<0); //Ensures the the coach doesn't have negative games coached
-							
-							do{
-								System.out.print("Enter the number of times the coach has won Stanley Cups: ");
-								stanleyN=in.nextInt();
-							}while (gameCP<0); //Ensures the the coach doesn't have negative number of times the coach wins Stanley Cups
-							
-							do {
-								System.out.print("Enter the type of coach the coach is: "); //Show list
-								coachType = in.nextInt();
-							} while (coachType <= 0 || coachType > 3); //Ensures coach type selection is in the list
-						} 
-					} while (!personType.equalsIgnoreCase("player") && !personType.equalsIgnoreCase("coach"));
-					if (playerType.equals("forward"))
-						team[j].getPlayers()[j]=new Forward();
-					else if (playerType.equals("defense"))
-						team[j].getPlayers()[j]=new Defense();
-					else 
-						team[j].getPlayers()[j]=new Goalie();
+						System.out.print("Enter player's shooting arm (R/L): ");
+						tempArm = in.next();
+					} while (!tempArm.equalsIgnoreCase("R") && !tempArm.equalsIgnoreCase("L"));
+					if (tempArm.equalsIgnoreCase("R"))
+						arm=true;
+					else
+						arm=false;
+
+					do{
+						System.out.print("Enter the player's jersey number: ");
+						number=in.nextInt();
+					}while (number<0); //Ensures the player doesn't have a negative jersey number
+					
+					
+					do{
+						System.out.print("Enter the amount of time the player has been on the ice (in minutes): ");
+						numMin=in.nextDouble());
+					}while (numMin<0); //Ensures that time is positive
+					
+					do{
+						System.out.print("Is the player a rookie? (Y/N)");
+						temprookie = in.next();
+					}while (!temprookie.equalsIgnoreCase("Y") && !temprookie.equalsIgnoreCase("N"));
+					if (temprookie.equalsIgnoreCase("Y"))
+						arm=true;
+					else
+						arm=false;
+					//prompt for specific class fields
+					do {
+						System.out.println("1 - Forward");
+						System.out.println("2 - Defense");
+						System.out.println("3 - Goalie");
+						System.out.println("Select the player's position: ");
+						option = in.nextInt();
+					} while (option < 1 || option > 3);
+					
+					if (option == 1 || option == 2) {
+						//prompts for forward/defense fields
+						
+						
+						
+						if (option == 1)
+							team[j].getPlayers()[j]=new Forward(fname, lname, gender, height, weight, month, day, year, place, mStatus,//person fields
+									salaryPY, contractR, tSalary, rating, gp, penaltyT, penaltyN, arm, number, //player fields
+									numMin, rookie, plusMinus, avgGoalsPS, double avgGoalPercentagePS, double avgShotsPS, double zsGoalPercentage, double avgAssistsPS, //forward fields
+									avgPenaltyPS, avgPPGoalsPS, avgSOGoalsPS, avgNShifts, gwGoals, ppGoals, soGoals,//more forward fields
+									int otGoals, faceoffPercentage, shootPercentage);
+						else if (option == 2)
+							team[j].getPlayers()[j]=new Defense();
+					}
+					else { //prompts for goalie fields
+						
+					}
+	
 				}
 				
 			}
