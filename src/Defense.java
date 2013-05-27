@@ -19,14 +19,14 @@ public class Defense extends Player{
 	protected double shootPercentage; //Shooting Percentage
 
 	public Defense(String fname, String lname, boolean gender, double height, double weight, int month, int day, int year, int place, int mStatus,//person fields
-			double salaryPY, int contractR, double tSalary, int rating, int gp, double penaltyT, int penaltyN, boolean arm, int number, //player fields
+			double salaryPY, int contractR, double tSalary, int gp, double penaltyT, int penaltyN, boolean arm, int number, //player fields
 			double numMin, boolean rookie, //more player fields
 			int plusMinus, double avgGoalsPS, double avgGoalPercentagePS, double avgShotsPS, double zsGoalPercentage, double avgAssistsPS, //defense fields
 			double avgPenaltyPS, double avgPPGoalsPS, double avgSOGoalsPS, double avgNShifts, int gwGoals, int ppGoals, int soGoals,//more defense fields
 			int otGoals, /*points taken care of in constructor,*/double faceoffPercentage, double shootPercentage) {//more defense fields
 		
 		super(fname, lname, gender, height, weight, month, day, year, place, mStatus,//person fields
-				salaryPY, contractR, tSalary, rating, gp, penaltyT, penaltyN, arm, number, //player fields
+				salaryPY, contractR, tSalary, gp, penaltyT, penaltyN, arm, number, //player fields
 				numMin, rookie); //more player fields
 
 		this.plusMinus = plusMinus;
