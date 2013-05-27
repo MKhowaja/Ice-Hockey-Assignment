@@ -1,0 +1,76 @@
+
+
+System.out.print("Select whether player is forward, defense or goalie: ");
+playerType = in.next();
+if (playerType.equalsIgnoreCase("forward")||playerType.equalsIgnoreCase("defense")){
+  do{
+		System.out.print("Enter the number of game-winning goals: ");
+		gwGoals=in.nextInt();
+	}while (gwGoals<0); //Ensure the player doesn't have negative game-winning goals
+	
+	do{
+		System.out.print("Enter the number of power-play goals: ");
+		ppGoals=in.nextInt();
+	}while (ppGoals<0); //Ensure the player doesn't have negative power-play goals
+	
+	do{
+		System.out.print("Enter the number of shootout goals: ");
+		soGoals=in.nextInt();
+	}while (soGoals<0); //Ensure the player doesn't have negative shootout goals
+	
+}else if (playerType.equalsIgnoreCase("goalie")){
+	do{
+		System.out.print("Enter the number of wins: ");
+		wins=in.nextInt();
+	}while (wins<0); //Ensures the number of wins is above zero (valid)
+	
+	do{
+		System.out.print("Enter the number of loses: ");
+		loses=in.nextInt();
+	}while(loses<0); //Ensures the number of loses is above zero (valid)
+	
+	do{
+		System.out.print("Enter the number of wins during playoffs: ");
+		winsP=in.nextInt();
+	}while(winsP<0); //Ensures the number of wins during playoffs is above zero (valid)
+	
+	do{
+		System.out.print("Enter the number of loses during playoffs: ");
+		losesP=in.nextInt();
+	}while(losesP<0); //Ensures the number of loses during playoffs is above zero (valid)
+	
+	do{
+		System.out.print("Enter the number of loses during overtime: ");
+		losesOT=in.nextInt();
+	}while(losesOT<0); //Ensures the number of loses during overtime is above zero (valid)
+	
+	do{
+		System.out.print("Enter the number of games started: ");
+		gameStart=in.nextInt();
+	}while(gameStart<0); //Ensures the number of games started is above zero (valid)
+	
+	do{
+		System.out.print("Enter the number of goals scored against: ");
+		goalA=in.nextInt();
+	}while(goalA<0); //Ensures the number of goals scored against is above zero (valid)
+	
+	do{
+		System.out.print("Enter the total number of shots on goal: ");
+		shotsOG=in.nextInt();
+	}while(shotsOG<0); //Ensures the total number of shots on goal is above zero (valid)
+	
+	do{
+		System.out.print("Enter the number of saves goalie made: ");
+		saves=in.nextInt();
+	}while(saves<0); //Ensures the number of saves goalie made is above zero (valid)
+	
+	do{
+		System.out.print("Enter the number of games where goalie had no goals against him and only goalie to play in game: ");
+		shutouts=in.nextInt();
+	}while(shutouts<0); //Ensures the number of shutouts is above zero (valid)
+	
+	do{
+		System.out.print("Enter the number of goals scored against while off ice for extra attack player: ");
+		emptyNG=in.nextInt();
+	}while(emptyNG<0); //Ensures the the number of empty net goals is above zero (valid)
+}
