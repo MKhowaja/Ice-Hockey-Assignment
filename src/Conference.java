@@ -1,5 +1,5 @@
 public class Conference {
-	private String confName;
+	private String confName; //name of the confernce (Easter or Western)
 	private Division [] divisions; //A group of divisions
 	
 	//Accessor Methods
