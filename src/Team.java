@@ -1,5 +1,37 @@
 public class Team {
-	private String name; //Name of team (Documenting required)
+	private String name; //Name of team
+	/*
+      	1. New Jersey Devils
+      	2. New York Islanders
+      	3. New York Rangers
+      	4. Philadelphia Flyers
+      	5. Pittsburgh Penguins
+      	6. Boston Bruins
+      	7. Buffalo Sabres
+      	8. Montréal Canadiens
+      	9. Ottawa Senators
+      	10. Toronto Maple Leafs
+      	11. Carolina Hurricanes
+      	12. Florida Panthers
+      	13. Tampa Bay Lightning
+      	14. Washington Capitals
+      	15. Winnipeg Jets
+      	16. Chicago Blackhawks
+      	17. Columbus Blue Jackets
+      	18. Detroit Red Wings
+      	19. Nashville Predators
+      	20. St. Louis Blues
+      	21. Calgary Flames
+      	22. Edmonton Oilers
+      	23. Colorado Avalanche
+      	24. Minnesota Wild
+      	25. Vancouver Canucks
+      	26. Anaheim Ducks
+      	27. Dallas Stars
+      	28. Los Angeles Kings
+      	29. Phoenix Coyotes
+      	30. San Jose Sharks
+      	*/
 	private String division; // that the division belongs to
 	private String conference; // that the conference belongs to
 	private Coach [] coachingstaff;  // coaches, assistants, trainers, etc.
