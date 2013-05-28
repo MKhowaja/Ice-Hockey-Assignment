@@ -34,7 +34,6 @@ public class Division{
 	/**
 	 * Returns the division name 
 	 * @return name
-	 * @author MK, AV, CH, PJ
 	 */
 	public String getName() {
 		return name;
@@ -43,7 +42,6 @@ public class Division{
 	/**
 	 * Returns the conference name
 	 * @return conference
-	 * @author MK, AV, CH, PJ
 	 */
 	public String getConference() {
 		return conference;
@@ -52,7 +50,6 @@ public class Division{
 	/**
 	 * Returns the array of teams in the division
 	 * @return team
-	 * @author MK, AV, CH, PJ
 	 */
 	public Team[] getTeam() {
 		return team;
@@ -61,8 +58,8 @@ public class Division{
 	//Mutator Methods
 	/**
 	 * Stores parameter to name
-	 * @param x of type String	 */
-	 * @author MK, AV, CH, PJ
+	 * @param x of type String
+	 */
 
 	
 	public void putName(String x) {
@@ -72,7 +69,6 @@ public class Division{
 	/**
 	 * Stores parameter to conference
 	 * @param x of type String
-	 * @author MK, AV, CH, PJ
 	 */
 
 	public void putConference(String x) {
@@ -82,7 +78,6 @@ public class Division{
 	/**
 	 * Stores parameter to team[]
 	 * @param x of type Team
-	 * @author MK, AV, CH, PJ
 	 */
 	public void putTeam(Team[] x) {
 		team = x;
