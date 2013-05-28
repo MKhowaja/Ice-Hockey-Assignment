@@ -1,7 +1,7 @@
 public class Division{
-  	protected String divName; //name of the division
-	protected String conference; // name of the conference (Eastern or Western)
-	protected Team team[]; //A group of teams specific to each division
+  	protected String divName;
+	protected String conference;
+	protected Team team[];
 	
 	//Accessor Methods
 	/**
