@@ -1,16 +1,16 @@
 public class Division{
-  	protected String divName;
+  	protected String name;
 	protected String conference;
 	protected Team team[];
 	
 	//Accessor Methods
 	/**
 	 * Returns the division name 
-	 * @return divName
+	 * @return name
 	 * @author MK, AV, CH, PJ
 	 */
-	public String getDivName() {
-		return divName;
+	public String getName() {
+		return name;
 	}
 	
 	/**
@@ -33,24 +33,24 @@ public class Division{
 	
 	//Mutator Methods
 	/**
-	 * Stores parameter to divName
+	 * Stores parameter to name
 	 * @param x of type Integer
 	 * @author MK, AV, CH, PJ
 	 */
 	
-	public void putDivName(int x) {
+	public void putName(int x) {
 		if (x>=26 && x<=30)
-			divName="Southeast";
+			name="Southeast";
 		else if (x>=21)
-			divName="Northwest";
+			name="Northwest";
 		else if (x>=16)
-			divName="Central";
+			name="Central";
 		else if (x>=11)
-			divName="Southeast";
+			name="Southeast";
 		else if (x>=6)
-			divName="Northeast";
+			name="Northeast";
 		else if (x>=1)
-			divName="Alantic";
+			name="Atlantic";
 	}
 	
 	/**
