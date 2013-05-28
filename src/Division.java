@@ -1,5 +1,5 @@
 public class Division{
-  	protected String divName; //name of the division
+  	protected String name; //name of the division
 	protected String conference; // name of the conference (Eastern or Western) 
 	protected Team team[] = new Team [1]; //A group of teams specific to each division 
 	
@@ -7,25 +7,25 @@ public class Division{
 		if (i == 0){
 			putConference("Eastern");
 			if (j ==0){
-				putDivName("Atlantic Division");
+				putName("Atlantic Division");
 			}
 			else if (j==1){
-				putDivName("Northeast Division");
+				putName("Northeast Division");
 			}
 			else{
-				putDivName("Southeast Division");
+				putName("Southeast Division");
 			}
 		}
 		else{
 			putConference("Western");
 			if (j ==0){
-				putDivName("Central Division");
+				putName("Central Division");
 			}
 			else if (j==1){
-				putDivName("Northwest Division");
+				putName("Northwest Division");
 			}
 			else{
-				putDivName("Pacific Division");
+				putName("Pacific Division");
 			}
 		}
 	}
@@ -33,11 +33,11 @@ public class Division{
 	//Accessor Methods
 	/**
 	 * Returns the division name 
-	 * @return divName
+	 * @return name
 	 * @author MK, AV, CH, PJ
 	 */
-	public String getDivName() {
-		return divName;
+	public String getName() {
+		return name;
 	}
 	
 	/**
@@ -60,13 +60,13 @@ public class Division{
 	
 	//Mutator Methods
 	/**
-	 * Stores parameter to divName
-	 * @param x of type String
+	 * Stores parameter to name
+	 * @param x of type String	 */
 	 * @author MK, AV, CH, PJ
-	 */
+
 	
-	public void putDivName(String x) {
-		divName = x;
+	public void putName(String x) {
+		name = x;
 	}
 	
 	/**
