@@ -1,6 +1,6 @@
 public class League {
-  private final String name = "NHL";
-	private Conference[] conference = new Conference[2];
+  private final String name = "NHL";//name of the league (preset to Nation Hockey League)
+	private Conference[] conference = new Conference[2]; //an array of type conference (holds Eastern and Wester COnference)
 	
 	//Accessor Methods
 			/**
