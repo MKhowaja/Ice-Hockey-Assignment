@@ -1,5 +1,5 @@
 public class Conference {
-	private String confName; //name of the confernce (Easter or Western)
+	private String name; //name of the confernce (Easter or Western)
 	private Division [] divisions; //A group of divisions
 	
 	//Accessor Methods
@@ -7,8 +7,8 @@ public class Conference {
 		 * Returns the conference name 
 		 * @return confname
 		 */
-		public String getconfName() {
-			return confName;
+		public String getname() {
+			return name;
 		}
 
 		/**
@@ -25,11 +25,11 @@ public class Conference {
 		 * @param x of type Integer
 		 */
 
-		public void putconfName(int x) {
+		public void putname(int x) {
 			if (x>=4 && x<=6)
-				confName = "Western";
+				name = "Western";
 			else if (x>=1)
-				confName = "Eastern";
+				name = "Eastern";
 		}
 		
 		/**
