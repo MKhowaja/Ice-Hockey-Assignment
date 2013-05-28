@@ -67,8 +67,6 @@ public class Team {
 			int shotsfor, int shotsagainst, int saves) {
 		super();
 		this.name = name;
-		this.division = division;
-		this.conference = conference;
 		this.payroll = payroll;
 		this.gp = gpT;
 		this.wins = wins;
