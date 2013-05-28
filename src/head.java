@@ -1,6 +1,8 @@
 public class head extends Coach {
 	protected int winS; //Regular season wins
 	protected int loseS; //Regular season losses
+	private int tieS; //Regular season ties
+	private int overtimeLS; //Regular season overtime loses
 	protected int gameCS; //Regular season games coached
 	protected double pointPS; //Regular season Points percentage (number of points team earned divided by total possible points)
 	protected int winP; //Playoff wins
@@ -10,11 +12,13 @@ public class head extends Coach {
 	protected int totalGamesCoached; //Total number of games coached, calculated
 
 	public head(String fname, String lname, boolean gender, double height, double weight, int month, int day, int year, int place, int mStatus,//person fields
-			int winS, int loseS, int gameCS, double pointPS, int winP, int loseP, int gameCP, int stanleyN, int coachType) {//coach fields
+			int winS, int loseS, int tieS, int overtimeLS, int gameCS, double pointPS, int winP, int loseP, int gameCP, int stanleyN, int coachType) {//coach fields
 		super(fname, lname, gender, height, weight, month, day, year, place, mStatus);
 		
 		this.winS = winS;
 		this.loseS = loseS;
+		this.tieS = tieS;
+		this.overtimeLS = overtimeLS;
 		this.gameCS = gameCS;
 		this.pointPS = pointPS;
 		this.winP = winP;
@@ -41,6 +45,22 @@ public class head extends Coach {
 	public int getloseS(){
 		return loseS;
 	}
+	
+	/**
+	 * Returns the number of regular season ties
+	 * @return the tieS
+	 */
+	public int getTieS() {
+		return tieS;
+	}
+
+	/**
+	 * Returns the number of regular season overtime loses
+	 * @return the overtimeLS
+	 */
+	public int getOvertimeLS() {
+		return overtimeLS;
+	}
 
 	/**
 	 * Returns regular season games coached
@@ -50,6 +70,7 @@ public class head extends Coach {
 		return gameCS;
 	}
 
+
 	/**
 	 * Returns regular season point percentage
 	 * <p>
@@ -57,9 +78,10 @@ public class head extends Coach {
 	 * @return pointPS
 	 */
 	public double getPointPS(){
+		updatePointPS();
 		return pointPS;
 	}
-
+	
 	/**
 	 * Returns playoff wins
 	 * @return winP
@@ -115,6 +137,23 @@ public class head extends Coach {
 	 */
 	public void putLoseS(int x){
 		loseS=x;
+	}
+	
+	/**
+	 * Stores parameter to tieS
+	 * @param x of type int
+	 */
+	public void putTieS(int x) {
+		tieS = x;
+	}
+
+
+	/**
+	 * Stores parameter to overtimeLS
+	 * @param x of type int
+	 */
+	public void setOvertimeLS(int x) {
+		overtimeLS = x;
 	}
 
 	/**
@@ -173,4 +212,11 @@ public class head extends Coach {
 		totalGamesCoached = gameCP + gameCS;
 	}
 	
+	/**
+	 * Calculates the Point percentage for regular season
+	 * @return Calculated point percentage
+	 */
+	public void updatePointPS(){
+		pointPS=(tieS+overtimeLS+(2*winS))/(2*gameCS);
+	}
 }
