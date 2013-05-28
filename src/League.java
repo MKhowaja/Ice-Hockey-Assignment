@@ -1,7 +1,12 @@
 public class League {
-	private final String name = "NHL";
-	private Conference[] conference = new Conference[2];
+	private final String name = "NHL"; //name of the league (preset to National Hockey League) 
+	private Conference[] conference = new Conference [2]; //an array of type conference (to hold Eastern and Western Conferences) 
 
+	public League(){
+		for (int i = 0; i <conference.length; i++){
+			conference[i] = new Conference(i);
+		}
+	}
 	//Accessor Methods
 	/**
 	 * Returns the League Name
@@ -12,10 +17,10 @@ public class League {
 	}
 
 	/**
-	 * Returns the array conference
+	 * Returns the conference name
 	 * @return conference
 	 */
-	public Conference[] getConference() {
+	public Conference [] getdConference() {
 		return conference;
 	}
 

@@ -1,14 +1,29 @@
 public class Conference {
-	private String name;
-	private Division [] divisions; //A group of divisions
+	private String confName; //name of the conference (Eastern or Western)
+	private Division [] divisions = new Division [3]; //A group of divisions
+	
+	public Conference (int i){
+		if (i == 0){
+			putconfName("Eastern");
+			for (int j = 0; j <divisions.length; j++){
+				divisions[j] = new Division(i, j);
+			}
+		}
+		else{
+			putconfName("Western");
+			for (int j = 0; j <divisions.length; j++){
+				divisions[j] = new Division(i, j);
+			}
+		}
+	}
 	
 	//Accessor Methods
 		/**
 		 * Returns the conference name 
 		 * @return confname
 		 */
-		public String getname() {
-			return name;
+		public String getconfName() {
+			return confName;
 		}
 
 		/**
@@ -22,14 +37,11 @@ public class Conference {
 	//Mutator Methods
 		/**
 		 * Stores parameter to conference
-		 * @param x of type Integer
+		 * @param x of type String
 		 */
 
-		public void putname(int x) {
-			if (x>=4 && x<=6)
-				name = "Western";
-			else if (x>=1)
-				name = "Eastern";
+		public void putconfName(String x) {
+			confName = x;
 		}
 		
 		/**

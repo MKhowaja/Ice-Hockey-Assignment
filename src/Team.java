@@ -1,37 +1,5 @@
 public class Team {
-	private String name; //Name of team
-	/*
-      	1. New Jersey Devils
-      	2. New York Islanders
-      	3. New York Rangers
-      	4. Philadelphia Flyers
-      	5. Pittsburgh Penguins
-      	6. Boston Bruins
-      	7. Buffalo Sabres
-      	8. Montréal Canadiens
-      	9. Ottawa Senators
-      	10. Toronto Maple Leafs
-      	11. Carolina Hurricanes
-      	12. Florida Panthers
-      	13. Tampa Bay Lightning
-      	14. Washington Capitals
-      	15. Winnipeg Jets
-      	16. Chicago Blackhawks
-      	17. Columbus Blue Jackets
-      	18. Detroit Red Wings
-      	19. Nashville Predators
-      	20. St. Louis Blues
-      	21. Calgary Flames
-      	22. Edmonton Oilers
-      	23. Colorado Avalanche
-      	24. Minnesota Wild
-      	25. Vancouver Canucks
-      	26. Anaheim Ducks
-      	27. Dallas Stars
-      	28. Los Angeles Kings
-      	29. Phoenix Coyotes
-      	30. San Jose Sharks
-      	*/
+	private String name; //Name of team (Documenting required)
 	private String division; // that the division belongs to
 	private String conference; // that the conference belongs to
 	private Coach [] coachingstaff;  // coaches, assistants, trainers, etc.
@@ -318,72 +286,11 @@ public class Team {
 	//Mutators
 	
 	/**
-	 * Assigns field name with a string
-	 * @param number that denotes the team
+	 * Assigns the parameter to name
+	 * @param name the name to put
 	 */
-	public void putName(int x) {
-		if (x == 1)
-			name = "New Jersey Devils";
-		else if (x == 2)
-			name = "New York Islanders";
-		else if (x == 3)
-			name = "New York Rangers";
-		else if (x == 4)
-			name = "Philadelphia Flyers";
-		else if (x == 5)
-			name = "Pittsburgh Penguins";
-		else if (x == 6)
-			name = "Boston Bruins";
-		else if (x == 7)
-			name = "Buffalo Sabres";
-		else if (x == 8)
-			name = "Montréal Canadiens";
-		else if (x == 9)
-			name = "Ottawa Senators";
-		else if (x == 10)
-			name = "Toronto Maple Leafs";
-		else if (x == 11)
-			name = "Carolina Hurricanes";
-		else if (x == 12)
-			name = "Florida Panthers";
-		else if (x == 13)
-			name = "Tampa Bay Lightning";
-		else if (x == 14)
-			name = "Washington Capitals";
-		else if (x == 15)
-			name = "Winnipeg Jets";
-		else if (x == 16)
-			name = "Chicago Blackhawks";
-		else if (x == 17)
-			name = "Columbus Blue Jackets";
-		else if (x == 18)
-			name = "Detroit Red Wings";
-		else if (x == 19)
-			name = "Nashville Predators";
-		else if (x == 20)
-			name = "St. Louis Blues";
-		else if (x == 21)
-			name = "Calgary Flames";
-		else if (x == 22)
-			name = "Edmonton Oilers";
-		else if (x == 23)
-			name = "Colorado Avalanche";
-		else if (x == 24)
-			name = "Minnesota Wild";
-		else if (x == 25)
-			name = "Vancouver Canucks";
-		else if (x == 26)
-			name = "Anaheim Ducks";
-		else if (x == 27)
-			name = "Dallas Stars";
-		else if (x == 28)
-			name = "Los Angeles Kings";
-		else if (x == 29)
-			name = "Phoenix Coyotes";
-		else if (x == 30)
-			name = "San Jose Sharks";		
-		else
-			System.out.println("Not an official NHL team");
+	public void putName(String name) {
+		this.name = name;
 	}
 
 	/**
