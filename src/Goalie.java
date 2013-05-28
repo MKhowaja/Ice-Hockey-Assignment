@@ -21,7 +21,7 @@ public class Goalie extends Player {
 			int wins, int loses, int winsP, int losesP, int losesOT, int gameStart, int goalA, int shotsOG, int saves, int shutouts, int emptyNG) { //goalie fields
 		
 		super(fname, lname, gender, height, weight, month, day, year, place, mStatus,//person fields
-				salaryPY, contractR, tSalary, rating, gp, penaltyT, penaltyN, arm, number, //player fields
+				salaryPY, contractR, tSalary, gp, penaltyT, penaltyN, arm, number, //player fields
 				numMin, rookie); //more player fields
 		
 		this.wins = wins;

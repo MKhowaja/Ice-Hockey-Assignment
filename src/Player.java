@@ -12,7 +12,7 @@ public class Player extends Person {
 	protected boolean rookie; //If the player is a rookie (true if he/she is)
 
 	public Player(String fname, String lname, boolean gender, double height, double weight, int month, int day, int year, int place, int mStatus,//person fields
-			double salaryPY, int contractR, double tSalary, int rating, int gp, double penaltyT, int penaltyN, boolean arm, int number, double numMin,
+			double salaryPY, int contractR, double tSalary, int gp, double penaltyT, int penaltyN, boolean arm, int number, double numMin,
 			boolean rookie) {//player fields
 		
 		super(fname, lname, gender, height, weight, month, day, year, place, mStatus);
