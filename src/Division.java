@@ -1,7 +1,7 @@
 public class Division{
   	protected String name; //name of the division
 	protected String conference; // name of the conference (Eastern or Western) 
-	protected Team team[] = new Team [1]; //A group of teams specific to each division 
+	protected Team team[] = new Team [2]; //A group of teams specific to each division 
 	
 	public Division (int i, int j){
 		if (i == 0){

@@ -61,7 +61,7 @@ public class Team {
 	private double savePercent; //The total saves divided by the total shots faced, calculated
 	private double ppPercent; //Power play percent: Power-play goals divided by power-play opportunites or power-play goals allowed divided by times short-handed, calculated
 	
-	public Team(String name, String division, String conference, double payroll, int gpT,
+	public Team(String name, double payroll, int gpT,
 			int wins, int losses, int goalsfor, int goalsagainst, int ppo,
 			int tsh, int ppgoals, int shgoals, int ppgoalsA, int shgoalsA,
 			int shotsfor, int shotsagainst, int saves) {

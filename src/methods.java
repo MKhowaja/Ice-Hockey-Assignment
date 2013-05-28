@@ -38,13 +38,6 @@ public class methods {
 				"27. Dallas Stars\n28. Los Angeles Kings\n29. Phoenix Coyotes\n"+
 				"30. San Jose Sharks\nEnter (1-30)");
 		name=in.nextLine();
-		
-		System.out.println("Enter name of divison the team is in: ");
-		division = in.next();
-		
-		System.out.println("Enter the name of the conference the team is in: ");
-		conference = in.next();
-		
 		do{
 			System.out.print("Enter "+name+"'s payroll for players: ");
 			payroll=in.nextDouble();
@@ -120,7 +113,7 @@ public class methods {
 			savesT=in.nextInt();
 		}while(savesT<0); //Ensures the total saves is above zero (valid)
 		
-		Team t = new Team(name, division, conference, payroll, gpT,
+		Team t = new Team(name, payroll, gpT,
 				winsT, losesT, goalsFor, goalsAgainst, ppo,
 				tsh, ppGoalsT, shGoals, ppGoalsA, shGoalsA,
 				shotsFor, shotsAgainst, savesT);
@@ -206,7 +199,7 @@ public class methods {
 		x = br.readLine();
 		savesT = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
 
-		temp = new Team(name, division, conference, payroll, gpT,
+		temp = new Team(name, payroll, gpT,
 				winsT, losesT, goalsFor, goalsAgainst, ppo,
 				tsh, ppGoalsT, shGoals, ppGoalsA, shGoalsA,
 				shotsFor, shotsAgainst, savesT);

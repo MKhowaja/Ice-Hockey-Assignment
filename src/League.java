@@ -20,7 +20,7 @@ public class League {
 	 * Returns the conference name
 	 * @return conference
 	 */
-	public Conference [] getdConference() {
+	public Conference [] getConference() {
 		return conference;
 	}
 
