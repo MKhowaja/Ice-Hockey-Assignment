@@ -8,6 +8,16 @@ import java.util.Stack;
 
 
 public class methods {
+	public static void saveTeam(Team t, PrintWriter pw){
+		pw.println("TEAM NAME: "+t.getName());
+		pw.println("Divisison: "+t.getDivision());
+		pw.println("Conference: "+t.getConference());
+		pw.println("Payroll: "+t.getPayroll());
+		pw.println("Games Played: "+t.getGP());
+		pw.println("Games Won: "+t.getWins());
+		pw.println("Games Lost:"+t);
+	}
+	
 	public static Team promptforTeam() {
 		//Temporary fields for team
 		String name; //Name of team
@@ -29,7 +39,7 @@ public class methods {
 		Scanner in = new Scanner(System.in);
 		System.out.print("1. New Jersey Devils\n2. New York Islanders\n"+
 				"3. New York Rangers\n4. Philadelphia Flyers\n5. Pittsburgh Penguins\n"+
-				"6. Boston Bruins\n7. Buffalo Sabres\n8. Montréal Canadiens\n"+
+				"6. Boston Bruins\n7. Buffalo Sabres\n8. MontrÃ©al Canadiens\n"+
 				"9. Ottawa Senators\n10. Toronto Maple Leafs\n11. Carolina Hurricanes\n"+
 				"12. Florida Panthers\n13. Tampa Bay Lightning\n14. Washington Capitals\n" +
 				"15. Winnipeg Jets\n16. Chicago Blackhawks\n17. Columbus Blue Jackets\n"+
@@ -503,9 +513,6 @@ public class methods {
 	 * @param String filepath
 	 * @author MK, AV, CH, PJ
 	 */
-	public static void saveAll(String filepath) {//should we make separate save methods and pass writer has parameter?
-		FileWriter fw;
-		
-		
+	
 	}
 }
