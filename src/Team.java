@@ -347,7 +347,7 @@ public class Team {
 				else if (x == 7)
 					name = "Buffalo Sabres";
 				else if (x == 8)
-					name = "Montréal Canadiens";
+					name = "MontrÃ©al Canadiens";
 				else if (x == 9)
 					name = "Ottawa Senators";
 				else
@@ -613,12 +613,15 @@ public class Team {
 	public void updatePpPercent() {
 		ppPercent = (ppgoals/ppo)*100;
 	}
-
+	/**
+	 * Determines the appropriate division the team belongs to
+	 * @return an integer representing the division the team belongs to
+	 */
 	public int divNum(){
 		if (name.equals("New Jersey Devils")||name.equals("New York Islanders")||name.equals("New York Rangers")||name.equals("Philadelphia Flyers")||name.equals("Pittsburgh Penguins")){
 			return 0;
 		}
-		else if (name.equals("Boston Bruins")||name.equals("Buffalo Sabres")||name.equals("Montr�al Canadiens")||name.equals("Ottawa Senators")||name.equals("Toronto Maple Leafs")){
+		else if (name.equals("Boston Bruins")||name.equals("Buffalo Sabres")||name.equals("Montréal Canadiens")||name.equals("Ottawa Senators")||name.equals("Toronto Maple Leafs")){
 			return 1;
 		}
 		else if (name.equals("Carolina Hurricanes")||name.equals("Florida Panthers")||name.equals("Tampa Bay Lightning")||name.equals("Washington Capitals")||name.equals("Winnipeg Jets")){
@@ -634,6 +637,10 @@ public class Team {
 			return 5;
 		}
 	}
+	/**
+	 * Determines the appropriate conference the team belongs to
+	 * @return an integer representing the conference the team belongs to
+	 */
 	public int confNum(){
 		int x = divNum();
 		if (x<=2){
