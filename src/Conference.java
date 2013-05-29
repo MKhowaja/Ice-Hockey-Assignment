@@ -27,11 +27,12 @@ public class Conference {
 		}
 
 		/**
-		 * Returns the division name
+		 * Returns the division at location i
+		 * @param int i the index of the array
 		 * @return divisions
 		 */
-		public Division [] getdivisions() {
-			return divisions;
+		public Division getdivisions(int i) {
+			return divisions[i];
 		}
 
 	//Mutator Methods

@@ -17,11 +17,12 @@ public class League {
 	}
 
 	/**
-	 * Returns the conference name
+	 * Returns the conference at location i 
+	 * @param int i the index in the array
 	 * @return conference
 	 */
-	public Conference [] getConference() {
-		return conference;
+	public Conference getConference(int i) {
+		return conference[i];
 	}
 
 	//Mutator Methods
@@ -34,6 +35,10 @@ public class League {
 	public void putConference(Conference[] x) {
 		conference = x;
 	}
-
+	public void addTeam(Team x){
+		int conf = x.confNum();
+		int div = x.divNum();
+		this.getConference(conf).getdivisions(div).addTeam(x);
+	}
 
 }

@@ -1,7 +1,9 @@
+import java.util.Stack;
+
 public class Division{
   	protected String name; //name of the division
 	protected String conference; // name of the conference (Eastern or Western) 
-	protected Team team[] = new Team [2]; //A group of teams specific to each division 
+	protected Stack <Team> team = new Stack <Team> (); //A group of teams specific to each division 
 	
 	public Division (int i, int j){
 		if (i == 0){
@@ -48,10 +50,10 @@ public class Division{
 	}
 	
 	/**
-	 * Returns the array of teams in the division
+	 * Returns the stack of teams in the division
 	 * @return team
 	 */
-	public Team[] getTeam() {
+	public Stack getTeam() {
 		return team;
 	}
 	
@@ -76,13 +78,11 @@ public class Division{
 	}
 		
 	/**
-	 * Stores parameter to team[]
+	 * Stores parameter to team
 	 * @param x of type Team
 	 */
-	public void putTeam(Team[] x) {
-		team = x;
+	public void addTeam(Team t) {
+		team.push(t);
 	}
-	
-	
-	
+
 }

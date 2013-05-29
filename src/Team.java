@@ -342,7 +342,7 @@ public class Team {
 				else if (x == 7)
 					name = "Buffalo Sabres";
 				else if (x == 8)
-					name = "MontrÃ©al Canadiens";
+					name = "Montréal Canadiens";
 				else if (x == 9)
 					name = "Ottawa Senators";
 				else
@@ -613,7 +613,7 @@ public class Team {
 		if (name.equals("New Jersey Devils")||name.equals("New York Islanders")||name.equals("New York Rangers")||name.equals("Philadelphia Flyers")||name.equals("Pittsburgh Penguins")){
 			return 0;
 		}
-		else if (name.equals("Boston Bruins")||name.equals("Buffalo Sabres")||name.equals("Montréal Canadiens")||name.equals("Ottawa Senators")||name.equals("Toronto Maple Leafs")){
+		else if (name.equals("Boston Bruins")||name.equals("Buffalo Sabres")||name.equals("Montr�al Canadiens")||name.equals("Ottawa Senators")||name.equals("Toronto Maple Leafs")){
 			return 1;
 		}
 		else if (name.equals("Carolina Hurricanes")||name.equals("Florida Panthers")||name.equals("Tampa Bay Lightning")||name.equals("Washington Capitals")||name.equals("Winnipeg Jets")){
