@@ -121,7 +121,7 @@ public class methods {
 	}
 	
 	/**
-	 * Loads the data of a team from a text file to this object
+	 * Loads the team data from a text file to this object
 	 * @param String filepath
 	 * @author MK, AV, CH, PJ
 	 * @throws IOException 
@@ -220,15 +220,14 @@ public class methods {
 	}
 
 	/**
-	 * Loads the data from a text file onto an object of type person in the program
-	 * Note: keep files with coaches and files with players separate
+	 * Loads the player data from a text file into a stack of players
+	 * Note: include only player objects in the text file
 	 * @param String filepath
-	 * @param number number of players to load into array
 	 * @author MK, AV, CH, PJ
 	 */
-	public static Stack playerLoad(String file) throws IOException{
+	public static Stack loadPlayer(String filepath) throws IOException{
 		String x;
-		FileReader fr = new FileReader(file);
+		FileReader fr = new FileReader(filepath);
 		BufferedReader br = new BufferedReader(fr);
 		String classType;
 		Stack players = new Stack();
@@ -238,7 +237,6 @@ public class methods {
 		do {
 			x = br.readLine();
 			classType = x.substring(x.indexOf(": ")+2,x.length());
-			
 			
 
 			if (classType.equals("forward"))
@@ -486,9 +484,12 @@ public class methods {
 	}
 	
 	/**
-	 * Loads the data from a text file onto an array of players in the main program
+	 * Loads the coach data from a text file into a stack of coaches
 	 * Note: include only player objects in the text file
 	 * @param String filepath
 	 * @author MK, AV, CH, PJ
 	 */
+	public static Stack loadCoach() {
+		
+	}
 }
