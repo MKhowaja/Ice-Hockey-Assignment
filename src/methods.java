@@ -1,6 +1,8 @@
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.Scanner;
 import java.util.Stack;
 
@@ -490,5 +492,16 @@ public class methods {
 	public static Stack loadCoach() {
 		Stack coaches = new Stack();
 		return coaches;
+	}
+	
+	/**
+	 * Saves all data into a text file 
+	 * @param String filepath
+	 * @author MK, AV, CH, PJ
+	 */
+	public static void saveAll(String filepath) {//should we make separate save methods and pass writer has parameter?
+		FileWriter fw;
+		
+		
 	}
 }
