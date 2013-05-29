@@ -1,15 +1,15 @@
 public class head extends Coach {
-	protected int winS; //Regular season wins
-	protected int loseS; //Regular season losses
+	private int winS; //Regular season wins
+	private int loseS; //Regular season losses
 	private int tieS; //Regular season ties
 	private int overtimeLS; //Regular season overtime loses
-	protected int gameCS; //Regular season games coached
-	protected double pointPS; //Regular season Points percentage (number of points team earned divided by total possible points)
-	protected int winP; //Playoff wins
-	protected int loseP; //Playoff loses
-	protected int gameCP; //Playoff games coached
-	protected int stanleyN; //Number of Stanley Cups
-	protected int totalGamesCoached; //Total number of games coached, calculated
+	private int gameCS; //Regular season games coached
+	private double pointPS; //Regular season Points percentage (number of points team earned divided by total possible points)
+	private int winP; //Playoff wins
+	private int loseP; //Playoff loses
+	private int gameCP; //Playoff games coached
+	private int stanleyN; //Number of Stanley Cups
+	private int totalGamesCoached; //Total number of games coached, calculated
 
 	public head(String fname, String lname, boolean gender, double height, double weight, int month, int day, int year, int place, int mStatus,//person fields
 			int winS, int loseS, int tieS, int overtimeLS, int gameCS, double pointPS, int winP, int loseP, int gameCP, int stanleyN, int coachType) {//coach fields
