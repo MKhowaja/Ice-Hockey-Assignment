@@ -8,7 +8,7 @@ public class Team {
       5. Pittsburgh Penguins
       6. Boston Bruins
       7. Buffalo Sabres
-      8. MontrÃ©al Canadiens
+      8. Montreal Canadiens
       9. Ottawa Senators
       10. Toronto Maple Leafs
       11. Carolina Hurricanes
@@ -316,7 +316,7 @@ public class Team {
 	//Mutators
 
 	/**
-	 * Assigns field name with a string
+	 * Assigns field name with a string, updates division and conference
 	 * @param number that denotes the team
 	 */
 	public void putName(int x) {
@@ -606,6 +606,36 @@ public class Team {
 	 * Updates ppPercent
 	 */
 	public void updatePpPercent() {
-		ppPercent = ppgoals - ppo;
+		ppPercent = (ppgoals/ppo)*100;
+	}
+
+	public int divNum(){
+		if (name.equals("New Jersey Devils")||name.equals("New York Islanders")||name.equals("New York Rangers")||name.equals("Philadelphia Flyers")||name.equals("Pittsburgh Penguins")){
+			return 0;
+		}
+		else if (name.equals("Boston Bruins")||name.equals("Buffalo Sabres")||name.equals("Montréal Canadiens")||name.equals("Ottawa Senators")||name.equals("Toronto Maple Leafs")){
+			return 1;
+		}
+		else if (name.equals("Carolina Hurricanes")||name.equals("Florida Panthers")||name.equals("Tampa Bay Lightning")||name.equals("Washington Capitals")||name.equals("Winnipeg Jets")){
+			return 2;
+		}
+		else if (name.equals("Chicago Blackhawks")||name.equals("Columbus Blue Jackets")||name.equals("Detroit Red Wings")||name.equals("Nashville Predators")||name.equals("St. Louis Blues")){
+			return 3;
+		}
+		else if (name.equals("Calgary Flames")||name.equals("Edmonton Oilers")||name.equals("Colorado Avalanche")||name.equals("Minnesota Wild")||name.equals("Vancouver Canucks")){
+			return 4;
+		}
+		else{
+			return 5;
+		}
+	}
+	public int confNum(){
+		int x = this.divNum();
+		if (x<=2){
+			return 0;
+		}
+		else{
+			return 1;
+		}
 	}
 }
