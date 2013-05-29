@@ -126,10 +126,8 @@ public class methods {
 	 * @author MK, AV, CH, PJ
 	 * @throws IOException 
 	 */
-	public static Team loadTeam(String filepath) throws IOException {
+	public static Team loadTeam(String filepath, BufferedReader br) throws IOException {
 		String x;
-		FileReader fr = new FileReader(filepath);
-		BufferedReader br = new BufferedReader(fr);
 		Team temp;
 		
 		String name; //Name of team
@@ -225,13 +223,13 @@ public class methods {
 	 * @param String filepath
 	 * @author MK, AV, CH, PJ
 	 */
-	public static Stack loadPlayer(String filepath) throws IOException{
+	public static Stack loadPlayer(String filepath, BufferedReader br) throws IOException{
 		String x;
-		FileReader fr = new FileReader(filepath);
-		BufferedReader br = new BufferedReader(fr);
 		String classType;
 		Stack players = new Stack();
 		int i = 0; //index of stack of players
+		
+		br.readLine(); //skips the blank line between team and players
 
 		//loads person fields into the object
 		do {
@@ -490,6 +488,7 @@ public class methods {
 	 * @author MK, AV, CH, PJ
 	 */
 	public static Stack loadCoach() {
-		
+		Stack coaches = new Stack();
+		return coaches;
 	}
 }
