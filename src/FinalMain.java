@@ -35,7 +35,7 @@ public class FinalMain {
 				//loads from text file
 				System.out.println("Enter location of the text file you want to load from: ");
 				filepath = in.next();
-				team = methods.loadTeam(filepath);
+				team = methods.loadTeam("H:\\Mustaqeem\\Grade 12\\Computer Science\\Resources\\file.txt");
 				league.addTeam(team);
 				i++;
 			}
