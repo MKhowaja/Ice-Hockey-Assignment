@@ -74,3 +74,43 @@ if (playerType.equalsIgnoreCase("forward")||playerType.equalsIgnoreCase("defense
 		emptyNG=in.nextInt();
 	}while(emptyNG<0); //Ensures the the number of empty net goals is above zero (valid)
 }
+
+if (classType.equals("forward")||classType.equals("defense")||classType.equals("goalie")) 
+	public static void loadCoach() {
+		if (classType.equals("assistant"))
+			person[i] = new assistant(null, null, false, 0, 0, 0, 0, 0, 0, 0);
+		else if (classType.equals("goaltender"))
+			person[i] = new goaltender(null, null, false, 0, 0, 0, 0, 0, 0, 0);
+		else if (classType.equals("head"))
+			person[i] = new head(null, null, false, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+		else if (classType.equals("trainer"))
+			person[i] = new trainer(null, null, false, 0, 0, 0, 0, 0, 0, 0);
+		
+		
+		if (classType.equals("head")) {
+			//loads coach fields into the object
+
+			x = br.readLine();
+			((head)players.get(i)).winS = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+
+			x = br.readLine();
+			((head)person[i]).loseS = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+
+			x = br.readLine();
+			((head)person[i]).gameCS = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+
+			x = br.readLine();
+			((head)person[i]).pointPS = Double.parseDouble(x.substring(x.indexOf(": ")+2,x.length()));
+
+			x = br.readLine();
+			((head)person[i]).winP = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+
+			x = br.readLine();
+			((head)person[i]).loseP = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+
+			x = br.readLine();
+			((head)person[i]).gameCP = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+
+			x = br.readLine();
+			((head)person[i]).stanleyN = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+		}
