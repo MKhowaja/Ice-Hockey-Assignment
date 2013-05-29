@@ -8,7 +8,7 @@ public class Team {
       5. Pittsburgh Penguins
       6. Boston Bruins
       7. Buffalo Sabres
-      8. Montréal Canadiens
+      8. MontrÃ©al Canadiens
       9. Ottawa Senators
       10. Toronto Maple Leafs
       11. Carolina Hurricanes
@@ -60,13 +60,13 @@ public class Team {
 	private double shPercent; //The total goals scored divided by the total number of shots taken, calculated
 	private double savePercent; //The total saves divided by the total shots faced, calculated
 	private double ppPercent; //Power play percent: Power-play goals divided by power-play opportunites or power-play goals allowed divided by times short-handed, calculated
-	
+
 	public Team(String name, double payroll, int gpT,
 			int wins, int losses, int goalsfor, int goalsagainst, int ppo,
 			int tsh, int ppgoals, int shgoals, int ppgoalsA, int shgoalsA,
 			int shotsfor, int shotsagainst, int saves) {
 		super();
-		this.name = name;
+		putName (Integer.parseInt(name));
 		this.payroll = payroll;
 		this.gp = gpT;
 		this.wins = wins;
@@ -91,7 +91,7 @@ public class Team {
 	public String getName() {
 		return name;
 	}
-	
+
 	/**
 	 * Returns Division team belongs to
 	 * @return the division
@@ -99,7 +99,7 @@ public class Team {
 	public String getDivision() {
 		return division;
 	}
-	
+
 	/**
 	 * Returns Conference team belongs to
 	 * @return the conference
@@ -147,7 +147,7 @@ public class Team {
 	public int getGP() {
 		return gp;
 	}
-	
+
 	/**
 	 * Returns total number of games won
 	 * @return the wins
@@ -155,7 +155,7 @@ public class Team {
 	public int getWins() {
 		return wins;
 	}
-	
+
 	/**
 	 * Returns total number of games lost
 	 * @return the losses
@@ -187,7 +187,7 @@ public class Team {
 	public int getPpo() {
 		return ppo;
 	}
-	
+
 	/**
 	 * Return times shorthanded
 	 * @return the tsh
@@ -195,7 +195,7 @@ public class Team {
 	public int getTsh() {
 		return tsh;
 	}
-	
+
 	/**
 	 * Returns total powerplay goals scored
 	 * @return the ppgoals
@@ -227,7 +227,7 @@ public class Team {
 	public int getShgoalsA() {
 		return shgoalsA;
 	}
-	
+
 	/**
 	 * Returns total shots 
 	 * @return the shotsfor
@@ -243,7 +243,7 @@ public class Team {
 	public int getShotsagainst() {
 		return shotsagainst;
 	}
-	
+
 	/**
 	 * Returns total saves
 	 * @return the saves
@@ -296,7 +296,7 @@ public class Team {
 		updateShPercent();
 		return shPercent;
 	}
-	
+
 	/**
 	 * @return the savePercent
 	 */
@@ -304,7 +304,7 @@ public class Team {
 		updateSavePercent();
 		return savePercent;
 	}
-	
+
 	/**
 	 * @return the power play Percent
 	 */
@@ -312,76 +312,99 @@ public class Team {
 		updatePpPercent();
 		return ppPercent;
 	}
-	
+
 	//Mutators
-	
+
 	/**
 	 * Assigns field name with a string
 	 * @param number that denotes the team
 	 */
 	public void putName(int x) {
-		if (x == 1)
-			name = "New Jersey Devils";
-		else if (x == 2)
-			name = "New York Islanders";
-		else if (x == 3)
-			name = "New York Rangers";
-		else if (x == 4)
-			name = "Philadelphia Flyers";
-		else if (x == 5)
-			name = "Pittsburgh Penguins";
-		else if (x == 6)
-			name = "Boston Bruins";
-		else if (x == 7)
-			name = "Buffalo Sabres";
-		else if (x == 8)
-			name = "Montréal Canadiens";
-		else if (x == 9)
-			name = "Ottawa Senators";
-		else if (x == 10)
-			name = "Toronto Maple Leafs";
-		else if (x == 11)
-			name = "Carolina Hurricanes";
-		else if (x == 12)
-			name = "Florida Panthers";
-		else if (x == 13)
-			name = "Tampa Bay Lightning";
-		else if (x == 14)
-			name = "Washington Capitals";
-		else if (x == 15)
-			name = "Winnipeg Jets";
-		else if (x == 16)
-			name = "Chicago Blackhawks";
-		else if (x == 17)
-			name = "Columbus Blue Jackets";
-		else if (x == 18)
-			name = "Detroit Red Wings";
-		else if (x == 19)
-			name = "Nashville Predators";
-		else if (x == 20)
-			name = "St. Louis Blues";
-		else if (x == 21)
-			name = "Calgary Flames";
-		else if (x == 22)
-			name = "Edmonton Oilers";
-		else if (x == 23)
-			name = "Colorado Avalanche";
-		else if (x == 24)
-			name = "Minnesota Wild";
-		else if (x == 25)
-			name = "Vancouver Canucks";
-		else if (x == 26)
-			name = "Anaheim Ducks";
-		else if (x == 27)
-			name = "Dallas Stars";
-		else if (x == 28)
-			name = "Los Angeles Kings";
-		else if (x == 29)
-			name = "Phoenix Coyotes";
-		else if (x == 30)
-			name = "San Jose Sharks";		
-		else
-			System.out.println("Not an official NHL team");
+		if (x<=15){
+			conference = "Eastern";
+			if (x<=5){
+				division = "Atlantic Division";
+				if (x == 1)
+					name = "New Jersey Devils";
+				else if (x == 2)
+					name = "New York Islanders";
+				else if (x == 3)
+					name = "New York Rangers";
+				else if (x == 4)
+					name = "Philadelphia Flyers";
+				else
+					name = "Pittsburgh Penguins";
+			}
+			else if (x<=10){
+				division = "Northeast Division";
+				if (x == 6)
+					name = "Boston Bruins";
+				else if (x == 7)
+					name = "Buffalo Sabres";
+				else if (x == 8)
+					name = "MontrÃ©al Canadiens";
+				else if (x == 9)
+					name = "Ottawa Senators";
+				else
+					name = "Toronto Maple Leafs";
+			}
+			else{
+				division = "Southeast Division";
+				if (x == 11)
+					name = "Carolina Hurricanes";
+				else if (x == 12)
+					name = "Florida Panthers";
+				else if (x == 13)
+					name = "Tampa Bay Lightning";
+				else if (x == 14)
+					name = "Washington Capitals";
+				else
+					name = "Winnipeg Jets";
+			}
+		}
+		if (x<=30){
+			conference = "Western";
+			if (x<=20){
+				division = "Central Division";
+				if (x == 16)
+					name = "Chicago Blackhawks";
+				else if (x == 17)
+					name = "Columbus Blue Jackets";
+				else if (x == 18)
+					name = "Detroit Red Wings";
+				else if (x == 19)
+					name = "Nashville Predators";
+				else
+					name = "St. Louis Blues";
+			}
+			else if (x<=25){
+				division = "Northwest Division";
+				if (x == 21)
+					name = "Calgary Flames";
+				else if (x == 22)
+					name = "Edmonton Oilers";
+				else if (x == 23)
+					name = "Colorado Avalanche";
+				else if (x == 24)
+					name = "Minnesota Wild";
+				else
+					name = "Vancouver Canucks";
+			}
+			else{
+				division = "Pacific Division";
+				if (x == 26)
+					name = "Anaheim Ducks";
+				else if (x == 27)
+					name = "Dallas Stars";
+				else if (x == 28)
+					name = "Los Angeles Kings";
+				else if (x == 29)
+					name = "Phoenix Coyotes";
+				else
+					name = "San Jose Sharks";		
+
+			}
+		}
 	}
 
 	/**
@@ -439,7 +462,7 @@ public class Team {
 	public void putWins(int x) {
 		wins = x;
 	}
-	
+
 	/**
 	 * Assigns the parameter to losses
 	 * @param int x the total games lost
@@ -462,7 +485,7 @@ public class Team {
 	public void putGoalsagainst(int x) {
 		goalsagainst = x;
 	}
-	
+
 	/**
 	 * Assigns the parameter to ppo
 	 * @param int x representing power play opportunities
@@ -470,7 +493,7 @@ public class Team {
 	public void putPpo(int x) {
 		ppo = x;
 	}
-	
+
 	/**
 	 * Assigns the parameter to tsh
 	 * @param int x representing times short handed
@@ -528,7 +551,7 @@ public class Team {
 	public void putShotsagainst(int x) {
 		shotsagainst = x;
 	}
-	
+
 	/**
 	 * Assigns parameter to saves
 	 * @param int x representing total saves
@@ -536,7 +559,7 @@ public class Team {
 	public void putSaves(int x) {
 		saves = x;
 	}
-	
+
 	/**
 	 * Updates avgGPG
 	 */
@@ -571,14 +594,14 @@ public class Team {
 	public void updateShPercent() {
 		shPercent = (goalsfor/shotsfor)*100;
 	}
-	
+
 	/**
 	 * Updates savePercent
 	 */
 	public void updateSavePercent() {
 		savePercent = (saves/shotsagainst)*100;
 	}
-	
+
 	/**
 	 * Updates ppPercent
 	 */
