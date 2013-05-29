@@ -13,7 +13,7 @@ public class FinalMain {
 	 */
 	public static void main(String[] args) throws IOException {
 		Scanner in = new Scanner(System.in);
-		BufferedReader br = new BufferedReader(new FileReader("J:\\Mustaqeem\\Grade 12\\Computer Science\\Resources\\file"));
+		BufferedReader br;
 		
 		String filepath;
 		int i = 1; //counter
@@ -36,9 +36,11 @@ public class FinalMain {
 			}
 			else if (option == 2) {
 				//loads from text file
-				System.out.println("Enter location of the text file you want to load from: ");
-				filepath = in.next();
-				team = methods.loadTeam("J:\\Mustaqeem\\Grade 12\\Computer Science\\Resources\\file", br);
+				System.out.print("Enter location of the text file you want to load from: ");
+				filepath = in.nextLine();
+				
+				br = new BufferedReader(new FileReader(filepath));
+				team = methods.loadTeam(filepath, br);
 				league.addTeam(team);
 				i++;
 			}

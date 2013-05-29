@@ -226,6 +226,7 @@ public class methods {
 	 * @author MK, AV, CH, PJ
 	 */
 	public static Stack loadPlayer(String filepath, BufferedReader br) throws IOException{
+		loadTeam(filepath, br); //moves br to desired location in text file
 		String x;
 		String classType;
 		Stack players = new Stack();
@@ -489,8 +490,11 @@ public class methods {
 	 * @param String filepath
 	 * @author MK, AV, CH, PJ
 	 */
-	public static Stack loadCoach() {
+	public static Stack loadCoach(String filepath, BufferedReader br) {
 		Stack coaches = new Stack();
+		loadPlayer(filepath, br); //skips team and players
+		br.readLine();
+		
 		return coaches;
 	}
 	
