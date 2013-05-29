@@ -8,6 +8,11 @@ import java.util.Stack;
 
 
 public class methods {
+	/**
+	 * Saves all statistics of team onto a text file
+	 * @param t of type Team
+	 * @param pw of type PrintWriter
+	 */
 	public static void saveTeam(Team t, PrintWriter pw){
 		pw.println("TEAM NAME: "+t.getName());
 		pw.println("Divisison: "+t.getDivision());
@@ -15,7 +20,154 @@ public class methods {
 		pw.println("Payroll: "+t.getPayroll());
 		pw.println("Games Played: "+t.getGP());
 		pw.println("Games Won: "+t.getWins());
-		pw.println("Games Lost:"+t);
+		pw.println("Games Lost:"+t.getLosses());
+		pw.println("Total Goals Scored: "+t.getGoalsfor());
+		pw.println("Total Goals Scored Against: "+t.getGoalsagainst());
+		pw.println("Number of Powerplay Opportunities: "+t.getPpo());
+		pw.println("Number of Short Times Handed: "+t.getTsh());
+		pw.println("Total Number of Powerplay Goals: "+t.getPpgoals());
+		pw.println("Total Number of Shorthanded Goals: "+t.getShgoals());
+		pw.println("Total Number of Powerplay Goals Against: "+t.getPpgoalsA());
+		pw.println("Total number of Shorthanded Goals Against: "+t.getShgoalsA());
+		pw.println("Total Shots: "+t.getShotsfor());
+		pw.println("Total Shots Against: "+t.getShotsagainst());
+		pw.println("Total Saves: "+t.getSaves());
+		pw.close();
+	}
+	
+	/**
+	 * Saves all statistics of a coach depending on what type of coach (head, assistant, trainer or goaltender) onto a text file
+	 * @param c of type Coach
+	 * @param pw of type PrintWriter
+	 */
+	public static void saveCoach(Coach c, PrintWriter pw){
+		if (c instanceof head)
+			pw.println("CLASS: Head");
+		else if (c instanceof assistant)
+			pw.println("CLASS: assistant");
+		else if (c instanceof trainer)
+			pw.println("CLASS: trainer");
+		else if (c instanceof goaltender)
+			pw.println("CLASS: goaltender");
+		pw.println("First Name: "+c.getFName());
+		pw.println("Last Name: "+c.getLName());
+		pw.println("Age: "+c.getAge());
+		pw.println("Gender: "+c.getGender());
+		pw.println("Height: "+c.getHeight());
+		pw.println("Weight: "+c.getWeight());
+		pw.println("Month of Birth: "+c.getBirthMonth());
+		pw.println("Day of Birth: "+c.getBirthDay());
+		pw.println("Year of Birth: "+c.getBirthYear());
+		pw.println("Birthplace: "+c.getBirthPlace());
+		pw.println("Martial Status: "+c.getMaritalStatus());
+		if (c instanceof head){
+			//Writes all head fields onto a text file
+			pw.println("Regular Season Wins: "+((head)c).getWinS());
+			pw.println("Regular Season Loses: "+((head)c).getloseS());
+			pw.println("Regular Season Ties: "+((head)c).getTieS());
+			pw.println("Regular Season Overtime Loses: "+((head)c).getOvertimeLS());
+			pw.println("Regular Season Games Coached: "+((head)c).getGameCS());
+			pw.println("Season Points Percentage: "+((head)c).getPointPS());
+			pw.println("Playoff Wins: "+((head)c).getWinP());
+			pw.println("Playoff Loses: "+((head)c).getLoseP());
+			pw.println("Playoff Games Coached: "+((head)c).getGameCP());
+		}
+		pw.close();
+	}
+	
+	/**
+	 * Saves all statistics of a player depending on what type of player (forward, defense or goalie) onto a text file
+	 * @param p of type Player
+	 * @param pw of type PrintWriter
+	 */
+	public static void savePlayer(Player p, PrintWriter pw){
+		if (p instanceof Forward)
+			pw.println("CLASS: forward");
+		else if (p instanceof Defense)
+			pw.println("CLASS: defense");
+		else if (p instanceof Goalie)
+			pw.println("CLASS: goalie");
+		pw.println("First Name: "+p.getFName());
+		pw.println("Last Name: "+p.getLName());
+		pw.println("Age: "+p.getAge());
+		pw.println("Gender: "+p.getGender());
+		pw.println("Height: "+p.getHeight());
+		pw.println("Weight: "+p.getWeight());
+		pw.println("Month of Birth: "+p.getBirthMonth());
+		pw.println("Day of Birth: "+p.getBirthDay());
+		pw.println("Year of Birth: "+p.getBirthYear());
+		pw.println("Birthplace: "+p.getBirthPlace());
+		pw.println("Martial Status: "+p.getMaritalStatus());
+		pw.println("Salary per year: "+p.getSalaryPY());
+		pw.println("Contract: "+p.getcontractR());
+		pw.println("Total salary: "+p.getTSalary());
+		pw.println("Rating: "+p.getRating());
+		pw.println("Games played: "+p.getGP());
+		pw.println("Penalty Minutes: "+p.getPenaltyT());
+		pw.println("Number of penalties: "+p.getPenaltyN());
+		if (p.getArm()==true)
+			pw.println("Arm: right arm");
+		else
+			pw.println("Arm: left arm");
+		pw.println("Jersey number: "+p.getNumber());
+		pw.println("Total number of minutes on ice: "+p.getNumMin());
+		pw.println("Rookie: "+p.getRookie());
+		if (p instanceof Forward){
+			//Writes all forward fields onto text file
+			pw.println("Plus/Minus: "+((Forward) p).getplusMinus());
+			pw.println("Average goals per season: "+((Forward) p).getavgGoalsPS());
+			pw.println("Average goal percentage per season: "+((Forward) p).getavgGoalPercentagePS());
+			pw.println("Average shots taken per season: "+((Forward) p).getavgShotsPS());
+			pw.println("Z-score of goal percentage: "+((Forward) p).getzsGoalPercentage());
+			pw.println("Average assists per season: "+((Forward) p).getavgAssistsPS());
+			pw.println("Average penalty minutes per season: "+((Forward) p).getavgPenaltyPS());
+			pw.println("Average power play goals per season: "+((Forward) p).getavgPPGoalsPS());
+			pw.println("Average shoot-out goals per season: "+((Forward) p).getavgSOGoalsPS());
+			pw.println("Average number of shifts per game: "+((Forward) p).getAvgNShifts());
+			pw.println("Number of game-winning goals: "+((Forward) p).getGWGoals());
+			pw.println("Number of power play goals: "+((Forward) p).getPPGoals());
+			pw.println("Number of shoot-out goals: "+((Forward) p).getSOGoals());
+			pw.println("Number of overtime goals: "+((Forward) p).getOTGoals());
+			pw.println("Points: "+((Forward) p).getPoints());
+			pw.println("Faceoff win percentage: "+((Forward) p).getFaceoffPercentage());
+			pw.println("Shooting percentage: "+((Forward) p).getShootPercentage());
+		}
+		else if (p instanceof Defense){
+			//Writes all the fields that defense has onto text file	
+			pw.println("Plus/Minus: "+((Defense) p).getplusMinus());
+			pw.println("Average goals per season: "+((Defense) p).getavgGoalsPS());
+			pw.println("Average goal percentage per season: "+((Defense) p).getavgGoalPercentagePS());
+			pw.println("Average shots taken per season: "+((Defense) p).getavgShotsPS());
+			pw.println("Z-score of goal percentage: "+((Defense) p).getzsGoalPercentage());
+			pw.println("Average assists per season: "+((Defense) p).getavgAssistsPS());
+			pw.println("Average penalty minutes per season: "+((Defense) p).getavgPenaltyPS());
+			pw.println("Average power play goals per season: "+((Defense) p).getavgPPGoalsPS());
+			pw.println("Average shoot-out goals per season: "+((Defense) p).getavgSOGoalsPS());
+			pw.println("Average number of shifts per game: "+((Defense) p).getAvgNShifts());
+			pw.println("Number of game-winning goals: "+((Defense) p).getGWGoals());
+			pw.println("Number of power play goals: "+((Defense) p).getPPGoals());
+			pw.println("Number of shoot-out goals: "+((Defense) p).getSOGoals());
+			pw.println("Number of overtime goals: "+((Defense) p).getOTGoals());
+			pw.println("Points: "+((Defense) p).getPoints());
+			pw.println("Faceoff win percentage: "+((Defense) p).getFaceoffPercentage());
+			pw.println("Shooting percentage: "+((Defense) p).getShootPercentage());
+		}
+		else if (p instanceof Goalie){
+			//Writes all the fields that goalie has onto text file
+			pw.println("Number of wins: "+((Goalie) p).getWins());
+			pw.println("Numer of losses: "+((Goalie) p).getLoses());
+			pw.println("Number of wins during playoffs: "+((Goalie) p).getWinsP());
+			pw.println("Number of losses during playoffs: "+((Goalie) p).getLosesP());
+			pw.println("Number of losses during overtime: "+((Goalie) p).getLosesOT());
+			pw.println("Bumber of games started by goalie: "+((Goalie) p).getGameStart());
+			pw.println("Number of goals scored against goalie: "+((Goalie) p).getGoalA());
+			pw.println("Total number of shots faced by goalie: "+((Goalie) p).getShotsOG());
+			pw.println("Number of saves by goalie: "+((Goalie) p).getSaves());
+			pw.println("Save Percentage: "+((Goalie) p).getSavePercent());
+			pw.println("Shutout Saves: "+((Goalie) p).getShutouts());
+			pw.println("Empty Net Goals: "+((Goalie) p).getEmptyNG());
+		}
+		pw.close();
 	}
 	
 	public static Team promptforTeam() {
