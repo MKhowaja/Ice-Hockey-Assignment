@@ -38,6 +38,8 @@ public class League {
 	public void addTeam(Team x){
 		int conf = x.confNum();
 		int div = x.divNum();
+		if (conf==1)
+			div-=3;
 		this.getConference(conf).getdivisions(div).addTeam(x);
 	}
 
