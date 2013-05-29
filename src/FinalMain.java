@@ -23,6 +23,7 @@ public class FinalMain {
 			System.out.println("For Team " + i);
 			System.out.println("1 - Manually enter Team");
 			System.out.println("2 - Load Team from text file");
+			System.out.println("3 - Exit");
 			System.out.println("Select an option: ");
 			option = in.nextInt();
 			if (option == 1) {
@@ -41,6 +42,6 @@ public class FinalMain {
 			}
 			else
 				System.out.println("Invalid option.");
-		} while (option<1||option>2);
+		}while (option!=3);
 	}
 }

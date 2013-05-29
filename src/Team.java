@@ -68,9 +68,10 @@ public class Team {
 		super();
 		try{
 			putName (Integer.parseInt(name));
-		}catch(NumberFormatException e) { 
+		}catch(NumberFormatException e){
 			this.name = name;
 		}
+		
 		this.payroll = payroll;
 		this.gp = gpT;
 		this.wins = wins;
@@ -617,7 +618,7 @@ public class Team {
 		if (name.equals("New Jersey Devils")||name.equals("New York Islanders")||name.equals("New York Rangers")||name.equals("Philadelphia Flyers")||name.equals("Pittsburgh Penguins")){
 			return 0;
 		}
-		else if (name.equals("Boston Bruins")||name.equals("Buffalo Sabres")||name.equals("Montrï¿½al Canadiens")||name.equals("Ottawa Senators")||name.equals("Toronto Maple Leafs")){
+		else if (name.equals("Boston Bruins")||name.equals("Buffalo Sabres")||name.equals("Montréal Canadiens")||name.equals("Ottawa Senators")||name.equals("Toronto Maple Leafs")){
 			return 1;
 		}
 		else if (name.equals("Carolina Hurricanes")||name.equals("Florida Panthers")||name.equals("Tampa Bay Lightning")||name.equals("Washington Capitals")||name.equals("Winnipeg Jets")){
@@ -634,7 +635,7 @@ public class Team {
 		}
 	}
 	public int confNum(){
-		int x = this.divNum();
+		int x = divNum();
 		if (x<=2){
 			return 0;
 		}
