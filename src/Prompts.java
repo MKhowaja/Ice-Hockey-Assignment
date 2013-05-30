@@ -5,7 +5,7 @@ public class Prompts {
   
 	/**
 	 * Prompts for the statistics for the different types of players (forwards, defenses, goalies) depending on how many players the user wants to enter statistics for.
-	 * @return Array of players the user wanted to enter statistics for
+	 * @return The array of players the user wanted to enter statistics for
 	 */
 	public static Player[] promptPlayer(){
 		Scanner in=new Scanner(System.in);
@@ -287,6 +287,177 @@ public class Prompts {
 			}
 		}
 		return p;
+	}
+	
+	/**
+	 * Prompts for the statistics for the different types of coaches (head, assistant, goaltender, trainer) depending on how many coaches the user wants to enter statistics for.
+	 * @return The array of coaches the user wanted to enter statistics for
+	 */
+	public static Coach[] promptCoach(){
+		Scanner in=new Scanner(System.in);
+		int num;
+		String coachType;
+		
+		//Temporary fields for person
+		String fname; //First name
+		String lname; //Last name
+		int age; //Age
+		String tempGender;
+		boolean gender; //True if male 
+		double height; //Height in centimetres
+		double weight; //Weight in kg
+		int birthMonth; //Month of birth 
+		int birthDay; //Day of birth
+		int birthYear; //Year of birth
+		int birthPlace; //City, Province/State of birth; Province/State in short notation
+		int martialStatus; //Single, Married, Divorced, Widowed etc.
+		
+		//Temporary fields for head
+		int winS; //Regular season wins
+		int loseS; //Regular season losses
+		int tieS; //Regular season ties
+		int overtimeLS; //Regular season overtime loses
+		int gameCS; //Regular season games coached
+		int winP; //Playoff wins
+		int loseP; //Playoff loses
+		int gameCP; //Playoff games coached
+		int stanleyN; //Number of Stanley Cups
+		
+		do {
+			System.out.print("Enter the number of coaches you want to enter statistics for: ");
+			num=in.nextInt();
+		}while (num<0); //Ensures the user has to enter the a coach
+		
+		Coach c[]=new Coach[num];
+		
+		for (int i=0; i<num; i++){
+			//Prompt for all person fields
+			do {
+				System.out.print("Enter first name: ");
+				fname = in.nextLine();
+				in.nextLine();
+				System.out.print("Enter last name: ");
+				lname = in.nextLine();
+				in.nextLine();
+			} while (fname.equals("")&&lname.equals("")); //Ensures that something is entered
+
+			do {
+				System.out.print("Enter the age of "+fname+": ");
+				age = in.nextInt();
+			} while (age <= 0); //Ensures age is greater than 0
+
+			do {
+				System.out.print("Enter the gender of "+fname+" (m/f): ");
+				tempGender = in.next();
+			} while (!tempGender.equalsIgnoreCase("m") && !tempGender.equalsIgnoreCase("f"));
+			if (tempGender.equalsIgnoreCase("m"))
+				gender = true;
+			else
+				gender = false;
+
+			do {
+				System.out.print("Enter the height of "+fname+": ");
+				height = in.nextDouble();
+			} while (height <= 0); //Ensures height is greater than 0
+
+			do {
+				System.out.print("Enter the weight of "+fname+": ");
+				weight = in.nextDouble();
+			} while (weight <= 0); //Ensures weight is greater than 0
+			
+			do {
+				System.out.print("Enter the birth month of "+fname+": ");
+				birthMonth = in.nextInt();
+			} while (birthMonth <= 0 || birthMonth >12); //Ensures birth month is between January and Decemeber
+			
+			do {
+				System.out.print("Enter the birth day of "+fname+": ");
+				birthDay = in.nextInt();
+			} while (birthDay <= 0 || birthDay >31); //Ensures birth day is between 1 and 31
+			
+			do {
+				System.out.print("Enter the birth year of "+fname+": ");
+				birthYear = in.nextInt();
+			} while (birthYear <= 0); //Ensures birth month is greater than 0
+			
+			do {
+				System.out.print("Enter birth place based on list: "); //Show list
+				birthPlace = in.nextInt();
+			} while (birthPlace <= 0 || birthPlace > 21); //Ensures birth place selection is in the list
+			
+			do {
+				System.out.print("Enter martial status based on list: "); //Show list
+				martialStatus = in.nextInt();
+			} while (martialStatus <= 0 || martialStatus > 5); //Ensures martial status selection is in the list
+			
+			do {
+				System.out.print("Select wheather "+fname+" is a head coach, assistant coach, goaltender coach or trainer (head/assistant/goaltender/trainer):");
+				coachType=in.next();
+			}while (!coachType.equalsIgnoreCase("head")||!coachType.equalsIgnoreCase("assistant")||!coachType.equalsIgnoreCase("goaltender")||!coachType.equalsIgnoreCase("trainer"));
+			
+			if (coachType.equalsIgnoreCase("head")){
+				//prompt for head fields
+				do{
+					System.out.print("Enter "+fname+"'s wins during regular season: ");
+					winS=in.nextInt();
+				}while (winS<0); //Ensures the the coach doesn't have negative wins
+				
+				do{
+					System.out.print("Enter "+fname+"'s loses during regular season: ");
+					loseS=in.nextInt();
+				}while (loseS<0); //Ensures the the coach doesn't have negative loses
+				
+				do{
+					System.out.print("Enter the number of ties "+fname+" has during regular season: ");
+					tieS=in.nextInt();
+				}while (tieS<0); //Ensures the the coach doesn't have negative ties
+				
+				do{
+					System.out.print("Enter the number of overtime losses "+fname+" has during regular season: ");
+					overtimeLS=in.nextInt();
+				}while (overtimeLS<0); //Ensures the the coach doesn't have negative overtime loses
+				
+				do{
+					System.out.print("Enter the number of games coach by "+fname+" during regular season: ");
+					gameCS=in.nextInt();
+				}while (gameCS<0); //Ensures the the coach doesn't have negative games coached
+				
+				do{
+					System.out.print("Enter "+fname+"'s wins during playoffs: ");
+					winP=in.nextInt();
+				}while (winP<0); //Ensures the the coach doesn't have negative wins
+				
+				do{
+					System.out.print("Enter "+fname+"'s loses during playoffs: ");
+					loseP=in.nextInt();
+				}while (loseP<0); //Ensures the the coach doesn't have negative loses
+				
+				do{
+					System.out.print("Enter "+fname+" loses during playoffs: ");
+					gameCP=in.nextInt();
+				}while (gameCP<0); //Ensures the the coach doesn't have negative games coach during playoffs
+				
+				do{
+					System.out.print("Enter the number of times "+fname+" has won the Stanley Cup: ");
+					stanleyN=in.nextInt();
+				}while (stanleyN<0); //Ensures the the coach doesn't have negative number of times the coach wins Stanley Cups
+				
+				//Creating object for head coach
+				c[i]=new head(fname, lname, gender, height, weight, birthMonth, birthDay, birthYear, birthPlace, martialStatus, //person fields
+						winS, loseS, tieS, overtimeLS, gameCS, 0, winP, loseP, gameCP, stanleyN //head fields
+						); 
+			}
+			else if (coachType.equalsIgnoreCase("assistant"))
+				//Creating object for assistant coach
+				c[i]=new assistant(fname, lname, gender, height, weight, birthMonth, birthDay, birthYear, birthPlace, martialStatus); //person fields
+			else if (coachType.equalsIgnoreCase("goaltender"))
+				//Creating object for goaltender coach
+				c[i]=new goaltender(fname, lname, gender, height, weight, birthMonth, birthDay, birthYear, birthPlace, martialStatus); //person fields
+			else if (coachType.equalsIgnoreCase("trainer"))
+				//Creating object for trainer
+				c[i]=new trainer(fname, lname, gender, height, weight, birthMonth, birthDay, birthYear, birthPlace, martialStatus); //person fields
+		}
+		return c;
 	}
 
 }
