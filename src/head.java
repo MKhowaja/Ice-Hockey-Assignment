@@ -12,7 +12,7 @@ public class head extends Coach {
 	private int totalGamesCoached; //Total number of games coached, calculated
 
 	public head(String fname, String lname, boolean gender, double height, double weight, int month, int day, int year, int place, int mStatus,//person fields
-			int winS, int loseS, int tieS, int overtimeLS, int gameCS, double pointPS, int winP, int loseP, int gameCP, int stanleyN, int coachType) {//coach fields
+			int winS, int loseS, int tieS, int overtimeLS, int gameCS, double pointPS, int winP, int loseP, int gameCP, int stanleyN) {//coach fields
 		super(fname, lname, gender, height, weight, month, day, year, place, mStatus);
 		
 		this.winS = winS;
@@ -152,7 +152,7 @@ public class head extends Coach {
 	 * Stores parameter to overtimeLS
 	 * @param x of type int
 	 */
-	public void setOvertimeLS(int x) {
+	public void putOvertimeLS(int x) {
 		overtimeLS = x;
 	}
 
@@ -202,6 +202,15 @@ public class head extends Coach {
 	 */
 	public void putStanleyN(int x){
 		stanleyN=x;
+	}
+	
+	/**
+	 * Stores parameter to totalGamesCoached 
+	 * Note: should only be used in loading methods
+	 * @param x of type int
+	 */
+	public void puttotalGamesCoached(int x) {
+		totalGamesCoached = x;
 	}
 	
 	//Update Methods

@@ -32,7 +32,6 @@ public class methods {
 		pw.println("Total Shots: "+t.getShotsfor());
 		pw.println("Total Shots Against: "+t.getShotsagainst());
 		pw.println("Total Saves: "+t.getSaves());
-		pw.close();
 	}
 	
 	/**
@@ -42,13 +41,13 @@ public class methods {
 	 */
 	public static void saveCoach(Coach c, PrintWriter pw){
 		if (c instanceof head)
-			pw.println("CLASS: Head");
+			pw.println("Coach type: Head");
 		else if (c instanceof assistant)
-			pw.println("CLASS: assistant");
+			pw.println("Coach type: assistant");
 		else if (c instanceof trainer)
-			pw.println("CLASS: trainer");
+			pw.println("Coach type: trainer");
 		else if (c instanceof goaltender)
-			pw.println("CLASS: goaltender");
+			pw.println("Coach type: goaltender");
 		pw.println("First Name: "+c.getFName());
 		pw.println("Last Name: "+c.getLName());
 		pw.println("Age: "+c.getAge());
@@ -72,7 +71,6 @@ public class methods {
 			pw.println("Playoff Loses: "+((head)c).getLoseP());
 			pw.println("Playoff Games Coached: "+((head)c).getGameCP());
 		}
-		pw.close();
 	}
 	
 	/**
@@ -80,13 +78,13 @@ public class methods {
 	 * @param p of type Player
 	 * @param pw of type PrintWriter
 	 */
-	public static void savePlayer(Player p, PrintWriter pw){
+	public static void savePlayer(Player p, PrintWriter pw){ //i don't think fields are converted (ex. int to string)
 		if (p instanceof Forward)
-			pw.println("CLASS: forward");
+			pw.println("Player type: forward");
 		else if (p instanceof Defense)
-			pw.println("CLASS: defense");
+			pw.println("Player type: defense");
 		else if (p instanceof Goalie)
-			pw.println("CLASS: goalie");
+			pw.println("Player type: goalie");
 		pw.println("First Name: "+p.getFName());
 		pw.println("Last Name: "+p.getLName());
 		pw.println("Age: "+p.getAge());
@@ -167,7 +165,6 @@ public class methods {
 			pw.println("Shutout Saves: "+((Goalie) p).getShutouts());
 			pw.println("Empty Net Goals: "+((Goalie) p).getEmptyNG());
 		}
-		pw.close();
 	}
 	
 	public static Team promptforTeam() {
@@ -635,14 +632,15 @@ public class methods {
 
 			}	
 			
+			i++; //increments player index
 			x = br.readLine();//skips the space between each player
 			br.mark(1000); //stores this location in the memory so program can revisit this part of the stream later
 			
-			x = x.substring(x.indexOf(": ")+2,x.length()); //checks if next class in the text file is a coach or not
+			x = x.substring(x.indexOf(": ")+2,x.length()); //for use with while condition
 			
-			br.reset();
+			br.reset();//moves cursor back to where stream was marked
 			
-		} while (x.equals("forward")||x.equals("defense")||x.equals("goalie"));
+		} while (x.equals("forward")||x.equals("defense")||x.equals("goalie")); //checks if next class in the text file is a coach or not
 		return players;
 	}
 	
@@ -651,20 +649,106 @@ public class methods {
 	 * Note: include only player objects in the text file
 	 * @param String filepath
 	 * @author MK, AV, CH, PJ
+	 * @throws IOException 
 	 */
-	public static Stack loadCoach(String filepath, BufferedReader br) {
+	public static Stack loadCoach(String filepath, BufferedReader br) throws IOException {
 		Stack coaches = new Stack();
+		String coachType;
+		String x;
+		int i = 0;
 		loadPlayer(filepath, br); //skips team and players
-		br.readLine();
 		
+		do {
+			x = br.readLine();
+			coachType = x.substring(x.indexOf(": ")+2,x.length());
+			if (coachType.equals("assistant"))
+				coaches.push(new assistant(null, null, false, 0, 0, 0, 0, 0, 0, 0));
+			else if (coachType.equals("goaltender"))
+				coaches.push(new goaltender(null, null, false, 0, 0, 0, 0, 0, 0, 0));
+			else if (coachType.equals("head"))
+				coaches.push(new head(null, null, false, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0));
+			else 
+				coaches.push(new trainer(null, null, false, 0, 0, 0, 0, 0, 0, 0));
+			
+			//loads person fields
+			x = br.readLine();
+			((Person)coaches.get(i)).fname = x.substring(x.indexOf(": ")+2,x.length());
+
+			x = br.readLine();
+			((Person)coaches.get(i)).lname = x.substring(x.indexOf(": ")+2,x.length());
+
+			x = br.readLine();
+			((Person)coaches.get(i)).age = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+
+			x = br.readLine();
+			x = x.substring(x.indexOf(": ")+2,x.length());
+			if (x.equals("male"))
+				((Person)coaches.get(i)).gender = true;
+			else
+				((Person)coaches.get(i)).gender = false;
+
+			x = br.readLine();
+			((Person)coaches.get(i)).height = Double.parseDouble(x.substring(x.indexOf(": ")+2,x.length()));
+
+			x = br.readLine();
+			((Person)coaches.get(i)).weight = Double.parseDouble(x.substring(x.indexOf(": ")+2,x.length()));
+
+			x = br.readLine();
+			((Person)coaches.get(i)).birthMonth = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+
+			x = br.readLine();
+			((Person)coaches.get(i)).birthDay = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+
+			x = br.readLine();
+			((Person)coaches.get(i)).birthYear = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+
+			x = br.readLine();
+			((Person)coaches.get(i)).birthPlace = Person.convertBirthPlaceToInt(x.substring(x.indexOf(": ")+2,x.length()));
+
+			x = br.readLine();
+			((Person)coaches.get(i)).maritalStatus = Person.convertMaritalStatusToInt(x.substring(x.indexOf(": ")+2,x.length()));
+			
+			if (coachType.equals("head")) {
+				//loads head coach fields into the object
+
+				x = br.readLine();
+				((head)coaches.get(i)).winS = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+
+				x = br.readLine();
+				((head)coaches.get(i)).loseS = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+				
+				x = br.readLine();
+				((head)coaches.get(i)).putOvertimeLS(Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length())));
+
+				x = br.readLine();
+				((head)coaches.get(i)).gameCS = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+
+				x = br.readLine();
+				((head)coaches.get(i)).pointPS = Double.parseDouble(x.substring(x.indexOf(": ")+2,x.length()));
+
+				x = br.readLine();
+				((head)coaches.get(i)).winP = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+
+				x = br.readLine();
+				((head)coaches.get(i)).loseP = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+
+				x = br.readLine();
+				((head)coaches.get(i)).gameCP = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+
+				x = br.readLine();
+				((head)coaches.get(i)).stanleyN = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+				
+				x = br.readLine();
+				((head)coaches.get(i)).puttotalGamesCoached(Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length())));
+			}
+			i++; //increments coach counter
+			x = br.readLine();//skips the space between each coach
+			br.mark(1000); //stores this location in the memory so program can revisit this part of the stream later
+			x = x.substring(x.indexOf(": ")+2,x.length()); //checks if next class in the text file is end of file or not
+			br.reset();
+		} while (x != null);
 		return coaches;
 	}
 	
-	/**
-	 * Saves all data into a text file 
-	 * @param String filepath
-	 * @author MK, AV, CH, PJ
-	 */
 	
-	}
 }
