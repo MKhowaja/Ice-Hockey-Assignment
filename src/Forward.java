@@ -1,3 +1,6 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+
 public class Forward extends Player {
   
 	protected int plusMinus; //Holds +/- for each player
@@ -46,6 +49,70 @@ public class Forward extends Player {
 		this.points = avgGoalsPS + avgAssistsPS; //calculates points
 		this.faceoffPercentage = faceoffPercentage;
 		this.shootPercentage = shootPercentage;
+	}
+	
+	/**
+	 * Loads forward data from a text file into this object
+	 * @param String filepath
+	 * @author MK, AV, CH, PJ
+	 * @throws IOException 
+	 * @overrides load in Player
+	 */
+	public void load(String filepath, BufferedReader br) throws IOException {
+		//loads person/player fields
+		super.load(filepath, br);
+		//loads forward fields
+		String x;
+		x = br.readLine();
+		plusMinus = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+
+		x = br.readLine();
+		avgGoalsPS = Double.parseDouble(x.substring(x.indexOf(": ")+2,x.length()));
+
+		x = br.readLine();
+		avgGoalPercentagePS = Double.parseDouble(x.substring(x.indexOf(": ")+2,x.length()));
+
+		x = br.readLine();
+		avgShotsPS = Double.parseDouble(x.substring(x.indexOf(": ")+2,x.length()));
+
+		x = br.readLine();
+		zsGoalPercentage = Double.parseDouble(x.substring(x.indexOf(": ")+2,x.length()));
+
+		x = br.readLine();
+		avgAssistsPS = Double.parseDouble(x.substring(x.indexOf(": ")+2,x.length()));
+
+		x = br.readLine();
+		avgPenaltyPS = Double.parseDouble(x.substring(x.indexOf(": ")+2,x.length()));
+
+		x = br.readLine();
+		avgPPGoalsPS = Double.parseDouble(x.substring(x.indexOf(": ")+2,x.length()));
+
+		x = br.readLine();
+		avgSOGoalsPS = Double.parseDouble(x.substring(x.indexOf(": ")+2,x.length()));
+
+		x = br.readLine();
+		avgNShifts = Double.parseDouble(x.substring(x.indexOf(": ")+2,x.length()));
+
+		x = br.readLine();
+		gwGoals = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+
+		x = br.readLine();
+		ppGoals = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+
+		x = br.readLine();
+		soGoals = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+
+		x = br.readLine();
+		otGoals = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+
+		x = br.readLine();
+		points = Double.parseDouble(x.substring(x.indexOf(": ")+2,x.length()));
+
+		x = br.readLine();
+		faceoffPercentage = Double.parseDouble(x.substring(x.indexOf(": ")+2,x.length()));
+
+		x = br.readLine();
+		shootPercentage = Double.parseDouble(x.substring(x.indexOf(": ")+2,x.length()));
 	}
 	
 	//Accessor Methods

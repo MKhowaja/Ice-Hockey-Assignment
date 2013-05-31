@@ -1,20 +1,23 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+
 public class head extends Coach {
-	private int winS; //Regular season wins
-	private int loseS; //Regular season losses
-	private int tieS; //Regular season ties
-	private int overtimeLS; //Regular season overtime loses
-	private int gameCS; //Regular season games coached
-	private double pointPS; //Regular season Points percentage (number of points team earned divided by total possible points)
-	private int winP; //Playoff wins
-	private int loseP; //Playoff loses
-	private int gameCP; //Playoff games coached
-	private int stanleyN; //Number of Stanley Cups
-	private int totalGamesCoached; //Total number of games coached, calculated
+	protected int winS; //Regular season wins
+	protected int loseS; //Regular season losses
+	protected int tieS; //Regular season ties
+	protected int overtimeLS; //Regular season overtime loses
+	protected int gameCS; //Regular season games coached
+	protected double pointPS; //Regular season Points percentage (number of points team earned divided by total possible points)
+	protected int winP; //Playoff wins
+	protected int loseP; //Playoff loses
+	protected int gameCP; //Playoff games coached
+	protected int stanleyN; //Number of Stanley Cups
+	protected int totalGamesCoached; //Total number of games coached, calculated
 
 	public head(String fname, String lname, boolean gender, double height, double weight, int month, int day, int year, int place, int mStatus,//person fields
 			int winS, int loseS, int tieS, int overtimeLS, int gameCS, double pointPS, int winP, int loseP, int gameCP, int stanleyN) {//coach fields
 		super(fname, lname, gender, height, weight, month, day, year, place, mStatus);
-		
+
 		this.winS = winS;
 		this.loseS = loseS;
 		this.tieS = tieS;
@@ -27,8 +30,53 @@ public class head extends Coach {
 		this.stanleyN = stanleyN;
 		updatetotalGamesCoached();
 	}
-	
-	
+
+	/**
+	 * Loads the head coach data from a text file into this head object
+	 * @param String filepath
+	 * @author MK, AV, CH, PJ
+	 * @throws IOException 
+	 * @overrides load in Coach
+	 */
+	public void load(String filepath, BufferedReader br) throws IOException {
+		
+		super.load(filepath, br); //loads coach fields
+		String x;
+		//loads head coach fields into the object
+
+		x = br.readLine();
+		winS = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+
+		x = br.readLine();
+		loseS = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+
+		x = br.readLine();
+		putOvertimeLS(Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length())));
+
+		x = br.readLine();
+		gameCS = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+
+		x = br.readLine();
+		pointPS = Double.parseDouble(x.substring(x.indexOf(": ")+2,x.length()));
+
+		x = br.readLine();
+		winP = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+
+		x = br.readLine();
+		loseP = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+
+		x = br.readLine();
+		gameCP = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+
+		x = br.readLine();
+		stanleyN = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+
+		x = br.readLine();
+		totalGamesCoached = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+	}
+
+
+
 	//Accessor Methods
 	/**
 	 * Returns regular season wins
@@ -45,7 +93,7 @@ public class head extends Coach {
 	public int getloseS(){
 		return loseS;
 	}
-	
+
 	/**
 	 * Returns the number of regular season ties
 	 * @return the tieS
@@ -81,7 +129,7 @@ public class head extends Coach {
 		updatePointPS();
 		return pointPS;
 	}
-	
+
 	/**
 	 * Returns playoff wins
 	 * @return winP
@@ -138,7 +186,7 @@ public class head extends Coach {
 	public void putLoseS(int x){
 		loseS=x;
 	}
-	
+
 	/**
 	 * Stores parameter to tieS
 	 * @param x of type int
@@ -203,7 +251,7 @@ public class head extends Coach {
 	public void putStanleyN(int x){
 		stanleyN=x;
 	}
-	
+
 	/**
 	 * Stores parameter to totalGamesCoached 
 	 * Note: should only be used in loading methods
@@ -212,7 +260,7 @@ public class head extends Coach {
 	public void puttotalGamesCoached(int x) {
 		totalGamesCoached = x;
 	}
-	
+
 	//Update Methods
 	/**
 	 * updates totalGames Coached
@@ -220,7 +268,7 @@ public class head extends Coach {
 	public void updatetotalGamesCoached() {
 		totalGamesCoached = gameCP + gameCS;
 	}
-	
+
 	/**
 	 * Calculates the Point percentage for regular season
 	 * @return Calculated point percentage

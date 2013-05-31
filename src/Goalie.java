@@ -1,3 +1,6 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+
 public class Goalie extends Player {
 	protected int wins; //Number of wins
 	protected int loses; //Number of losses
@@ -38,6 +41,57 @@ public class Goalie extends Player {
 		this.emptyNG = emptyNG;
 		
 		updateSavePercent();
+	}
+	
+	/**
+	 * Loads goalie data from a text file into this object
+	 * @param String filepath
+	 * @author MK, AV, CH, PJ
+	 * @throws IOException 
+	 * @overrides load in Player
+	 */
+	public void load(String filepath, BufferedReader br) throws IOException {
+		//loads person/player fields
+		super.load(filepath, br);
+		//load goalie fields into object
+		String x;
+		
+		x = br.readLine();
+		wins = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+
+		x = br.readLine();
+		loses = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+
+		x = br.readLine();
+		winsP = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+
+		x = br.readLine();
+		losesP = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+
+		x = br.readLine();
+		losesOT = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+
+		x = br.readLine();
+		gameStart = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+
+		x = br.readLine();
+		goalA = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+
+		x = br.readLine();
+		shotsOG = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+
+		x = br.readLine();
+		saves = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+
+		x = br.readLine();
+		savePercent = Double.parseDouble(x.substring(x.indexOf(": ")+2,x.length()));
+
+		x = br.readLine();
+		shutouts = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+
+		x = br.readLine();
+		emptyNG = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+		
 	}
 	
 	//Accessor Methods

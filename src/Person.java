@@ -1,6 +1,8 @@
+import java.io.BufferedReader;
+import java.io.IOException;
 import java.util.Calendar;
 
-public abstract class Person {
+abstract class Person {
   	protected String fname; //First name
   	protected String lname; //Last name
 	protected int age; //Age, calculated
@@ -31,6 +33,54 @@ public abstract class Person {
 		updateAge();
 	}
 	
+	/**
+	 * Loads person data from a text file into this object
+	 * @param String filepath
+	 * @author MK, AV, CH, PJ
+	 * @throws IOException 
+	 */
+	public void load(String filepath, BufferedReader br) throws IOException {
+		String x;
+
+		//loads person fields
+		x = br.readLine();
+		fname = x.substring(x.indexOf(": ")+2,x.length());
+
+		x = br.readLine();
+		lname = x.substring(x.indexOf(": ")+2,x.length());
+
+		x = br.readLine();
+		age = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+
+		x = br.readLine();
+		x = x.substring(x.indexOf(": ")+2,x.length());
+		if (x.equals("male"))
+			gender = true;
+		else
+			gender = false;
+
+		x = br.readLine();
+		height = Double.parseDouble(x.substring(x.indexOf(": ")+2,x.length()));
+
+		x = br.readLine();
+		weight = Double.parseDouble(x.substring(x.indexOf(": ")+2,x.length()));
+
+		x = br.readLine();
+		birthMonth = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+
+		x = br.readLine();
+		birthDay = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+
+		x = br.readLine();
+		birthYear = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+
+		x = br.readLine();
+		birthPlace = Person.convertBirthPlaceToInt(x.substring(x.indexOf(": ")+2,x.length()));
+
+		x = br.readLine();
+		maritalStatus = Person.convertMaritalStatusToInt(x.substring(x.indexOf(": ")+2,x.length()));
+	}
+
 
 	//Accessors
 	

@@ -1,4 +1,7 @@
-public class Player extends Person {
+import java.io.BufferedReader;
+import java.io.IOException;
+
+abstract class Player extends Person {
 	protected double salaryPY; //Salary per year
 	protected int contractR; //# of years remaining of contract 
 	protected double tSalary; //Total salary over entire contract length
@@ -14,7 +17,7 @@ public class Player extends Person {
 	public Player(String fname, String lname, boolean gender, double height, double weight, int month, int day, int year, int place, int mStatus,//person fields
 			double salaryPY, int contractR, double tSalary, int gp, double penaltyT, int penaltyN, boolean arm, int number, double numMin,
 			boolean rookie) {//player fields
-		
+
 		super(fname, lname, gender, height, weight, month, day, year, place, mStatus);
 		this.salaryPY = salaryPY;
 		this.contractR = contractR;
@@ -29,12 +32,69 @@ public class Player extends Person {
 		this.rookie = rookie;
 	}
 
+	/**
+	 * Loads coach data from a text file into this object
+	 * @param String filepath
+	 * @author MK, AV, CH, PJ
+	 * @throws IOException 
+	 * @overrides load in Person
+	 */
+	public void load(String filepath, BufferedReader br) throws IOException {
+		//loads person fields
+		super.load(filepath, br);
+		//loads player fields
+		String x;
+
+		x = br.readLine();
+		salaryPY = Double.parseDouble(x.substring(x.indexOf(": ")+2,x.length()));
+
+		x = br.readLine();
+		contractR = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+
+		x = br.readLine();
+		tSalary = Double.parseDouble(x.substring(x.indexOf(": ")+2,x.length()));
+
+		x = br.readLine();
+		rating = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+
+		x = br.readLine();
+		gp = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+
+		x = br.readLine();
+		penaltyT = Double.parseDouble(x.substring(x.indexOf(": ")+2,x.length()));
+
+		x = br.readLine();
+		penaltyN = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+
+		x = br.readLine();
+		x = x.substring(x.indexOf(": ")+2,x.length());
+		if (x.equals("right arm"))
+			arm = true;
+		else
+			arm = false;
+
+		x = br.readLine();
+		number = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+
+		x = br.readLine();
+		numMin = Double.parseDouble(x.substring(x.indexOf(": ")+2,x.length()));
+
+		x = br.readLine();
+		x = x.substring(x.indexOf(": ")+2,x.length());
+		if (x.equals("true")) 
+			rookie = true;
+		else
+			rookie = false;
+
+	}
+
+
 	//Accessors
 
 	/**
 	 * Returns salary per year
 	 * @return salaryPY
-	*/
+	 */
 
 	public double getSalaryPY(){
 		return salaryPY;
@@ -43,7 +103,7 @@ public class Player extends Person {
 	/**
 	 * Returns remaining years in contract
 	 * @return contractR
-	*/
+	 */
 
 	public int getcontractR(){
 		return contractR;
@@ -52,7 +112,7 @@ public class Player extends Person {
 	/**
 	 * Returns total salary over entire contract length
 	 * @return tSalary
-	*/
+	 */
 
 	public double getTSalary(){
 		return tSalary;
@@ -61,7 +121,7 @@ public class Player extends Person {
 	/**
 	 * Returns rating
 	 * @return rating
-	*/
+	 */
 
 	public int getRating(){
 		return rating;
@@ -70,7 +130,7 @@ public class Player extends Person {
 	/**
 	 * Returns games played
 	 * @return gp
-	*/
+	 */
 
 	public int getGP(){
 		return gp;
@@ -79,7 +139,7 @@ public class Player extends Person {
 	/**
 	 * Returns time spent in penalties in minutes
 	 * @return penaltyT
-	*/
+	 */
 
 	public double getPenaltyT (){
 		return penaltyT;
@@ -108,7 +168,7 @@ public class Player extends Person {
 	public int getNumber() {
 		return number;
 	}
-	
+
 	/**
 	 * Returns total number of minutes the player has been on ice
 	 * @return the number of minutes
@@ -116,7 +176,7 @@ public class Player extends Person {
 	public double getNumMin(){
 		return numMin;
 	}
-	
+
 	/**
 	 * Returns if the player is rookie or not
 	 * @return rookie
@@ -126,11 +186,11 @@ public class Player extends Person {
 	}
 
 	//Mutators
-	
+
 	/**
 	 * Stores salary per year
 	 * @param x of type double
-	*/
+	 */
 
 	public void putSalaryPY(double x){
 		salaryPY = x;
@@ -139,7 +199,7 @@ public class Player extends Person {
 	/**
 	 * Stores years in contract
 	 * @param x of type int
-	*/
+	 */
 
 	public void putcontractR(int x){
 		contractR = x;
@@ -148,7 +208,7 @@ public class Player extends Person {
 	/**
 	 * Stores total salary over entire contract length
 	 * @param x of type double
-	*/
+	 */
 
 	public void putTSalary(double x){
 		tSalary = x;
@@ -157,7 +217,7 @@ public class Player extends Person {
 	/**
 	 * Stores rating
 	 * @param x of type int
-	*/
+	 */
 
 	public void putRating(int x){
 		rating = x;
@@ -166,7 +226,7 @@ public class Player extends Person {
 	/**
 	 * Stores games played
 	 * @param x of type int
-	*/
+	 */
 
 	public void putGP(int x){
 		gp = x;
@@ -204,7 +264,7 @@ public class Player extends Person {
 	public void putNumber(int x) {
 		number = x;
 	}
-	
+
 	/**
 	 * Assigns number the value of x, representing the total number of minutes the player has been on ice
 	 * @param x of type double
@@ -212,7 +272,7 @@ public class Player extends Person {
 	public void putNumMin(double x){
 		numMin=x;
 	}
-	
+
 	/**
 	 * Assigns number the value of x, representing if the player is a rookie
 	 * @param x of type boolean
