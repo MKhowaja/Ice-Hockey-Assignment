@@ -1,5 +1,6 @@
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.PrintWriter;
 
 public class Goalie extends Player {
 	protected int wins; //Number of wins
@@ -45,14 +46,13 @@ public class Goalie extends Player {
 	
 	/**
 	 * Loads goalie data from a text file into this object
-	 * @param String filepath
 	 * @author MK, AV, CH, PJ
 	 * @throws IOException 
 	 * @overrides load in Player
 	 */
-	public void load(String filepath, BufferedReader br) throws IOException {
+	public void load( BufferedReader br) throws IOException {
 		//loads person/player fields
-		super.load(filepath, br);
+		super.load(br);
 		//load goalie fields into object
 		String x;
 		
@@ -91,7 +91,28 @@ public class Goalie extends Player {
 
 		x = br.readLine();
 		emptyNG = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
-		
+	}
+	
+	/**
+	 * Saves all statistics of goalie onto a text file
+	 * @param pw of type PrintWriter
+	 * @overrides save in Player
+	 */
+	public void save(PrintWriter pw) {
+		super.save(pw);
+		//Writes all goalie fields onto text file
+		pw.println("Number of wins: "+wins);
+		pw.println("Numer of losses: "+loses);
+		pw.println("Number of wins during playoffs: "+winsP);
+		pw.println("Number of losses during playoffs: "+losesP);
+		pw.println("Number of losses during overtime: "+losesOT);
+		pw.println("Bumber of games started by goalie: "+gameStart);
+		pw.println("Number of goals scored against goalie: "+goalA);
+		pw.println("Total number of shots faced by goalie: "+shotsOG);
+		pw.println("Number of saves by goalie: "+saves);
+		pw.println("Save Percentage: "+savePercent);
+		pw.println("Shutout Saves: "+shutouts);
+		pw.println("Empty Net Goals: "+emptyNG);
 	}
 	
 	//Accessor Methods

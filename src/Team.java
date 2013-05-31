@@ -43,7 +43,7 @@ public class Team {
 	private Player [] players;  // a structure that will contain the maximum number of roster spots allowed for a team
 	private double payroll;   //how much the team is paying its players currently for the season (in millions)
 	private final double salarycap = 64.3;   // put by the league. It is the same for all teams (in millions)
-	//Team stats (Don't know if this is enough)
+	//Team stats
 	private int gp; //games played
 	private int wins; //games won
 	private int losses; //games lost
@@ -76,7 +76,7 @@ public class Team {
 		}catch(NumberFormatException e){
 			this.name = name;
 		}
-		
+
 		this.payroll = payroll;
 		this.gp = gpT;
 		this.wins = wins;
@@ -104,13 +104,13 @@ public class Team {
 
 		x = br.readLine();//skips first line of text file
 		x = br.readLine();//skips second line of text file
-		
+
 		x = br.readLine();
 		name = x.substring(x.indexOf(": ")+2,x.length());
-		
+
 		x = br.readLine();
 		division = x.substring(x.indexOf(": ")+2,x.length());
-		
+
 		x = br.readLine();
 		conference = x.substring(x.indexOf(": ")+2,x.length());
 
@@ -160,7 +160,7 @@ public class Team {
 		saves = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
 
 	}
-	
+
 	/**
 	 * Loads the team data through prompting the user for data
 	 * @author MK, AV, CH, PJ
@@ -183,78 +183,78 @@ public class Team {
 			System.out.print("Enter "+name+"'s payroll for players: ");
 			payroll=in.nextDouble();
 		}while (payroll<0); //Ensures the payroll for the players isn't negative
-		
+
 		do{
 			System.out.print("Enter the number of games the "+name+" played: ");
 			gp=in.nextInt();
 		}while(gp<0); //Ensures the number of games played is above zero (valid)
-		
+
 		do{
 			System.out.print("Enter the number of games the "+name+" won: ");
 			wins=in.nextInt();
 		}while(wins<0); //Ensures the number of games won is above zero (valid)
-		
+
 		do{
 			System.out.print("Enter the number of games the "+name+" lost: ");
 			losses=in.nextInt();
 		}while(losses<0); //Ensures the number of games lost is above zero (valid)
-		
+
 		do{
 			System.out.print("Enter the total number of goals the "+name+" scored (including power-play, short-handed and empty-net goals): ");
 			goalsfor=in.nextInt();
 		}while(goalsfor<0); //Ensures the total goals scored is above zero (valid)
-		
+
 		do{
 			System.out.print("Enter the total goals scored against the "+name+" (including power-play, short-handed and empty-net goals): ");
 			goalsagainst=in.nextInt();
 		}while(goalsagainst<0); //Ensures the total goals scored against is above zero (valid)
-		
+
 		do{
 			System.out.print("Enter the number of power-play opportunities that the "+name+" have: ");
 			ppo=in.nextInt();
 		}while(ppo<0); //Ensures the number of power-play opportunities is above zero (valid)
-		
+
 		do{
 			System.out.print("Enter the number of times the "+name+" were short-handed: ");
 			tsh=in.nextInt();
 		}while(tsh<0); //Ensures the number of times short-handed is above zero (valid)
-		
+
 		do{
 			System.out.print("Enter the total number of power-play goals the "+name+" have: ");
 			ppgoals=in.nextInt();
 		}while(ppgoals<0); //Ensures the total number of power-play goals is above zero (valid)
-		
+
 		do{
 			System.out.print("Enter the total number of short-handed goals the "+name+" have: ");
 			shgoals=in.nextInt();
 		}while(shgoals<0); //Ensures the total number of short-handed goals is above zero (valid)
-		
+
 		do{
 			System.out.print("Enter the total number of power-play goals aganist the "+name+": ");
 			ppgoalsA=in.nextInt();
 		}while(ppgoalsA<0); //Ensures the total number of power-play goals against is above zero (valid)
-		
+
 		do{
 			System.out.print("Enter the total number of short-handed goals against the "+name+": ");
 			shgoalsA=in.nextInt();
 		}while(shgoalsA<0); //Ensures the total number of short-handed goals against is above zero (valid)
-		
+
 		do{
 			System.out.print("Enter the total number of shots on the "+name+"'s goal: "); //More info needed
 			shotsfor=in.nextInt();
 		}while(shotsfor<0); //Ensures the total shots on goal is above zero (valid)
-		
+
 		do{
 			System.out.print("Enter the total number of shots against the "+name+": ");
 			shotsagainst=in.nextInt();
 		}while(shotsagainst<0); //Ensures the total shots against is above zero (valid)
-		
+
 		do{
 			System.out.print("Enter the total number of saves for the "+name+": ");
 			saves=in.nextInt();
 		}while(saves<0); //Ensures the total saves is above zero (valid)
 	}
-	
+
 	/**
 	 * Saves all statistics of team onto a text file
 	 * @param pw of type PrintWriter
@@ -280,7 +280,7 @@ public class Team {
 		pw.println("Total Saves: "+saves);
 
 	}
-	
+
 	/**
 	 * Returns name of team
 	 * @return the name

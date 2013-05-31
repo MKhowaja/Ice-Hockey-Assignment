@@ -24,9 +24,10 @@ abstract class Coach extends Person {
 	/**
 	 * Saves statistics of a coach onto a text file
 	 * @param pw of type PrintWriter
+	 * @overrides save in Person
 	 */
 	public void save(PrintWriter pw){
-		
+		super.save(pw);
 	}
 
 }

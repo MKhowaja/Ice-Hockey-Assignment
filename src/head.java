@@ -1,5 +1,6 @@
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.PrintWriter;
 
 public class head extends Coach {
 	protected int winS; //Regular season wins
@@ -74,7 +75,23 @@ public class head extends Coach {
 		totalGamesCoached = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
 	}
 
-
+	/**
+	 * Saves statistics of a head coach onto a text file
+	 * @param pw of type PrintWriter
+	 * @overrides save in Coach
+	 */
+	public void save(PrintWriter pw){
+		super.save(pw);
+		pw.println("Regular Season Wins: "+winS);
+		pw.println("Regular Season Loses: "+loseS);
+		pw.println("Regular Season Ties: "+tieS);
+		pw.println("Regular Season Overtime Loses: "+overtimeLS);
+		pw.println("Regular Season Games Coached: "+gameCS);
+		pw.println("Season Points Percentage: "+pointPS);
+		pw.println("Playoff Wins: "+winP);
+		pw.println("Playoff Loses: "+loseP);
+		pw.println("Playoff Games Coached: "+gameCP);
+	}
 
 	//Accessor Methods
 	/**

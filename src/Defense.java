@@ -1,5 +1,6 @@
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.PrintWriter;
 
 public class Defense extends Player{
   
@@ -51,16 +52,37 @@ public class Defense extends Player{
 		this.shootPercentage = shootPercentage;
 	}
 	
+	public void save(PrintWriter pw) {
+		super.save(pw);
+		//Writes all defense fields onto text file
+		pw.println("Plus/Minus: "+plusMinus);
+		pw.println("Average goals per season: "+avgGoalsPS);
+		pw.println("Average goal percentage per season: "+avgGoalPercentagePS);
+		pw.println("Average shots taken per season: "+avgShotsPS);
+		pw.println("Z-score of goal percentage: "+zsGoalPercentage);
+		pw.println("Average assists per season: "+avgAssistsPS);
+		pw.println("Average penalty minutes per season: "+avgPenaltyPS);
+		pw.println("Average power play goals per season: "+avgPPGoalsPS);
+		pw.println("Average shoot-out goals per season: "+avgSOGoalsPS);
+		pw.println("Average number of shifts per game: "+avgNShifts);
+		pw.println("Number of game-winning goals: "+gwGoals);
+		pw.println("Number of power play goals: "+ppGoals);
+		pw.println("Number of shoot-out goals: "+soGoals);
+		pw.println("Number of overtime goals: "+otGoals);
+		pw.println("Points: "+points);
+		pw.println("Faceoff win percentage: "+faceoffPercentage);
+		pw.println("Shooting percentage: "+shootPercentage);
+	}
+	
 	/**
 	 * Loads defense data from a text file into this object
-	 * @param String filepath
 	 * @author MK, AV, CH, PJ
 	 * @throws IOException 
 	 * @overrides load in Player
 	 */
-	public void load(String filepath, BufferedReader br) throws IOException {
+	public void load(BufferedReader br) throws IOException {
 		//loads person/player fields
-		super.load(filepath, br);
+		super.load(br);
 		
 		//load defense fields into object
 		String x;

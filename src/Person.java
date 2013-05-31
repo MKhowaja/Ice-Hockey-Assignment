@@ -2,6 +2,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Calendar;
+import java.util.Scanner;
 
 abstract class Person {
   	protected String fname; //First name
@@ -32,6 +33,72 @@ abstract class Person {
 		this.birthPlace = place;
 		this.maritalStatus = mStatus;
 		updateAge();
+	}
+	
+	/**
+	 * Loads a person's data through prompting the user
+	 * @author MK, AV, CH, PJ
+	 */
+	public void prompt() {
+		Scanner in = new Scanner(System.in);
+		String tempGender;
+		do {
+			System.out.print("Enter the name of player: ");
+			fname = in.nextLine();
+			in.nextLine();
+			System.out.print("Enter the last name of player: ");
+			lname = in.nextLine();
+			in.nextLine();
+		} while (fname.equals("")&&lname.equals("")); //Ensures that something is entered
+
+		do {
+			System.out.print("Enter the age of "+fname+": ");
+			age = in.nextInt();
+		} while (age <= 0); //Ensures age is greater than 0
+
+		do {
+			System.out.print("Enter the gender of "+fname+" (m/f): ");
+			tempGender = in.next();
+		} while (!tempGender.equalsIgnoreCase("m") && !tempGender.equalsIgnoreCase("f"));
+		if (tempGender.equalsIgnoreCase("m"))
+			gender = true;
+		else
+			gender = false;
+
+		do {
+			System.out.print("Enter the height of "+fname+": ");
+			height = in.nextDouble();
+		} while (height <= 0); //Ensures height is greater than 0
+
+		do {
+			System.out.print("Enter the weight of "+fname+": ");
+			weight = in.nextDouble();
+		} while (weight <= 0); //Ensures weight is greater than 0
+		
+		do {
+			System.out.print("Enter the birth month of "+fname+": ");
+			birthMonth = in.nextInt();
+		} while (birthMonth <= 0 || birthMonth >12); //Ensures birth month is between January and December
+		
+		do {
+			System.out.print("Enter the birth day of "+fname+": ");
+			birthDay = in.nextInt();
+		} while (birthDay <= 0 || birthDay >31); //Ensures birth day is between 1 and 31
+		
+		do {
+			System.out.print("Enter the birth year of "+fname+": ");
+			birthYear = in.nextInt();
+		} while (birthYear <= 0); //Ensures birth month is greater than 0
+		
+		do {
+			System.out.print("Enter birth place based on list: "); //Show list
+			birthPlace = in.nextInt();
+		} while (birthPlace <= 0 || birthPlace > 21); //Ensures birth place selection is in the list
+		
+		do {
+			System.out.print("Enter martial status based on list: "); //Show list
+			maritalStatus = in.nextInt();
+		} while (maritalStatus <= 0 || maritalStatus > 5); //Ensures martial status selection is in the list
 	}
 	
 	/**

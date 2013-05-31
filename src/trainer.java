@@ -1,5 +1,6 @@
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.PrintWriter;
 
 
 public class trainer extends Coach {
@@ -18,6 +19,14 @@ public class trainer extends Coach {
 	 */
 	public void load(BufferedReader br) throws IOException {
 		super.load(br); //loads coach fields
+	}
+	/**
+	 * Saves statistics of a trainer onto a text file
+	 * @param pw of type PrintWriter
+	 * @overrides save in Coach
+	 */
+	public void save(PrintWriter pw){
+		super.save(pw);
 	}
 
 }
