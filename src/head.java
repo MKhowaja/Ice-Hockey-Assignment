@@ -33,14 +33,13 @@ public class head extends Coach {
 
 	/**
 	 * Loads the head coach data from a text file into this head object
-	 * @param String filepath
 	 * @author MK, AV, CH, PJ
 	 * @throws IOException 
 	 * @overrides load in Coach
 	 */
-	public void load(String filepath, BufferedReader br) throws IOException {
+	public void load(BufferedReader br) throws IOException {
 		
-		super.load(filepath, br); //loads coach fields
+		super.load(br); //loads coach fields
 		String x;
 		//loads head coach fields into the object
 

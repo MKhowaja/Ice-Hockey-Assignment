@@ -22,7 +22,6 @@ abstract class Player extends Person {
 		this.salaryPY = salaryPY;
 		this.contractR = contractR;
 		this.tSalary = tSalary;
-		this.rating = rating;
 		this.gp = gp;
 		this.penaltyT = penaltyT;
 		this.penaltyN = penaltyN;
@@ -34,14 +33,13 @@ abstract class Player extends Person {
 
 	/**
 	 * Loads coach data from a text file into this object
-	 * @param String filepath
 	 * @author MK, AV, CH, PJ
 	 * @throws IOException 
 	 * @overrides load in Person
 	 */
-	public void load(String filepath, BufferedReader br) throws IOException {
+	public void load(BufferedReader br) throws IOException {
 		//loads person fields
-		super.load(filepath, br);
+		super.load(br);
 		//loads player fields
 		String x;
 

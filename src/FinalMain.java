@@ -22,10 +22,10 @@ public class FinalMain {
 		League league = new League ();
 		Team team;
 		do {
-			System.out.println("For Team " + i);
+			System.out.println("Step 1: Enter team information");
 			System.out.println("1 - Manually enter Team");
 			System.out.println("2 - Load Team from text file");
-			System.out.println("3 - Exit");
+			System.out.println("3 - Continue");//make sure at least 1 team is loaded before continuing
 			System.out.println("Select an option: ");
 			option = in.nextInt();
 			if (option == 1) {

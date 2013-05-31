@@ -1,3 +1,8 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.Scanner;
+
 public class Team {
 	private String name; //Name of team
 	/*
@@ -89,6 +94,193 @@ public class Team {
 		this.saves = saves;
 	}
 
+	/**
+	 * Loads the team data from a text file to this object
+	 * @author MK, AV, CH, PJ
+	 * @throws IOException 
+	 */
+	public void load(BufferedReader br) throws IOException {
+		String x;
+
+		x = br.readLine();//skips first line of text file
+		x = br.readLine();//skips second line of text file
+		
+		x = br.readLine();
+		name = x.substring(x.indexOf(": ")+2,x.length());
+		
+		x = br.readLine();
+		division = x.substring(x.indexOf(": ")+2,x.length());
+		
+		x = br.readLine();
+		conference = x.substring(x.indexOf(": ")+2,x.length());
+
+		x = br.readLine();
+		payroll = Double.parseDouble(x.substring(x.indexOf(": ")+2,x.length()));
+
+		x = br.readLine();
+		gp = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+
+		x = br.readLine();
+		wins = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+
+		x = br.readLine();
+		losses = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+
+		x = br.readLine();
+		goalsfor = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+
+		x = br.readLine();
+		goalsagainst = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+
+		x = br.readLine();
+		ppo = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+
+		x = br.readLine();
+		tsh  = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+
+		x = br.readLine();
+		ppgoals = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+
+		x = br.readLine();
+		shgoals = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+
+		x = br.readLine();
+		ppgoalsA = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+
+		x = br.readLine();
+		shgoalsA = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+
+		x = br.readLine();
+		shotsfor = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+
+		x = br.readLine();
+		shotsagainst = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+
+		x = br.readLine();
+		saves = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+
+	}
+	
+	/**
+	 * Loads the team data through prompting the user for data
+	 * @author MK, AV, CH, PJ
+	 */
+	public void prompt() {
+		Scanner in = new Scanner(System.in);
+		System.out.print("1. New Jersey Devils\n2. New York Islanders\n"+
+				"3. New York Rangers\n4. Philadelphia Flyers\n5. Pittsburgh Penguins\n"+
+				"6. Boston Bruins\n7. Buffalo Sabres\n8. Montréal Canadiens\n"+
+				"9. Ottawa Senators\n10. Toronto Maple Leafs\n11. Carolina Hurricanes\n"+
+				"12. Florida Panthers\n13. Tampa Bay Lightning\n14. Washington Capitals\n" +
+				"15. Winnipeg Jets\n16. Chicago Blackhawks\n17. Columbus Blue Jackets\n"+
+				"18. Detroit Red Wings\n19. Nashville Predators\n20. St. Louis Blues\n"+
+				"21. Calgary Flames\n22. Edmonton Oilers\n23. Colorado Avalanche\n"+
+				"24. Minnesota Wild\n25. Vancouver Canucks\n26. Anaheim Ducks\n"+
+				"27. Dallas Stars\n28. Los Angeles Kings\n29. Phoenix Coyotes\n"+
+				"30. San Jose Sharks\nEnter (1-30)");
+		name=in.nextLine();
+		do{
+			System.out.print("Enter "+name+"'s payroll for players: ");
+			payroll=in.nextDouble();
+		}while (payroll<0); //Ensures the payroll for the players isn't negative
+		
+		do{
+			System.out.print("Enter the number of games the "+name+" played: ");
+			gp=in.nextInt();
+		}while(gp<0); //Ensures the number of games played is above zero (valid)
+		
+		do{
+			System.out.print("Enter the number of games the "+name+" won: ");
+			wins=in.nextInt();
+		}while(wins<0); //Ensures the number of games won is above zero (valid)
+		
+		do{
+			System.out.print("Enter the number of games the "+name+" lost: ");
+			losses=in.nextInt();
+		}while(losses<0); //Ensures the number of games lost is above zero (valid)
+		
+		do{
+			System.out.print("Enter the total number of goals the "+name+" scored (including power-play, short-handed and empty-net goals): ");
+			goalsfor=in.nextInt();
+		}while(goalsfor<0); //Ensures the total goals scored is above zero (valid)
+		
+		do{
+			System.out.print("Enter the total goals scored against the "+name+" (including power-play, short-handed and empty-net goals): ");
+			goalsagainst=in.nextInt();
+		}while(goalsagainst<0); //Ensures the total goals scored against is above zero (valid)
+		
+		do{
+			System.out.print("Enter the number of power-play opportunities that the "+name+" have: ");
+			ppo=in.nextInt();
+		}while(ppo<0); //Ensures the number of power-play opportunities is above zero (valid)
+		
+		do{
+			System.out.print("Enter the number of times the "+name+" were short-handed: ");
+			tsh=in.nextInt();
+		}while(tsh<0); //Ensures the number of times short-handed is above zero (valid)
+		
+		do{
+			System.out.print("Enter the total number of power-play goals the "+name+" have: ");
+			ppgoals=in.nextInt();
+		}while(ppgoals<0); //Ensures the total number of power-play goals is above zero (valid)
+		
+		do{
+			System.out.print("Enter the total number of short-handed goals the "+name+" have: ");
+			shgoals=in.nextInt();
+		}while(shgoals<0); //Ensures the total number of short-handed goals is above zero (valid)
+		
+		do{
+			System.out.print("Enter the total number of power-play goals aganist the "+name+": ");
+			ppgoalsA=in.nextInt();
+		}while(ppgoalsA<0); //Ensures the total number of power-play goals against is above zero (valid)
+		
+		do{
+			System.out.print("Enter the total number of short-handed goals against the "+name+": ");
+			shgoalsA=in.nextInt();
+		}while(shgoalsA<0); //Ensures the total number of short-handed goals against is above zero (valid)
+		
+		do{
+			System.out.print("Enter the total number of shots on the "+name+"'s goal: "); //More info needed
+			shotsfor=in.nextInt();
+		}while(shotsfor<0); //Ensures the total shots on goal is above zero (valid)
+		
+		do{
+			System.out.print("Enter the total number of shots against the "+name+": ");
+			shotsagainst=in.nextInt();
+		}while(shotsagainst<0); //Ensures the total shots against is above zero (valid)
+		
+		do{
+			System.out.print("Enter the total number of saves for the "+name+": ");
+			saves=in.nextInt();
+		}while(saves<0); //Ensures the total saves is above zero (valid)
+	}
+	
+	/**
+	 * Saves all statistics of team onto a text file
+	 * @param pw of type PrintWriter
+	 */
+	public void save(PrintWriter pw){
+		pw.println("TEAM NAME: "+name);
+		pw.println("Divisison: "+division);
+		pw.println("Conference: "+conference);
+		pw.println("Payroll: "+payroll);
+		pw.println("Games Played: "+gp);
+		pw.println("Games Won: "+wins);
+		pw.println("Games Lost:"+losses);
+		pw.println("Total Goals Scored: "+goalsfor);
+		pw.println("Total Goals Scored Against: "+goalsagainst);
+		pw.println("Number of Powerplay Opportunities: "+ppo);
+		pw.println("Number of Short Times Handed: "+tsh);
+		pw.println("Total Number of Powerplay Goals: "+ppgoals);
+		pw.println("Total Number of Shorthanded Goals: "+shgoals);
+		pw.println("Total Number of Powerplay Goals Against: "+ppgoalsA);
+		pw.println("Total number of Shorthanded Goals Against: "+shgoalsA);
+		pw.println("Total Shots: "+shotsfor);
+		pw.println("Total Shots Against: "+shotsagainst);
+		pw.println("Total Saves: "+saves);
+
+	}
+	
 	/**
 	 * Returns name of team
 	 * @return the name

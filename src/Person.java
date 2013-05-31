@@ -1,5 +1,6 @@
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.Calendar;
 
 abstract class Person {
@@ -35,11 +36,11 @@ abstract class Person {
 	
 	/**
 	 * Loads person data from a text file into this object
-	 * @param String filepath
+	 * @param BufferedReader
 	 * @author MK, AV, CH, PJ
 	 * @throws IOException 
 	 */
-	public void load(String filepath, BufferedReader br) throws IOException {
+	public void load(BufferedReader br) throws IOException {
 		String x;
 
 		//loads person fields
@@ -81,7 +82,24 @@ abstract class Person {
 		maritalStatus = Person.convertMaritalStatusToInt(x.substring(x.indexOf(": ")+2,x.length()));
 	}
 
-
+	/**
+	 * Saves all statistics of a person onto a text file
+	 * @param pw of type PrintWriter
+	 */
+	public void save(PrintWriter pw) {
+		pw.println("First Name: "+fname);
+		pw.println("Last Name: "+lname);
+		pw.println("Age: "+age);
+		pw.println("Gender: "+gender);
+		pw.println("Height: "+height);
+		pw.println("Weight: "+weight);
+		pw.println("Month of Birth: "+birthMonth);
+		pw.println("Day of Birth: "+birthDay);
+		pw.println("Year of Birth: "+birthYear);
+		pw.println("Birthplace: "+birthPlace);
+		pw.println("Martial Status: "+maritalStatus);
+	}
+	
 	//Accessors
 	
 	/**

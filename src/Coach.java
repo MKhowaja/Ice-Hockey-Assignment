@@ -1,5 +1,6 @@
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.PrintWriter;
 
 
 abstract class Coach extends Person { 
@@ -12,13 +13,20 @@ abstract class Coach extends Person {
 	
 	/**
 	 * Loads coach data from a text file into this object
-	 * @param String filepath
 	 * @author MK, AV, CH, PJ
 	 * @throws IOException 
 	 * @overrides load in Person
 	 */
-	public void load(String filepath, BufferedReader br) throws IOException {
-		super.load(filepath, br); //loads person fields
+	public void load(BufferedReader br) throws IOException {
+		super.load(br); //loads person fields
+	}
+	
+	/**
+	 * Saves statistics of a coach onto a text file
+	 * @param pw of type PrintWriter
+	 */
+	public void save(PrintWriter pw){
+		
 	}
 
 }

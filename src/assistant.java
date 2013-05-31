@@ -12,13 +12,12 @@ public class assistant extends Coach{
 
 	/**
 	 * Loads the assistant coach data from a text file into this assistant object
-	 * @param String filepath
 	 * @author MK, AV, CH, PJ
 	 * @throws IOException 
 	 * @overrides load in Coach
 	 */
-	public void load(String filepath, BufferedReader br) throws IOException {
-		super.load(filepath, br); //loads coach fields
+	public void load(BufferedReader br) throws IOException {
+		super.load(br); //loads coach fields
 	}
 
 }
