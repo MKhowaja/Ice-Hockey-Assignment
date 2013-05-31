@@ -146,9 +146,32 @@ public class Forward extends Player {
 	/**
 	 * Loads a forward's data through prompting the user
 	 * @author MK, AV, CH, PJ
+	 * @overrides prompt in Player
 	 */
 	public void prompt() {
 		Scanner in = new Scanner(System.in);
+		super.prompt();
+		do{
+			System.out.print("Enter the number of game-winning goals by "+fname+": ");
+			gwGoals=in.nextInt();
+		}while (gwGoals<0); //Ensure the player doesn't have negative game-winning goals
+		
+		do{
+			System.out.print("Enter the number of power-play goals by "+fname+": ");
+			ppGoals=in.nextInt();
+		}while (ppGoals<0); //Ensure the player doesn't have negative power-play goals
+		
+		do{
+			System.out.print("Enter the number of shootout goals by "+fname+": ");
+			soGoals=in.nextInt();
+		}while (soGoals<0); //Ensure the player doesn't have negative shootout goals
+		
+		do{
+			System.out.print("Enter the number of overtime goals by "+fname+": ");
+			otGoals=in.nextInt();
+		}while (otGoals<0); //Ensure the player doesn't have negative overtime goals
+		
+	}
 	
 	//Accessor Methods
 	/**
