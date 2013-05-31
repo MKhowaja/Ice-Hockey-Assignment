@@ -29,5 +29,14 @@ abstract class Coach extends Person {
 	public void save(PrintWriter pw){
 		super.save(pw);
 	}
+	
+	/**
+	 * Loads a goalie's data through prompting the user
+	 * @author MK, AV, CH, PJ
+	 * @overrides prompt in Player
+	 */
+	public void prompt() {
+		super.prompt();
+	}
 
 }
