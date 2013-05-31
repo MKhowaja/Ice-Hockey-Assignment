@@ -1,6 +1,7 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.Scanner;
 
 public class Goalie extends Player {
 	protected int wins; //Number of wins
@@ -113,6 +114,72 @@ public class Goalie extends Player {
 		pw.println("Save Percentage: "+savePercent);
 		pw.println("Shutout Saves: "+shutouts);
 		pw.println("Empty Net Goals: "+emptyNG);
+	}
+	
+
+	/**
+	 * Loads a goalie's data through prompting the user
+	 * @author MK, AV, CH, PJ
+	 * @overrides prompt in Player
+	 */
+	public void prompt() {
+		Scanner in = new Scanner(System.in);
+		super.prompt();
+		do{
+			System.out.print("Enter the number of times "+fname+" has won: ");
+			wins=in.nextInt();
+		}while (wins<0); //Ensures the number of wins is above zero (valid)
+		
+		do{
+			System.out.print("Enter the number of times "+fname+" has lost: ");
+			loses=in.nextInt();
+		}while(loses<0); //Ensures the number of loses is above zero (valid)
+		
+		do{
+			System.out.print("Enter the number of times "+fname+" has won during playoffs: ");
+			winsP=in.nextInt();
+		}while(winsP<0); //Ensures the number of wins during playoffs is above zero (valid)
+		
+		do{
+			System.out.print("Enter the number of times "+fname+" has lost during playoffs: ");
+			losesP=in.nextInt();
+		}while(losesP<0); //Ensures the number of loses during playoffs is above zero (valid)
+		
+		do{
+			System.out.print("Enter the number of times "+fname+" has lost during overtime: ");
+			losesOT=in.nextInt();
+		}while(losesOT<0); //Ensures the number of loses during overtime is above zero (valid)
+		
+		do{
+			System.out.print("Enter the number of times "+fname+" has started at the beginning of a game: ");
+			gameStart=in.nextInt();
+		}while(gameStart<0); //Ensures the number of games started is above zero (valid)
+		
+		do{
+			System.out.print("Enter the number of times "+fname+" got scored on: ");
+			goalA=in.nextInt();
+		}while(goalA<0); //Ensures the number of goals scored against is above zero (valid)
+		
+		do{
+			System.out.print("Enter the total number of times "+fname+" was shot on (shots on goal): ");
+			shotsOG=in.nextInt();
+		}while(shotsOG<0); //Ensures the total number of shots on goal is above zero (valid)
+		
+		do{
+			System.out.print("Enter the number of times "+fname+" made a save: ");
+			saves=in.nextInt();
+		}while(saves<0); //Ensures the number of saves goalie made is above zero (valid)
+		
+		do{
+			System.out.print("Enter the number of times "+fname+" was never scored against and played for the entire game: ");
+			shutouts=in.nextInt();
+		}while(shutouts<0); //Ensures the number of shutouts is above zero (valid)
+		
+		do{
+			System.out.print("Enter the number of times "+fname+" was scored on while off the ice to add an extra attack player: ");
+			emptyNG=in.nextInt();
+		}while(emptyNG<0); //Ensures the the number of empty net goals is above zero (valid)
+		
 	}
 	
 	//Accessor Methods
