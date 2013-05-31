@@ -1,6 +1,7 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.Scanner;
 
 public class Defense extends Player{
   
@@ -51,7 +52,11 @@ public class Defense extends Player{
 		this.faceoffPercentage = faceoffPercentage;
 		this.shootPercentage = shootPercentage;
 	}
-	
+	/**
+	 * Saves all statistics of a defense onto a text file
+	 * @param pw of type PrintWriter
+	 * @overrides save in Player
+	 */
 	public void save(PrintWriter pw) {
 		super.save(pw);
 		//Writes all defense fields onto text file
@@ -137,6 +142,35 @@ public class Defense extends Player{
 
 		x = br.readLine();
 		shootPercentage = Double.parseDouble(x.substring(x.indexOf(": ")+2,x.length()));
+	}
+	/**
+	 * Loads a defense's data through prompting the user
+	 * @overrides prompt in Player
+	 * @author MK, AV, CH, PJ
+	 */
+	public void prompt() {
+		Scanner in = new Scanner(System.in);
+		super.prompt();
+		do{
+			System.out.print("Enter the number of game-winning goals by "+fname+": ");
+			gwGoals=in.nextInt();
+		}while (gwGoals<0); //Ensure the player doesn't have negative game-winning goals
+		
+		do{
+			System.out.print("Enter the number of power-play goals by "+fname+": ");
+			ppGoals=in.nextInt();
+		}while (ppGoals<0); //Ensure the player doesn't have negative power-play goals
+		
+		do{
+			System.out.print("Enter the number of shootout goals by "+fname+": ");
+			soGoals=in.nextInt();
+		}while (soGoals<0); //Ensure the player doesn't have negative shootout goals
+		
+		do{
+			System.out.print("Enter the number of overtime goals by "+fname+": ");
+			otGoals=in.nextInt();
+		}while (otGoals<0); //Ensure the player doesn't have negative overtime goals
+		
 	}
 	
 	//Accessor Methods
