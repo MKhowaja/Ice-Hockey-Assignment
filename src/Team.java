@@ -832,7 +832,7 @@ public class Team {
 		else if (name.equals("Calgary Flames")||name.equals("Edmonton Oilers")||name.equals("Colorado Avalanche")||name.equals("Minnesota Wild")||name.equals("Vancouver Canucks")){
 			return 4;
 		}
-		else{
+		else {
 			return 5;
 		}
 	}
@@ -842,11 +842,9 @@ public class Team {
 	 */
 	public int confNum(){
 		int x = divNum();
-		if (x<=2){
+		if (x<=2)
 			return 0;
-		}
-		else{
+		else
 			return 1;
-		}
 	}
 }

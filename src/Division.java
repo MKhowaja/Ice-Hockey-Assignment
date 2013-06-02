@@ -53,7 +53,7 @@ public class Division{
 	 * Returns the stack of teams in the division
 	 * @return team
 	 */
-	public Stack getTeam() {
+	public Stack<Team> getTeam() {
 		return team;
 	}
 	
