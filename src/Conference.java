@@ -18,40 +18,39 @@ public class Conference {
 	}
 	
 	//Accessor Methods
-		/**
-		 * Returns the conference name 
-		 * @return name
-		 */
-		public String getName() {
-			return name;
-		}
+	/**
+	 * Returns the conference name 
+	 * @return name
+	 */
+	public String getName() {
+		return name;
+	}
 
-		/**
-		 * Returns the division at location i
-		 * @param int i the index of the array
-		 * @return divisions
-		 */
-		public Division getdivisions(int i) {
-			return divisions[i];
-		}
+	/**
+	 * Returns the division at location i
+	 * @param int i the index of the array
+	 * @return divisions
+	 */
+	public Division getdivisions(int i) {
+		return divisions[i];
+	}
 
 	//Mutator Methods
-		/**
-		 * Stores parameter to conference
-		 * @param x of type String
-		 */
-
-		public void putName(String x) {
-			name = x;
-		}
-		
-		/**
-		 * Stores parameter to divisions[]
-		 * @param x of type Division
-		 */
-		
-		public void putdivisions(Division[] x) {
-			divisions = x;
-		}
+	/**
+	 * Stores parameter to conference
+	 * @param x of type String
+	 */
+	public void putName(String x) {
+		name = x;
+	}
 	
+	/**
+	 * Stores parameter to divisions[]
+	 * @param x of type Division
+	 */
+	
+	public void putdivisions(Division[] x) {
+		divisions = x;
+	}
+
 }
