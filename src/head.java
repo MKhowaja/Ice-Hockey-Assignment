@@ -32,6 +32,14 @@ public class head extends Coach {
 		this.stanleyN = stanleyN;
 		updatetotalGamesCoached();
 	}
+	
+	public head(BufferedReader br) throws IOException {
+		load(br);
+	}
+	
+	public head() {
+		prompt();
+	}
 
 	/**
 	 * Loads the head coach data from a text file into this head object

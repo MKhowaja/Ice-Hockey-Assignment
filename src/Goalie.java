@@ -45,6 +45,14 @@ public class Goalie extends Player {
 		updateSavePercent();
 	}
 	
+	public Goalie(BufferedReader br) throws IOException {
+		load(br);
+	}
+	
+	public Goalie() {
+		prompt();
+	}
+	
 	/**
 	 * Loads goalie data from a text file into this object
 	 * @author MK, AV, CH, PJ
@@ -116,7 +124,6 @@ public class Goalie extends Player {
 		pw.println("Empty Net Goals: "+emptyNG);
 	}
 	
-
 	/**
 	 * Loads a goalie's data through prompting the user
 	 * @author MK, AV, CH, PJ

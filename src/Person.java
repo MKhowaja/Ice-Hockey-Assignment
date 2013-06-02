@@ -37,6 +37,14 @@ abstract class Person {
 		convertMaritalStatusToString(maritalStatus);
 	}
 	
+	public Person(BufferedReader br) throws IOException {
+		load(br);
+	}
+	
+	public Person() {
+		prompt();
+	}
+	
 	/**
 	 * Loads a person's data through prompting the user
 	 * @author MK, AV, CH, PJ

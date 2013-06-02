@@ -11,6 +11,14 @@ abstract class Coach extends Person {
 		super(fname, lname, gender, height, weight, month, day, year, place, mStatus);
 	}
 	
+	public Coach(BufferedReader br) throws IOException {
+		load(br);
+	}
+	
+	public Coach() {
+		prompt();
+	}
+	
 	/**
 	 * Loads coach data from a text file into this object
 	 * @author MK, AV, CH, PJ

@@ -11,6 +11,13 @@ public class assistant extends Coach{
 
 	}
 
+	public assistant(BufferedReader br) throws IOException {
+		load(br);
+	}
+	
+	public assistant() {
+		prompt();
+	}
 	/**
 	 * Loads the assistant coach data from a text file into this assistant object
 	 * @author MK, AV, CH, PJ

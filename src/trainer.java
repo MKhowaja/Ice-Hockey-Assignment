@@ -11,6 +11,14 @@ public class trainer extends Coach {
 		super(fname, lname, gender, height, weight, month, day, year, place, mStatus);
 	}
 	
+	public trainer(BufferedReader br) throws IOException {
+		load(br);
+	}
+	
+	public trainer() {
+		prompt();
+	}
+	
 	/**
 	 * Loads the trainer data from a text file into this trainer object
 	 * @author MK, AV, CH, PJ

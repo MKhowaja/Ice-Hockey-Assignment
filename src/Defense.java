@@ -52,6 +52,15 @@ public class Defense extends Player{
 		this.faceoffPercentage = faceoffPercentage;
 		this.shootPercentage = shootPercentage;
 	}
+	
+	public Defense(BufferedReader br) throws IOException {
+		load(br);
+	}
+	
+	public Defense() {
+		prompt();
+	}
+	
 	/**
 	 * Saves all statistics of a defense onto a text file
 	 * @param pw of type PrintWriter

@@ -53,6 +53,14 @@ public class Forward extends Player {
 		this.shootPercentage = shootPercentage;
 	}
 	
+	public Forward(BufferedReader br) throws IOException {
+		load(br);
+	}
+	
+	public Forward() {
+		prompt();
+	}
+	
 	/**
 	 * Loads forward data from a text file into this object
 	 * @author MK, AV, CH, PJ

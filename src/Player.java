@@ -33,8 +33,16 @@ abstract class Player extends Person {
 		this.rookie = rookie;
 	}
 
+	public Player(BufferedReader br) throws IOException {
+		load(br);
+	}
+	
+	public Player() {
+		prompt();
+	}
+	
 	/**
-	 * Loads coach data from a text file into this object
+	 * Loads player data from a text file into this object
 	 * @author MK, AV, CH, PJ
 	 * @throws IOException 
 	 * @overrides load in Person

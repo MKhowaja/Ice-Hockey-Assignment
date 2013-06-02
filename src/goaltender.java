@@ -10,6 +10,15 @@ public class goaltender extends Coach {
 			int place, int mStatus) {
 		super(fname, lname, gender, height, weight, month, day, year, place, mStatus);
 	}
+	
+	public goaltender(BufferedReader br) throws IOException {
+		load(br);
+	}
+	
+	public goaltender() {
+		prompt();
+	}
+	
 	/**
 	 * Loads the goaltender data from a text file into this goaltender object
 	 * @author MK, AV, CH, PJ
