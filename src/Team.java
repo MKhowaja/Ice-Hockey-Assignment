@@ -70,7 +70,7 @@ public class Team {
 			int wins, int losses, int goalsfor, int goalsagainst, int ppo,
 			int tsh, int ppgoals, int shgoals, int ppgoalsA, int shgoalsA,
 			int shotsfor, int shotsagainst, int saves) {
-		super();
+		//super(); what's this for?
 		try{
 			putName (Integer.parseInt(name));
 		}catch(NumberFormatException e){
@@ -94,6 +94,13 @@ public class Team {
 		this.saves = saves;
 	}
 
+	public Team(BufferedReader br) throws IOException {
+		load(br);
+	}
+	
+	public Team() {
+		prompt();
+	}
 	/**
 	 * Loads the team data from a text file to this object
 	 * @author MK, AV, CH, PJ
