@@ -28,5 +28,13 @@ public class trainer extends Coach {
 	public void save(PrintWriter pw){
 		super.save(pw);
 	}
+	/**
+	 * Loads a trainer's data through prompting the user
+	 * @author MK, AV, CH, PJ
+	 * @overrides prompt in Coach
+	 */
+	public void prompt() {
+		super.prompt();
+	}
 
 }

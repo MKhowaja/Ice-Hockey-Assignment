@@ -31,9 +31,9 @@ abstract class Coach extends Person {
 	}
 	
 	/**
-	 * Loads a goalie's data through prompting the user
+	 * Loads a coach's data through prompting the user
 	 * @author MK, AV, CH, PJ
-	 * @overrides prompt in Player
+	 * @overrides prompt in Person
 	 */
 	public void prompt() {
 		super.prompt();
