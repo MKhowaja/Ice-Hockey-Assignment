@@ -23,6 +23,14 @@ public class Forward extends Player {
 	protected double faceoffPercentage; //Face off win percentage
 	protected double shootPercentage; //Shooting Percentage
 	
+	/**
+	 * Constructs an object of type Forward
+	 * @param  fname, lname of type string and gender of type boolean and height, weight of type double and month, day, year, place, mStatus of type int
+	 * salaryPY of type double, contractR of type int, tSalary of type double, gp of type int, penaltyT of type double, penaltyN of type int, arm of type boolean, number of type int,
+	 * numMin of type double, rookie of type boolean, plusMinus of type int, avgGoalsPS of type double, avgGoalPercentagePS of type double, avgShotsPS of type double, zsGoalPercentage of type double, avgAssistsPS of type double,	 * double avgPenaltyPS, double avgPPGoalsPS, double avgSOGoalsPS, double avgNShifts, int gwGoals, int ppGoals, int soGoals,//more defense fields
+	 * otGoals of type int
+	 * @throws IOException
+	 */
 	public Forward(String fname, String lname, boolean gender, double height, double weight, int month, int day, int year, int place, int mStatus,//person fields
 			double salaryPY, int contractR, double tSalary, int gp, double penaltyT, int penaltyN, boolean arm, int number, //player fields
 			double numMin, boolean rookie, //more player fields
@@ -53,10 +61,18 @@ public class Forward extends Player {
 		this.shootPercentage = shootPercentage;
 	}
 	
+	/**
+	 * Constructs an object of type Forward by calling the load method
+	 * @throws IOException
+	 */
 	public Forward(BufferedReader br) throws IOException {
 		load(br);
 	}
 	
+	/**
+	 * Constructs an object of type Forward by prompting for each field
+	 * @throws IOException
+	 */
 	public Forward() {
 		prompt();
 	}
