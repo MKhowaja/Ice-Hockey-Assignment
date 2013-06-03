@@ -103,9 +103,21 @@ public class FinalMain {
 			}
 			else if (option == 2) {
 				//loads from team from text file
-				System.out.print("Enter location of the text file you want to load from: ");
-				filepath = in.nextLine();
-				br = new BufferedReader(new FileReader(filepath));
+				boolean fileFound;
+				br = null;
+				in = new Scanner(System.in); //or else catch behaves weirdly
+				do {
+					System.out.println("Enter location of the text file you want to load from: ");
+					filepath = in.nextLine();
+					try {
+						br = new BufferedReader(new FileReader(filepath));
+						fileFound = true;
+					}
+					catch (FileNotFoundException e) {
+						fileFound = false;
+						System.out.println("File not found.");
+					}
+				} while (fileFound == false);
 				teams.push(new Team(br));
 				
 				//loads players from text file
