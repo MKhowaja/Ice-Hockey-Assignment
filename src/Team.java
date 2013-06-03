@@ -843,7 +843,19 @@ public class Team {
 	 */
 	public void writePlayer(PrintWriter pw){
 		for (int i = 0; i < players.length; i++){
-			players[i].save(pw);
+			if (players[i] instanceof Forward) {
+				pw.println("Player type: forward");
+				((Forward)players[i]).save(pw);
+			}
+			if (players[i] instanceof Defense) {
+				pw.println("Player type: defense");
+				((Defense)players[i]).save(pw);
+			}
+			else {
+				pw.println("Player type: goalie");
+				((Goalie)players[i]).save(pw);
+			}
+			pw.println("");
 		}
 	}
 	
@@ -853,7 +865,23 @@ public class Team {
 	 */
 	public void writeCoach(PrintWriter pw){
 		for (int i = 0; i < coachingstaff.length; i++){
-			coachingstaff[i].save(pw);
+			if (coachingstaff[i] instanceof head) {
+				pw.println("Coach type: head");
+				((head)coachingstaff[i]).save(pw);
+			}
+			else if (coachingstaff[i] instanceof assistant) {
+				pw.println("Coach type: assistant");
+				((assistant)coachingstaff[i]).save(pw);
+			}
+			else if (coachingstaff[i] instanceof goaltender) {
+				pw.println("Coach type: goaltender");
+				((goaltender)coachingstaff[i]).save(pw);
+			}
+			else {
+				pw.println("Coach type: trainer");
+				((trainer)coachingstaff[i]).save(pw);
+			}
+			pw.println("");
 		}
 	}
 
