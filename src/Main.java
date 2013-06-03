@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Scanner;
 import java.util.Stack;
-public class FinalMain {
+public class Main {
 
 	/**
 	 * @param args
@@ -22,17 +22,17 @@ public class FinalMain {
 		String x; //general purpose variable for user input/loading
 		String classType;
 
-		Stack<Team> teams = new Stack();
+		Stack<Team> teams = new Stack<Team>();
 		Stack<Player> players;
 		Stack<Coach> coaches;
 
 		boolean menuRunning;
-
+		int error = 0;
 		menuRunning = true;
 		do {
 			//resets players and coaches
-			players = new Stack();
-			coaches = new Stack(); 
+			players = new Stack<Player>();
+			coaches = new Stack<Coach>(); 
 			System.out.println("Step 1: Enter team information");
 			System.out.println("1 - Manually enter Team");
 			System.out.println("2 - Load Team from text file");
@@ -127,6 +127,8 @@ public class FinalMain {
 				do {
 					x = br.readLine();
 					classType = x.substring(x.indexOf(": ")+2,x.length());
+					error++;
+					System.out.println(error);
 					if (classType.equals("forward"))
 						players.push(new Forward(br));
 					else if (classType.equals("defense")) {
@@ -142,14 +144,13 @@ public class FinalMain {
 					classType = x.substring(x.indexOf(": ")+2,x.length());
 					br.reset();//moves cursor back to where stream was marked
 				} while (classType.equals("forward")||classType.equals("defense")||classType.equals("goalie"));
-
+				teams.get(count).putplayersize(players.size());
 				players.copyInto(teams.get(count).getPlayers()); //copies stack into player array
 				
 				//loads coaches from text file
 				do {
 					x = br.readLine();
 					classType = x.substring(x.indexOf(": ")+2,x.length());
-
 					if (classType.equals("head"))
 						coaches.push(new head(br));
 					else if (classType.equals("assistant"))
@@ -161,7 +162,7 @@ public class FinalMain {
 
 					x = br.readLine();//skips the space between each coach
 					br.mark(1000); //stores this location in the memory so program can revisit this part of the stream later
-					x = x.substring(x.indexOf(": ")+2,x.length()); //checks if next line in the text file is end of file or not
+					x = x.substring(x.indexOf(": ")+2,x.length()); //checks if next line in the text file is end of file or not ERROR ERROR ERROR
 					br.reset();
 				} while (x != null);
 				coaches.copyInto(teams.get(count).getCoachingstaff()); //copies stack into player array
