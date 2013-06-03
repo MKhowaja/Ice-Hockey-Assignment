@@ -45,7 +45,7 @@ public class head extends Coach {
 	*/
 	public head(BufferedReader br) throws IOException {
 		super(br);
-		load(br);
+		loadhead(br);
 	}
 	
 	/**
@@ -63,7 +63,7 @@ public class head extends Coach {
 	 * @throws IOException 
 	 * @overrides load in Coach
 	 */
-	public void load(BufferedReader br) throws IOException {
+	public void loadhead(BufferedReader br) throws IOException {
 		String x;
 		//loads head coach fields into the object
 
@@ -74,7 +74,10 @@ public class head extends Coach {
 		loseS = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
 
 		x = br.readLine();
-		putOvertimeLS(Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length())));
+		tieS=Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+		
+		x = br.readLine();
+		overtimeLS=Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
 
 		x = br.readLine();
 		gameCS = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
