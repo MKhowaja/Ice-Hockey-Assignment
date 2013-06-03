@@ -68,7 +68,7 @@ public class Defense extends Player{
 	 */
 	public Defense(BufferedReader br) throws IOException {
 		super(br);
-		this.load(br);
+		loaddefense(br);
 	}
 
 	/**
@@ -112,7 +112,7 @@ public class Defense extends Player{
 	 * @throws IOException 
 	 * @overrides load in Player
 	 */
-	public void load(BufferedReader br) throws IOException {
+	public void loaddefense(BufferedReader br) throws IOException {
 		//load defense fields into object
 		String x;
 
