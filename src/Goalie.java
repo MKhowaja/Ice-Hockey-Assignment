@@ -58,7 +58,7 @@ public class Goalie extends Player {
 	*/
 	public Goalie(BufferedReader br) throws IOException {
 		super(br);
-		load(br);
+		loadgoalie(br);
 	}
 	
 	/**
@@ -76,7 +76,7 @@ public class Goalie extends Player {
 	 * @throws IOException 
 	 * @overrides load in Player
 	 */
-	public void load( BufferedReader br) throws IOException {
+	public void loadgoalie( BufferedReader br) throws IOException {
 		//load goalie fields into object
 		String x;
 		
@@ -398,6 +398,4 @@ public class Goalie extends Player {
 	public void updateSavePercent(){
 		savePercent=goalA/shotsOG;
 	}
-	
-	
 }
