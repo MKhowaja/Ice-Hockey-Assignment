@@ -238,7 +238,6 @@ public class Forward extends Player {
 			System.out.print("Enter the shooting percentage by "+fname+": ");
 			shootPercentage=in.nextDouble();
 		}while (shootPercentage<0); //Ensure the player doesn't have negative shooting percentage
-		
 	}
 	
 	//Accessor Methods
