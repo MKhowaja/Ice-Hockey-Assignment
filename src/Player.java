@@ -46,7 +46,7 @@ abstract class Player extends Person {
 	*/
 	public Player(BufferedReader br) throws IOException {
 		super(br); //loads person fields
-		this.load(br); //loads player fields
+		loadplayer(br); //loads player fields
 	}
 	
 	/**
@@ -64,7 +64,7 @@ abstract class Player extends Person {
 	 * @throws IOException 
 	 * @overrides load in Person
 	 */
-	public void load(BufferedReader br) throws IOException {
+	public void loadplayer(BufferedReader br) throws IOException {
 		//loads player fields
 		String x;
 
