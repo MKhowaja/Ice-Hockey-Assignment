@@ -23,6 +23,15 @@ public class Defense extends Player{
 	protected double faceoffPercentage; //Face off win percentage
 	protected double shootPercentage; //Shooting Percentage
 
+
+	/**
+	 * Constructs an object of type Defense
+	 * @param  fname, lname of type string and gender of type boolean and height, weight of type double and month, day, year, place, mStatus of type int
+	 * salaryPY of type double, contractR of type int, tSalary of type double, gp of type int, penaltyT of type double, penaltyN of type int, arm of type boolean, number of type int,
+	 * numMin of type double, rookie of type boolean, plusMinus of type int, avgGoalsPS of type double, avgGoalPercentagePS of type double, avgShotsPS of type double, zsGoalPercentage of type double, avgAssistsPS of type double,	 * double avgPenaltyPS, double avgPPGoalsPS, double avgSOGoalsPS, double avgNShifts, int gwGoals, int ppGoals, int soGoals,//more defense fields
+	 * otGoals of type int
+	 * @throws IOException
+	 */
 	public Defense(String fname, String lname, boolean gender, double height, double weight, int month, int day, int year, int place, int mStatus,//person fields
 			double salaryPY, int contractR, double tSalary, int gp, double penaltyT, int penaltyN, boolean arm, int number, //player fields
 			double numMin, boolean rookie, //more player fields
@@ -53,10 +62,18 @@ public class Defense extends Player{
 		this.shootPercentage = shootPercentage;
 	}
 	
+	/**
+	 * Constructs an object of type Defense by calling the load method
+	 * @throws IOException
+	 */
 	public Defense(BufferedReader br) throws IOException {
 		load(br);
 	}
 	
+	/**
+	 * Constructs an object of type Defense by prompting for each field
+	 * @throws IOException
+	 */
 	public Defense() {
 		prompt();
 	}
@@ -161,84 +178,25 @@ public class Defense extends Player{
 		Scanner in = new Scanner(System.in);
 		super.prompt();
 		do{
-			System.out.print("Enter the plus/minus of "+fname+": ");
-			plusMinus=in.nextInt();
-		}while (plusMinus<0); //Ensure the player doesn't have negative plus/minus
-
-		do{
-			System.out.print("Enter the average goals per season by "+fname+": ");
-			avgGoalsPS=in.nextDouble();
-		}while (avgGoalsPS<0); //Ensure the player doesn't have negative average goals per season
-
-		do{
-			System.out.print("Enter the average goal percentage per season by "+fname+": ");
-			avgGoalPercentagePS=in.nextDouble();
-		}while (avgGoalPercentagePS<0); //Ensure the player doesn't have negative average goal percentage per season
-
-		do{
-			System.out.print("Enter the average shots per season by "+fname+": ");
-			avgShotsPS=in.nextDouble();
-		}while (avgShotsPS<0); //Ensure the player doesn't have negative average shots per season
-
-		do{
-			System.out.print("Enter the Z-score of goal percentage by "+fname+": ");
-			zsGoalPercentage=in.nextDouble();
-		}while (zsGoalPercentage<0); //Ensure the player doesn't have negative Z-score of goal percentage
-
-		do{
-			System.out.print("Enter the average assists per season by "+fname+": ");
-			avgAssistsPS=in.nextDouble();
-		}while (avgAssistsPS<0); //Ensure the player doesn't have negative average assists per season
-
-		do{
-			System.out.print("Enter the average penalty minutrs per season by "+fname+": ");
-			avgPenaltyPS=in.nextDouble();
-		}while (avgPenaltyPS<0); //Ensure the player doesn't have negative average penalty minutes per season
-
-		do{
-			System.out.print("Enter the average power-play goals per season by "+fname+": ");
-			avgPPGoalsPS=in.nextDouble();
-		}while (avgPPGoalsPS<0); //Ensure the player doesn't have negative power-play goals per season
-
-		do{
-			System.out.print("Enter the average shoot-out goals per season by "+fname+": ");
-			avgSOGoalsPS=in.nextDouble();
-		}while (avgSOGoalsPS<0); //Ensure the player doesn't have negative shoot-out goals per season
-
-		do{
-			System.out.print("Enter the average number of shifts per game by "+fname+": ");
-			avgNShifts=in.nextDouble();
-		}while (avgNShifts<0); //Ensure the player doesn't have negative average number of shifts per game
-
-		do{
 			System.out.print("Enter the number of game-winning goals by "+fname+": ");
 			gwGoals=in.nextInt();
 		}while (gwGoals<0); //Ensure the player doesn't have negative game-winning goals
-
+		
 		do{
 			System.out.print("Enter the number of power-play goals by "+fname+": ");
 			ppGoals=in.nextInt();
 		}while (ppGoals<0); //Ensure the player doesn't have negative power-play goals
-
+		
 		do{
 			System.out.print("Enter the number of shootout goals by "+fname+": ");
 			soGoals=in.nextInt();
 		}while (soGoals<0); //Ensure the player doesn't have negative shootout goals
-
+		
 		do{
 			System.out.print("Enter the number of overtime goals by "+fname+": ");
 			otGoals=in.nextInt();
 		}while (otGoals<0); //Ensure the player doesn't have negative overtime goals
-
-		do{
-			System.out.print("Enter the face off percentage by "+fname+": ");
-			faceoffPercentage=in.nextDouble();
-		}while (faceoffPercentage<0); //Ensure the player doesn't have negative face off percentage
-
-		do{
-			System.out.print("Enter the shooting percentage by "+fname+": ");
-			shootPercentage=in.nextDouble();
-		}while (shootPercentage<0); //Ensure the player doesn't have negative shooting percentage	
+		
 	}
 	
 	//Accessor Methods
