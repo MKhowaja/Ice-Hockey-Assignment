@@ -67,7 +67,7 @@ public class Forward extends Player {
 	 */
 	public Forward(BufferedReader br) throws IOException {
 		super(br);
-		load(br);
+		loadforward(br);
 	}
 	
 	/**
@@ -85,7 +85,7 @@ public class Forward extends Player {
 	 * @throws IOException 
 	 * @overrides load in Player
 	 */
-	public void load(BufferedReader br) throws IOException {
+	public void loadforward(BufferedReader br) throws IOException {
 		//loads forward fields
 		String x;
 		x = br.readLine();
