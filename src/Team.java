@@ -66,6 +66,14 @@ public class Team {
 	private double savePercent; //The total saves divided by the total shots faced, calculated
 	private double ppPercent; //Power play percent: Power-play goals divided by power-play opportunites or power-play goals allowed divided by times short-handed, calculated
 
+	/**
+  	* Constructs an object of type Team
+   	* @param  name of type String, payroll of type double, gpT of type int,
+   	* wins of type int, losses of type int, goalsfor of type int, goalsagainst of type int, ppo of type int,
+   	* tsh of type int, ppgoals of type int, shgoals of type int,ppgoalsA of type int, shgoalsA of type int,
+   	* shotsfor of type int, shotsagainst of type int, saves of type int
+   	* @throws IOException
+   	*/
 	public Team(String name, double payroll, int gpT,
 			int wins, int losses, int goalsfor, int goalsagainst, int ppo,
 			int tsh, int ppgoals, int shgoals, int ppgoalsA, int shgoalsA,
@@ -95,10 +103,18 @@ public class Team {
 		this.saves = saves;
 	}
 
+	/**
+   	* Constructs an object of type Team by calling the load method
+   	* @throws IOException
+   	*/
 	public Team(BufferedReader br) throws IOException {
 		load(br);
 	}
 	
+	/**
+   	* Constructs an object of type Team by prompting for each field
+  	* @throws IOException
+   	*/
 	public Team() {
 		prompt();
 	}
