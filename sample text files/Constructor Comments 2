@@ -123,8 +123,92 @@
 	 * @throws IOException
 	 */
    
-//
+//TEAM
 
+/**
+   * Constructs an object of type Team
+   * @param  name of type String, payroll of type double, gpT of type int,
+   * wins of type int, losses of type int, goalsfor of type int, goalsagainst of type int, ppo of type int,
+   * tsh of type int, ppgoals of type int, shgoals of type int,ppgoalsA of type int, shgoalsA of type int,
+   * shotsfor of type int, shotsagainst of type int, saves of type int
+   * @throws IOException
+   */
+   
+/**
+   * Constructs an object of type Team by calling the load method
+   * @throws IOException
+   */
+   
+/**
+   * Constructs an object of type Team by prompting for each field
+   * @throws IOException
+   */
 
+//ASSISTANT
+/**
+   * Constructs an object of type assistant
+	 * @param  fname, lname of type string and gender of type boolean and height, weight of type double and month, day, year, place, mStatus of type int
+	 * @throws IOException
+	 */
+   
+/**
+   * Constructs an object of type assistant by calling the load method
+	 * @throws IOException
+	 */
+   
+/**
+   * Constructs an object of type assistant by prompting for each field
+	 * @throws IOException
+	 */
 
+//GOALTENDER
+/**
+   * Constructs an object of type goaltender
+	 * @param  fname, lname of type string and gender of type boolean and height, weight of type double and month, day, year, place, mStatus of type int
+	 * @throws IOException
+	 */
+   
+/**
+   * Constructs an object of type goaltender by calling the load method
+	 * @throws IOException
+	 */
+   
+/**
+   * Constructs an object of type goaltender by prompting for each field
+	 * @throws IOException
+	 */
 
+//HEAD 
+/**
+   * Constructs an object of type Goaltender
+	 * @param  fname, lname of type string and gender of type boolean and height, weight of type double and month, day, year, place, mStatus of type int
+	 * winS of type int, loseS of type int, tieS of type int, overtimeLS of type int, gameCS of type int, pointPS of type double, winP of type int, loseP of type int, gameCP of type , stanleyN of type int
+	 * @throws IOException
+	 */
+
+/**
+   * Constructs an object of type head by calling the load method
+	 * @throws IOException
+	 */
+   
+/**
+   * Constructs an object of type head by prompting for each field
+	 * @throws IOException
+	 */
+
+//TRAINER
+/**
+   * Constructs an object of type trainer
+	 * @param  fname, lname of type string and gender of type boolean and height, weight of type double and month, day, year, place, mStatus of type int
+	 * @throws IOException
+	 */
+   
+/**
+   * Constructs an object of type trainer by calling the load method
+	 * @throws IOException
+	 */
+   
+/**
+   * Constructs an object of type trainer by prompting for each field
+	 * @throws IOException
+	 */
