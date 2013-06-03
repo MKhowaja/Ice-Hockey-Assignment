@@ -42,8 +42,7 @@ class Person {
    	* @throws IOException
    	*/
 	public Person(BufferedReader br) throws IOException {
-		System.out.println("hi");
-		this.load(br);
+		loadperson(br);
 	}
 	
 	/**
@@ -131,9 +130,8 @@ class Person {
 	 * @author MK, AV, CH, PJ
 	 * @throws IOException 
 	 */
-	public void load(BufferedReader br) throws IOException {
+	public void loadperson(BufferedReader br) throws IOException {
 		String x;
-		System.out.println("hello");
 		//loads person fields
 		x = br.readLine();
 		fname = x.substring(x.indexOf(": ")+2,x.length());
