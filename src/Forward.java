@@ -160,6 +160,56 @@ public class Forward extends Player {
 		Scanner in = new Scanner(System.in);
 		super.prompt();
 		do{
+			System.out.print("Enter the plus/minus of "+fname+": ");
+			plusMinus=in.nextInt();
+		}while (plusMinus<0); //Ensure the player doesn't have negative plus/minus
+		
+		do{
+			System.out.print("Enter the average goals per season by "+fname+": ");
+			avgGoalsPS=in.nextDouble();
+		}while (avgGoalsPS<0); //Ensure the player doesn't have negative average goals per season
+		
+		do{
+			System.out.print("Enter the average goal percentage per season by "+fname+": ");
+			avgGoalPercentagePS=in.nextDouble();
+		}while (avgGoalPercentagePS<0); //Ensure the player doesn't have negative average goal percentage per season
+		
+		do{
+			System.out.print("Enter the average shots per season by "+fname+": ");
+			avgShotsPS=in.nextDouble();
+		}while (avgShotsPS<0); //Ensure the player doesn't have negative average shots per season
+		
+		do{
+			System.out.print("Enter the Z-score of goal percentage by "+fname+": ");
+			zsGoalPercentage=in.nextDouble();
+		}while (zsGoalPercentage<0); //Ensure the player doesn't have negative Z-score of goal percentage
+		
+		do{
+			System.out.print("Enter the average assists per season by "+fname+": ");
+			avgAssistsPS=in.nextDouble();
+		}while (avgAssistsPS<0); //Ensure the player doesn't have negative average assists per season
+		
+		do{
+			System.out.print("Enter the average penalty minutrs per season by "+fname+": ");
+			avgPenaltyPS=in.nextDouble();
+		}while (avgPenaltyPS<0); //Ensure the player doesn't have negative average penalty minutes per season
+		
+		do{
+			System.out.print("Enter the average power-play goals per season by "+fname+": ");
+			avgPPGoalsPS=in.nextDouble();
+		}while (avgPPGoalsPS<0); //Ensure the player doesn't have negative power-play goals per season
+		
+		do{
+			System.out.print("Enter the average shoot-out goals per season by "+fname+": ");
+			avgSOGoalsPS=in.nextDouble();
+		}while (avgSOGoalsPS<0); //Ensure the player doesn't have negative shoot-out goals per season
+		
+		do{
+			System.out.print("Enter the average number of shifts per game by "+fname+": ");
+			avgNShifts=in.nextDouble();
+		}while (avgNShifts<0); //Ensure the player doesn't have negative average number of shifts per game
+		
+		do{
 			System.out.print("Enter the number of game-winning goals by "+fname+": ");
 			gwGoals=in.nextInt();
 		}while (gwGoals<0); //Ensure the player doesn't have negative game-winning goals
@@ -178,6 +228,16 @@ public class Forward extends Player {
 			System.out.print("Enter the number of overtime goals by "+fname+": ");
 			otGoals=in.nextInt();
 		}while (otGoals<0); //Ensure the player doesn't have negative overtime goals
+		
+		do{
+			System.out.print("Enter the face off percentage by "+fname+": ");
+			faceoffPercentage=in.nextDouble();
+		}while (faceoffPercentage<0); //Ensure the player doesn't have negative face off percentage
+		
+		do{
+			System.out.print("Enter the shooting percentage by "+fname+": ");
+			shootPercentage=in.nextDouble();
+		}while (shootPercentage<0); //Ensure the player doesn't have negative shooting percentage
 		
 	}
 	
