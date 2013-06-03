@@ -2,6 +2,10 @@ public class Conference {
 	private String name; //name of the conference (Eastern or Western)
 	private Division [] divisions = new Division [3]; //A group of divisions
 	
+	/**
+	 * Constructs object of type Conference
+	 * @param i of type int which classifies the conference as either Eastern or Western
+	 */
 	public Conference (int i){
 		if (i == 0){
 			putName("Eastern");
