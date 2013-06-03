@@ -7,7 +7,7 @@ public class head extends Coach {
 	protected int winS; //Regular season wins
 	protected int loseS; //Regular season losses
 	protected int tieS; //Regular season ties
-	protected int overtimeLS; //Regular season overtime loses
+	protected int overtimeLS; //Regular season overtime losses
 	protected int gameCS; //Regular season games coached
 	protected double pointPS; //Regular season Points percentage (number of points team earned divided by total possible points)
 	protected int winP; //Playoff wins
