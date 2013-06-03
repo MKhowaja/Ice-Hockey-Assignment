@@ -20,6 +20,13 @@ public class Goalie extends Player {
 	//for our scoring system, we can have the main ones (ex. savepercent, etc. decide on bulk of rating
 	//then things like emptyNG and shutouts that can imply good decision-making/other factors can be like an "AIF"
 	
+	/**
+   	* Constructs an object of type Goalie
+   	* @param fname, lname of type string and gender of type boolean and height, weight of type double and month, day, year, place, mStatus of type int
+   	* salaryP of type double, contractR of type int, tSalary of type double, rating of type int, gp of type int, penaltyT of type double, penaltyN of type int, arm of type boolean, number of type int,
+   	* numMin of type double, rookie of type boolean,wins of type int, loses of type int, winsP of type int, losesP of type int, losesOT of type int, gameStart of type int, goalA of type int, shotsOG of type int, saves of type int, shutouts of type int, emptyNG of type int
+   	* @throws IOException
+   	*/
 	public Goalie(String fname, String lname, boolean gender, double height, double weight, int month, int day, int year, int place, int mStatus,//person fields
 			double salaryPY, int contractR, double tSalary, int rating, int gp, double penaltyT, int penaltyN, boolean arm, int number, //player fields
 			double numMin, boolean rookie, //more player fields
@@ -45,10 +52,18 @@ public class Goalie extends Player {
 		updateSavePercent();
 	}
 	
+	/**
+	* Constructs an object of type Goalie by calling the load method
+   	* @throws IOException
+	*/
 	public Goalie(BufferedReader br) throws IOException {
 		load(br);
 	}
 	
+	/**
+   	* Constructs an object of type Goalie by prompting for each field
+	* @throws IOException
+	*/
 	public Goalie() {
 		prompt();
 	}
