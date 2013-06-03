@@ -16,6 +16,13 @@ abstract class Player extends Person {
 	protected double numMin; //Total number of minutes the player has been on ice
 	protected boolean rookie; //If the player is a rookie (true if he/she is)
 
+	/**
+   	* Constructs an object of type Player
+   	* @param  fname, lname of type string and gender of type boolean and height, weight of type double and month, day, year, place, mStatus of type int
+	* salaryPY of type double, contractR of type int, tSalary of type double, gp of type int, penaltyT of type double, penaltyN of type int, arm of type boolean, number of type int,
+	* numMin of type double, rookie of type boolean,
+	* @throws IOException
+	*/
 	public Player(String fname, String lname, boolean gender, double height, double weight, int month, int day, int year, int place, int mStatus,//person fields
 			double salaryPY, int contractR, double tSalary, int gp, double penaltyT, int penaltyN, boolean arm, int number, double numMin,
 			boolean rookie) {//player fields
@@ -33,10 +40,18 @@ abstract class Player extends Person {
 		this.rookie = rookie;
 	}
 
+	/**
+   	* Constructs an object of type Player by calling the load method
+	* @throws IOException
+	*/
 	public Player(BufferedReader br) throws IOException {
 		load(br);
 	}
 	
+	/**
+   	* Constructs an object of type Player by prompting for each field
+	* @throws IOException
+	*/
 	public Player() {
 		prompt();
 	}
