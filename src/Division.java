@@ -5,6 +5,10 @@ public class Division{
 	protected String conference; // name of the conference (Eastern or Western) 
 	protected Stack <Team> team = new Stack <Team> (); //A group of teams specific to each division 
 	
+	/**
+	 * Constructs object of type Division
+	 * @param i of type int which classifies the conference as either Eastern or Western, and j of type int which classifies the division (according to the conference)
+	 */
 	public Division (int i, int j){
 		if (i == 0){
 			putConference("Eastern");
