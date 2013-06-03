@@ -40,5 +40,4 @@ public class trainer extends Coach {
 	public void save(PrintWriter pw){
 		super.save(pw);
 	}
-
 }
