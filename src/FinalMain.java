@@ -14,20 +14,20 @@ public class FinalMain {
 	 */
 	public static void main(String[] args) throws IOException {
 		Scanner in = new Scanner(System.in);
-		BufferedReader br;
+		BufferedReader br = null;
 
 		String filepath;
 		int count = 0; //counter
 		int option; //Specifies the option that the user selects from the menu
 		String x; //general purpose variable for user input/loading
 		String classType;
-		
+
 		Stack<Team> teams = new Stack();
 		Stack<Player> players;
 		Stack<Coach> coaches;
-		
+
 		boolean menuRunning;
-		
+
 		menuRunning = true;
 		do {
 			//resets players and coaches
@@ -45,7 +45,7 @@ public class FinalMain {
 				//Prompts for team stats
 				System.out.println("Step 1: Team Information");
 				teams.push(new Team());
-				
+
 				//Prompts for player stats
 				System.out.println("Step 2: Player Information");
 				do {
@@ -71,8 +71,9 @@ public class FinalMain {
 						continuePrompt = false;
 				} while (continuePrompt);
 				players.copyInto(teams.get(count).getPlayers()); //copies stack into player array
-				
+
 				//prompts for coach stats
+				System.out.println("Step 3: Coach Information");
 				do {
 					do {
 						System.out.println("1 - Head");
@@ -99,12 +100,13 @@ public class FinalMain {
 						continuePrompt = false;
 				} while (continuePrompt);
 				coaches.copyInto(teams.get(count).getCoachingstaff()); //copies stack into player array
+				teams.get(count).updateconf();
+				teams.get(count).updatediv();
 				count++;
 			}
 			else if (option == 2) {
 				//loads from team from text file
 				boolean fileFound;
-				br = null;
 				in = new Scanner(System.in); //or else catch behaves weirdly
 				do {
 					System.out.println("Enter location of the text file you want to load from: ");
@@ -119,20 +121,21 @@ public class FinalMain {
 					}
 				} while (fileFound == false);
 				teams.push(new Team(br));
-				
+
+
 				//loads players from text file
 				br.readLine(); //skips empty line
 				do {
 					x = br.readLine();
 					classType = x.substring(x.indexOf(": ")+2,x.length());
-					
+
 					if (classType.equals("forward"))
 						players.push(new Forward(br));
 					else if (classType.equals("defense"))
 						players.push(new Defense(br));
 					else 
 						players.push(new Goalie(br));
-					
+
 					br.readLine();//skips the space between each player
 					br.mark(1000); //stores this location in the memory so program can revisit this part of the stream later
 					x = br.readLine(); //reads next object
@@ -140,12 +143,12 @@ public class FinalMain {
 					br.reset();//moves cursor back to where stream was marked
 				} while (classType.equals("forward")||classType.equals("defense")||classType.equals("goalie"));
 				players.copyInto(teams.get(count).getPlayers()); //copies stack into player array
-				
+
 				//loads coaches from text file
 				do {
 					x = br.readLine();
 					classType = x.substring(x.indexOf(": ")+2,x.length());
-					
+
 					if (classType.equals("head"))
 						coaches.push(new head(br));
 					else if (classType.equals("assistant"))
@@ -154,13 +157,15 @@ public class FinalMain {
 						coaches.push(new goaltender(br));
 					else 
 						coaches.push(new trainer(br));
-					
+
 					x = br.readLine();//skips the space between each coach
 					br.mark(1000); //stores this location in the memory so program can revisit this part of the stream later
 					x = x.substring(x.indexOf(": ")+2,x.length()); //checks if next line in the text file is end of file or not
 					br.reset();
 				} while (x != null);
 				coaches.copyInto(teams.get(count).getCoachingstaff()); //copies stack into player array
+				teams.get(count).updateconf();
+				teams.get(count).updatediv();
 				count++;
 			}
 			else if (option == 3) {//to avoid printing invalid
@@ -172,7 +177,7 @@ public class FinalMain {
 			else
 				System.out.println("Invalid option.");
 		} while (menuRunning);
-		
+
 
 		System.out.println("Enter location to save text file: ");
 		filepath = in.next();
@@ -184,5 +189,9 @@ public class FinalMain {
 			teams.get(i).writeCoach(pw);
 			pw.println(""); //skips an additional line between each team
 		}
+		in.close();
+		br.close();
+		pw.close();
+
 	}
 }
