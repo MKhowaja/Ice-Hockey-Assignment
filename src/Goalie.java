@@ -57,6 +57,7 @@ public class Goalie extends Player {
    	* @throws IOException
 	*/
 	public Goalie(BufferedReader br) throws IOException {
+		super(br);
 		load(br);
 	}
 	
@@ -65,6 +66,7 @@ public class Goalie extends Player {
 	* @throws IOException
 	*/
 	public Goalie() {
+		super();
 		prompt();
 	}
 	
@@ -75,8 +77,6 @@ public class Goalie extends Player {
 	 * @overrides load in Player
 	 */
 	public void load( BufferedReader br) throws IOException {
-		//loads person/player fields
-		super.load(br);
 		//load goalie fields into object
 		String x;
 		
@@ -146,7 +146,6 @@ public class Goalie extends Player {
 	 */
 	public void prompt() {
 		Scanner in = new Scanner(System.in);
-		super.prompt();
 		do{
 			System.out.print("Enter the number of times "+fname+" has won: ");
 			wins=in.nextInt();

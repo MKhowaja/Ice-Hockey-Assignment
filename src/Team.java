@@ -42,7 +42,7 @@ public class Team {
 	private Coach [] coachingstaff;  // coaches, assistants, trainers, etc.
 	private Player [] players;  // a structure that will contain the maximum number of roster spots allowed for a team
 	private double payroll;   //how much the team is paying its players currently for the season (in millions)
-	private final double salarycap = 64.3;   // put by the league. It is the same for all teams (in millions)
+	private final double SALARYCAP = 64.3;   // put by the league. It is the same for all teams (in millions)
 	//Team stats
 	private int gp; //games played
 	private int wins; //games won
@@ -201,12 +201,13 @@ public class Team {
 				"21. Calgary Flames\n22. Edmonton Oilers\n23. Colorado Avalanche\n"+
 				"24. Minnesota Wild\n25. Vancouver Canucks\n26. Anaheim Ducks\n"+
 				"27. Dallas Stars\n28. Los Angeles Kings\n29. Phoenix Coyotes\n"+
-				"30. San Jose Sharks\nEnter (1-30)");
+				"30. San Jose Sharks\nEnter (1-30): ");
 		name=in.nextLine();
+		putName (Integer.parseInt(name));
 		do{
 			System.out.print("Enter "+name+"'s payroll for players: ");
 			payroll=in.nextDouble();
-		}while (payroll<0); //Ensures the payroll for the players isn't negative
+		}while (payroll<0 || payroll > SALARYCAP); //Ensures the payroll for the players isn't negative
 
 		do{
 			System.out.print("Enter the number of games the "+name+" played: ");
@@ -357,10 +358,10 @@ public class Team {
 
 	/**
 	 * Returns the salary cap for the team
-	 * @return the salarycap
+	 * @return the SALARYCAP
 	 */
 	public double getSalarycap() {
-		return salarycap;
+		return SALARYCAP;
 	}
 
 	/**

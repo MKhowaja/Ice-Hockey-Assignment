@@ -44,6 +44,7 @@ public class head extends Coach {
 	* @throws IOException
 	*/
 	public head(BufferedReader br) throws IOException {
+		super(br);
 		load(br);
 	}
 	
@@ -52,6 +53,7 @@ public class head extends Coach {
 	* @throws IOException
 	*/
 	public head() {
+		super();
 		prompt();
 	}
 
@@ -62,8 +64,6 @@ public class head extends Coach {
 	 * @overrides load in Coach
 	 */
 	public void load(BufferedReader br) throws IOException {
-		
-		super.load(br); //loads coach fields
 		String x;
 		//loads head coach fields into the object
 
@@ -123,7 +123,6 @@ public class head extends Coach {
 	 */
 	public void prompt() {
 		Scanner in = new Scanner(System.in);
-		super.prompt();
 		//prompt for head fields
 		do{
 			System.out.print("Enter "+fname+"'s wins during regular season: ");

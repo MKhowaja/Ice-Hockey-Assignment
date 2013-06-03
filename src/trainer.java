@@ -21,7 +21,7 @@ public class trainer extends Coach {
 	* @throws IOException
 	*/
 	public trainer(BufferedReader br) throws IOException {
-		load(br);
+		super(br);
 	}
 	
 	/**
@@ -29,18 +29,9 @@ public class trainer extends Coach {
 	* @throws IOException
 	*/
 	public trainer() {
-		prompt();
+		super();
 	}
 	
-	/**
-	 * Loads the trainer data from a text file into this trainer object
-	 * @author MK, AV, CH, PJ
-	 * @throws IOException 
-	 * @overrides load in Coach
-	 */
-	public void load(BufferedReader br) throws IOException {
-		super.load(br); //loads coach fields
-	}
 	/**
 	 * Saves statistics of a trainer onto a text file
 	 * @param pw of type PrintWriter
@@ -48,14 +39,6 @@ public class trainer extends Coach {
 	 */
 	public void save(PrintWriter pw){
 		super.save(pw);
-	}
-	/**
-	 * Loads a trainer's data through prompting the user
-	 * @author MK, AV, CH, PJ
-	 * @overrides prompt in Coach
-	 */
-	public void prompt() {
-		super.prompt();
 	}
 
 }

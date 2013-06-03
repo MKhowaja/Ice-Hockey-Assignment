@@ -21,7 +21,7 @@ abstract class Coach extends Person {
 	 * @throws IOException
 	 */
 	public Coach(BufferedReader br) throws IOException {
-		load(br);
+		super(br);
 	}
 	
 	/**
@@ -29,19 +29,9 @@ abstract class Coach extends Person {
 	 * @throws IOException
 	 */
 	public Coach() {
-		prompt();
+		super();
 	}
-	
-	/**
-	 * Loads coach data from a text file into this object
-	 * @author MK, AV, CH, PJ
-	 * @throws IOException 
-	 * @overrides load in Person
-	 */
-	public void load(BufferedReader br) throws IOException {
-		super.load(br); //loads person fields
-	}
-	
+		
 	/**
 	 * Saves statistics of a coach onto a text file
 	 * @param pw of type PrintWriter
@@ -49,15 +39,6 @@ abstract class Coach extends Person {
 	 */
 	public void save(PrintWriter pw){
 		super.save(pw);
-	}
-	
-	/**
-	 * Loads a coach's data through prompting the user
-	 * @author MK, AV, CH, PJ
-	 * @overrides prompt in Person
-	 */
-	public void prompt() {
-		super.prompt();
 	}
 
 }

@@ -4,7 +4,7 @@ import java.io.PrintWriter;
 import java.util.Calendar;
 import java.util.Scanner;
 
-abstract class Person {
+class Person {
   	protected String fname; //First name
   	protected String lname; //Last name
 	protected int age; //Age, calculated
@@ -42,7 +42,8 @@ abstract class Person {
    	* @throws IOException
    	*/
 	public Person(BufferedReader br) throws IOException {
-		load(br);
+		System.out.println("hi");
+		this.load(br);
 	}
 	
 	/**
@@ -59,25 +60,25 @@ abstract class Person {
 	 * @author MK, AV, CH, PJ
 	 */
 	public void prompt() {
-		Scanner in = new Scanner(System.in);
+		Scanner input3 = new Scanner(System.in);
 		String tempGender;
 		do {
 			System.out.print("Enter the name of player: ");
-			fname = in.nextLine();
-			in.nextLine();
+			fname = input3.nextLine();
+			input3.nextLine();
 			System.out.print("Enter the last name of player: ");
-			lname = in.nextLine();
-			in.nextLine();
+			lname = input3.nextLine();
+			input3.nextLine();
 		} while (fname.equals("")&&lname.equals("")); //Ensures that something is entered
 
 		do {
 			System.out.print("Enter the age of "+fname+": ");
-			age = in.nextInt();
+			age = input3.nextInt();
 		} while (age <= 0); //Ensures age is greater than 0
 
 		do {
 			System.out.print("Enter the gender of "+fname+" (m/f): ");
-			tempGender = in.next();
+			tempGender = input3.next();
 		} while (!tempGender.equalsIgnoreCase("m") && !tempGender.equalsIgnoreCase("f"));
 		if (tempGender.equalsIgnoreCase("m"))
 			gender = true;
@@ -86,41 +87,42 @@ abstract class Person {
 
 		do {
 			System.out.print("Enter the height of "+fname+": ");
-			height = in.nextDouble();
+			height = input3.nextDouble();
 		} while (height <= 0); //Ensures height is greater than 0
 
 		do {
 			System.out.print("Enter the weight of "+fname+": ");
-			weight = in.nextDouble();
+			weight = input3.nextDouble();
 		} while (weight <= 0); //Ensures weight is greater than 0
 		
 		do {
 			System.out.print("Enter the birth month of "+fname+": ");
-			birthMonth = in.nextInt();
+			birthMonth = input3.nextInt();
 		} while (birthMonth <= 0 || birthMonth >12); //Ensures birth month is between January and December
 		
 		do {
 			System.out.print("Enter the birth day of "+fname+": ");
-			birthDay = in.nextInt();
+			birthDay = input3.nextInt();
 		} while (birthDay <= 0 || birthDay >31); //Ensures birth day is between 1 and 31
 		
 		do {
 			System.out.print("Enter the birth year of "+fname+": ");
-			birthYear = in.nextInt();
+			birthYear = input3.nextInt();
 		} while (birthYear <= 0); //Ensures birth month is greater than 0
 		
 		do {
 			System.out.print("1. Austria\n2. Balarus\n3. Canada\n4. Czech Republic\n5. Denmark\n6. Finland\n"+
 		"7. France\n8. Germany\n9. Hungary\n10. Italy\n11. Kazakhstan\n12. Latvia\n13. Norway\n14. Russia\n15. Slovakia\n16. Slovenia\n17. Sweden\n18. Switzerland\n19. Ukraine\n20. United States\n21. Other");
 			System.out.println("Enter a number based on place of birth: ");
-			birthPlace = in.nextInt();
+			birthPlace = input3.nextInt();
 		} while (birthPlace <= 0 || birthPlace > 21); //Ensures birth place selection is in the list
 		
 		do {
 			System.out.println("1. Divorced\n2. Married\n3. Single\n4. Widowed\n5. Other");
 			System.out.print("Enter martial status based on list: "); 
-			maritalStatus = in.nextInt();
+			maritalStatus = input3.nextInt();
 		} while (maritalStatus <= 0 || maritalStatus > 5); //Ensures martial status selection is in the list
+		input3.close();
 	}
 	
 	/**
@@ -131,7 +133,7 @@ abstract class Person {
 	 */
 	public void load(BufferedReader br) throws IOException {
 		String x;
-
+		System.out.println("hello");
 		//loads person fields
 		x = br.readLine();
 		fname = x.substring(x.indexOf(": ")+2,x.length());

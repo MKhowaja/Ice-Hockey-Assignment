@@ -19,67 +19,6 @@ Total Shots: 1325
 Total Shots Against: 1301
 Total Saves: 1000
 
-CLASS: head
-First Name: Alain
-Last Name: Vigneault
-Age: 52
-Gender: male
-height: 180.34
-weight: 91
-Month of Birth: 5
-Day of Birth: 14
-Year of Birth: 1961
-Birthplace: Canada
-Martial Status: married
-Regular Season Wins: 422
-Regular Season Losses: 288
-Regular Season Ties: 175
-Regular Overtime Losses: 149
-Regular Season Games Coached: 806
-Season Points Percentage: 0.583
-Playoff Wins: 37
-Playoff Losses: 37
-Playoff Games Coached: 74
-
-CLASS: assistant
-First Name: Nolan
-Last Name: Baumgartner
-Age: 37
-Gender: male
-height: 187.96
-weight: 93
-Month of Birth: 3
-Day of Birth: 23
-Year of Birth: 1976
-Birthplace: Canada
-Martial Status: married
-
-CLASS: trainer
-First Name: Mike
-Last Name: Burnstein
-Age: 24
-Gender: male
-height: 187.96
-weight: 95.2544
-Month of Birth: 8
-Day of Birth: 5
-Year of Birth: 1988
-Birthplace: Canada
-Martial Status: married
-
-CLASS: goaltender
-First Name: Boss
-Last Name: McBoss
-Age: 22
-Gender: female
-height: 185
-weight: 87
-Month of Birth: 10
-Day of Birth: 10
-Year of Birth: 1990
-Birthplace: Canada
-Martial Status: divorced
-
 CLASS: defense
 First Name: Andrew
 Last Name: Alberts
@@ -1688,6 +1627,67 @@ Average shots taken per season: 73.78125
 Z-score of goal percentage: 0
 Average assists per season: 14.594
 Average penalty minutes per season: 10
+
+CLASS: head
+First Name: Alain
+Last Name: Vigneault
+Age: 52
+Gender: male
+height: 180.34
+weight: 91
+Month of Birth: 5
+Day of Birth: 14
+Year of Birth: 1961
+Birthplace: Canada
+Martial Status: married
+Regular Season Wins: 422
+Regular Season Losses: 288
+Regular Season Ties: 175
+Regular Overtime Losses: 149
+Regular Season Games Coached: 806
+Season Points Percentage: 0.583
+Playoff Wins: 37
+Playoff Losses: 37
+Playoff Games Coached: 74
+
+CLASS: assistant
+First Name: Nolan
+Last Name: Baumgartner
+Age: 37
+Gender: male
+height: 187.96
+weight: 93
+Month of Birth: 3
+Day of Birth: 23
+Year of Birth: 1976
+Birthplace: Canada
+Martial Status: married
+
+CLASS: trainer
+First Name: Mike
+Last Name: Burnstein
+Age: 24
+Gender: male
+height: 187.96
+weight: 95.2544
+Month of Birth: 8
+Day of Birth: 5
+Year of Birth: 1988
+Birthplace: Canada
+Martial Status: married
+
+CLASS: goaltender
+First Name: Boss
+Last Name: McBoss
+Age: 22
+Gender: female
+height: 185
+weight: 87
+Month of Birth: 10
+Day of Birth: 10
+Year of Birth: 1990
+Birthplace: Canada
+Martial Status: divorced
 Average power play goals per season: 2.00
 Average shoot-out goals per season: 0
 Average number of shifts per game:

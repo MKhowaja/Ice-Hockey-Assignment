@@ -21,7 +21,7 @@ public class goaltender extends Coach {
 	* @throws IOException
 	*/
 	public goaltender(BufferedReader br) throws IOException {
-		load(br);
+		super(br);
 	}
 	
 	/**
@@ -29,17 +29,7 @@ public class goaltender extends Coach {
 	* @throws IOException
 	*/
 	public goaltender() {
-		prompt();
-	}
-	
-	/**
-	 * Loads the goaltender data from a text file into this goaltender object
-	 * @author MK, AV, CH, PJ
-	 * @throws IOException 
-	 * @overrides load in Coach
-	 */
-	public void load(BufferedReader br) throws IOException {
-		super.load(br); //loads coach fields
+		super();
 	}
 	
 	/**
@@ -50,15 +40,4 @@ public class goaltender extends Coach {
 	public void save(PrintWriter pw){
 		super.save(pw);
 	}
-	
-	/**
-	 * Loads a goaltender's data through prompting the user
-	 * @author MK, AV, CH, PJ
-	 * @overrides prompt in Coach
-	 */
-	public void prompt() {
-		super.prompt();
-	}
-	
-	
 }

@@ -21,7 +21,7 @@ public class assistant extends Coach{
 	* @throws IOException
 	*/
 	public assistant(BufferedReader br) throws IOException {
-		load(br);
+		super(br);
 	}
 	
 	/**
@@ -29,25 +29,7 @@ public class assistant extends Coach{
 	* @throws IOException
 	*/
 	public assistant() {
-		prompt();
-	}
-	/**
-	 * Loads the assistant coach data from a text file into this assistant object
-	 * @author MK, AV, CH, PJ
-	 * @throws IOException 
-	 * @overrides load in Coach
-	 */
-	public void load(BufferedReader br) throws IOException {
-		super.load(br); //loads coach fields
-	}
-	
-	/**
-	 * Saves statistics of an assistant onto a text file
-	 * @param pw of type PrintWriter
-	 * @overrides save in Coach
-	 */
-	public void save(PrintWriter pw){
-		super.save(pw);
+		super();
 	}
 	
 	/**

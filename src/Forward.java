@@ -66,6 +66,7 @@ public class Forward extends Player {
 	 * @throws IOException
 	 */
 	public Forward(BufferedReader br) throws IOException {
+		super(br);
 		load(br);
 	}
 	
@@ -74,6 +75,7 @@ public class Forward extends Player {
 	 * @throws IOException
 	 */
 	public Forward() {
+		super();
 		prompt();
 	}
 	
@@ -83,9 +85,7 @@ public class Forward extends Player {
 	 * @throws IOException 
 	 * @overrides load in Player
 	 */
-	public void load(String filepath, BufferedReader br) throws IOException {
-		//loads person/player fields
-		super.load(br);
+	public void load(BufferedReader br) throws IOException {
 		//loads forward fields
 		String x;
 		x = br.readLine();
@@ -174,7 +174,6 @@ public class Forward extends Player {
 	 */
 	public void prompt() {
 		Scanner in = new Scanner(System.in);
-		super.prompt();
 		do{
 			System.out.print("Enter the plus/minus of "+fname+": ");
 			plusMinus=in.nextInt();

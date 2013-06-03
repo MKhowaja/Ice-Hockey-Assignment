@@ -121,20 +121,20 @@ public class FinalMain {
 					}
 				} while (fileFound == false);
 				teams.push(new Team(br));
-
-
+				in.close();
 				//loads players from text file
 				br.readLine(); //skips empty line
 				do {
 					x = br.readLine();
 					classType = x.substring(x.indexOf(": ")+2,x.length());
-
 					if (classType.equals("forward"))
 						players.push(new Forward(br));
-					else if (classType.equals("defense"))
+					else if (classType.equals("defense")) {
 						players.push(new Defense(br));
+					}
 					else 
 						players.push(new Goalie(br));
+					
 
 					br.readLine();//skips the space between each player
 					br.mark(1000); //stores this location in the memory so program can revisit this part of the stream later
@@ -142,8 +142,9 @@ public class FinalMain {
 					classType = x.substring(x.indexOf(": ")+2,x.length());
 					br.reset();//moves cursor back to where stream was marked
 				} while (classType.equals("forward")||classType.equals("defense")||classType.equals("goalie"));
-				players.copyInto(teams.get(count).getPlayers()); //copies stack into player array
 
+				players.copyInto(teams.get(count).getPlayers()); //copies stack into player array
+				
 				//loads coaches from text file
 				do {
 					x = br.readLine();
