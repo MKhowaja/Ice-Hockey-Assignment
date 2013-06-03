@@ -852,7 +852,7 @@ public class Team {
 	 * @param pw the print writer keeping track of cursor in the file
 	 */
 	public void writeCoach(PrintWriter pw){
-		for (int i = 0; i < players.length; i++){
+		for (int i = 0; i < coachingstaff.length; i++){
 			coachingstaff[i].save(pw);
 		}
 	}
