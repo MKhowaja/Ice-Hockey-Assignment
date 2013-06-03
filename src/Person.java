@@ -37,10 +37,19 @@ abstract class Person {
 		convertMaritalStatusToString(maritalStatus);
 	}
 	
+	/**
+   	* Constructs an object of type Person by calling the load method
+   	* @throws IOException
+   	*/
 	public Person(BufferedReader br) throws IOException {
 		load(br);
 	}
 	
+	/**
+   	* Constructs an object of type Person by prompting for each field
+	* @throws IOException
+	*/
+
 	public Person() {
 		prompt();
 	}
