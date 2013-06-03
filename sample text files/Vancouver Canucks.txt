@@ -51,7 +51,7 @@ Average assists per season: 14.594
 Average penalty minutes per season: 10
 Average power play goals per season: 2.00
 Average shoot-out goals per season: 0
-Average number of shifts per game:
+Average number of shifts per game: 1
 Number of game-winning goals: 63
 Number of power play goals: 106
 Number of shoot-out goals: 0
@@ -92,7 +92,7 @@ Average assists per season: 14.594
 Average penalty minutes per season: 10
 Average power play goals per season: 2.00
 Average shoot-out goals per season: 0
-Average number of shifts per game:
+Average number of shifts per game: 0
 Number of game-winning goals: 63
 Number of power play goals: 106
 Number of shoot-out goals: 0
@@ -133,7 +133,7 @@ Average assists per season: 14.594
 Average penalty minutes per season: 10
 Average power play goals per season: 2.00
 Average shoot-out goals per season: 0
-Average number of shifts per game:
+Average number of shifts per game: 0
 Number of game-winning goals: 63
 Number of power play goals: 106
 Number of shoot-out goals: 0
@@ -174,7 +174,7 @@ Average assists per season: 14.594
 Average penalty minutes per season: 10
 Average power play goals per season: 2.00
 Average shoot-out goals per season: 0
-Average number of shifts per game:
+Average number of shifts per game: 0
 Number of game-winning goals: 63
 Number of power play goals: 106
 Number of shoot-out goals: 0
@@ -215,7 +215,7 @@ Average assists per season: 14.594
 Average penalty minutes per season: 10
 Average power play goals per season: 2.00
 Average shoot-out goals per season: 0
-Average number of shifts per game:
+Average number of shifts per game: 0
 Number of game-winning goals: 63
 Number of power play goals: 106
 Number of shoot-out goals: 0
@@ -256,7 +256,7 @@ Average assists per season: 14.594
 Average penalty minutes per season: 10
 Average power play goals per season: 2.00
 Average shoot-out goals per season: 0
-Average number of shifts per game:
+Average number of shifts per game: 0
 Number of game-winning goals: 63
 Number of power play goals: 106
 Number of shoot-out goals: 0
@@ -297,7 +297,7 @@ Average assists per season: 14.594
 Average penalty minutes per season: 10
 Average power play goals per season: 2.00
 Average shoot-out goals per season: 0
-Average number of shifts per game:
+Average number of shifts per game: 0
 Number of game-winning goals: 63
 Number of power play goals: 106
 Number of shoot-out goals: 0
@@ -338,7 +338,7 @@ Average assists per season: 14.594
 Average penalty minutes per season: 10
 Average power play goals per season: 2.00
 Average shoot-out goals per season: 0
-Average number of shifts per game:
+Average number of shifts per game: 0
 Number of game-winning goals: 63
 Number of power play goals: 106
 Number of shoot-out goals: 0
@@ -415,7 +415,7 @@ Average assists per season: 14.594
 Average penalty minutes per season: 10
 Average power play goals per season: 2.00
 Average shoot-out goals per season: 0
-Average number of shifts per game:
+Average number of shifts per game: 0
 Number of game-winning goals: 63
 Number of power play goals: 106
 Number of shoot-out goals: 0
@@ -456,7 +456,7 @@ Average assists per season: 14.594
 Average penalty minutes per season: 10
 Average power play goals per season: 2.00
 Average shoot-out goals per season: 0
-Average number of shifts per game:
+Average number of shifts per game: 0
 Number of game-winning goals: 63
 Number of power play goals: 106
 Number of shoot-out goals: 0
@@ -497,7 +497,7 @@ Average assists per season: 14.594
 Average penalty minutes per season: 10
 Average power play goals per season: 2.00
 Average shoot-out goals per season: 0
-Average number of shifts per game:
+Average number of shifts per game: 0
 Number of game-winning goals: 63
 Number of power play goals: 106
 Number of shoot-out goals: 0
@@ -538,7 +538,7 @@ Average assists per season: 14.594
 Average penalty minutes per season: 10
 Average power play goals per season: 2.00
 Average shoot-out goals per season: 0
-Average number of shifts per game:
+Average number of shifts per game: 0
 Number of game-winning goals: 63
 Number of power play goals: 106
 Number of shoot-out goals: 0
@@ -579,7 +579,7 @@ Average assists per season: 14.594
 Average penalty minutes per season: 10
 Average power play goals per season: 2.00
 Average shoot-out goals per season: 0
-Average number of shifts per game:
+Average number of shifts per game: 0
 Number of game-winning goals: 63
 Number of power play goals: 106
 Number of shoot-out goals: 0
@@ -620,7 +620,7 @@ Average assists per season: 14.594
 Average penalty minutes per season: 10
 Average power play goals per season: 2.00
 Average shoot-out goals per season: 0
-Average number of shifts per game:
+Average number of shifts per game: 0
 Number of game-winning goals: 63
 Number of power play goals: 106
 Number of shoot-out goals: 0
@@ -661,7 +661,7 @@ Average assists per season: 14.594
 Average penalty minutes per season: 10
 Average power play goals per season: 2.00
 Average shoot-out goals per season: 0
-Average number of shifts per game:
+Average number of shifts per game: 0
 Number of game-winning goals: 63
 Number of power play goals: 106
 Number of shoot-out goals: 0
@@ -702,7 +702,7 @@ Average assists per season: 14.594
 Average penalty minutes per season: 10
 Average power play goals per season: 2.00
 Average shoot-out goals per season: 0
-Average number of shifts per game:
+Average number of shifts per game: 0
 Number of game-winning goals: 63
 Number of power play goals: 106
 Number of shoot-out goals: 0
@@ -743,7 +743,7 @@ Average assists per season: 14.594
 Average penalty minutes per season: 10
 Average power play goals per season: 2.00
 Average shoot-out goals per season: 0
-Average number of shifts per game:
+Average number of shifts per game: 0
 Number of game-winning goals: 63
 Number of power play goals: 106
 Number of shoot-out goals: 0
@@ -784,7 +784,7 @@ Average assists per season: 14.594
 Average penalty minutes per season: 10
 Average power play goals per season: 2.00
 Average shoot-out goals per season: 0
-Average number of shifts per game:
+Average number of shifts per game: 0
 Number of game-winning goals: 63
 Number of power play goals: 106
 Number of shoot-out goals: 0
@@ -825,7 +825,7 @@ Average assists per season: 14.594
 Average penalty minutes per season: 10
 Average power play goals per season: 2.00
 Average shoot-out goals per season: 0
-Average number of shifts per game:
+Average number of shifts per game: 0
 Number of game-winning goals: 63
 Number of power play goals: 106
 Number of shoot-out goals: 0
@@ -866,7 +866,7 @@ Average assists per season: 14.594
 Average penalty minutes per season: 10
 Average power play goals per season: 2.00
 Average shoot-out goals per season: 0
-Average number of shifts per game:
+Average number of shifts per game: 0
 Number of game-winning goals: 63
 Number of power play goals: 106
 Number of shoot-out goals: 0
@@ -907,7 +907,7 @@ Average assists per season: 14.594
 Average penalty minutes per season: 10
 Average power play goals per season: 2.00
 Average shoot-out goals per season: 0
-Average number of shifts per game:
+Average number of shifts per game: 0
 Number of game-winning goals: 63
 Number of power play goals: 106
 Number of shoot-out goals: 0
@@ -984,13 +984,14 @@ Average assists per season: 14.594
 Average penalty minutes per season: 10
 Average power play goals per season: 2.00
 Average shoot-out goals per season: 0
-Average number of shifts per game:
+Average number of shifts per game: 0
 Number of game-winning goals: 63
 Number of power play goals: 106
 Number of shoot-out goals: 0
 Number of overtime goals: 10
 Points: 758
 Face off win percentage: 50
+Shooting Percentage: 5
 
 CLASS: forward
 First Name: Maxim
@@ -1024,7 +1025,7 @@ Average assists per season: 14.594
 Average penalty minutes per season: 10
 Average power play goals per season: 2.00
 Average shoot-out goals per season: 0
-Average number of shifts per game:
+Average number of shifts per game: 0
 Number of game-winning goals: 63
 Number of power play goals: 106
 Number of shoot-out goals: 0
@@ -1101,7 +1102,7 @@ Average assists per season: 14.594
 Average penalty minutes per season: 10
 Average power play goals per season: 2.00
 Average shoot-out goals per season: 0
-Average number of shifts per game:
+Average number of shifts per game: 0
 Number of game-winning goals: 63
 Number of power play goals: 106
 Number of shoot-out goals: 0
@@ -1142,7 +1143,7 @@ Average assists per season: 14.594
 Average penalty minutes per season: 10
 Average power play goals per season: 2.00
 Average shoot-out goals per season: 0
-Average number of shifts per game:
+Average number of shifts per game: 0
 Number of game-winning goals: 63
 Number of power play goals: 106
 Number of shoot-out goals: 0
@@ -1183,7 +1184,7 @@ Average assists per season: 14.594
 Average penalty minutes per season: 10
 Average power play goals per season: 2.00
 Average shoot-out goals per season: 0
-Average number of shifts per game:
+Average number of shifts per game: 0
 Number of game-winning goals: 63
 Number of power play goals: 106
 Number of shoot-out goals: 0
@@ -1224,7 +1225,7 @@ Average assists per season: 14.594
 Average penalty minutes per season: 10
 Average power play goals per season: 2.00
 Average shoot-out goals per season: 0
-Average number of shifts per game:
+Average number of shifts per game: 0
 Number of game-winning goals: 63
 Number of power play goals: 106
 Number of shoot-out goals: 0
@@ -1265,7 +1266,7 @@ Average assists per season: 14.594
 Average penalty minutes per season: 10
 Average power play goals per season: 2.00
 Average shoot-out goals per season: 0
-Average number of shifts per game:
+Average number of shifts per game: 0
 Number of game-winning goals: 63
 Number of power play goals: 106
 Number of shoot-out goals: 0
@@ -1306,7 +1307,7 @@ Average assists per season: 14.594
 Average penalty minutes per season: 10
 Average power play goals per season: 2.00
 Average shoot-out goals per season: 0
-Average number of shifts per game:
+Average number of shifts per game: 0
 Number of game-winning goals: 63
 Number of power play goals: 106
 Number of shoot-out goals: 0
@@ -1383,7 +1384,7 @@ Average assists per season: 14.594
 Average penalty minutes per season: 10
 Average power play goals per season: 2.00
 Average shoot-out goals per season: 0
-Average number of shifts per game:
+Average number of shifts per game: 0
 Number of game-winning goals: 63
 Number of power play goals: 106
 Number of shoot-out goals: 0
@@ -1424,7 +1425,7 @@ Average assists per season: 14.594
 Average penalty minutes per season: 10
 Average power play goals per season: 2.00
 Average shoot-out goals per season: 0
-Average number of shifts per game:
+Average number of shifts per game: 0
 Number of game-winning goals: 63
 Number of power play goals: 106
 Number of shoot-out goals: 0
@@ -1465,7 +1466,7 @@ Average assists per season: 14.594
 Average penalty minutes per season: 10
 Average power play goals per season: 2.00
 Average shoot-out goals per season: 0
-Average number of shifts per game:
+Average number of shifts per game: 0
 Number of game-winning goals: 63
 Number of power play goals: 106
 Number of shoot-out goals: 0
@@ -1506,7 +1507,7 @@ Average assists per season: 14.594
 Average penalty minutes per season: 10
 Average power play goals per season: 2.00
 Average shoot-out goals per season: 0
-Average number of shifts per game:
+Average number of shifts per game: 0
 Number of game-winning goals: 63
 Number of power play goals: 106
 Number of shoot-out goals: 0
@@ -1547,7 +1548,7 @@ Average assists per season: 14.594
 Average penalty minutes per season: 10
 Average power play goals per season: 2.00
 Average shoot-out goals per season: 0
-Average number of shifts per game:
+Average number of shifts per game: 0
 Number of game-winning goals: 63
 Number of power play goals: 106
 Number of shoot-out goals: 0
@@ -1588,7 +1589,7 @@ Average assists per season: 14.594
 Average penalty minutes per season: 10
 Average power play goals per season: 2.00
 Average shoot-out goals per season: 0
-Average number of shifts per game:
+Average number of shifts per game: 0
 Number of game-winning goals: 63
 Number of power play goals: 106
 Number of shoot-out goals: 0
@@ -1627,6 +1628,16 @@ Average shots taken per season: 73.78125
 Z-score of goal percentage: 0
 Average assists per season: 14.594
 Average penalty minutes per season: 10
+Average power play goals per season: 2.00
+Average shoot-out goals per season: 0
+Average number of shifts per game: 0
+Number of game-winning goals: 63
+Number of power play goals: 106
+Number of shoot-out goals: 0
+Number of overtime goals: 10
+Points: 758
+Face off win percentage: 50
+Shooting Percentage: 5
 
 CLASS: head
 First Name: Alain
@@ -1649,6 +1660,8 @@ Season Points Percentage: 0.583
 Playoff Wins: 37
 Playoff Losses: 37
 Playoff Games Coached: 74
+Number of Stanley Cups: 10
+Total Games Coached: 4385
 
 CLASS: assistant
 First Name: Nolan
