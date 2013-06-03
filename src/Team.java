@@ -76,7 +76,8 @@ public class Team {
 		}catch(NumberFormatException e){
 			this.name = name;
 		}
-
+		division = getDivision();
+		conference = getConference();
 		this.payroll = payroll;
 		this.gp = gpT;
 		this.wins = wins;
@@ -301,6 +302,7 @@ public class Team {
 	 * @return the division
 	 */
 	public String getDivision() {
+		updatediv();
 		return division;
 	}
 
@@ -309,6 +311,7 @@ public class Team {
 	 * @return the conference
 	 */
 	public String getConference() {
+		updateconf();
 		return conference;
 	}
 
@@ -611,22 +614,7 @@ public class Team {
 		}
 	}
 
-	/**
-	 * Assigns the parameter to division
-	 * @param division the division to put
-	 */
-	public void putDivision(String division) {
-		this.division = division;
-	}
-
-	/**
-	 * Assigns the parameter to conference
-	 * @param conference the conference to put
-	 */
-	public void putConference(String conference) {
-		this.conference = conference;
-	}
-
+	
 	/**
 	 * Assigns the parameter to coachingstaff
 	 * @param Coach [] x an array of coaches
@@ -812,6 +800,63 @@ public class Team {
 	public void updatePpPercent() {
 		ppPercent = (ppgoals/ppo)*100;
 	}
+	
+	/**
+	 * Updates division
+	 */
+	public void updatediv() {
+		if (name.equals("New Jersey Devils")||name.equals("New York Islanders")||name.equals("New York Rangers")||name.equals("Philadelphia Flyers")||name.equals("Pittsburgh Penguins")){
+			division = "Atlantic Division";
+		}
+		else if (name.equals("Boston Bruins")||name.equals("Buffalo Sabres")||name.equals("Montr√©al Canadiens")||name.equals("Ottawa Senators")||name.equals("Toronto Maple Leafs")){
+			division = "Northeast Division";
+		}
+		else if (name.equals("Carolina Hurricanes")||name.equals("Florida Panthers")||name.equals("Tampa Bay Lightning")||name.equals("Washington Capitals")||name.equals("Winnipeg Jets")){
+			division = "Southeast Division";
+		}
+		else if (name.equals("Chicago Blackhawks")||name.equals("Columbus Blue Jackets")||name.equals("Detroit Red Wings")||name.equals("Nashville Predators")||name.equals("St. Louis Blues")){
+			division = "Central Division";
+		}
+		else if (name.equals("Calgary Flames")||name.equals("Edmonton Oilers")||name.equals("Colorado Avalanche")||name.equals("Minnesota Wild")||name.equals("Vancouver Canucks")){
+			division = "Northwest Division";
+		}
+		else {
+			division = "Pacific Division";
+		}
+	}
+	
+	/**
+	 * Updates Conference
+	 */
+	public void updateconf() {
+		int conf = confNum();
+		if (conf == 0){
+			conference = "Eastern";
+		}else{
+			conference = "Western";
+		}
+	}
+
+	/**
+	 * Writes players to text file
+	 * @param pw the print writer keeping track of cursor in the file
+	 */
+	public void writePlayer(PrintWriter pw){
+		for (int i = 0; i < players.length; i++){
+			players[i].save(pw);
+		}
+	}
+	
+	/**
+	 * Writes coaches to text file
+	 * @param pw the print writer keeping track of cursor in the file
+	 */
+	public void writeCoach(PrintWriter pw){
+		for (int i = 0; i < players.length; i++){
+			coachingstaff[i].save(pw);
+		}
+	}
+
 	/**
 	 * Determines the appropriate division the team belongs to
 	 * @return an integer representing the division the team belongs to
@@ -820,7 +865,7 @@ public class Team {
 		if (name.equals("New Jersey Devils")||name.equals("New York Islanders")||name.equals("New York Rangers")||name.equals("Philadelphia Flyers")||name.equals("Pittsburgh Penguins")){
 			return 0;
 		}
-		else if (name.equals("Boston Bruins")||name.equals("Buffalo Sabres")||name.equals("MontrÈal Canadiens")||name.equals("Ottawa Senators")||name.equals("Toronto Maple Leafs")){
+		else if (name.equals("Boston Bruins")||name.equals("Buffalo Sabres")||name.equals("MontrÔøΩal Canadiens")||name.equals("Ottawa Senators")||name.equals("Toronto Maple Leafs")){
 			return 1;
 		}
 		else if (name.equals("Carolina Hurricanes")||name.equals("Florida Panthers")||name.equals("Tampa Bay Lightning")||name.equals("Washington Capitals")||name.equals("Winnipeg Jets")){
