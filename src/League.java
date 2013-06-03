@@ -2,6 +2,10 @@ public class League {
 	private final String name = "NHL"; //name of the league (preset to National Hockey League) 
 	private Conference[] conference = new Conference [2]; //an array of type conference (to hold Eastern and Western Conferences) 
 
+	/**
+   	* Constructs a League which contains 2 Conferences
+   	* @throws IOException
+	*/
 	public League(){
 		for (int i = 0; i <conference.length; i++){
 			conference[i] = new Conference(i);
