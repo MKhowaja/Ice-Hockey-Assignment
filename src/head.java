@@ -16,6 +16,12 @@ public class head extends Coach {
 	protected int stanleyN; //Number of Stanley Cups
 	protected int totalGamesCoached; //Total number of games coached, calculated
 
+	/**
+   	* Constructs an object of type Goaltender
+	* @param  fname, lname of type string and gender of type boolean and height, weight of type double and month, day, year, place, mStatus of type int
+	* winS of type int, loseS of type int, tieS of type int, overtimeLS of type int, gameCS of type int, pointPS of type double, winP of type int, loseP of type int, gameCP of type , stanleyN of type int
+	* @throws IOException
+	*/
 	public head(String fname, String lname, boolean gender, double height, double weight, int month, int day, int year, int place, int mStatus,//person fields
 			int winS, int loseS, int tieS, int overtimeLS, int gameCS, double pointPS, int winP, int loseP, int gameCP, int stanleyN) {//coach fields
 		super(fname, lname, gender, height, weight, month, day, year, place, mStatus);
@@ -33,10 +39,18 @@ public class head extends Coach {
 		updatetotalGamesCoached();
 	}
 	
+	/**
+	* Constructs an object of type head by calling the load method
+	* @throws IOException
+	*/
 	public head(BufferedReader br) throws IOException {
 		load(br);
 	}
 	
+	/**
+   	* Constructs an object of type head by prompting for each field
+	* @throws IOException
+	*/
 	public head() {
 		prompt();
 	}
