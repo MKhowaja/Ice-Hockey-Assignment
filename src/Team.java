@@ -43,7 +43,7 @@ public class Team {
 	private Player [] players;  // a structure that will contain the maximum number of roster spots allowed for a team
 	private double payroll;   //how much the team is paying its players currently for the season (in millions)
 	private final double SALARYCAP = 64.3;   // put by the league. It is the same for all teams (in millions)
-	//Team stats
+	//Team stats (not just based on the current players, but for the entire duration of the team's existence)
 	private int gp; //games played
 	private int wins; //games won
 	private int losses; //games lost
