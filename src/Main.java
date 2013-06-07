@@ -99,7 +99,7 @@ public class Main {
 					else
 						continuePrompt = false;
 				} while (continuePrompt);
-				coaches.copyInto(teams.get(count).getCoachingstaff()); //copies stack into player array
+				coaches.copyInto(teams.get(count).getCoachingstaff()); //copies stack into coach array
 				teams.get(count).updateconf();
 				teams.get(count).updatediv();
 				count++;
