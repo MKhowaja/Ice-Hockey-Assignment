@@ -193,7 +193,7 @@ public class Team {
 		Scanner in = new Scanner(System.in);
 		System.out.print("1. New Jersey Devils\n2. New York Islanders\n"+
 				"3. New York Rangers\n4. Philadelphia Flyers\n5. Pittsburgh Penguins\n"+
-				"6. Boston Bruins\n7. Buffalo Sabres\n8. MontrÃ©al Canadiens\n"+
+				"6. Boston Bruins\n7. Buffalo Sabres\n8. MontrÃƒÂ©al Canadiens\n"+
 				"9. Ottawa Senators\n10. Toronto Maple Leafs\n11. Carolina Hurricanes\n"+
 				"12. Florida Panthers\n13. Tampa Bay Lightning\n14. Washington Capitals\n" +
 				"15. Winnipeg Jets\n16. Chicago Blackhawks\n17. Columbus Blue Jackets\n"+
@@ -303,7 +303,7 @@ public class Team {
 		pw.println("Total Shots: "+shotsfor);
 		pw.println("Total Shots Against: "+shotsagainst);
 		pw.println("Total Saves: "+saves);
-
+		pw.println("");
 	}
 
 	/**
@@ -566,7 +566,7 @@ public class Team {
 				else if (x == 7)
 					name = "Buffalo Sabres";
 				else if (x == 8)
-					name = "MontrÃ©al Canadiens";
+					name = "MontrÃƒÂ©al Canadiens";
 				else if (x == 9)
 					name = "Ottawa Senators";
 				else
@@ -825,7 +825,7 @@ public class Team {
 		if (name.equals("New Jersey Devils")||name.equals("New York Islanders")||name.equals("New York Rangers")||name.equals("Philadelphia Flyers")||name.equals("Pittsburgh Penguins")){
 			division = "Atlantic Division";
 		}
-		else if (name.equals("Boston Bruins")||name.equals("Buffalo Sabres")||name.equals("MontrÃ©al Canadiens")||name.equals("Ottawa Senators")||name.equals("Toronto Maple Leafs")){
+		else if (name.equals("Boston Bruins")||name.equals("Buffalo Sabres")||name.equals("MontrÃƒÂ©al Canadiens")||name.equals("Ottawa Senators")||name.equals("Toronto Maple Leafs")){
 			division = "Northeast Division";
 		}
 		else if (name.equals("Carolina Hurricanes")||name.equals("Florida Panthers")||name.equals("Tampa Bay Lightning")||name.equals("Washington Capitals")||name.equals("Winnipeg Jets")){
@@ -853,7 +853,6 @@ public class Team {
 			conference = "Western";
 		}
 	}
-
 	/**
 	 * Writes players to text file
 	 * @param pw the print writer keeping track of cursor in the file
@@ -864,7 +863,7 @@ public class Team {
 				pw.println("Player type: forward");
 				((Forward)players[i]).save(pw);
 			}
-			if (players[i] instanceof Defense) {
+			else if (players[i] instanceof Defense) {
 				pw.println("Player type: defense");
 				((Defense)players[i]).save(pw);
 			}
@@ -910,7 +909,7 @@ public class Team {
 		if (name.equals("New Jersey Devils")||name.equals("New York Islanders")||name.equals("New York Rangers")||name.equals("Philadelphia Flyers")||name.equals("Pittsburgh Penguins")){
 			return 0;
 		}
-		else if (name.equals("Boston Bruins")||name.equals("Buffalo Sabres")||name.equals("Montrï¿½al Canadiens")||name.equals("Ottawa Senators")||name.equals("Toronto Maple Leafs")){
+		else if (name.equals("Boston Bruins")||name.equals("Buffalo Sabres")||name.equals("MontrÃ¯Â¿Â½al Canadiens")||name.equals("Ottawa Senators")||name.equals("Toronto Maple Leafs")){
 			return 1;
 		}
 		else if (name.equals("Carolina Hurricanes")||name.equals("Florida Panthers")||name.equals("Tampa Bay Lightning")||name.equals("Washington Capitals")||name.equals("Winnipeg Jets")){
@@ -939,5 +938,9 @@ public class Team {
 	}
 	public void putplayersize(int x){
 		players = new Player [x];
+	}
+	
+	public void putcoachingstaffsize(int x){
+		coachingstaff = new Coach [x];
 	}
 }
