@@ -1701,13 +1701,3 @@ Day of Birth: 10
 Year of Birth: 1990
 Birthplace: Canada
 Martial Status: divorced
-Average power play goals per season: 2.00
-Average shoot-out goals per season: 0
-Average number of shifts per game:
-Number of game-winning goals: 63
-Number of power play goals: 106
-Number of shoot-out goals: 0
-Number of overtime goals: 10
-Points: 758
-Face off win percentage: 50
-Shooting Percentage: 5
