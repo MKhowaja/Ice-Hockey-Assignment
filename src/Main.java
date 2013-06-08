@@ -25,17 +25,22 @@ public class Main {
 		Stack<Team> teams = new Stack<Team>();
 		Stack<Player> players;
 		Stack<Coach> coaches;
+		
+		System.out.println("Welcome to Hockey Stats Analysis");
+		System.out.println("Press ENTER to continue.");
+		in.nextLine();
 
 		boolean menuRunning;
 		menuRunning = true;
+		System.out.println("Stage 1: Input Information");
+		System.out.println("Note: More than one team may be inputted.");
 		do {
 			//resets players and coaches
 			players = new Stack<Player>();
 			coaches = new Stack<Coach>(); 
-			System.out.println("Step 1: Enter team information");
-			System.out.println("1 - Manually enter Team");
-			System.out.println("2 - Load Team from text file");
-			System.out.println("3 - Continue"); //continues to next step once more than 1 team is loaded
+			System.out.println("1 - Manually enter a team's statistics.");
+			System.out.println("2 - Load a team's statistics from a text file.");
+			System.out.println("3 - Continue to Stage 2: Operations"); //continues to next step once more than 1 team is loaded
 			System.out.println("Select an option: ");
 			option = in.nextInt();
 			if (option == 1) {
@@ -132,8 +137,6 @@ public class Main {
 					}
 					else 
 						players.push(new Goalie(br));
-					
-
 					br.readLine();//skips the space between each player
 					br.mark(1000); //stores this location in the memory so program can revisit this part of the stream later
 					x = br.readLine(); //reads next object
@@ -155,7 +158,6 @@ public class Main {
 						coaches.push(new goaltender(br));
 					else 
 						coaches.push(new trainer(br));
-
 					x = br.readLine();//skips the space between each coach
 					br.mark(1000); //stores this location in the memory so program can revisit this part of the stream later
 					x = br.readLine(); //checks if next line in the text file is end of file or not
@@ -163,11 +165,9 @@ public class Main {
 				} while (x != null);
 				teams.get(count).putcoachingstaffsize(coaches.size());
 				coaches.copyInto(teams.get(count).getCoachingstaff()); //copies stack into coach array
-				teams.get(count).updateconf();
-				teams.get(count).updatediv();
 				count++;
 			}
-			else if (option == 3) {//to avoid printing invalid
+			else if (option == 3) {
 				if (count<1)
 					System.out.println("Error - Information is required for at least 1 team.");
 				else
@@ -176,21 +176,42 @@ public class Main {
 			else
 				System.out.println("Invalid option.");
 		} while (menuRunning);
+		br.close(); 
 
-
-		System.out.println("Enter location to save text file: ");
-		filepath = in.next();
-		PrintWriter pw = new PrintWriter(new FileWriter(filepath));
-		System.out.println("League: NHL\n");
-		for (int i = 0; i<teams.size();i++) {
-			teams.get(i).save(pw);
-			teams.get(i).writePlayer(pw);
-			teams.get(i).writeCoach(pw);
-			pw.println(""); //skips an additional line between each team
-		}
+		PrintWriter pw = null; //initializes printwriter
+		System.out.println("Stage 2: Operations");
+		menuRunning = true;
+		do {
+			System.out.println("1 - Save teams onto a text file.");
+			System.out.println("2 - Sort a team."); //by stats that users specify
+			System.out.println("3 - Rank the teams.");
+			System.out.println("4 - Rank the players."); //make gigantic array of players and bubble sort according to rating
+			System.out.println("5 - Terminate the program.");
+			System.out.println("Select an operation: ");
+			option = in.nextInt();
+			if (option == 1) {
+				System.out.println("Enter location to save text file: ");
+				filepath = in.next();
+				pw = new PrintWriter(new FileWriter(filepath));
+				pw.println("League: NHL");
+				pw.println("");
+				for (int i = 0; i < teams.size(); i++) {
+					teams.get(i).save(pw); //already skips line in method
+					teams.get(i).writePlayer(pw); //already skips lines in method
+					teams.get(i).writeCoach(pw); //already skips lines in method
+					pw.println("----------------------------------------------------"); //separates each team
+					pw.println();
+				}
+			}
+			else if (option == 5) {
+				System.out.println("Terminating program.");
+				System.out.println("Thank you for using Hockey Stats Analysis.");
+				menuRunning = false;
+			}
+			else
+				System.out.println("Invalid option.");
+		} while (menuRunning);
 		in.close();
-		br.close();
 		pw.close();
-
 	}
 }

@@ -119,7 +119,7 @@ abstract class Player extends Person {
 	public void save(PrintWriter pw) {
 		super.save(pw);
 		pw.println("Salary per year: "+salaryPY);
-		pw.println("Contract: "+contractR);
+		pw.println("Years remaining on contract : "+contractR);
 		pw.println("Total salary: "+tSalary);
 		pw.println("Rating: "+rating);
 		pw.println("Games played: "+gp);
@@ -395,4 +395,6 @@ abstract class Player extends Person {
 	public void putRookie(boolean x) {
 		rookie = x;
 	}
+	
+	
 }

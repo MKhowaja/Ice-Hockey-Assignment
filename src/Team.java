@@ -182,7 +182,27 @@ public class Team {
 
 		x = br.readLine();
 		saves = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
-
+		
+		x = br.readLine();
+		avgGPG = Double.parseDouble(x.substring(x.indexOf(": ")+2,x.length()));
+		
+		x = br.readLine();
+		avgGAPG = Double.parseDouble(x.substring(x.indexOf(": ")+2,x.length()));
+		
+		x = br.readLine();
+		avgSPG = Double.parseDouble(x.substring(x.indexOf(": ")+2,x.length()));
+		
+		x = br.readLine();
+		avgSAPG = Double.parseDouble(x.substring(x.indexOf(": ")+2,x.length()));
+		
+		x = br.readLine();
+		shPercent = Double.parseDouble(x.substring(x.indexOf(": ")+2,x.length()));
+		
+		x = br.readLine();
+		savePercent = Double.parseDouble(x.substring(x.indexOf(": ")+2,x.length()));
+		
+		x = br.readLine();
+		ppPercent = Double.parseDouble(x.substring(x.indexOf(": ")+2,x.length()));
 	}
 
 	/**
@@ -212,72 +232,79 @@ public class Team {
 		do{
 			System.out.print("Enter the number of games the "+name+" played: ");
 			gp=in.nextInt();
-		}while(gp<0); //Ensures the number of games played is above zero (valid)
+		}while(gp<0); //Ensures the number of games played is not negative
 
 		do{
 			System.out.print("Enter the number of games the "+name+" won: ");
 			wins=in.nextInt();
-		}while(wins<0); //Ensures the number of games won is above zero (valid)
+		}while(wins<0); //Ensures the number of games won is not negative
 
 		do{
 			System.out.print("Enter the number of games the "+name+" lost: ");
 			losses=in.nextInt();
-		}while(losses<0); //Ensures the number of games lost is above zero (valid)
+		}while(losses<0); //Ensures the number of games lost is not negative
 
 		do{
 			System.out.print("Enter the total number of goals the "+name+" scored (including power-play, short-handed and empty-net goals): ");
 			goalsfor=in.nextInt();
-		}while(goalsfor<0); //Ensures the total goals scored is above zero (valid)
+		}while(goalsfor<0); //Ensures the total goals scored is not negative
 
 		do{
 			System.out.print("Enter the total goals scored against the "+name+" (including power-play, short-handed and empty-net goals): ");
 			goalsagainst=in.nextInt();
-		}while(goalsagainst<0); //Ensures the total goals scored against is above zero (valid)
+		}while(goalsagainst<0); //Ensures the total goals scored against is not negative
 
 		do{
 			System.out.print("Enter the number of power-play opportunities that the "+name+" have: ");
 			ppo=in.nextInt();
-		}while(ppo<0); //Ensures the number of power-play opportunities is above zero (valid)
+		}while(ppo<0); //Ensures the number of power-play opportunities is not negative
 
 		do{
 			System.out.print("Enter the number of times the "+name+" were short-handed: ");
 			tsh=in.nextInt();
-		}while(tsh<0); //Ensures the number of times short-handed is above zero (valid)
+		}while(tsh<0); //Ensures the number of times short-handed is not negative
 
 		do{
 			System.out.print("Enter the total number of power-play goals the "+name+" have: ");
 			ppgoals=in.nextInt();
-		}while(ppgoals<0); //Ensures the total number of power-play goals is above zero (valid)
+		}while(ppgoals<0); //Ensures the total number of power-play goals is not negative
 
 		do{
 			System.out.print("Enter the total number of short-handed goals the "+name+" have: ");
 			shgoals=in.nextInt();
-		}while(shgoals<0); //Ensures the total number of short-handed goals is above zero (valid)
+		}while(shgoals<0); //Ensures the total number of short-handed goals is not negative
 
 		do{
 			System.out.print("Enter the total number of power-play goals aganist the "+name+": ");
 			ppgoalsA=in.nextInt();
-		}while(ppgoalsA<0); //Ensures the total number of power-play goals against is above zero (valid)
+		}while(ppgoalsA<0); //Ensures the total number of power-play goals against is not negative
 
 		do{
 			System.out.print("Enter the total number of short-handed goals against the "+name+": ");
 			shgoalsA=in.nextInt();
-		}while(shgoalsA<0); //Ensures the total number of short-handed goals against is above zero (valid)
+		}while(shgoalsA<0); //Ensures the total number of short-handed goals against is not negative
 
 		do{
 			System.out.print("Enter the total number of shots on the "+name+"'s goal: "); //More info needed
 			shotsfor=in.nextInt();
-		}while(shotsfor<0); //Ensures the total shots on goal is above zero (valid)
+		}while(shotsfor<0); //Ensures the total shots on goal is not negative
 
 		do{
 			System.out.print("Enter the total number of shots against the "+name+": ");
 			shotsagainst=in.nextInt();
-		}while(shotsagainst<0); //Ensures the total shots against is above zero (valid)
+		}while(shotsagainst<0); //Ensures the total shots against is not negative
 
 		do{
 			System.out.print("Enter the total number of saves for the "+name+": ");
 			saves=in.nextInt();
-		}while(saves<0); //Ensures the total saves is above zero (valid)
+		}while(saves<0); //Ensures the total saves is not negative
+		
+		do{
+			System.out.print("Enter the average goals scored per game for the "+name+": ");
+			avgGPG=in.nextInt();
+		}while(avgGPG<0); //Ensures the total saves is not negative
+		
+		//not completed yet (prompt, save)
 	}
 
 	/**
@@ -291,7 +318,7 @@ public class Team {
 		pw.println("Payroll: "+payroll);
 		pw.println("Games Played: "+gp);
 		pw.println("Games Won: "+wins);
-		pw.println("Games Lost:"+losses);
+		pw.println("Games Lost: "+losses);
 		pw.println("Total Goals Scored: "+goalsfor);
 		pw.println("Total Goals Scored Against: "+goalsagainst);
 		pw.println("Number of Powerplay Opportunities: "+ppo);

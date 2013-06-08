@@ -5,8 +5,8 @@ import java.util.Calendar;
 import java.util.Scanner;
 
 class Person {
-  	protected String fname; //First name
-  	protected String lname; //Last name
+	protected String fname; //First name
+	protected String lname; //Last name
 	protected int age; //Age, calculated
 	protected boolean gender; //True if male 
 	protected double height; //Height in centimetres
@@ -20,7 +20,7 @@ class Person {
 	/**
 	 * Constructor that creates an object of type person with parameters sent in
 	 * @param String fname, String lname, int age, boolean gender, double height, double weight, int month, int day, int year, int place, int mStatus
-	*/
+	 */
 	Person(String fname, String lname, boolean gender, double height, double weight, int month, int day, int year, int place, int mStatus) {
 		this.fname = fname;
 		this.lname = lname;
@@ -36,24 +36,24 @@ class Person {
 		convertBirthPlaceToString(birthPlace);
 		convertMaritalStatusToString(maritalStatus);
 	}
-	
+
 	/**
-   	* Constructs an object of type Person by calling the load method
-   	* @throws IOException
-   	*/
+	 * Constructs an object of type Person by calling the load method
+	 * @throws IOException
+	 */
 	public Person(BufferedReader br) throws IOException {
 		loadperson(br);
 	}
-	
+
 	/**
-   	* Constructs an object of type Person by prompting for each field
-	* @throws IOException
-	*/
+	 * Constructs an object of type Person by prompting for each field
+	 * @throws IOException
+	 */
 
 	public Person() {
 		prompt();
 	}
-	
+
 	/**
 	 * Loads a person's data through prompting the user
 	 * @author MK, AV, CH, PJ
@@ -93,29 +93,31 @@ class Person {
 			System.out.print("Enter the weight of "+fname+": ");
 			weight = input3.nextDouble();
 		} while (weight <= 0); //Ensures weight is greater than 0
-		
+
 		do {
+			System.out.println("1. January\n2. February\n3. March\n4. April\n5. May\n6. June\n7. July\n"+
+					"8. August\n9. September\n10. October\n11. November\n12. December");
 			System.out.print("Enter the birth month of "+fname+": ");
 			birthMonth = input3.nextInt();
 		} while (birthMonth <= 0 || birthMonth >12); //Ensures birth month is between January and December
-		
+
 		do {
 			System.out.print("Enter the birth day of "+fname+": ");
 			birthDay = input3.nextInt();
 		} while (birthDay <= 0 || birthDay >31); //Ensures birth day is between 1 and 31
-		
+
 		do {
 			System.out.print("Enter the birth year of "+fname+": ");
 			birthYear = input3.nextInt();
 		} while (birthYear <= 0); //Ensures birth month is greater than 0
-		
+
 		do {
 			System.out.print("1. Austria\n2. Balarus\n3. Canada\n4. Czech Republic\n5. Denmark\n6. Finland\n"+
-		"7. France\n8. Germany\n9. Hungary\n10. Italy\n11. Kazakhstan\n12. Latvia\n13. Norway\n14. Russia\n15. Slovakia\n16. Slovenia\n17. Sweden\n18. Switzerland\n19. Ukraine\n20. United States\n21. Other");
+					"7. France\n8. Germany\n9. Hungary\n10. Italy\n11. Kazakhstan\n12. Latvia\n13. Norway\n14. Russia\n15. Slovakia\n16. Slovenia\n17. Sweden\n18. Switzerland\n19. Ukraine\n20. United States\n21. Other");
 			System.out.println("Enter a number based on place of birth: ");
 			birthPlace = input3.nextInt();
 		} while (birthPlace <= 0 || birthPlace > 21); //Ensures birth place selection is in the list
-		
+
 		do {
 			System.out.println("1. Divorced\n2. Married\n3. Single\n4. Widowed\n5. Other");
 			System.out.print("Enter martial status based on list: "); 
@@ -123,7 +125,7 @@ class Person {
 		} while (maritalStatus <= 0 || maritalStatus > 5); //Ensures martial status selection is in the list
 		input3.close();
 	}
-	
+
 	/**
 	 * Loads person data from a text file into this object
 	 * @param BufferedReader
@@ -156,7 +158,7 @@ class Person {
 		weight = Double.parseDouble(x.substring(x.indexOf(": ")+2,x.length()));
 
 		x = br.readLine();
-		birthMonth = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+		birthMonth = convertBirthMonthtoInt(x.substring(x.indexOf(": ")+2,x.length()));
 
 		x = br.readLine();
 		birthDay = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
@@ -165,10 +167,10 @@ class Person {
 		birthYear = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
 
 		x = br.readLine();
-		birthPlace = Person.convertBirthPlaceToInt(x.substring(x.indexOf(": ")+2,x.length()));
+		birthPlace = convertBirthPlaceToInt(x.substring(x.indexOf(": ")+2,x.length()));
 
 		x = br.readLine();
-		maritalStatus = Person.convertMaritalStatusToInt(x.substring(x.indexOf(": ")+2,x.length()));
+		maritalStatus = convertMaritalStatusToInt(x.substring(x.indexOf(": ")+2,x.length()));
 	}
 
 	/**
@@ -179,30 +181,33 @@ class Person {
 		pw.println("First Name: "+fname);
 		pw.println("Last Name: "+lname);
 		pw.println("Age: "+age);
-		pw.println("Gender: "+gender);
+		if (gender==true)
+			pw.println("Gender: male");
+		else
+			pw.println("Gender: female");
 		pw.println("Height: "+height);
 		pw.println("Weight: "+weight);
-		pw.println("Month of Birth: "+birthMonth);
+		pw.println("Month of Birth: "+convertBirthMonthtoString(birthMonth));
 		pw.println("Day of Birth: "+birthDay);
 		pw.println("Year of Birth: "+birthYear);
-		pw.println("Birthplace: "+birthPlace);
-		pw.println("Martial Status: "+maritalStatus);
+		pw.println("Birthplace: "+convertBirthPlaceToString(birthPlace));
+		pw.println("Martial Status: "+convertMaritalStatusToString(maritalStatus));
 	}
-	
+
 	//Accessors
-	
+
 	/**
 	 * Returns First name
 	 * @return fname
 	 */
-	 public String getFName(){
-	 	return fname;
-	 	}
+	public String getFName(){
+		return fname;
+	}
 
 	/**
-	* Returns Last name
-	* @return lname
-	*/
+	 * Returns Last name
+	 * @return lname
+	 */
 
 	public String getLName(){
 		return lname;
@@ -211,7 +216,7 @@ class Person {
 	/**
 	 * Returns age
 	 * @return age
-	*/
+	 */
 
 	public int getAge(){
 		updateAge();
@@ -223,7 +228,7 @@ class Person {
 	 * <p>
 	 * True if male and false if female.
 	 * @return gender
-	*/
+	 */
 
 	public boolean getGender(){
 		return gender;
@@ -232,7 +237,7 @@ class Person {
 	/**
 	 * Returns height in centimetres
 	 * @return height
-	*/
+	 */
 
 	public double getHeight(){
 		return height;
@@ -241,7 +246,7 @@ class Person {
 	/**
 	 * Returns weight in kg
 	 * @return weight
-	*/
+	 */
 
 	public double getWeight(){
 		return weight;
@@ -250,7 +255,7 @@ class Person {
 	/**
 	 * Returns day of birth
 	 * @return birthDay
-	*/
+	 */
 
 	public int getBirthDay(){
 		return birthDay;
@@ -259,7 +264,7 @@ class Person {
 	/**
 	 * Returns month of birth
 	 * @return birthDay
-	*/
+	 */
 
 	public int getBirthMonth(){
 		return birthMonth;
@@ -268,7 +273,7 @@ class Person {
 	/**
 	 * Returns year of birth
 	 * @return birthYear
-	*/
+	 */
 
 	public int getBirthYear(){
 		return birthYear;
@@ -281,41 +286,41 @@ class Person {
 	public int getBirthPlace(){
 		return birthPlace;
 	}
-	
+
 	/**
 	 * Returns Marital status
 	 * <p>
 	 * Single, Married, Divorced or Widowed.
 	 * @return maritalStatus
-	*/
+	 */
 	public int getMaritalStatus(){
 		return maritalStatus;
 	}
 
 	//Mutators
-	
+
 	/**
-	* Stores parameter to fname
-	* @param x of type String
-	*/
+	 * Stores parameter to fname
+	 * @param x of type String
+	 */
 
 	public void putFName(String x){
 		fname = x;
 	}
 
 	/**
-	* Stores parameter to lname
-	* @param x of type String
-	*/
+	 * Stores parameter to lname
+	 * @param x of type String
+	 */
 
 	public void putLName(String x){
-	lname = x;
+		lname = x;
 	}
 
 	/**
 	 * Stores parameter to gender
 	 * @param x of type boolean
-	*/
+	 */
 
 	public void putGender (boolean x){
 		gender = x;
@@ -324,16 +329,16 @@ class Person {
 	/**
 	 * Stores parameter to height
 	 * @param x of type double
-	*/
+	 */
 
 	public void putHeight (double x){
 		height = x;
 	}
-	
+
 	/**
 	 * Stores parameter to weight
 	 * @param x of type double
-	*/
+	 */
 
 	public void putWeight (double x){
 		weight = x;
@@ -342,7 +347,7 @@ class Person {
 	/**
 	 * Stores parameter to birthDay
 	 * @param x of type int
-	*/
+	 */
 
 	public void putBirthday (int x){
 		birthDay = x;
@@ -360,7 +365,7 @@ class Person {
 	/**
 	 * Stores parameter to birthDay
 	 * @param x of type int
-	*/
+	 */
 
 	public void putBirthYear (int x){
 		birthYear = x;
@@ -369,7 +374,7 @@ class Person {
 	/**
 	 * Stores parameter to birthPlace
 	 * @param x of type String
-	*/
+	 */
 
 	public void putBirthplace (int x){
 		birthPlace = x;
@@ -378,12 +383,12 @@ class Person {
 	/**
 	 * Stores parameter to maritalStatus
 	 * @param x of type String
-	*/
+	 */
 
 	public void putMaritalStatus (int x){
 		maritalStatus = x;
 	}
-	
+
 	/**
 	 * Converts a string representing coachType into an int, then returns it
 	 * @return int birthPlace
@@ -391,73 +396,73 @@ class Person {
 	public static String convertBirthPlaceToString(int birthPlace){
 		String x;//string that holds country or origin/birthplace
 		switch(birthPlace){
-			case 1:
-				x = "Austria";
-				break;
-			case 2:
-				x = "Balarus";
-				break;
-			case 3:
-				x = "Canada";
-				break;
-			case 4:
-				x = "Czech Republic";
-				break;
-			case 5:
-				x = "Denmark";
-				break;
-			case 6:
-				x = "Finland";
-				break;
-			case 7:
-				x = "France";
-				break;
-			case 8:
-				x = "Germany";
-				break;
-			case 9:
-				x = "Hungary";
-				break;
-			case 10:
-				x = "Italy";
-				break;
-			case 11:
-				x = "Kazakhstan";
-				break;
-			case 12:
-				x = "Latvia";
-				break;
-			case 13:
-				x = "Norway";
-				break;
-			case 14:
-				x = "Russia";
-				break;
-			case 15:
-				x = "Slovakia";
-				break;
-			case 16:
-				x = "Slovenia";
-				break;
-			case 17:
-				x = "Sweden";
-				break;
-			case 18:
-				x = "Switzerland";
-				break;
-			case 19:
-				x = "Ukraine";
-				break;
-			case 20:
-				x = "United States";
-				break;
-			default:
-				x = "n/a"; //Unknown birthplace
-				break;
+		case 1:
+			x = "Austria";
+			break;
+		case 2:
+			x = "Balarus";
+			break;
+		case 3:
+			x = "Canada";
+			break;
+		case 4:
+			x = "Czech Republic";
+			break;
+		case 5:
+			x = "Denmark";
+			break;
+		case 6:
+			x = "Finland";
+			break;
+		case 7:
+			x = "France";
+			break;
+		case 8:
+			x = "Germany";
+			break;
+		case 9:
+			x = "Hungary";
+			break;
+		case 10:
+			x = "Italy";
+			break;
+		case 11:
+			x = "Kazakhstan";
+			break;
+		case 12:
+			x = "Latvia";
+			break;
+		case 13:
+			x = "Norway";
+			break;
+		case 14:
+			x = "Russia";
+			break;
+		case 15:
+			x = "Slovakia";
+			break;
+		case 16:
+			x = "Slovenia";
+			break;
+		case 17:
+			x = "Sweden";
+			break;
+		case 18:
+			x = "Switzerland";
+			break;
+		case 19:
+			x = "Ukraine";
+			break;
+		case 20:
+			x = "United States";
+			break;
+		default:
+			x = "n/a"; //Unknown birthplace
+			break;
 		}
 		return x;
 	}
-	
+
 	/**
 	 * Converts birthPlace into a meaningful string, then returns it
 	 * @return String birthPlace
@@ -506,7 +511,7 @@ class Person {
 			x = 20;
 		else 
 			x = 0;
-		
+
 		return x;
 	}
 
@@ -517,25 +522,25 @@ class Person {
 	public static String convertMaritalStatusToString (int maritalStatus){
 		String x; //String to hold marital status
 		switch (maritalStatus) {
-			case 1:
-				x = "divorced";
-				break;
-			case 2:
-				x = "married";
-				break;
-			case 3:
-				x = "single";
-				break;
-			case 4:
-				x = "widowed";
-				break;
-			default:
-				x = "n/a";
-				break;
+		case 1:
+			x = "divorced";
+			break;
+		case 2:
+			x = "married";
+			break;
+		case 3:
+			x = "single";
+			break;
+		case 4:
+			x = "widowed";
+			break;
+		default:
+			x = "n/a";
+			break;
 		}
 		return x;
 	}
-	
+
 	/**
 	 * Converts maritalStatus into a meaningful string, then returns it
 	 * @return String maritalStatus
@@ -555,6 +560,90 @@ class Person {
 		return x;			
 	}	
 	
+	/**
+	 * Converts birthMonth into a meaningful string, then returns it
+	 * @return String birthMonth
+	 */
+	public static String convertBirthMonthtoString(int birthMonth){
+		String x;
+		switch (birthMonth) {
+		case 1:
+			x = "January";
+			break;
+		case 2:
+			x = "February";
+			break;
+		case 3:
+			x = "March";
+			break;
+		case 4:
+			x = "April";
+			break;
+		case 5:
+			x = "May";
+			break;
+		case 6:
+			x = "June";
+			break;
+		case 7:
+			x = "July";
+			break;
+		case 8:
+			x = "August";
+			break;
+		case 9:
+			x = "September";
+			break;
+		case 10:
+			x = "October";
+			break;
+		case 11:
+			x = "November";
+			break;
+		case 12:
+			x = "December";
+			break;
+		default:
+			x = "n/a";
+		}	
+		return x;
+	}
+	
+	/**
+	 * Converts a string representing birthMonth into an int, then returns it
+	 * @return int birthMonth
+	 */
+	public static int convertBirthMonthtoInt(String birthMonth) {
+		int x;
+		if (birthMonth.equals("January"))
+			x = 1;
+		else if (birthMonth.equals("February"))
+			x = 2;
+		else if (birthMonth.equals("March"))
+			x = 3;
+		else if (birthMonth.equals("April"))
+			x = 4;
+		else if (birthMonth.equals("May"))
+			x = 5;
+		else if (birthMonth.equals("June"))
+			x = 6;
+		else if (birthMonth.equals("July"))
+			x = 7;
+		else if (birthMonth.equals("August"))
+			x = 8;
+		else if (birthMonth.equals("September"))
+			x = 9;
+		else if (birthMonth.equals("October"))
+			x = 10;
+		else if (birthMonth.equals("November"))
+			x = 11;
+		else if (birthMonth.equals("December"))
+			x = 12;
+		else
+			x = 0;
+		return x;
+	}
+	//update methods
 	/**
 	 * Updates age based on birthday and current date
 	 */
