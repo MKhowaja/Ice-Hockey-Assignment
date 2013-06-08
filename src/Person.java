@@ -62,7 +62,7 @@ class Person {
 		Scanner input3 = new Scanner(System.in);
 		String tempGender;
 		do {
-			System.out.print("Enter the name of player: ");
+			System.out.print("Enter the first name of player: ");
 			fname = input3.nextLine();
 			input3.nextLine();
 			System.out.print("Enter the last name of player: ");
