@@ -27,7 +27,6 @@ public class Main {
 		Stack<Coach> coaches;
 
 		boolean menuRunning;
-		int error = 0;
 		menuRunning = true;
 		do {
 			//resets players and coaches
@@ -121,14 +120,11 @@ public class Main {
 					}
 				} while (fileFound == false);
 				teams.push(new Team(br));
-				in.close();
 				//loads players from text file
 				br.readLine(); //skips empty line
 				do {
 					x = br.readLine();
 					classType = x.substring(x.indexOf(": ")+2,x.length());
-					error++;
-					System.out.println(error);
 					if (classType.equals("forward"))
 						players.push(new Forward(br));
 					else if (classType.equals("defense")) {
@@ -162,10 +158,11 @@ public class Main {
 
 					x = br.readLine();//skips the space between each coach
 					br.mark(1000); //stores this location in the memory so program can revisit this part of the stream later
-					x = x.substring(x.indexOf(": ")+2,x.length()); //checks if next line in the text file is end of file or not ERROR ERROR ERROR
+					x = br.readLine(); //checks if next line in the text file is end of file or not
 					br.reset();
 				} while (x != null);
-				coaches.copyInto(teams.get(count).getCoachingstaff()); //copies stack into player array
+				teams.get(count).putcoachingstaffsize(coaches.size());
+				coaches.copyInto(teams.get(count).getCoachingstaff()); //copies stack into coach array
 				teams.get(count).updateconf();
 				teams.get(count).updatediv();
 				count++;
