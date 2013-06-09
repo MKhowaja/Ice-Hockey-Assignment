@@ -9,7 +9,6 @@ public class Defense extends Player{
 	protected double avgGoalsPS; //Average goals per season
 	protected double avgGoalPercentagePS; //Average goal percentage per season
 	protected double avgShotsPS; //Average shots taken per season
-	protected double zsGoalPercentage; //Z-score of goal percentage 
 	protected double avgAssistsPS; //Average assists per season
 	protected double avgPenaltyPS; //Average penalty minutes per season
 	protected double avgPPGoalsPS; //Average power play goals per season (double)
@@ -28,14 +27,14 @@ public class Defense extends Player{
 	 * Constructs an object of type Defense
 	 * @param  fname, lname of type string and gender of type boolean and height, weight of type double and month, day, year, place, mStatus of type int
 	 * salaryPY of type double, contractR of type int, tSalary of type double, gp of type int, penaltyT of type double, penaltyN of type int, arm of type boolean, number of type int,
-	 * numMin of type double, rookie of type boolean, plusMinus of type int, avgGoalsPS of type double, avgGoalPercentagePS of type double, avgShotsPS of type double, zsGoalPercentage of type double, avgAssistsPS of type double,	 * double avgPenaltyPS, double avgPPGoalsPS, double avgSOGoalsPS, double avgNShifts, int gwGoals, int ppGoals, int soGoals,//more defense fields
+	 * numMin of type double, rookie of type boolean, plusMinus of type int, avgGoalsPS of type double, avgGoalPercentagePS of type double, avgShotsPS of type double, avgAssistsPS of type double, double avgPenaltyPS, double avgPPGoalsPS, double avgSOGoalsPS, double avgNShifts, int gwGoals, int ppGoals, int soGoals,//more defense fields
 	 * otGoals of type int
 	 * @throws IOException
 	 */
 	public Defense(String fname, String lname, boolean gender, double height, double weight, int month, int day, int year, int place, int mStatus,//person fields
 			double salaryPY, int contractR, double tSalary, int gp, double penaltyT, int penaltyN, boolean arm, int number, //player fields
 			double numMin, boolean rookie, //more player fields
-			int plusMinus, double avgGoalsPS, double avgGoalPercentagePS, double avgShotsPS, double zsGoalPercentage, double avgAssistsPS, //defense fields
+			int plusMinus, double avgGoalsPS, double avgGoalPercentagePS, double avgShotsPS, double avgAssistsPS, //defense fields
 			double avgPenaltyPS, double avgPPGoalsPS, double avgSOGoalsPS, double avgNShifts, int gwGoals, int ppGoals, int soGoals,//more defense fields
 			int otGoals, /*points taken care of in constructor,*/double faceoffPercentage, double shootPercentage) {//more defense fields
 
@@ -47,7 +46,6 @@ public class Defense extends Player{
 		this.avgGoalsPS = avgGoalsPS;
 		this.avgGoalPercentagePS = avgGoalPercentagePS;
 		this.avgShotsPS = avgShotsPS;
-		this.zsGoalPercentage = zsGoalPercentage;
 		this.avgAssistsPS = avgAssistsPS;
 		this.avgPenaltyPS = avgPenaltyPS;
 		this.avgPPGoalsPS = avgPPGoalsPS;
@@ -92,7 +90,6 @@ public class Defense extends Player{
 		pw.println("Average goals per season: "+avgGoalsPS);
 		pw.println("Average goal percentage per season: "+avgGoalPercentagePS);
 		pw.println("Average shots taken per season: "+avgShotsPS);
-		pw.println("Z-score of goal percentage: "+zsGoalPercentage);
 		pw.println("Average assists per season: "+avgAssistsPS);
 		pw.println("Average penalty minutes per season: "+avgPenaltyPS);
 		pw.println("Average power play goals per season: "+avgPPGoalsPS);
@@ -127,9 +124,6 @@ public class Defense extends Player{
 
 		x = br.readLine();
 		avgShotsPS = Double.parseDouble(x.substring(x.indexOf(": ")+2,x.length()));
-
-		x = br.readLine();
-		zsGoalPercentage = Double.parseDouble(x.substring(x.indexOf(": ")+2,x.length()));
 
 		x = br.readLine();
 		avgAssistsPS = Double.parseDouble(x.substring(x.indexOf(": ")+2,x.length()));
@@ -174,87 +168,84 @@ public class Defense extends Player{
 	 */
 	
 	public void prompt() {
-		Scanner input2 = new Scanner(System.in);
-		do{
+		Scanner in = new Scanner(System.in);
+		do {
 			System.out.print("Enter the plus/minus of "+fname+": ");
-			plusMinus=input2.nextInt();
-		}while (plusMinus<0); //Ensure the player doesn't have negative plus/minus
+			plusMinus=in.nextInt();
+		} while (plusMinus<0); //Ensure the player doesn't have negative plus/minus
 
-		do{
+		do {
 			System.out.print("Enter the average goals per season by "+fname+": ");
-			avgGoalsPS=input2.nextDouble();
-		}while (avgGoalsPS<0); //Ensure the player doesn't have negative average goals per season
+			avgGoalsPS=in.nextDouble();
+		} while (avgGoalsPS<0); //Ensure the player doesn't have negative average goals per season
 
-		do{
+		do {
 			System.out.print("Enter the average goal percentage per season by "+fname+": ");
-			avgGoalPercentagePS=input2.nextDouble();
-		}while (avgGoalPercentagePS<0); //Ensure the player doesn't have negative average goal percentage per season
+			avgGoalPercentagePS=in.nextDouble();
+		} while (avgGoalPercentagePS<0); //Ensure the player doesn't have negative average goal percentage per season
 
-		do{
+		do {
 			System.out.print("Enter the average shots per season by "+fname+": ");
-			avgShotsPS=input2.nextDouble();
-		}while (avgShotsPS<0); //Ensure the player doesn't have negative average shots per season
+			avgShotsPS=in.nextDouble();
+		} while (avgShotsPS<0); //Ensure the player doesn't have negative average shots per season
 
-		do{
-			System.out.print("Enter the Z-score of goal percentage by "+fname+": ");
-			zsGoalPercentage=input2.nextDouble();
-		}while (zsGoalPercentage<0); //Ensure the player doesn't have negative Z-score of goal percentage
-
-		do{
+		do {
 			System.out.print("Enter the average assists per season by "+fname+": ");
-			avgAssistsPS=input2.nextDouble();
-		}while (avgAssistsPS<0); //Ensure the player doesn't have negative average assists per season
+			avgAssistsPS=in.nextDouble();
+		} while (avgAssistsPS<0); //Ensure the player doesn't have negative average assists per season
 
-		do{
+		do {
 			System.out.print("Enter the average penalty minutrs per season by "+fname+": ");
-			avgPenaltyPS=input2.nextDouble();
-		}while (avgPenaltyPS<0); //Ensure the player doesn't have negative average penalty minutes per season
+			avgPenaltyPS=in.nextDouble();
+		} while (avgPenaltyPS<0); //Ensure the player doesn't have negative average penalty minutes per season
 
-		do{
+		do {
 			System.out.print("Enter the average power-play goals per season by "+fname+": ");
-			avgPPGoalsPS=input2.nextDouble();
-		}while (avgPPGoalsPS<0); //Ensure the player doesn't have negative power-play goals per season
+			avgPPGoalsPS=in.nextDouble();
+		} while (avgPPGoalsPS<0); //Ensure the player doesn't have negative power-play goals per season
 
-		do{
+		do {
 			System.out.print("Enter the average shoot-out goals per season by "+fname+": ");
-			avgSOGoalsPS=input2.nextDouble();
-		}while (avgSOGoalsPS<0); //Ensure the player doesn't have negative shoot-out goals per season
+			avgSOGoalsPS=in.nextDouble();
+		} while (avgSOGoalsPS<0); //Ensure the player doesn't have negative shoot-out goals per season
 
-		do{
+		do {
 			System.out.print("Enter the average number of shifts per game by "+fname+": ");
-			avgNShifts=input2.nextDouble();
-		}while (avgNShifts<0); //Ensure the player doesn't have negative average number of shifts per game
+			avgNShifts=in.nextDouble();
+		} while (avgNShifts<0); //Ensure the player doesn't have negative average number of shifts per game
 
-		do{
+		do {
 			System.out.print("Enter the number of game-winning goals by "+fname+": ");
-			gwGoals=input2.nextInt();
-		}while (gwGoals<0); //Ensure the player doesn't have negative game-winning goals
+			gwGoals=in.nextInt();
+		} while (gwGoals<0); //Ensure the player doesn't have negative game-winning goals
 
-		do{
+		do {
 			System.out.print("Enter the number of power-play goals by "+fname+": ");
-			ppGoals=input2.nextInt();
-		}while (ppGoals<0); //Ensure the player doesn't have negative power-play goals
+			ppGoals=in.nextInt();
+		} while (ppGoals<0); //Ensure the player doesn't have negative power-play goals
 
-		do{
+		do {
 			System.out.print("Enter the number of shootout goals by "+fname+": ");
-			soGoals=input2.nextInt();
-		}while (soGoals<0); //Ensure the player doesn't have negative shootout goals
+			soGoals=in.nextInt();
+		} while (soGoals<0); //Ensure the player doesn't have negative shootout goals
 
-		do{
+		do {
 			System.out.print("Enter the number of overtime goals by "+fname+": ");
-			otGoals=input2.nextInt();
-		}while (otGoals<0); //Ensure the player doesn't have negative overtime goals
+			otGoals=in.nextInt();
+		} while (otGoals<0); //Ensure the player doesn't have negative overtime goals
 
-		do{
+		do {
 			System.out.print("Enter the face off percentage by "+fname+": ");
-			faceoffPercentage=input2.nextDouble();
-		}while (faceoffPercentage<0); //Ensure the player doesn't have negative face off percentage
+			faceoffPercentage=in.nextDouble();
+		} while (faceoffPercentage<0); //Ensure the player doesn't have negative face off percentage
 
-		do{
+		do {
 			System.out.print("Enter the shooting percentage by "+fname+": ");
-			shootPercentage=input2.nextDouble();
-		}while (shootPercentage<0); //Ensure the player doesn't have negative shooting percentage
-		input2.close();
+			shootPercentage=in.nextDouble();
+		} while (shootPercentage<0); //Ensure the player doesn't have negative shooting percentage
+		
+		this.points = avgGoalsPS + avgAssistsPS; //calculates points
+		in.close();
 	}
 	
 
@@ -288,13 +279,7 @@ public class Defense extends Player{
 	public double getavgShotsPS() {
 		return avgShotsPS;
 	}
-	/**
-	 * Returns z-score of goal percentage of a player
-	 * @return zsGoalPercentage
-	 */
-	public double getzsGoalPercentage() {
-		return zsGoalPercentage;
-	}
+
 	/**
 	 * Returns average assists per season of a player
 	 * @return avgAssistsPS
@@ -420,13 +405,7 @@ public class Defense extends Player{
 	public void putavgShotsPS(double x) {
 		avgShotsPS = x;
 	}
-	/**
-	 * stores parameter to zsGoalPercentage
-	 * @param x of type double
-	 */
-	public void putzsGoalPercentage(double x) {
-		zsGoalPercentage = x;
-	}
+
 	/**
 	 * stores parameter to avgAssistsPS
 	 * @param x of type double

@@ -59,25 +59,25 @@ abstract class Person {
 	 * @author MK, AV, CH, PJ
 	 */
 	public void prompt() {
-		Scanner input3 = new Scanner(System.in);
+		Scanner in = new Scanner(System.in);
 		String tempGender;
 		do {
 			System.out.print("Enter the first name of player: ");
-			fname = input3.nextLine();
-			input3.nextLine();
+			fname = in.nextLine();
+			in.nextLine();
 			System.out.print("Enter the last name of player: ");
-			lname = input3.nextLine();
-			input3.nextLine();
+			lname = in.nextLine();
+			in.nextLine();
 		} while (fname.equals("")&&lname.equals("")); //Ensures that something is entered
 
 		do {
 			System.out.print("Enter the age of "+fname+": ");
-			age = input3.nextInt();
+			age = in.nextInt();
 		} while (age <= 0); //Ensures age is greater than 0
 
 		do {
 			System.out.print("Enter the gender of "+fname+" (m/f): ");
-			tempGender = input3.next();
+			tempGender = in.next();
 		} while (!tempGender.equalsIgnoreCase("m") && !tempGender.equalsIgnoreCase("f"));
 		if (tempGender.equalsIgnoreCase("m"))
 			gender = true;
@@ -86,44 +86,44 @@ abstract class Person {
 
 		do {
 			System.out.print("Enter the height of "+fname+": ");
-			height = input3.nextDouble();
+			height = in.nextDouble();
 		} while (height <= 0); //Ensures height is greater than 0
 
 		do {
 			System.out.print("Enter the weight of "+fname+": ");
-			weight = input3.nextDouble();
+			weight = in.nextDouble();
 		} while (weight <= 0); //Ensures weight is greater than 0
 
 		do {
 			System.out.println("1. January\n2. February\n3. March\n4. April\n5. May\n6. June\n7. July\n"+
 					"8. August\n9. September\n10. October\n11. November\n12. December");
 			System.out.print("Enter the birth month of "+fname+": ");
-			birthMonth = input3.nextInt();
+			birthMonth = in.nextInt();
 		} while (birthMonth <= 0 || birthMonth >12); //Ensures birth month is between January and December
 
 		do {
 			System.out.print("Enter the birth day of "+fname+": ");
-			birthDay = input3.nextInt();
+			birthDay = in.nextInt();
 		} while (birthDay <= 0 || birthDay >31); //Ensures birth day is between 1 and 31
 
 		do {
 			System.out.print("Enter the birth year of "+fname+": ");
-			birthYear = input3.nextInt();
+			birthYear = in.nextInt();
 		} while (birthYear <= 0); //Ensures birth month is greater than 0
 
 		do {
 			System.out.print("1. Austria\n2. Balarus\n3. Canada\n4. Czech Republic\n5. Denmark\n6. Finland\n"+
 					"7. France\n8. Germany\n9. Hungary\n10. Italy\n11. Kazakhstan\n12. Latvia\n13. Norway\n14. Russia\n15. Slovakia\n16. Slovenia\n17. Sweden\n18. Switzerland\n19. Ukraine\n20. United States\n21. Other");
 			System.out.println("Enter a number based on place of birth: ");
-			birthPlace = input3.nextInt();
+			birthPlace = in.nextInt();
 		} while (birthPlace <= 0 || birthPlace > 21); //Ensures birth place selection is in the list
 
 		do {
 			System.out.println("1. Divorced\n2. Married\n3. Single\n4. Widowed\n5. Other");
 			System.out.print("Enter martial status based on list: "); 
-			maritalStatus = input3.nextInt();
+			maritalStatus = in.nextInt();
 		} while (maritalStatus <= 0 || maritalStatus > 5); //Ensures martial status selection is in the list
-		input3.close();
+		in.close();
 	}
 
 	/**

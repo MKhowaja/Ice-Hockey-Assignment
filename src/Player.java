@@ -140,43 +140,43 @@ abstract class Player extends Person {
 	 */
 	
 	public void prompt() {
-		Scanner input = new Scanner(System.in);
+		Scanner in = new Scanner(System.in);
 		String tempArm;
 		String tempRookie;
 		
 		do {
 			System.out.print("Enter the player's salary per year: ");
-			salaryPY=input.nextDouble();
+			salaryPY=in.nextDouble();
 		} while (salaryPY<0); //Ensures the player does have a salary per year
 
 		do {
 			System.out.print("Enter the number of years "+fname+" has left in their contract: ");
-			contractR=input.nextInt();
+			contractR=in.nextInt();
 		} while (contractR<0); //Ensures the player has number of years in the contract
 
 		do {
 			System.out.print("Enter "+fname+"'s total salary over the contract's length: ");
-			tSalary=input.nextDouble();
+			tSalary=in.nextDouble();
 		} while (tSalary<0); //Ensures the player has number of years in the contract
 
 		do {
 			System.out.print("Enter number of games "+fname+" has played: ");
-			gp=input.nextInt();
+			gp=in.nextInt();
 		} while (gp<0); //Ensures the player has at least player 0 games
 
 		do {
 			System.out.print("Enter the number of seconds "+fname+" has spent in the penalty box: ");
-			penaltyT=input.nextDouble();
+			penaltyT=in.nextDouble();
 		} while (penaltyT<0); //Ensures the player has at least spent 0 seconds in the penalty box
 
 		do {
 			System.out.print("Enter the number of times "+fname+" has gone to the penalty box: ");
-			penaltyN=input.nextInt();
+			penaltyN=in.nextInt();
 		} while (penaltyN<0); //Ensures the player has at least been in the penalty box once
 
 		do {
 			System.out.print("Enter "+fname+"'s shooting arm (R/L): ");
-			tempArm = input.next();
+			tempArm = in.next();
 		} while (!tempArm.equalsIgnoreCase("R") && !tempArm.equalsIgnoreCase("L"));
 		if (tempArm.equalsIgnoreCase("R"))
 			arm=true;
@@ -185,23 +185,23 @@ abstract class Player extends Person {
 
 		do {
 			System.out.print("Enter "+fname+"'s jersey number: ");
-			number=input.nextInt();
+			number=in.nextInt();
 		} while (number<0); //Ensures the player doesn't have a negative jersey number
 
 		do {
 			System.out.print("Enter the number of minutes "+fname+" has been on the ice: ");
-			numMin=input.nextInt();
+			numMin=in.nextInt();
 		} while (numMin<0); //Ensures the player has had minutes on the ice
 
 		do {
 			System.out.print("Enter if "+fname+" is a rookie (Y/N): ");
-			tempRookie=input.next();
+			tempRookie=in.next();
 		} while (!tempRookie.equalsIgnoreCase("y")||!tempRookie.equalsIgnoreCase("n")); //Ensures the player is a rookie or not
 		if (tempRookie.equalsIgnoreCase("n"))
 			rookie=true;
 		else if (tempRookie.equalsIgnoreCase("n"))
 			rookie=false;
-		input.close();
+		in.close();
 	}
 	
 	//Accessors

@@ -129,50 +129,51 @@ public class head extends Coach {
 	public void prompt() {
 		Scanner in = new Scanner(System.in);
 		//prompt for head fields
-		do{
+		do {
 			System.out.print("Enter "+fname+"'s wins during regular season: ");
 			winS=in.nextInt();
-		}while (winS<0); //Ensures the the coach doesn't have negative wins
+		} while (winS<0); //Ensures the the coach doesn't have negative wins
 		
-		do{
+		do {
 			System.out.print("Enter "+fname+"'s loses during regular season: ");
 			loseS=in.nextInt();
-		}while (loseS<0); //Ensures the the coach doesn't have negative loses
+		} while (loseS<0); //Ensures the the coach doesn't have negative loses
 		
-		do{
+		do {
 			System.out.print("Enter the number of ties "+fname+" has during regular season: ");
 			tieS=in.nextInt();
-		}while (tieS<0); //Ensures the the coach doesn't have negative ties
+		} while (tieS<0); //Ensures the the coach doesn't have negative ties
 		
-		do{
+		do {
 			System.out.print("Enter the number of overtime losses "+fname+" has during regular season: ");
 			overtimeLS=in.nextInt();
-		}while (overtimeLS<0); //Ensures the the coach doesn't have negative overtime loses
+		} while (overtimeLS<0); //Ensures the the coach doesn't have negative overtime loses
 		
-		do{
+		do {
 			System.out.print("Enter the number of games coach by "+fname+" during regular season: ");
 			gameCS=in.nextInt();
-		}while (gameCS<0); //Ensures the the coach doesn't have negative games coached
+		} while (gameCS<0); //Ensures the the coach doesn't have negative games coached
 		
-		do{
+		do {
 			System.out.print("Enter "+fname+"'s wins during playoffs: ");
 			winP=in.nextInt();
-		}while (winP<0); //Ensures the the coach doesn't have negative wins
+		} while (winP<0); //Ensures the the coach doesn't have negative wins
 		
-		do{
+		do {
 			System.out.print("Enter "+fname+"'s loses during playoffs: ");
 			loseP=in.nextInt();
-		}while (loseP<0); //Ensures the the coach doesn't have negative loses
+		} while (loseP<0); //Ensures the the coach doesn't have negative loses
 		
-		do{
+		do {
 			System.out.print("Enter "+fname+" loses during playoffs: ");
 			gameCP=in.nextInt();
-		}while (gameCP<0); //Ensures the the coach doesn't have negative games coach during playoffs
+		} while (gameCP<0); //Ensures the the coach doesn't have negative games coach during playoffs
 		
-		do{
+		do {
 			System.out.print("Enter the number of times "+fname+" has won the Stanley Cup: ");
 			stanleyN=in.nextInt();
-		}while (stanleyN<0); //Ensures the the coach doesn't have negative number of times the coach wins Stanley Cu
+		} while (stanleyN<0); //Ensures the the coach doesn't have negative number of times the coach wins the Stanley Cup
+		in.close();
 	}
 	
 	//Accessor Methods

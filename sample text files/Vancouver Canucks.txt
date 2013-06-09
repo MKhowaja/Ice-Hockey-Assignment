@@ -39,13 +39,13 @@ Year of Birth: 1981
 Birthplace: United States
 Martial Status: single
 Salary per year: 1225000.0
-Years remaining on contract : 2
+Years remaining on contract: 2
 Total salary: 1225000.0
 Rating: 1
 Games played: 906
 Penalty Minutes: 72.0
 Number of penalties: 5
-Arm: left arm
+Shooting Arm: left arm
 Jersey number: 41
 Total number of minutes on ice: 14563.0
 Rookie: false
@@ -53,7 +53,6 @@ Plus/Minus: 172
 Average goals per season: 9.09375
 Average goal percentage per season: 12.3
 Average shots taken per season: 73.78125
-Z-score of goal percentage: 0.0
 Average assists per season: 14.594
 Average penalty minutes per season: 10.0
 Average power play goals per season: 2.0
@@ -80,13 +79,13 @@ Year of Birth: 1991
 Birthplace: Sweden
 Martial Status: single
 Salary per year: 1000000.0
-Years remaining on contract : 2
+Years remaining on contract: 2
 Total salary: 1000000.0
 Rating: 1
 Games played: 906
 Penalty Minutes: 72.0
 Number of penalties: 5
-Arm: left arm
+Shooting Arm: left arm
 Jersey number: 80
 Total number of minutes on ice: 14563.0
 Rookie: false
@@ -94,7 +93,6 @@ Plus/Minus: 172
 Average goals per season: 9.09375
 Average goal percentage per season: 12.3
 Average shots taken per season: 73.78125
-Z-score of goal percentage: 0.0
 Average assists per season: 14.594
 Average penalty minutes per season: 10.0
 Average power play goals per season: 2.0
@@ -121,13 +119,13 @@ Year of Birth: 1990
 Birthplace: Canada
 Martial Status: single
 Salary per year: 1000000.0
-Years remaining on contract : 2
+Years remaining on contract: 2
 Total salary: 1000000.0
 Rating: 1
 Games played: 906
 Penalty Minutes: 72.0
 Number of penalties: 5
-Arm: left arm
+Shooting Arm: left arm
 Jersey number: 49
 Total number of minutes on ice: 14563.0
 Rookie: false
@@ -135,7 +133,6 @@ Plus/Minus: 172
 Average goals per season: 9.09375
 Average goal percentage per season: 12.3
 Average shots taken per season: 73.78125
-Z-score of goal percentage: 0.0
 Average assists per season: 14.594
 Average penalty minutes per season: 10.0
 Average power play goals per season: 2.0
@@ -162,13 +159,13 @@ Year of Birth: 1982
 Birthplace: United States
 Martial Status: single
 Salary per year: 1000000.0
-Years remaining on contract : 2
+Years remaining on contract: 2
 Total salary: 1000000.0
 Rating: 1
 Games played: 906
 Penalty Minutes: 72.0
 Number of penalties: 5
-Arm: left arm
+Shooting Arm: left arm
 Jersey number: 4
 Total number of minutes on ice: 14563.0
 Rookie: false
@@ -176,7 +173,6 @@ Plus/Minus: 172
 Average goals per season: 9.09375
 Average goal percentage per season: 12.3
 Average shots taken per season: 73.78125
-Z-score of goal percentage: 0.0
 Average assists per season: 14.594
 Average penalty minutes per season: 10.0
 Average power play goals per season: 2.0
@@ -203,13 +199,13 @@ Year of Birth: 1986
 Birthplace: Canada
 Martial Status: single
 Salary per year: 700000.0
-Years remaining on contract : 1
+Years remaining on contract: 1
 Total salary: 700000.0
 Rating: 1
 Games played: 906
 Penalty Minutes: 72.0
 Number of penalties: 5
-Arm: left arm
+Shooting Arm: left arm
 Jersey number: 18
 Total number of minutes on ice: 14563.0
 Rookie: false
@@ -217,7 +213,6 @@ Plus/Minus: 172
 Average goals per season: 9.09375
 Average goal percentage per season: 12.3
 Average shots taken per season: 73.78125
-Z-score of goal percentage: 0.0
 Average assists per season: 14.594
 Average penalty minutes per season: 10.0
 Average power play goals per season: 2.0
@@ -244,13 +239,13 @@ Year of Birth: 1981
 Birthplace: Canada
 Martial Status: single
 Salary per year: 4600000.0
-Years remaining on contract : 1
+Years remaining on contract: 1
 Total salary: 4600000.0
 Rating: 1
 Games played: 906
 Penalty Minutes: 72.0
 Number of penalties: 5
-Arm: left arm
+Shooting Arm: left arm
 Jersey number: 3
 Total number of minutes on ice: 14563.0
 Rookie: false
@@ -258,7 +253,6 @@ Plus/Minus: 172
 Average goals per season: 9.09375
 Average goal percentage per season: 12.3
 Average shots taken per season: 73.78125
-Z-score of goal percentage: 0.0
 Average assists per season: 14.594
 Average penalty minutes per season: 10.0
 Average power play goals per season: 2.0
@@ -285,13 +279,13 @@ Year of Birth: 1984
 Birthplace: United States
 Martial Status: single
 Salary per year: 4.25E7
-Years remaining on contract : 1
+Years remaining on contract: 1
 Total salary: 4250000.0
 Rating: 1
 Games played: 906
 Penalty Minutes: 72.0
 Number of penalties: 5
-Arm: left arm
+Shooting Arm: left arm
 Jersey number: 7
 Total number of minutes on ice: 14563.0
 Rookie: false
@@ -299,7 +293,6 @@ Plus/Minus: 172
 Average goals per season: 9.09375
 Average goal percentage per season: 12.3
 Average shots taken per season: 73.78125
-Z-score of goal percentage: 0.0
 Average assists per season: 14.594
 Average penalty minutes per season: 10.0
 Average power play goals per season: 2.0
@@ -326,13 +319,13 @@ Year of Birth: 1981
 Birthplace: Canada
 Martial Status: single
 Salary per year: 6000000.0
-Years remaining on contract : 7
+Years remaining on contract: 7
 Total salary: 6000000.0
 Rating: 1
 Games played: 906
 Penalty Minutes: 72.0
 Number of penalties: 5
-Arm: left arm
+Shooting Arm: left arm
 Jersey number: 14
 Total number of minutes on ice: 14563.0
 Rookie: false
@@ -340,7 +333,6 @@ Plus/Minus: 172
 Average goals per season: 9.09375
 Average goal percentage per season: 12.3
 Average shots taken per season: 73.78125
-Z-score of goal percentage: 0.0
 Average assists per season: 14.594
 Average penalty minutes per season: 10.0
 Average power play goals per season: 2.0
@@ -367,13 +359,13 @@ Year of Birth: 1990
 Birthplace: United States
 Martial Status: single
 Salary per year: 100000.0
-Years remaining on contract : 1
+Years remaining on contract: 1
 Total salary: 100000.0
 Rating: 1
 Games played: 906
 Penalty Minutes: 72.0
 Number of penalties: 5
-Arm: left arm
+Shooting Arm: left arm
 Jersey number: 14
 Total number of minutes on ice: 14563.0
 Rookie: true
@@ -403,13 +395,13 @@ Year of Birth: 1993
 Birthplace: Canada
 Martial Status: single
 Salary per year: 100000.0
-Years remaining on contract : 7
+Years remaining on contract: 7
 Total salary: 100000.0
 Rating: 1
 Games played: 906
 Penalty Minutes: 72.0
 Number of penalties: 5
-Arm: right arm
+Shooting Arm: right arm
 Jersey number: 26
 Total number of minutes on ice: 14563.0
 Rookie: false
@@ -417,7 +409,6 @@ Plus/Minus: 172
 Average goals per season: 9.09375
 Average goal percentage per season: 12.3
 Average shots taken per season: 73.78125
-Z-score of goal percentage: 0.0
 Average assists per season: 14.594
 Average penalty minutes per season: 10.0
 Average power play goals per season: 2.0
@@ -444,13 +435,13 @@ Year of Birth: 1983
 Birthplace: Canada
 Martial Status: single
 Salary per year: 1000000.0
-Years remaining on contract : 2
+Years remaining on contract: 2
 Total salary: 1000000.0
 Rating: 1
 Games played: 906
 Penalty Minutes: 72.0
 Number of penalties: 5
-Arm: left arm
+Shooting Arm: left arm
 Jersey number: 25
 Total number of minutes on ice: 14563.0
 Rookie: false
@@ -458,7 +449,6 @@ Plus/Minus: 172
 Average goals per season: 9.09375
 Average goal percentage per season: 12.3
 Average shots taken per season: 73.78125
-Z-score of goal percentage: 0.0
 Average assists per season: 14.594
 Average penalty minutes per season: 10.0
 Average power play goals per season: 2.0
@@ -485,13 +475,13 @@ Year of Birth: 1986
 Birthplace: Sweden
 Martial Status: single
 Salary per year: 3250000.0
-Years remaining on contract : 9
+Years remaining on contract: 9
 Total salary: 3250000.0
 Rating: 1
 Games played: 906
 Penalty Minutes: 72.0
 Number of penalties: 5
-Arm: left arm
+Shooting Arm: left arm
 Jersey number: 23
 Total number of minutes on ice: 14563.0
 Rookie: false
@@ -499,7 +489,6 @@ Plus/Minus: 172
 Average goals per season: 9.09375
 Average goal percentage per season: 12.3
 Average shots taken per season: 73.78125
-Z-score of goal percentage: 0.0
 Average assists per season: 14.594
 Average penalty minutes per season: 10.0
 Average power play goals per season: 2.0
@@ -526,13 +515,13 @@ Year of Birth: 1986
 Birthplace: Sweden
 Martial Status: single
 Salary per year: 3250000.0
-Years remaining on contract : 9
+Years remaining on contract: 9
 Total salary: 3250000.0
 Rating: 1
 Games played: 906
 Penalty Minutes: 72.0
 Number of penalties: 5
-Arm: left arm
+Shooting Arm: left arm
 Jersey number: 23
 Total number of minutes on ice: 14563.0
 Rookie: false
@@ -540,7 +529,6 @@ Plus/Minus: 172
 Average goals per season: 9.09375
 Average goal percentage per season: 12.3
 Average shots taken per season: 73.78125
-Z-score of goal percentage: 0.0
 Average assists per season: 14.594
 Average penalty minutes per season: 10.0
 Average power play goals per season: 2.0
@@ -567,13 +555,13 @@ Year of Birth: 1984
 Birthplace: Canada
 Martial Status: single
 Salary per year: 4600000.0
-Years remaining on contract : 2
+Years remaining on contract: 2
 Total salary: 4600000.0
 Rating: 1
 Games played: 906
 Penalty Minutes: 72.0
 Number of penalties: 5
-Arm: left arm
+Shooting Arm: left arm
 Jersey number: 5
 Total number of minutes on ice: 14563.0
 Rookie: false
@@ -581,7 +569,6 @@ Plus/Minus: 172
 Average goals per season: 9.09375
 Average goal percentage per season: 12.3
 Average shots taken per season: 73.78125
-Z-score of goal percentage: 0.0
 Average assists per season: 14.594
 Average penalty minutes per season: 10.0
 Average power play goals per season: 2.0
@@ -608,13 +595,13 @@ Year of Birth: 1994
 Birthplace: Canada
 Martial Status: single
 Salary per year: 100000.0
-Years remaining on contract : 2
+Years remaining on contract: 2
 Total salary: 100000.0
 Rating: 1
 Games played: 906
 Penalty Minutes: 72.0
 Number of penalties: 5
-Arm: left arm
+Shooting Arm: left arm
 Jersey number: 50
 Total number of minutes on ice: 14563.0
 Rookie: true
@@ -622,7 +609,6 @@ Plus/Minus: 172
 Average goals per season: 9.09375
 Average goal percentage per season: 12.3
 Average shots taken per season: 73.78125
-Z-score of goal percentage: 0.0
 Average assists per season: 14.594
 Average penalty minutes per season: 10.0
 Average power play goals per season: 2.0
@@ -649,13 +635,13 @@ Year of Birth: 1982
 Birthplace: Canada
 Martial Status: single
 Salary per year: 100000.0
-Years remaining on contract : 2
+Years remaining on contract: 2
 Total salary: 100000.0
 Rating: 1
 Games played: 906
 Penalty Minutes: 72.0
 Number of penalties: 5
-Arm: left arm
+Shooting Arm: left arm
 Jersey number: 2
 Total number of minutes on ice: 14563.0
 Rookie: false
@@ -663,7 +649,6 @@ Plus/Minus: 172
 Average goals per season: 9.09375
 Average goal percentage per season: 12.3
 Average shots taken per season: 73.78125
-Z-score of goal percentage: 0.0
 Average assists per season: 14.594
 Average penalty minutes per season: 10.0
 Average power play goals per season: 2.0
@@ -690,13 +675,13 @@ Year of Birth: 1986
 Birthplace: Denmark
 Martial Status: single
 Salary per year: 1350000.0
-Years remaining on contract : 9
+Years remaining on contract: 9
 Total salary: 1350000.0
 Rating: 1
 Games played: 906
 Penalty Minutes: 72.0
 Number of penalties: 5
-Arm: left arm
+Shooting Arm: left arm
 Jersey number: 2
 Total number of minutes on ice: 14563.0
 Rookie: false
@@ -704,7 +689,6 @@ Plus/Minus: 172
 Average goals per season: 9.09375
 Average goal percentage per season: 12.3
 Average shots taken per season: 73.78125
-Z-score of goal percentage: 0.0
 Average assists per season: 14.594
 Average penalty minutes per season: 10.0
 Average power play goals per season: 2.0
@@ -731,13 +715,13 @@ Year of Birth: 1983
 Birthplace: United States
 Martial Status: single
 Salary per year: 1900000.0
-Years remaining on contract : 11
+Years remaining on contract: 11
 Total salary: 1900000.0
 Rating: 1
 Games played: 906
 Penalty Minutes: 72.0
 Number of penalties: 5
-Arm: left arm
+Shooting Arm: left arm
 Jersey number: 20
 Total number of minutes on ice: 14563.0
 Rookie: false
@@ -745,7 +729,6 @@ Plus/Minus: 172
 Average goals per season: 9.09375
 Average goal percentage per season: 12.3
 Average shots taken per season: 73.78125
-Z-score of goal percentage: 0.0
 Average assists per season: 14.594
 Average penalty minutes per season: 10.0
 Average power play goals per season: 2.0
@@ -772,13 +755,13 @@ Year of Birth: 1987
 Birthplace: Canada
 Martial Status: single
 Salary per year: 1000000.0
-Years remaining on contract : 2
+Years remaining on contract: 2
 Total salary: 1000000.0
 Rating: 1
 Games played: 906
 Penalty Minutes: 72.0
 Number of penalties: 5
-Arm: left arm
+Shooting Arm: left arm
 Jersey number: 38
 Total number of minutes on ice: 14563.0
 Rookie: false
@@ -786,7 +769,6 @@ Plus/Minus: 172
 Average goals per season: 9.09375
 Average goal percentage per season: 12.3
 Average shots taken per season: 73.78125
-Z-score of goal percentage: 0.0
 Average assists per season: 14.594
 Average penalty minutes per season: 10.0
 Average power play goals per season: 2.0
@@ -813,13 +795,13 @@ Year of Birth: 1987
 Birthplace: Canada
 Martial Status: single
 Salary per year: 1000000.0
-Years remaining on contract : 2
+Years remaining on contract: 2
 Total salary: 1000000.0
 Rating: 1
 Games played: 906
 Penalty Minutes: 72.0
 Number of penalties: 5
-Arm: left arm
+Shooting Arm: left arm
 Jersey number: 38
 Total number of minutes on ice: 14563.0
 Rookie: false
@@ -827,7 +809,6 @@ Plus/Minus: 172
 Average goals per season: 9.09375
 Average goal percentage per season: 12.3
 Average shots taken per season: 73.78125
-Z-score of goal percentage: 0.0
 Average assists per season: 14.594
 Average penalty minutes per season: 10.0
 Average power play goals per season: 2.0
@@ -854,13 +835,13 @@ Year of Birth: 1991
 Birthplace: Canada
 Martial Status: single
 Salary per year: 870000.0
-Years remaining on contract : 4
+Years remaining on contract: 4
 Total salary: 870000.0
 Rating: 1
 Games played: 906
 Penalty Minutes: 72.0
 Number of penalties: 5
-Arm: left arm
+Shooting Arm: left arm
 Jersey number: 9
 Total number of minutes on ice: 14563.0
 Rookie: false
@@ -868,7 +849,6 @@ Plus/Minus: 172
 Average goals per season: 9.09375
 Average goal percentage per season: 12.3
 Average shots taken per season: 73.78125
-Z-score of goal percentage: 0.0
 Average assists per season: 14.594
 Average penalty minutes per season: 10.0
 Average power play goals per season: 2.0
@@ -895,13 +875,13 @@ Year of Birth: 1991
 Birthplace: Canada
 Martial Status: single
 Salary per year: 5000000.0
-Years remaining on contract : 10
+Years remaining on contract: 10
 Total salary: 5000000.0
 Rating: 1
 Games played: 906
 Penalty Minutes: 72.0
 Number of penalties: 5
-Arm: left arm
+Shooting Arm: left arm
 Jersey number: 17
 Total number of minutes on ice: 14563.0
 Rookie: false
@@ -909,7 +889,6 @@ Plus/Minus: 172
 Average goals per season: 9.09375
 Average goal percentage per season: 12.3
 Average shots taken per season: 73.78125
-Z-score of goal percentage: 0.0
 Average assists per season: 14.594
 Average penalty minutes per season: 10.0
 Average power play goals per season: 2.0
@@ -936,13 +915,13 @@ Year of Birth: 1988
 Birthplace: Sweden
 Martial Status: single
 Salary per year: 100000.0
-Years remaining on contract : 1
+Years remaining on contract: 1
 Total salary: 100000.0
 Rating: 1
 Games played: 906
 Penalty Minutes: 72.0
 Number of penalties: 5
-Arm: left arm
+Shooting Arm: left arm
 Jersey number: 31
 Total number of minutes on ice: 14563.0
 Rookie: false
@@ -972,13 +951,13 @@ Year of Birth: 1989
 Birthplace: Canada
 Martial Status: single
 Salary per year: 1000000.0
-Years remaining on contract : 1
+Years remaining on contract: 1
 Total salary: 100000.0
 Rating: 1
 Games played: 906
 Penalty Minutes: 72.0
 Number of penalties: 5
-Arm: left arm
+Shooting Arm: left arm
 Jersey number: 0
 Total number of minutes on ice: 14563.0
 Rookie: false
@@ -986,7 +965,6 @@ Plus/Minus: 172
 Average goals per season: 9.09375
 Average goal percentage per season: 12.3
 Average shots taken per season: 73.78125
-Z-score of goal percentage: 0.0
 Average assists per season: 14.594
 Average penalty minutes per season: 10.0
 Average power play goals per season: 2.0
@@ -1013,13 +991,13 @@ Year of Birth: 1985
 Birthplace: Canada
 Martial Status: single
 Salary per year: 1000000.0
-Years remaining on contract : 2
+Years remaining on contract: 2
 Total salary: 100000.0
 Rating: 1
 Games played: 906
 Penalty Minutes: 72.0
 Number of penalties: 5
-Arm: left arm
+Shooting Arm: left arm
 Jersey number: 40
 Total number of minutes on ice: 14563.0
 Rookie: false
@@ -1027,7 +1005,6 @@ Plus/Minus: 172
 Average goals per season: 9.09375
 Average goal percentage per season: 12.3
 Average shots taken per season: 73.78125
-Z-score of goal percentage: 0.0
 Average assists per season: 14.594
 Average penalty minutes per season: 10.0
 Average power play goals per season: 2.0
@@ -1054,13 +1031,13 @@ Year of Birth: 1979
 Birthplace: Canada
 Martial Status: single
 Salary per year: 5.333E7
-Years remaining on contract : 7
+Years remaining on contract: 7
 Total salary: 5333000.0
 Rating: 1
 Games played: 906
 Penalty Minutes: 72.0
 Number of penalties: 5
-Arm: left arm
+Shooting Arm: left arm
 Jersey number: 1
 Total number of minutes on ice: 42887.0
 Rookie: false
@@ -1090,13 +1067,13 @@ Year of Birth: 1980
 Birthplace: Canada
 Martial Status: single
 Salary per year: 2500000.0
-Years remaining on contract : 3
+Years remaining on contract: 3
 Total salary: 2500000.0
 Rating: 1
 Games played: 906
 Penalty Minutes: 72.0
 Number of penalties: 5
-Arm: left arm
+Shooting Arm: left arm
 Jersey number: 27
 Total number of minutes on ice: 14563.0
 Rookie: false
@@ -1104,7 +1081,6 @@ Plus/Minus: 172
 Average goals per season: 9.09375
 Average goal percentage per season: 12.3
 Average shots taken per season: 73.78125
-Z-score of goal percentage: 0.0
 Average assists per season: 14.594
 Average penalty minutes per season: 10.0
 Average power play goals per season: 2.0
@@ -1131,13 +1107,13 @@ Year of Birth: 1992
 Birthplace: Canada
 Martial Status: single
 Salary per year: 100000.0
-Years remaining on contract : 1
+Years remaining on contract: 1
 Total salary: 100000.0
 Rating: 1
 Games played: 906
 Penalty Minutes: 72.0
 Number of penalties: 5
-Arm: left arm
+Shooting Arm: left arm
 Jersey number: 78
 Total number of minutes on ice: 14563.0
 Rookie: false
@@ -1145,7 +1121,6 @@ Plus/Minus: 172
 Average goals per season: 9.09375
 Average goal percentage per season: 12.3
 Average shots taken per season: 73.78125
-Z-score of goal percentage: 0.0
 Average assists per season: 14.594
 Average penalty minutes per season: 10.0
 Average power play goals per season: 2.0
@@ -1172,13 +1147,13 @@ Year of Birth: 1984
 Birthplace: Canada
 Martial Status: single
 Salary per year: 600000.0
-Years remaining on contract : 2
+Years remaining on contract: 2
 Total salary: 600000.0
 Rating: 1
 Games played: 906
 Penalty Minutes: 72.0
 Number of penalties: 5
-Arm: right arm
+Shooting Arm: right arm
 Jersey number: 13
 Total number of minutes on ice: 14563.0
 Rookie: false
@@ -1186,7 +1161,6 @@ Plus/Minus: 172
 Average goals per season: 9.09375
 Average goal percentage per season: 12.3
 Average shots taken per season: 73.78125
-Z-score of goal percentage: 0.0
 Average assists per season: 14.594
 Average penalty minutes per season: 10.0
 Average power play goals per season: 2.0
@@ -1213,13 +1187,13 @@ Year of Birth: 1984
 Birthplace: Canada
 Martial Status: single
 Salary per year: 600000.0
-Years remaining on contract : 2
+Years remaining on contract: 2
 Total salary: 600000.0
 Rating: 1
 Games played: 906
 Penalty Minutes: 72.0
 Number of penalties: 5
-Arm: right arm
+Shooting Arm: right arm
 Jersey number: 13
 Total number of minutes on ice: 14563.0
 Rookie: false
@@ -1227,7 +1201,6 @@ Plus/Minus: 172
 Average goals per season: 9.09375
 Average goal percentage per season: 12.3
 Average shots taken per season: 73.78125
-Z-score of goal percentage: 0.0
 Average assists per season: 14.594
 Average penalty minutes per season: 10.0
 Average power play goals per season: 2.0
@@ -1254,13 +1227,13 @@ Year of Birth: 1985
 Birthplace: Canada
 Martial Status: single
 Salary per year: 2750000.0
-Years remaining on contract : 8
+Years remaining on contract: 8
 Total salary: 2750000.0
 Rating: 1
 Games played: 906
 Penalty Minutes: 72.0
 Number of penalties: 5
-Arm: left arm
+Shooting Arm: left arm
 Jersey number: 21
 Total number of minutes on ice: 14563.0
 Rookie: false
@@ -1268,7 +1241,6 @@ Plus/Minus: 172
 Average goals per season: 9.09375
 Average goal percentage per season: 12.3
 Average shots taken per season: 73.78125
-Z-score of goal percentage: 0.0
 Average assists per season: 14.594
 Average penalty minutes per season: 10.0
 Average power play goals per season: 2.0
@@ -1295,13 +1267,13 @@ Year of Birth: 1983
 Birthplace: Canada
 Martial Status: single
 Salary per year: 100000.0
-Years remaining on contract : 1
+Years remaining on contract: 1
 Total salary: 100000.0
 Rating: 1
 Games played: 906
 Penalty Minutes: 72.0
 Number of penalties: 5
-Arm: left arm
+Shooting Arm: left arm
 Jersey number: 15
 Total number of minutes on ice: 14563.0
 Rookie: false
@@ -1309,7 +1281,6 @@ Plus/Minus: 172
 Average goals per season: 9.09375
 Average goal percentage per season: 12.3
 Average shots taken per season: 73.78125
-Z-score of goal percentage: 0.0
 Average assists per season: 14.594
 Average penalty minutes per season: 10.0
 Average power play goals per season: 2.0
@@ -1336,13 +1307,13 @@ Year of Birth: 1986
 Birthplace: United States
 Martial Status: single
 Salary per year: 4000000.0
-Years remaining on contract : 9
+Years remaining on contract: 9
 Total salary: 4000000.0
 Rating: 1
 Games played: 906
 Penalty Minutes: 72.0
 Number of penalties: 5
-Arm: left arm
+Shooting Arm: left arm
 Jersey number: 35
 Total number of minutes on ice: 14563.0
 Rookie: true
@@ -1372,13 +1343,13 @@ Year of Birth: 1980
 Birthplace: Sweden
 Martial Status: married
 Salary per year: 6100000.0
-Years remaining on contract : 5
+Years remaining on contract: 5
 Total salary: 6100000.0
 Rating: 1
 Games played: 906
 Penalty Minutes: 72.0
 Number of penalties: 5
-Arm: left arm
+Shooting Arm: left arm
 Jersey number: 22
 Total number of minutes on ice: 14563.0
 Rookie: false
@@ -1386,7 +1357,6 @@ Plus/Minus: 172
 Average goals per season: 9.09375
 Average goal percentage per season: 12.3
 Average shots taken per season: 73.78125
-Z-score of goal percentage: 0.0
 Average assists per season: 14.594
 Average penalty minutes per season: 10.0
 Average power play goals per season: 2.0
@@ -1413,13 +1383,13 @@ Year of Birth: 1980
 Birthplace: Sweden
 Martial Status: married
 Salary per year: 6100000.0
-Years remaining on contract : 5
+Years remaining on contract: 5
 Total salary: 6100000.0
 Rating: 1
 Games played: 906
 Penalty Minutes: 72.0
 Number of penalties: 5
-Arm: left arm
+Shooting Arm: left arm
 Jersey number: 33
 Total number of minutes on ice: 14563.0
 Rookie: false
@@ -1427,7 +1397,6 @@ Plus/Minus: 172
 Average goals per season: 9.09375
 Average goal percentage per season: 12.3
 Average shots taken per season: 73.78125
-Z-score of goal percentage: 0.0
 Average assists per season: 14.594
 Average penalty minutes per season: 10.0
 Average power play goals per season: 2.0
@@ -1454,13 +1423,13 @@ Year of Birth: 1980
 Birthplace: Sweden
 Martial Status: married
 Salary per year: 6100000.0
-Years remaining on contract : 5
+Years remaining on contract: 5
 Total salary: 6100000.0
 Rating: 1
 Games played: 906
 Penalty Minutes: 72.0
 Number of penalties: 5
-Arm: left arm
+Shooting Arm: left arm
 Jersey number: 33
 Total number of minutes on ice: 14563.0
 Rookie: false
@@ -1468,7 +1437,6 @@ Plus/Minus: 172
 Average goals per season: 9.09375
 Average goal percentage per season: 12.3
 Average shots taken per season: 73.78125
-Z-score of goal percentage: 0.0
 Average assists per season: 14.594
 Average penalty minutes per season: 10.0
 Average power play goals per season: 2.0
@@ -1495,13 +1463,13 @@ Year of Birth: 1980
 Birthplace: Sweden
 Martial Status: married
 Salary per year: 6100000.0
-Years remaining on contract : 5
+Years remaining on contract: 5
 Total salary: 6100000.0
 Rating: 1
 Games played: 906
 Penalty Minutes: 72.0
 Number of penalties: 5
-Arm: left arm
+Shooting Arm: left arm
 Jersey number: 33
 Total number of minutes on ice: 14563.0
 Rookie: false
@@ -1509,7 +1477,6 @@ Plus/Minus: 172
 Average goals per season: 9.09375
 Average goal percentage per season: 12.3
 Average shots taken per season: 73.78125
-Z-score of goal percentage: 0.0
 Average assists per season: 14.594
 Average penalty minutes per season: 10.0
 Average power play goals per season: 2.0
@@ -1536,13 +1503,13 @@ Year of Birth: 1980
 Birthplace: United States
 Martial Status: married
 Salary per year: 100000.0
-Years remaining on contract : 1
+Years remaining on contract: 1
 Total salary: 100000.0
 Rating: 1
 Games played: 906
 Penalty Minutes: 72.0
 Number of penalties: 5
-Arm: left arm
+Shooting Arm: left arm
 Jersey number: 29
 Total number of minutes on ice: 14563.0
 Rookie: false
@@ -1550,7 +1517,6 @@ Plus/Minus: 172
 Average goals per season: 9.09375
 Average goal percentage per season: 12.3
 Average shots taken per season: 73.78125
-Z-score of goal percentage: 0.0
 Average assists per season: 14.594
 Average penalty minutes per season: 10.0
 Average power play goals per season: 2.0
@@ -1577,13 +1543,13 @@ Year of Birth: 1989
 Birthplace: Canada
 Martial Status: married
 Salary per year: 900000.0
-Years remaining on contract : 3
+Years remaining on contract: 3
 Total salary: 900000.0
 Rating: 1
 Games played: 906
 Penalty Minutes: 72.0
 Number of penalties: 5
-Arm: right arm
+Shooting Arm: right arm
 Jersey number: 8
 Total number of minutes on ice: 14563.0
 Rookie: false
@@ -1591,7 +1557,6 @@ Plus/Minus: 172
 Average goals per season: 9.09375
 Average goal percentage per season: 12.3
 Average shots taken per season: 73.78125
-Z-score of goal percentage: 0.0
 Average assists per season: 14.594
 Average penalty minutes per season: 10.0
 Average power play goals per season: 2.0
@@ -1618,13 +1583,13 @@ Year of Birth: 1988
 Birthplace: Canada
 Martial Status: married
 Salary per year: 615000.0
-Years remaining on contract : 2
+Years remaining on contract: 2
 Total salary: 615000.0
 Rating: 1
 Games played: 906
 Penalty Minutes: 72.0
 Number of penalties: 5
-Arm: right arm
+Shooting Arm: right arm
 Jersey number: 8
 Total number of minutes on ice: 14563.0
 Rookie: false
@@ -1632,7 +1597,6 @@ Plus/Minus: 172
 Average goals per season: 9.09375
 Average goal percentage per season: 12.3
 Average shots taken per season: 73.78125
-Z-score of goal percentage: 0.0
 Average assists per season: 14.594
 Average penalty minutes per season: 10.0
 Average power play goals per season: 2.0
@@ -1665,7 +1629,7 @@ Regular Season Overtime Loses: 149
 Regular Season Games Coached: 806
 Season Points Percentage: 0.583
 Playoff Wins: 37
-Playoff Loses: 37
+Playoff Losses: 37
 Playoff Games Coached: 74
 Number of Stanley Cups: 10
 Total number of games coached: 4385
