@@ -109,7 +109,7 @@ public class head extends Coach {
 	public void save(PrintWriter pw){
 		super.save(pw);
 		pw.println("Regular Season Wins: "+winS);
-		pw.println("Regular Season Loses: "+loseS);
+		pw.println("Regular Season Losses: "+loseS);
 		pw.println("Regular Season Ties: "+tieS);
 		pw.println("Regular Season Overtime Loses: "+overtimeLS);
 		pw.println("Regular Season Games Coached: "+gameCS);
