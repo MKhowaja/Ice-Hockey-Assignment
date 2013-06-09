@@ -26,7 +26,7 @@ public class Main {
 		Stack<Player> players;
 		Stack<Coach> coaches;
 		
-		System.out.println("Welcome to Hockey Stats Analysis");
+		System.out.println("Welcome to H.P.A. - The Hockey Performance Analyzer.");
 		System.out.println("Press ENTER to continue.");
 		in.nextLine();
 
@@ -205,7 +205,7 @@ public class Main {
 			}
 			else if (option == 5) {
 				System.out.println("Terminating program.");
-				System.out.println("Thank you for using Hockey Stats Analysis.");
+				System.out.println("Thank you for using H.P.A.");
 				menuRunning = false;
 				in.close();
 				pw.close();
