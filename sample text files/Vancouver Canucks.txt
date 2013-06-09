@@ -1623,7 +1623,7 @@ Year of Birth: 1961
 Birthplace: Canada
 Martial Status: married
 Regular Season Wins: 422
-Regular Season Loses: 288
+Regular Season Losses: 288
 Regular Season Ties: 175
 Regular Season Overtime Loses: 149
 Regular Season Games Coached: 806
