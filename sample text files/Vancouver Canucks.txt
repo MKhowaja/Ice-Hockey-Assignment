@@ -3,12 +3,12 @@ League: NHL
 Team Name: Vancouver Canucks
 Divisison: Something
 Conference: Something or other
-Payroll: 63.5
-Games Played: 406
-Games Won: 233
-Games Lost: 173
-Total Goals Scored: 546
-Total Goals Scored Against: 346
+Payroll: 70.093
+Games Played: 82
+Games Won: 51
+Games Lost: 22
+Total Goals Scored: 249
+Total Goals Scored Against: 198
 Number of Powerplay Opportunities: 150
 Number of Short Times Handed: 50
 Total Number of Powerplay Goals: 114
