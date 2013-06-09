@@ -398,4 +398,12 @@ public class Goalie extends Player {
 	public void updateSavePercent(){
 		savePercent=goalA/shotsOG;
 	}
+
+	/**
+	 * calculates the rating of a goalie
+	 */
+	public void calculateRating() {
+		// TODO Auto-generated method stub
+		
+	}
 }

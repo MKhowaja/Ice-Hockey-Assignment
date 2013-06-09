@@ -1,6 +1,6 @@
 League: NHL
 
-TEAM NAME: Vancouver Canucks
+Team Name: Vancouver Canucks
 Divisison: Something
 Conference: Something or other
 Payroll: 63.5
@@ -14,10 +14,17 @@ Number of Short Times Handed: 50
 Total Number of Powerplay Goals: 114
 Total Number of Shorthanded Goals: 24
 Total Number of Powerplay Goals Against: 100
-Total number of Shorthanded Goals Against: 100
+Total Number of Shorthanded Goals Against: 100
 Total Shots: 1325
 Total Shots Against: 1301
 Total Saves: 1000
+Average goals scored per game: 7.0
+Average goals scored per game against: 9.0
+Average shots per game: 20.0
+Average shots per game against: 5.0
+Shot Percentage: 67.0
+Save Percentage: 45.0
+Power-play Percentage: 23.0
 
 Player type: defense
 First Name: Andrew

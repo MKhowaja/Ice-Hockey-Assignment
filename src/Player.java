@@ -119,16 +119,16 @@ abstract class Player extends Person {
 	public void save(PrintWriter pw) {
 		super.save(pw);
 		pw.println("Salary per year: "+salaryPY);
-		pw.println("Years remaining on contract : "+contractR);
+		pw.println("Years remaining on contract: "+contractR);
 		pw.println("Total salary: "+tSalary);
 		pw.println("Rating: "+rating);
 		pw.println("Games played: "+gp);
 		pw.println("Penalty Minutes: "+penaltyT);
 		pw.println("Number of penalties: "+penaltyN);
 		if (arm==true)
-			pw.println("Arm: right arm");
+			pw.println("Shooting Arm: right arm");
 		else
-			pw.println("Arm: left arm");
+			pw.println("Shooting Arm: left arm");
 		pw.println("Jersey number: "+number);
 		pw.println("Total number of minutes on ice: "+numMin);
 		pw.println("Rookie: "+rookie);
@@ -395,6 +395,8 @@ abstract class Player extends Person {
 	public void putRookie(boolean x) {
 		rookie = x;
 	}
+	
+	abstract public void calculateRating();
 	
 	
 }

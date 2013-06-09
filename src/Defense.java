@@ -519,4 +519,12 @@ public class Defense extends Player{
 	public void putShootPercentage(double x) {
 		shootPercentage = x;
 	}
+
+	/**
+	 * calculates the rating of a defense
+	 */
+	public void calculateRating() {
+		// TODO Auto-generated method stub
+		
+	}
 }

@@ -528,4 +528,12 @@ public class Forward extends Player {
 	public void putShootPercentage(double x) {
 		shootPercentage = x;
 	}
+
+	/**
+	 * calculates the rating of a forward
+	 */
+	public void calculateRating() {
+		// TODO Auto-generated method stub
+		
+	}
 }

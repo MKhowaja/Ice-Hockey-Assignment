@@ -115,7 +115,7 @@ public class head extends Coach {
 		pw.println("Regular Season Games Coached: "+gameCS);
 		pw.println("Season Points Percentage: "+pointPS);
 		pw.println("Playoff Wins: "+winP);
-		pw.println("Playoff Loses: "+loseP);
+		pw.println("Playoff Losses: "+loseP);
 		pw.println("Playoff Games Coached: "+gameCP);
 		pw.println("Number of Stanley Cups: "+stanleyN);
 		pw.println("Total number of games coached: "+totalGamesCoached);

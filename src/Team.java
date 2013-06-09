@@ -299,12 +299,7 @@ public class Team {
 			saves=in.nextInt();
 		}while(saves<0); //Ensures the total saves is not negative
 		
-		do{
-			System.out.print("Enter the average goals scored per game for the "+name+": ");
-			avgGPG=in.nextInt();
-		}while(avgGPG<0); //Ensures the total saves is not negative
-		
-		//not completed yet (prompt, save)
+		//calculate the rest of the fields
 	}
 
 	/**
@@ -312,7 +307,7 @@ public class Team {
 	 * @param pw of type PrintWriter
 	 */
 	public void save(PrintWriter pw){
-		pw.println("TEAM NAME: "+name);
+		pw.println("Team Name: "+name);
 		pw.println("Divisison: "+division);
 		pw.println("Conference: "+conference);
 		pw.println("Payroll: "+payroll);
@@ -326,10 +321,17 @@ public class Team {
 		pw.println("Total Number of Powerplay Goals: "+ppgoals);
 		pw.println("Total Number of Shorthanded Goals: "+shgoals);
 		pw.println("Total Number of Powerplay Goals Against: "+ppgoalsA);
-		pw.println("Total number of Shorthanded Goals Against: "+shgoalsA);
+		pw.println("Total Number of Shorthanded Goals Against: "+shgoalsA);
 		pw.println("Total Shots: "+shotsfor);
 		pw.println("Total Shots Against: "+shotsagainst);
 		pw.println("Total Saves: "+saves);
+		pw.println("Average goals scored per game: "+avgGPG);
+		pw.println("Average goals scored per game against: "+avgGAPG);
+		pw.println("Average shots per game: "+avgSPG);
+		pw.println("Average shots per game against: "+avgSAPG);
+		pw.println("Shot Percentage: "+shPercent);
+		pw.println("Save Percentage: "+savePercent);
+		pw.println("Power-play Percentage: "+ppPercent);
 		pw.println("");
 	}
 

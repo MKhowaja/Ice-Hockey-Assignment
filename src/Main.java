@@ -207,11 +207,11 @@ public class Main {
 				System.out.println("Terminating program.");
 				System.out.println("Thank you for using Hockey Stats Analysis.");
 				menuRunning = false;
+				in.close();
+				pw.close();
 			}
 			else
 				System.out.println("Invalid option.");
 		} while (menuRunning);
-		in.close();
-		pw.close();
 	}
 }

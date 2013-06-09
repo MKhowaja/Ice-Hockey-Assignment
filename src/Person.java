@@ -4,7 +4,7 @@ import java.io.PrintWriter;
 import java.util.Calendar;
 import java.util.Scanner;
 
-class Person {
+abstract class Person {
 	protected String fname; //First name
 	protected String lname; //Last name
 	protected int age; //Age, calculated
