@@ -50,19 +50,18 @@ Jersey number: 41
 Total number of minutes on ice: 628.32
 Rookie: false
 Plus/Minus: 4
-Average goals per season: 0.05
-Average goal percentage per season: 10.5
-Average shots taken per season: 19
-Average assists per season: 0.02
-Average power play goals per season: 0
+Average goals per game: 0.05
+Average shots taken per game: 0.43
+Average assists per game: 0.02
 Average number of shifts per game: 19.7
 Number of game-winning goals: 2
 Number of power play goals: 0
-Number of shoot-out goals: 0
 Number of overtime goals: 0
 Points: 3
 Faceoff win percentage: 0
 Shooting percentage: 10.5
+Total Goals:2
+Total Shots: 19
 
 Player type: defense
 First Name: Keith
@@ -88,19 +87,18 @@ Jersey number: 4
 Total number of minutes on ice: 728.5
 Rookie: false
 Plus/Minus: 0
-Average goals per season: 0.02
-Average goal percentage per season: 2.44
-Average shots taken per season: 41
-Average assists per season: 0.13
-Average power play goals per season: 0
+Average goals per game: 0.02
+Average shots taken per game: 0.87
+Average assists per game: 0.13
 Average number of shifts per game: 21.4
 Number of game-winning goals: 0
 Number of power play goals: 0
-Number of shoot-out goals: 0
 Number of overtime goals: 0
 Points: 7
 Faceoff win percentage: 0
 Shooting percentage: 2.4
+Total Goals: 1
+Total Shots: 41
 
 Player type: defense
 First Name: Kevin
@@ -126,19 +124,18 @@ Jersey number: 3
 Total number of minutes on ice: 1843.92
 Rookie: false
 Plus/Minus: 12
-Average goals per season: 0.1
-Average goal percentage per season: 4.8
-Average shots taken per season: 166
-Average assists per season: 0.46
-Average power play goals per season: 0.03
+Average goals per game: 0.1
+Average shots taken per game: 2.13
+Average assists per game: 0.46
 Average number of shifts per game: 28.2
 Number of game-winning goals: 2
 Number of power play goals: 2
-Number of shoot-out goals: 0
 Number of overtime goals: 0
 Points: 44
 Faceoff win percentage: 0
 Shooting percentage: 4.8
+Total Goals: 8
+Total Shots: 166
 
 Player type: defense
 First Name: Byron
@@ -159,24 +156,23 @@ Rating: 1
 Games played: 10
 Penalty Minutes: 14
 Number of penalties: 0
-Shooting Arm:right arm
+Shooting Arm: right arm
 Jersey number: 34
 Total number of minutes on ice: 104.99
 Rookie: false
 Plus/Minus: 2
-Average goals per season: 0.1
-Average goal percentage per season: 16.7
-Average shots taken per season: 6
-Average assists per season: 0.3
-Average power play goals per season: 0
+Average goals per game: 0.1
+Average shots taken per game: 0.6
+Average assists per game: 0.3
 Average number of shifts per game: 17.4
 Number of game-winning goals: 0
 Number of power play goals: 0
-Number of shoot-out goals: 0
 Number of overtime goals: 0
 Points: 4
 Faceoff win percentage: 0
 Shooting percentage: 17.4
+Total Goals: 1
+Total Shots: 6
 
 Player type: forward
 First Name: David
@@ -202,19 +198,18 @@ Jersey number: 7
 Total number of minutes on ice: 832.67
 Rookie: false
 Plus/Minus: 1
-Average goals per season: 0.29
-Average goal percentage per season: 11
-Average shots taken per season: 145
-Average assists per season: 0.23
-Average power play goals per season: 0.05
+Average goals per game: 0.29
+Average shots taken per game: 2.59
+Average assists per game: 0.23
 Average number of shifts per game: 20.7
 Number of game-winning goals: 1
 Number of power play goals: 3
-Number of shoot-out goals: 0
 Number of overtime goals: 0
 Points: 29
 Faceoff win percentage: 50.0
 Shooting percentage: 11
+Total Goals: 16
+Total Shots: 145
 
 Player type: forward
 First Name: Alexandre
@@ -240,19 +235,18 @@ Jersey number: 14
 Total number of minutes on ice: 1477.95
 Rookie: false
 Plus/Minus: 24
-Average goals per season: 0.35
-Average goal percentage per season: 14.1
-Average shots taken per season: 198
-Average assists per season: 0.3
-Average power play goals per season: 0.04
+Average goals per game: 0.35
+Average shots taken per game: 2.48
+Average assists per game: 0.3
 Average number of shifts per game: 25.8
 Number of game-winning goals: 7
 Number of power play goals: 3
-Number of shoot-out goals: 2
 Number of overtime goals: 0
 Points: 52
 Faceoff win percentage: 35
 Shooting percentage: 14.1
+Total Goals: 28
+Total Shots: 198
 
 Player type: forward
 First Name: Andrew
@@ -278,19 +272,18 @@ Jersey number: 25
 Total number of minutes on ice: 172.5
 Rookie: false
 Plus/Minus: 2
-Average goals per season: 0.28
-Average goal percentage per season: 18.5
-Average shots taken per season: 27
-Average assists per season: 0.06
-Average power play goals per season: 0.06
+Average goals per game: 0.28
+Average shots taken per game: 1.5
+Average assists per game: 0.06
 Average number of shifts per game: 14.6
 Number of game-winning goals: 2
 Number of power play goals: 1
-Number of shoot-out goals: 0
 Number of overtime goals: 2
 Points: 6
 Faceoff win percentage: 53.6
 Shooting percentage: 18.5
+Total Goals: 5
+Total Shots: 27
 
 Player type: defense
 Frst Name: Alexandrer
@@ -316,19 +309,18 @@ Jersey number: 23
 Total number of minutes on ice: 1956.9
 Rookie: false
 Plus/Minus: 0
-Average goals per season: 0.13
-Average goal percentage per season: 4.8
-Average shots taken per season: 228
-Average assists per season: 0.46
-Average power play goals per season: 0.06
+Average goals per game: 0.13
+Average shots taken per game: 2.78
+Average assists per game: 0.46
 Average number of shifts per game: 28.9
 Number of game-winning goals: 0
 Number of power play goals: 5
-Number of shoot-out goals: 0
 Number of overtime goals: 0
 Points: 49
 Faceoff win percentage: 0
 Shooting percentage: 4.8
+Total Goals: 11
+Total Shots: 228
 
 Player type: defense
 First Name: Dan
@@ -354,11 +346,9 @@ Jersey number: 2
 Total number of minutes on ice: 1921.18
 Rookie: false
 Plus/Minus: 29
-Average goals per season: 0.049
-Average goal percentage per season: 2.9
-Average shots taken per season: 140
-Average assists per season: 0.40
-Average power play goals per season: 0.01
+Average goals per game: 0.049
+Average shots taken per game: 1.7
+Average assists per game: 0.40
 Average number of shifts per game: 28.8
 Number of game-winning goals: 0
 Number of power play goals: 1
@@ -366,6 +356,9 @@ Number of overtime goals: 0
 Points: 37
 Faceoff win percentage: 0
 Shooting percentage: 2.9
+Total Goals: 4
+Total Shots: 140
+
 
 Player type: defense
 First Name: Janinik
@@ -391,19 +384,18 @@ Jersey number: 2
 Total number of minutes on ice: 1221.5
 Rookie: false
 Plus/Minus:  18
-Average goals per season: 0.195
-Average goal percentage per season: 11.7
-Average shots taken per season: 137
-Average assists per season: 0.28
-Average power play goals per season: 0
+Average goals per game: 0.195
+Average shots taken per game: 1.67
+Average assists per game: 0.28
 Average number of shifts per game: 22.3
 Number of game-winning goals: 1
 Number of power play goals: 0
-Number of shoot-out goals: 0
 Number of overtime goals: 0
 Points: 39
 Faceoff win percentage: 41.
 Shooting percentage: 11.7
+Total Goals: 16
+Total Shots: 137
 
 Player type: forward
 First Name: Chris
@@ -429,19 +421,18 @@ Jersey number: 20
 Total number of minutes on ice: 1158.5
 Rookie: false
 Plus/Minus: 11
-Average goals per season: 0.25
-Average goal percentage per season: 10.9
-Average shots taken per season: 165
-Average assists per season: 0.35
-Average power play goals per season: 0.014
+Average goals per game: 0.25
+Average shots taken per game: 2.32
+Average assists per game: 0.35
 Average number of shifts per game: 23.5
 Number of game-winning goals: 4
 Number of power play goals: 1
-Number of shoot-out goals: 0
 Number of overtime goals: 2
 Points: 43
 Faceoff win percentage: 40
 Shooting percentage: 10.9
+Total Goals: 18
+Total Shots: 165
 
 Player type: forward
 First Name: Zack
@@ -467,19 +458,18 @@ Jersey number: 9
 Total number of minutes on ice: 174.8
 Rookie: false
 Plus/Minus: -1
-Average goals per season: 0.06
-Average goal percentage per season: 5.6
-Average shots taken per season: 18
-Average assists per season: 0.12
-Average power play goals per season: 0
+Average goals per game: 0.06
+Average shots taken per game: 1.06
+Average assists per game: 0.12
 Average number of shifts per game: 14.6
 Number of game-winning goals: 0
 Number of power play goals: 0
-Number of shoot-out goals: 0
 Number of overtime goals: 0
 Points: 3
 Faceoff win percentage: 44.4
 Shooting percentage: 5.6
+Total Goals: 1
+Total Shots: 18
 
 Player type: forward
 First Name: Ryan
@@ -505,19 +495,18 @@ Jersey number: 17
 Total number of minutes on ice: 1547.0
 Rookie: false
 Plus/Minus: 11
-Average goals per season: 0.29
-Average goal percentage per season: 9.9
-Average shots taken per season: 222
-Average assists per season: 0.35
-Average power play goals per season: 0.1
+Average goals per game: 0.29
+Average shots taken per game: 2.88
+Average assists per game: 0.35
 Average number of shifts per game: 25.8
 Number of game-winning goals: 1
 Number of power play goals: 8
-Number of shoot-out goals: 1
 Number of overtime goals: 0
 Points: 49
 Faceoff win percentage: 53.6
 Shooting percentage: 9.9
+Total Goals: 22
+Total Shots: 222
 
 Player type: forward
 First Name: Maxim
@@ -543,19 +532,18 @@ Jersey number: 40
 Total number of minutes on ice: 920.5
 Rookie: false
 Plus/Minus: -3
-Average goals per season: 0.110
-Average goal percentage per season: 8.7
-Average shots taken per season: 103
-Average assists per season: 0.122
-Average power play goals per season: 0
+Average goals per game: 0.110
+Average shots taken per game: 1.26
+Average assists per game: 0.122
 Average number of shifts per game: 17.6
 Number of game-winning goals: 0
 Number of power play goals: 0
-Number of shoot-out goals: 0
 Number of overtime goals: 0
 Points: 19
 Faceoff win percentage: 52.1
 Shooting percentage: 8.7
+Total Goals: 9
+Total Shots: 103
 
 Player type: goalie
 First Name: Roberto
@@ -617,19 +605,18 @@ Jersey number: 27
 Total number of minutes on ice: 963.0
 Rookie: false
 Plus/Minus: -11
-Average goals per season: 0.090
-Average goal percentage per season: 11.7
-Average shots taken per season: 60
-Average assists per season: 0.141
-Average power play goals per season: 0
+Average goals per game: 0.090
+Average shots taken per game: 0.77
+Average assists per game: 0.141
 Average number of shifts per game: 20.9
 Number of game-winning goals: 2
 Number of power play goals: 0
-Number of shoot-out goals: 0
 Number of overtime goals: 9
 Points: 18
 Faceoff win percentage: 58.5
 Shooting percentage: 11.7
+Total Goals: 7
+Total Shots: 60
 
 Player type: forward
 First Name: Mason
@@ -655,19 +642,18 @@ Jersey number: 21
 Total number of minutes on ice: 857.25
 Rookie: false
 Plus/Minus: 4
-Average goals per season: 0.182
-Average goal percentage per season: 8.0
-Average shots taken per season: 125
-Average assists per season: 0.182
-Average power play goals per season: 0.018
+Average goals per game: 0.182
+Average shots taken per game: 125
+Average assists per game: 0.182
 Average number of shifts per game: 22.2
 Number of game-winning goals: 2
 Number of power play goals: 1
-Number of shoot-out goals: 1
 Number of overtime goals: 0
 Points: 20
 Faceoff win percentage: 28.0
 Shooting percentage: 8.0
+Total Goals: 10
+Total Shots: 125
 
 Player type: defense
 First Name: Aaron
@@ -693,19 +679,18 @@ Jersey number: 27
 Total number of minutes on ice: 1956.9
 Rookie: false
 Plus/Minus: -4
-Average goals per season: 0.093
-Average goal percentage per season: 9.5
-Average shots taken per season: 42
-Average assists per season: 0.140
-Average power play goals per season: 0.023
+Average goals per game: 0.093
+Average shots taken per game: 0.98
+Average assists per game: 0.140
 Average number of shifts per game: 28.9
 Number of game-winning goals: 1
 Number of power play goals: 1
-Number of shoot-out goals: 0
 Number of overtime goals: 0
 Points: 10
 Faceoff win percentage: 0
 Shooting percentage: 9.5
+Total Goals: 4
+Total Shots: 42
 
 Player type: defense
 First Name: Sami
@@ -731,19 +716,18 @@ Jersey number: 6
 Total number of minutes on ice: 1414.5
 Rookie: false
 Plus/Minus: 7
-Average goals per season: 0.130
-Average goal percentage per season: 6.6
-Average shots taken per season: 136
-Average assists per season: 0.232
-Average power play goals per season: 0.101
+Average goals per game: 0.130
+Average shots taken per game: 1.97
+Average assists per game: 0.232
 Average number of shifts per game: 28.9
 Number of game-winning goals: 3
 Number of power play goals: 7
-Number of short handed goals: 0
 Number of overtime goals: 1
 Points: 25
 Faceoff win percentage: 0
 Shooting percentage: 6.6
+Total Goals: 9
+Total Shots: 136
 
 Player type: goalie
 First Name: Cory
@@ -806,19 +790,17 @@ Total number of minutes on ice: 1350
 Rookie: false
 Plus/Minus: 14
 Average goals per season: 0.194
-Average goal percentage per season: 26.2
-Average shots taken per season: 229
+Average shots taken per season: 3.18
 Average assists per season: 0.514
-Average penalty minutes per season: 40
-Average power play goals per season: 0.139
 Average number of shifts per game: 25
 Number of game-winning goals: 6
 Number of power play goals: 10
-Number of short handed goals: 0
 Number of overtime goals: 0
 Points: 67
 Faceoff win percentage: 31.6
 Shooting percentage: 13.1
+Total Goals: 30
+Total Shots: 229
 
 Player type: forward
 First Name: Henrick
@@ -845,18 +827,17 @@ Total number of minutes on ice: 1558
 Rookie: false
 Plus/Minus: 23
 Average goals per season: 0.171
-Average goal percentage per season: 12.4
-Average shots taken per season: 113
+Average shots taken per season: 1.34
 Average assists per season: 0.817
-Average power play goals per season: 0.098
 Average number of shifts per game: 24.8
 Number of game-winning goals: 6
 Number of power play goals: 8
-Number of short handed goals: 0
 Number of overtime goals: 0
 Points: 81
 Faceoff win percentage: 50.1
 Shooting percentage: 12.4
+Total Goals: 14
+Total Shots: 113
 
 Coach type: head
 First Name: Alain
