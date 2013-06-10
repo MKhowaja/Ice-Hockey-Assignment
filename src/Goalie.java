@@ -130,7 +130,7 @@ public class Goalie extends Player {
 		pw.println("Number of wins during playoffs: "+winsP);
 		pw.println("Number of losses during playoffs: "+losesP);
 		pw.println("Number of losses during overtime: "+losesOT);
-		pw.println("Bumber of games started by goalie: "+gameStart);
+		pw.println("Number of games started by goalie: "+gameStart);
 		pw.println("Number of goals scored against goalie: "+goalA);
 		pw.println("Total number of shots faced by goalie: "+shotsOG);
 		pw.println("Number of saves by goalie: "+saves);
