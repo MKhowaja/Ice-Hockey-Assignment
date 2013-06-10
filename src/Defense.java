@@ -8,7 +8,7 @@ public class Defense extends Player{
 	protected int plusMinus; //Holds +/- for each player
 	protected double avgGoalsPG; //Average goals per game, calculated
 	protected double avgShotsPG; //Average shots taken per game, calculated
-	protected double avgAssistsPG; //Average assists per game
+	protected double avgAssistsPG; //Average assists per game, calculated
 	protected double avgNShifts; //Average number of shifts per game
 	protected int gwGoals; //Number of game-winning goals
 	protected int ppGoals; //Number of power play goals
@@ -18,6 +18,7 @@ public class Defense extends Player{
 	protected double shootPercentage; //Shooting Percentage, calculated
 	protected int goals; //total number of goals scored per season
 	protected int shots; //total number of shots taken per season
+	protected int assists; //total number of assists per season
 
 
 	/**
@@ -28,7 +29,7 @@ public class Defense extends Player{
 			double numMin, boolean rookie, //more player fields
 			int plusMinus, double avgGoalsPG, double avgShotsPG, double avgAssistsPG, //defense fields
 			double avgPenaltyPG, double avgNShifts, int gwGoals, int ppGoals, //more defense fields
-			int otGoals, /*points taken care of in constructor,*/double faceoffPercentage, double shootPercentage, int goals, int shots) {//more defense fields
+			int otGoals, /*points taken care of in constructor,*/double faceoffPercentage, double shootPercentage, int goals, int shots, int assists) {//more defense fields
 
 		super(fname, lname, gender, height, weight, month, day, year, place, mStatus,//person fields
 				salaryPY, contractR, tSalary, gp, penaltyT, penaltyN, arm, number, //player fields
@@ -47,6 +48,7 @@ public class Defense extends Player{
 		this.shootPercentage = shootPercentage;
 		this.goals = goals;
 		this.shots = shots;
+		this.assists = assists;
 	}
 
 	/**
@@ -86,6 +88,9 @@ public class Defense extends Player{
 		pw.println("Points: "+points);
 		pw.println("Faceoff win percentage: "+faceoffPercentage);
 		pw.println("Shooting percentage: "+shootPercentage);
+		pw.println("Total Goals per Season: "+goals);
+		pw.println("Total Shots per Season: "+shots);
+		pw.println("Total Assists per Season: "+assists);
 	}
 
 	/**
@@ -129,6 +134,18 @@ public class Defense extends Player{
 
 		x = br.readLine();
 		shootPercentage = Double.parseDouble(x.substring(x.indexOf(": ")+2,x.length()));
+		
+		x = br.readLine();
+		goals = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+		
+		x = br.readLine();
+		shots = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+		
+		x = br.readLine();
+		assists = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+		
+		calculateRating();
+		//TODO
 	}
 	/**
 	 * Loads a defense's data through prompting the user
@@ -187,6 +204,21 @@ public class Defense extends Player{
 			System.out.print("Enter the shooting percentage by "+fname+": ");
 			shootPercentage=in.nextDouble();
 		} while (shootPercentage<0); //Ensure the player doesn't have negative shooting percentage
+		
+		do {
+			System.out.print("Enter total number of goals scored per season by "+fname+": ");
+			goals=in.nextInt();
+		} while (goals<0); //Ensure the player doesn't have negative goals scored per season
+		
+		do {
+			System.out.print("Enter total number of shots taken per season by "+fname+": ");
+			shots=in.nextInt();
+		} while (shots<0); //Ensure the player doesn't have negative shots taken per season
+		
+		do {
+			System.out.print("Enter the total number of assists per season by "+fname+": ");
+			assists=in.nextInt();
+		} while (assists<0); //Ensure the player doesn't have negative total number of assists per season
 		
 		this.points = avgGoalsPG + avgAssistsPG; //calculates points
 		in.close();
@@ -401,11 +433,19 @@ public class Defense extends Player{
 		this.shots = shots;
 	}
 	
+	//CALCULATION METHODS
+	
 	/**
 	 * calculates the rating of a defense
 	 */
 	public void calculateRating() {
 		// TODO Auto-generated method stub
-		
 	}	
+	
+	/**
+	 * calculates the shootPercentage
+	 */
+	public void calculateShootPercentage() {
+		shootPercentage = avgGoalsPG/avgShotsPG;
+	}
 }

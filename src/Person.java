@@ -33,8 +33,6 @@ abstract class Person {
 		this.birthPlace = place;
 		this.maritalStatus = mStatus;
 		updateAge();
-		convertBirthPlaceToString(birthPlace);
-		convertMaritalStatusToString(maritalStatus);
 	}
 
 	/**
