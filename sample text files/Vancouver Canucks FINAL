@@ -44,7 +44,6 @@ Total salary: 1225000.0
 Rating: 1
 Games played: 44
 Penalty Minutes: 40
-Number of penalties: 0
 Shooting Arm: left arm
 Jersey number: 41
 Total number of minutes on ice: 628.32
@@ -62,6 +61,7 @@ Faceoff win percentage: 0
 Shooting percentage: 10.5
 Total Goals:2
 Total Shots: 19
+Total Assists: 1
 
 Player type: defense
 First Name: Keith
@@ -81,7 +81,6 @@ Total salary: 1000000.0
 Rating: 0
 Games played: 47
 Penalty Minutes: 64
-Number of penalties: 0
 Shooting Arm: left arm
 Jersey number: 4
 Total number of minutes on ice: 728.5
@@ -97,8 +96,9 @@ Number of overtime goals: 0
 Points: 7
 Faceoff win percentage: 0
 Shooting percentage: 2.4
-Total Goals: 1
+Total Goals: 
 Total Shots: 41
+Total Assists: 6
 
 Player type: defense
 First Name: Kevin
@@ -118,7 +118,6 @@ Total salary: 4600000.0
 Rating: 1
 Games played: 78
 Penalty Minutes: 94
-Number of penalties: 0
 Shooting Arm: left arm
 Jersey number: 3
 Total number of minutes on ice: 1843.92
@@ -136,6 +135,7 @@ Faceoff win percentage: 0
 Shooting percentage: 4.8
 Total Goals: 8
 Total Shots: 166
+Total Assists: 36
 
 Player type: defense
 First Name: Byron
@@ -155,7 +155,6 @@ Total salary: 1000000.0
 Rating: 1
 Games played: 10
 Penalty Minutes: 14
-Number of penalties: 0
 Shooting Arm: right arm
 Jersey number: 34
 Total number of minutes on ice: 104.99
@@ -173,6 +172,7 @@ Faceoff win percentage: 0
 Shooting percentage: 17.4
 Total Goals: 1
 Total Shots: 6
+Total Assists: 3
 
 Player type: forward
 First Name: David
@@ -192,7 +192,6 @@ Total salary: 4250000.0
 Rating: 1
 Games played: 56
 Penalty Minutes: 32
-Number of penalties: 0
 Shooting Arm: left arm
 Jersey number: 7
 Total number of minutes on ice: 832.67
@@ -210,6 +209,7 @@ Faceoff win percentage: 50.0
 Shooting percentage: 11
 Total Goals: 16
 Total Shots: 145
+Total Assists: 13
 
 Player type: forward
 First Name: Alexandre
@@ -229,7 +229,6 @@ Total salary: 6000000.0
 Rating: 1
 Games played: 80
 Penalty Minutes: 90
-Number of penalties: 0
 Shooting Arm: left arm
 Jersey number: 14
 Total number of minutes on ice: 1477.95
@@ -247,6 +246,7 @@ Faceoff win percentage: 35
 Shooting percentage: 14.1
 Total Goals: 28
 Total Shots: 198
+Total Assists: 24
 
 Player type: forward
 First Name: Andrew
@@ -266,7 +266,6 @@ Total salary: 1000000.0
 Rating: 1
 Games played: 18
 Penalty Minutes: 6
-Number of penalties: 0
 Shooting Arm: left arm
 Jersey number: 25
 Total number of minutes on ice: 172.5
@@ -284,6 +283,7 @@ Faceoff win percentage: 53.6
 Shooting percentage: 18.5
 Total Goals: 5
 Total Shots: 27
+Total Assists: 1
 
 Player type: defense
 Frst Name: Alexandrer
@@ -303,7 +303,6 @@ Total salary: 3250000.0
 Rating: 1
 Games played: 82
 Penalty Minutes: 34
-Number of penalties: 0
 Shooting Arm: left arm
 Jersey number: 23
 Total number of minutes on ice: 1956.9
@@ -321,6 +320,7 @@ Faceoff win percentage: 0
 Shooting percentage: 4.8
 Total Goals: 11
 Total Shots: 228
+Total Assists: 38
 
 Player type: defense
 First Name: Dan
@@ -340,7 +340,6 @@ Total salary: 0
 Rating: 1
 Games played: 82
 Penalty Minutes: 46
-Number of penalties: 0
 Shooting Arm: left arm
 Jersey number: 2
 Total number of minutes on ice: 1921.18
@@ -358,7 +357,7 @@ Faceoff win percentage: 0
 Shooting percentage: 2.9
 Total Goals: 4
 Total Shots: 140
-
+Total Assists: 33
 
 Player type: defense
 First Name: Janinik
@@ -378,7 +377,6 @@ Total salary: 1350000.0
 Rating: 1
 Games played: 82
 Penalty Minutes: 34
-Number of penalties: 0
 Shooting Arm: left arm
 Jersey number: 2
 Total number of minutes on ice: 1221.5
@@ -396,43 +394,7 @@ Faceoff win percentage: 41.
 Shooting percentage: 11.7
 Total Goals: 16
 Total Shots: 137
-
-Player type: forward
-First Name: Chris
-Last Name: Higgins
-Age: 29
-Gender: male
-Height: 182.88
-Weight: 92.9864
-Month of Birth: May
-Day of Birth: 2
-Year of Birth: 1983
-Birthplace: United States
-Martial Status: single
-Salary per year: 1900000.0
-Years remaining on contract: 11
-Total salary: 1900000.0
-Rating: 1
-Games played: 71
-Penalty Minutes: 16
-Number of penalties: 0
-Shooting Arm: left arm
-Jersey number: 20
-Total number of minutes on ice: 1158.5
-Rookie: false
-Plus/Minus: 11
-Average goals per game: 0.25
-Average shots taken per game: 2.32
-Average assists per game: 0.35
-Average number of shifts per game: 23.5
-Number of game-winning goals: 4
-Number of power play goals: 1
-Number of overtime goals: 2
-Points: 43
-Faceoff win percentage: 40
-Shooting percentage: 10.9
-Total Goals: 18
-Total Shots: 165
+Total Assists: 23
 
 Player type: forward
 First Name: Zack
@@ -452,7 +414,6 @@ Total salary: 870000.0
 Rating: 1
 Games played: 17
 Penalty Minutes: 31
-Number of penalties: 0
 Shooting Arm: left arm
 Jersey number: 9
 Total number of minutes on ice: 174.8
@@ -470,6 +431,82 @@ Faceoff win percentage: 44.4
 Shooting percentage: 5.6
 Total Goals: 1
 Total Shots: 18
+Total Assists: 2
+
+Player type: forward
+First Name: Cody
+Last Name: Hodgson
+Age: 23
+Gender: male
+Height: 182.88
+Weight: 87.9969
+Month of Birth: February
+Day of Birth: 18
+Year of Birth: 1990
+Birthplace: Canada
+Martial Status: single
+Salary per year: 0
+Years remaining on contract: 0
+Total salary: 0
+Rating: 0
+Games played: 63
+Penalty Minutes: 8
+Shooting Arm: right arm
+Jersey number: 19
+Total number of minutes on ice: 801.15
+Rookie: false
+Plus/Minus: 8
+Average goals per game: 0.25
+Average shots taken per game: 1.63
+Average assists per game: 0.27
+Average number of shifts per game: 18.6
+Number of game-winning goals: 2
+Number of power play goals: 5
+Number of overtime goals: 0
+Points: 33
+Faceoff win percentage: 42.8
+Shooting percentage: 15.5
+Total Goals: 16
+Total Shots: 103
+Total Assists: 17
+
+
+Player type: forward
+First Name: Chris
+Last Name: Higgins
+Age: 29
+Gender: male
+Height: 182.88
+Weight: 92.9864
+Month of Birth: May
+Day of Birth: 2
+Year of Birth: 1983
+Birthplace: United States
+Martial Status: single
+Salary per year: 1900000.0
+Years remaining on contract: 11
+Total salary: 1900000.0
+Rating: 1
+Games played: 71
+Penalty Minutes: 16
+Shooting Arm: left arm
+Jersey number: 20
+Total number of minutes on ice: 1158.5
+Rookie: false
+Plus/Minus: 11
+Average goals per game: 0.25
+Average shots taken per game: 2.32
+Average assists per game: 0.35
+Average number of shifts per game: 23.5
+Number of game-winning goals: 4
+Number of power play goals: 1
+Number of overtime goals: 2
+Points: 43
+Faceoff win percentage: 40
+Shooting percentage: 10.9
+Total Goals: 18
+Total Shots: 165
+Total Assists: 25
 
 Player type: forward
 First Name: Ryan
@@ -489,7 +526,6 @@ Total salary: 5000000.0
 Rating: 1
 Games played: 77
 Penalty Minutes: 56
-Number of penalties: 0
 Shooting Arm: left arm
 Jersey number: 17
 Total number of minutes on ice: 1547.0
@@ -507,6 +543,7 @@ Faceoff win percentage: 53.6
 Shooting percentage: 9.9
 Total Goals: 22
 Total Shots: 222
+Total Assists: 27
 
 Player type: forward
 First Name: Maxim
@@ -526,7 +563,6 @@ Total salary: 0
 Rating: 1
 Games played: 82
 Penalty Minutes: 130
-Number of penalties: 0
 Shooting Arm: left arm
 Jersey number: 40
 Total number of minutes on ice: 920.5
@@ -544,6 +580,7 @@ Faceoff win percentage: 52.1
 Shooting percentage: 8.7
 Total Goals: 9
 Total Shots: 103
+Total Assists: 10
 
 Player type: goalie
 First Name: Roberto
@@ -563,7 +600,6 @@ Total salary: 5333000.0
 Rating: 1
 Games played: 55
 Penalty Minutes: 4
-Number of penalties: 0
 Shooting Arm: left arm
 Jersey number: 1
 Total number of minutes on ice: 3162.5
@@ -599,7 +635,6 @@ Total salary: 2500000.0
 Rating: 1
 Games played: 78
 Penalty Minutes: 14
-Number of penalties: 0
 Shooting Arm: left arm
 Jersey number: 27
 Total number of minutes on ice: 963.0
@@ -617,6 +652,7 @@ Faceoff win percentage: 58.5
 Shooting percentage: 11.7
 Total Goals: 7
 Total Shots: 60
+Total Assists: 11
 
 Player type: forward
 First Name: Mason
@@ -636,7 +672,6 @@ Total salary: 2750000.0
 Rating: 1
 Games played: 55
 Penalty Minutes: 18
-Number of penalties: 0
 Shooting Arm: left arm
 Jersey number: 21
 Total number of minutes on ice: 857.25
@@ -654,6 +689,7 @@ Faceoff win percentage: 28.0
 Shooting percentage: 8.0
 Total Goals: 10
 Total Shots: 125
+Total Assists: 10
 
 Player type: defense
 First Name: Aaron
@@ -673,7 +709,6 @@ Total salary: 0
 Rating: 1
 Games played: 43
 Penalty Minutes: 46
-Number of penalties: 0
 Shooting Arm: left arm
 Jersey number: 27
 Total number of minutes on ice: 1956.9
@@ -691,6 +726,7 @@ Faceoff win percentage: 0
 Shooting percentage: 9.5
 Total Goals: 4
 Total Shots: 42
+Total Assists: 6
 
 Player type: defense
 First Name: Sami
@@ -710,7 +746,6 @@ Total salary: 0
 Rating: 1
 Games played: 69
 Penalty Minutes: 10
-Number of penalties: 0
 Shooting Arm: left arm
 Jersey number: 6
 Total number of minutes on ice: 1414.5
@@ -728,6 +763,7 @@ Faceoff win percentage: 0
 Shooting percentage: 6.6
 Total Goals: 9
 Total Shots: 136
+Total Assists: 16
 
 Player type: goalie
 First Name: Cory
@@ -747,7 +783,6 @@ Total salary: 4000000.0
 Rating: 1
 Games played: 33
 Penalty Minutes: 0
-Number of penalties: 0
 Shooting Arm: left arm
 Jersey number: 35
 Total number of minutes on ice: 1832.9
@@ -783,7 +818,6 @@ Total salary: 6100000.0
 Rating: 1
 Games played: 72
 Penalty Minutes: 40
-Number of penalties: 0
 Shooting Arm: left arm
 Jersey number: 22
 Total number of minutes on ice: 1350
@@ -801,6 +835,7 @@ Faceoff win percentage: 31.6
 Shooting percentage: 13.1
 Total Goals: 30
 Total Shots: 229
+Total Assists: 37
 
 Player type: forward
 First Name: Henrick
@@ -820,7 +855,6 @@ Total salary: 6100000.0
 Rating: 1
 Games played: 82
 Penalty Minutes: 52
-Number of penalties: 0
 Shooting Arm: left arm
 Jersey number: 33
 Total number of minutes on ice: 1558
@@ -838,6 +872,7 @@ Faceoff win percentage: 50.1
 Shooting percentage: 12.4
 Total Goals: 14
 Total Shots: 113
+Total Assists: 67
 
 Coach type: head
 First Name: Alain
