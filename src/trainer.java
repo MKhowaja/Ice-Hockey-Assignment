@@ -7,7 +7,7 @@ public class trainer extends Coach {
 	
 	/**
    	* Constructs an object of type trainer
-	* @param  fname, lname of type string and gender of type boolean and height, weight of type double and month, day, year, place, mStatus of type int
+	
 	* @throws IOException
 	*/
 	public trainer(String fname, String lname, boolean gender,

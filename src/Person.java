@@ -19,7 +19,7 @@ abstract class Person {
 
 	/**
 	 * Constructor that creates an object of type person with parameters sent in
-	 * @param String fname, String lname, int age, boolean gender, double height, double weight, int month, int day, int year, int place, int mStatus
+	 
 	 */
 	Person(String fname, String lname, boolean gender, double height, double weight, int month, int day, int year, int place, int mStatus) {
 		this.fname = fname;

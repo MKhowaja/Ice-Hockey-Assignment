@@ -7,8 +7,6 @@ abstract class Coach extends Person {
 	
 	/**
 	 * Constructs an object of type coach
-	 * @param fname, lname of type string and gender of type boolean and height, weight of type double and month, day, year, place, mStatus of type int
-	 * @throws IOException
 	 */
 	public Coach(String fname, String lname, boolean gender,
 			double height, double weight, int month, int day, int year,

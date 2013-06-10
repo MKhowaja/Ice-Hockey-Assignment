@@ -18,10 +18,6 @@ abstract class Player extends Person {
 
 	/**
    	* Constructs an object of type Player
-   	* @param  fname, lname of type string and gender of type boolean and height, weight of type double and month, day, year, place, mStatus of type int
-	* salaryPY of type double, contractR of type int, tSalary of type double, gp of type int, penaltyT of type double, penaltyN of type int, arm of type boolean, number of type int,
-	* numMin of type double, rookie of type boolean,
-	* @throws IOException
 	*/
 	public Player(String fname, String lname, boolean gender, double height, double weight, int month, int day, int year, int place, int mStatus,//person fields
 			double salaryPY, int contractR, double tSalary, int gp, double penaltyT, int penaltyN, boolean arm, int number, double numMin,

@@ -5,8 +5,6 @@ public class assistant extends Coach{
 
 	/**
    	* Constructs an object of type assistant
-	* @param  fname, lname of type string and gender of type boolean and height, weight of type double and month, day, year, place, mStatus of type int
-	* @throws IOException
 	*/
 	public assistant(String fname, String lname, boolean gender,
 			double height, double weight, int month, int day, int year,
