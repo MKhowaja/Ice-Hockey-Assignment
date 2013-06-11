@@ -189,18 +189,22 @@ public class Main {
 			System.out.println("5 - Terminate the program.");
 			System.out.println("Select an operation: ");
 			option = in.nextInt();
+			boolean locationFound = false;
 			if (option == 1) {
-				System.out.println("Enter location to save text file: ");
-				filepath = in.next();
-				pw = new PrintWriter(new FileWriter(filepath));
-				pw.println("League: NHL");
-				pw.println("");
 				for (int i = 0; i < teams.size(); i++) {
-					teams.get(i).save(pw); //already skips line in method
-					teams.get(i).writePlayer(pw); //already skips lines in method
-					teams.get(i).writeCoach(pw); //already skips lines in method
-					pw.println("----------------------------------------------------"); //separates each team
-					pw.println();
+					System.out.println("Enter location to save text file: ");
+					filepath = in.next()+"\\" + teams.get(i).getName() + ".txt";
+					try {
+						pw = new PrintWriter(new FileWriter(filepath));
+						locationFound = true;
+					}
+					catch (FileNotFoundException e) {
+						locationFound = false;
+						System.out.println("Location not found.");
+					}
+					pw.println("League: NHL");
+					pw.println("");
+					teams.get(i).save(pw); //already skips line in method5
 				}
 			}
 			else if (option == 5) {
