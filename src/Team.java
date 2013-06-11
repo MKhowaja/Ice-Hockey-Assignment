@@ -334,6 +334,8 @@ public class Team {
 		pw.println("Save Percentage: "+savePercent);
 		pw.println("Power-play Percentage: "+ppPercent);
 		pw.println("");
+		writePlayer(pw); //already skips lines in method
+		writeCoach(pw); //already skips lines in method
 	}
 
 	/**
