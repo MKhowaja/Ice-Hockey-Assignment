@@ -417,7 +417,7 @@ Penalty Minutes: 31
 Shooting Arm: left arm
 Jersey number: 9
 Total number of minutes on ice: 174.8
-Rookie: false
+Rookie: true
 Plus/Minus: -1
 Average goals per game: 0.06
 Average shots taken per game: 1.06
@@ -454,7 +454,7 @@ Penalty Minutes: 8
 Shooting Arm: right arm
 Jersey number: 19
 Total number of minutes on ice: 801.15
-Rookie: false
+Rookie: true
 Plus/Minus: 8
 Average goals per game: 0.25
 Average shots taken per game: 1.63
@@ -925,14 +925,14 @@ Birthplace: Canada
 Martial Status: married
 
 Coach type: goaltender
-First Name: Boss
-Last Name: McBoss
-Age: 22
-Gender: female
-Height: 185.0
-Weight: 87.0
+First Name: Alphonse
+Last Name: Elric
+Age: 19
+Gender: male
+Height: 188
+Weight: 90
 Month of Birth: October
 Day of Birth: 10
 Year of Birth: 1990
-Birthplace: Canada
-Martial Status: divorced
+Birthplace: Germany
+Martial Status: single
