@@ -1,30 +1,30 @@
 League: NHL
 
 Team Name: Vancouver Canucks
-Divisison: Something
-Conference: Something or other
+Divisison: Northwest
+Conference: Western
 Payroll: 70.093
 Games Played: 82
 Games Won: 51
 Games Lost: 22
 Total Goals Scored: 249
 Total Goals Scored Against: 198
-Number of Powerplay Opportunities: 150
-Number of Short Times Handed: 50
-Total Number of Powerplay Goals: 114
-Total Number of Shorthanded Goals: 24
-Total Number of Powerplay Goals Against: 100
-Total Number of Shorthanded Goals Against: 100
-Total Shots: 1325
-Total Shots Against: 1301
-Total Saves: 1000
-Average goals scored per game: 7.0
-Average goals scored per game against: 9.0
-Average shots per game: 20.0
-Average shots per game against: 5.0
-Shot Percentage: 67.0
-Save Percentage: 45.0
-Power-play Percentage: 23.0
+Number of Powerplay Opportunities: 288
+Number of Short Times Handed: 286
+Total Number of Powerplay Goals: 57
+Total Number of Shorthanded Goals: 7
+Total Number of Powerplay Goals Against: 40
+Total Number of Shorthanded Goals Against: 279
+Total Shots: 2583
+Total Shots Against: 2527
+Total Saves: 2335
+Average goals scored per game: 3.04
+Average goals scored per game against: 2.41
+Average shots per game: 31.5
+Average shots per game against: 30.82
+Shot Percentage: 9.63
+Save Percentage: 92.8
+Power-play Percentage: 19.8
 
 Player type: defense
 First Name: Andrew
@@ -42,109 +42,26 @@ Salary per year: 1225000.0
 Years remaining on contract: 2
 Total salary: 1225000.0
 Rating: 1
-Games played: 906
-Penalty Minutes: 72.0
-Number of penalties: 5
+Games played: 44
+Penalty Minutes: 40.0
 Shooting Arm: left arm
 Jersey number: 41
-Total number of minutes on ice: 14563.0
+Total number of minutes on ice: 628.32
 Rookie: false
-Plus/Minus: 172
-Average goals per season: 9.09375
-Average goal percentage per season: 12.3
-Average shots taken per season: 73.78125
-Average assists per season: 14.594
-Average penalty minutes per season: 10.0
-Average power play goals per season: 2.0
-Average shoot-out goals per season: 0.0
-Average number of shifts per game: 1.0
-Number of game-winning goals: 63
-Number of power play goals: 106
-Number of shoot-out goals: 0
-Number of overtime goals: 10
-Points: 758.0
-Faceoff win percentage: 50.0
-Shooting percentage: 5.0
-
-Player type: defense
-First Name: Peter
-Last Name: Andersson
-Age: 22
-Gender: male
-Height: 190.5
-Weight: 87.9969
-Month of Birth: April
-Day of Birth: 13
-Year of Birth: 1991
-Birthplace: Sweden
-Martial Status: single
-Salary per year: 1000000.0
-Years remaining on contract: 2
-Total salary: 1000000.0
-Rating: 1
-Games played: 906
-Penalty Minutes: 72.0
-Number of penalties: 5
-Shooting Arm: left arm
-Jersey number: 80
-Total number of minutes on ice: 14563.0
-Rookie: false
-Plus/Minus: 172
-Average goals per season: 9.09375
-Average goal percentage per season: 12.3
-Average shots taken per season: 73.78125
-Average assists per season: 14.594
-Average penalty minutes per season: 10.0
-Average power play goals per season: 2.0
-Average shoot-out goals per season: 0.0
-Average number of shifts per game: 0.0
-Number of game-winning goals: 63
-Number of power play goals: 106
-Number of shoot-out goals: 0
-Number of overtime goals: 10
-Points: 758.0
-Faceoff win percentage: 50.0
-Shooting percentage: 5.0
-
-Player type: forward
-First Name: Darren
-Last Name: Archibald
-Age: 23
-Gender: male
-Height: 190.5
-Weight: 95.2544
-Month of Birth: February
-Day of Birth: 9
-Year of Birth: 1990
-Birthplace: Canada
-Martial Status: single
-Salary per year: 1000000.0
-Years remaining on contract: 2
-Total salary: 1000000.0
-Rating: 1
-Games played: 906
-Penalty Minutes: 72.0
-Number of penalties: 5
-Shooting Arm: left arm
-Jersey number: 49
-Total number of minutes on ice: 14563.0
-Rookie: false
-Plus/Minus: 172
-Average goals per season: 9.09375
-Average goal percentage per season: 12.3
-Average shots taken per season: 73.78125
-Average assists per season: 14.594
-Average penalty minutes per season: 10.0
-Average power play goals per season: 2.0
-Average shoot-out goals per season: 0.0
-Average number of shifts per game: 0.0
-Number of game-winning goals: 63
-Number of power play goals: 106
-Number of shoot-out goals: 0
-Number of overtime goals: 10
-Points: 758.0
-Faceoff win percentage: 50.0
-Shooting percentage: 5.0
+Plus/Minus: 4
+Average goals per game: 0.05
+Average shots taken per game: 0.43
+Average assists per game: 0.02
+Average number of shifts per game: 19.7
+Number of game-winning goals: 2
+Number of power play goals: 0
+Number of overtime goals: 0
+Points: 3.0
+Faceoff win percentage: 0.0
+Shooting percentage: 10.5
+Total Goals per Season: 2
+Total Shots per Season: 19
+Total Assists per Season: 1
 
 Player type: defense
 First Name: Keith
@@ -161,70 +78,27 @@ Martial Status: single
 Salary per year: 1000000.0
 Years remaining on contract: 2
 Total salary: 1000000.0
-Rating: 1
-Games played: 906
-Penalty Minutes: 72.0
-Number of penalties: 5
+Rating: 0
+Games played: 47
+Penalty Minutes: 64.0
 Shooting Arm: left arm
 Jersey number: 4
-Total number of minutes on ice: 14563.0
+Total number of minutes on ice: 728.5
 Rookie: false
-Plus/Minus: 172
-Average goals per season: 9.09375
-Average goal percentage per season: 12.3
-Average shots taken per season: 73.78125
-Average assists per season: 14.594
-Average penalty minutes per season: 10.0
-Average power play goals per season: 2.0
-Average shoot-out goals per season: 0.0
-Average number of shifts per game: 0.0
-Number of game-winning goals: 63
-Number of power play goals: 106
-Number of shoot-out goals: 0
-Number of overtime goals: 10
-Points: 758.0
-Faceoff win percentage: 50.0
-Shooting percentage: 5.0
-
-Player type: defense
-First Name: Cam
-Last Name: Barker
-Age: 27
-Gender: male
-Height: 190.5
-Weight: 101.151
-Month of Birth: April
-Day of Birth: 4
-Year of Birth: 1986
-Birthplace: Canada
-Martial Status: single
-Salary per year: 700000.0
-Years remaining on contract: 1
-Total salary: 700000.0
-Rating: 1
-Games played: 906
-Penalty Minutes: 72.0
-Number of penalties: 5
-Shooting Arm: left arm
-Jersey number: 18
-Total number of minutes on ice: 14563.0
-Rookie: false
-Plus/Minus: 172
-Average goals per season: 9.09375
-Average goal percentage per season: 12.3
-Average shots taken per season: 73.78125
-Average assists per season: 14.594
-Average penalty minutes per season: 10.0
-Average power play goals per season: 2.0
-Average shoot-out goals per season: 0.0
-Average number of shifts per game: 0.0
-Number of game-winning goals: 63
-Number of power play goals: 106
-Number of shoot-out goals: 0
-Number of overtime goals: 10
-Points: 758.0
-Faceoff win percentage: 50.0
-Shooting percentage: 5.0
+Plus/Minus: 0
+Average goals per game: 0.02
+Average shots taken per game: 0.87
+Average assists per game: 0.13
+Average number of shifts per game: 21.4
+Number of game-winning goals: 0
+Number of power play goals: 0
+Number of overtime goals: 0
+Points: 7.0
+Faceoff win percentage: 0.0
+Shooting percentage: 2.4
+Total Goals per Season: 1
+Total Shots per Season: 41
+Total Assists per Season: 6
 
 Player type: defense
 First Name: Kevin
@@ -242,29 +116,63 @@ Salary per year: 4600000.0
 Years remaining on contract: 1
 Total salary: 4600000.0
 Rating: 1
-Games played: 906
-Penalty Minutes: 72.0
-Number of penalties: 5
+Games played: 78
+Penalty Minutes: 94.0
 Shooting Arm: left arm
 Jersey number: 3
-Total number of minutes on ice: 14563.0
+Total number of minutes on ice: 1843.92
 Rookie: false
-Plus/Minus: 172
-Average goals per season: 9.09375
-Average goal percentage per season: 12.3
-Average shots taken per season: 73.78125
-Average assists per season: 14.594
-Average penalty minutes per season: 10.0
-Average power play goals per season: 2.0
-Average shoot-out goals per season: 0.0
-Average number of shifts per game: 0.0
-Number of game-winning goals: 63
-Number of power play goals: 106
-Number of shoot-out goals: 0
-Number of overtime goals: 10
-Points: 758.0
-Faceoff win percentage: 50.0
-Shooting percentage: 5.0
+Plus/Minus: 12
+Average goals per game: 0.1
+Average shots taken per game: 2.13
+Average assists per game: 0.46
+Average number of shifts per game: 28.2
+Number of game-winning goals: 2
+Number of power play goals: 2
+Number of overtime goals: 0
+Points: 44.0
+Faceoff win percentage: 0.0
+Shooting percentage: 4.8
+Total Goals per Season: 8
+Total Shots per Season: 166
+Total Assists per Season: 36
+
+Player type: defense
+First Name: Byron
+Last Name: Blitz
+Age: 29
+Gender: male
+Height: 195.58
+Weight: 97.5224
+Month of Birth: July
+Day of Birth: 21
+Year of Birth: 1984
+Birthplace: Canada
+Martial Status: single
+Salary per year: 1000000.0
+Years remaining on contract: 2
+Total salary: 1000000.0
+Rating: 1
+Games played: 10
+Penalty Minutes: 14.0
+Shooting Arm: right arm
+Jersey number: 34
+Total number of minutes on ice: 104.99
+Rookie: false
+Plus/Minus: 2
+Average goals per game: 0.1
+Average shots taken per game: 0.6
+Average assists per game: 0.3
+Average number of shifts per game: 17.4
+Number of game-winning goals: 0
+Number of power play goals: 0
+Number of overtime goals: 0
+Points: 4.0
+Faceoff win percentage: 0.0
+Shooting percentage: 17.4
+Total Goals per Season: 1
+Total Shots per Season: 6
+Total Assists per Season: 3
 
 Player type: forward
 First Name: David
@@ -282,29 +190,26 @@ Salary per year: 4.25E7
 Years remaining on contract: 1
 Total salary: 4250000.0
 Rating: 1
-Games played: 906
-Penalty Minutes: 72.0
-Number of penalties: 5
+Games played: 56
+Penalty Minutes: 32.0
 Shooting Arm: left arm
 Jersey number: 7
-Total number of minutes on ice: 14563.0
+Total number of minutes on ice: 832.67
 Rookie: false
-Plus/Minus: 172
-Average goals per season: 9.09375
-Average goal percentage per season: 12.3
-Average shots taken per season: 73.78125
-Average assists per season: 14.594
-Average penalty minutes per season: 10.0
-Average power play goals per season: 2.0
-Average shoot-out goals per season: 0.0
-Average number of shifts per game: 0.0
-Number of game-winning goals: 63
-Number of power play goals: 106
-Number of shoot-out goals: 0
-Number of overtime goals: 10
-Points: 758.0
+Plus/Minus: 1
+Average goals per game: 0.29
+Average shots taken per game: 2.59
+Average assists per game: 0.23
+Average number of shifts per game: 20.7
+Number of game-winning goals: 1
+Number of power play goals: 3
+Number of overtime goals: 0
+Points: 29.0
 Faceoff win percentage: 50.0
-Shooting percentage: 5.0
+Shooting percentage: 11.0
+Total Goals per Season: 16
+Total Shots per Season: 145
+Total Assists per Season: 13
 
 Player type: forward
 First Name: Alexandre
@@ -322,105 +227,26 @@ Salary per year: 6000000.0
 Years remaining on contract: 7
 Total salary: 6000000.0
 Rating: 1
-Games played: 906
-Penalty Minutes: 72.0
-Number of penalties: 5
+Games played: 80
+Penalty Minutes: 90.0
 Shooting Arm: left arm
 Jersey number: 14
-Total number of minutes on ice: 14563.0
+Total number of minutes on ice: 1477.95
 Rookie: false
-Plus/Minus: 172
-Average goals per season: 9.09375
-Average goal percentage per season: 12.3
-Average shots taken per season: 73.78125
-Average assists per season: 14.594
-Average penalty minutes per season: 10.0
-Average power play goals per season: 2.0
-Average shoot-out goals per season: 0.0
-Average number of shifts per game: 0.0
-Number of game-winning goals: 63
-Number of power play goals: 106
-Number of shoot-out goals: 0
-Number of overtime goals: 10
-Points: 758.0
-Faceoff win percentage: 50.0
-Shooting percentage: 5.0
-
-Player type: goalie
-First Name: Joe
-Last Name: Cannata
-Age: 23
-Gender: male
-Height: 180.34
-Weight: 90.7185
-Month of Birth: January
-Day of Birth: 2
-Year of Birth: 1990
-Birthplace: United States
-Martial Status: single
-Salary per year: 100000.0
-Years remaining on contract: 1
-Total salary: 100000.0
-Rating: 1
-Games played: 906
-Penalty Minutes: 72.0
-Number of penalties: 5
-Shooting Arm: left arm
-Jersey number: 14
-Total number of minutes on ice: 14563.0
-Rookie: true
-Number of wins: 0
-Numer of losses: 0
-Number of wins during playoffs: 0
-Number of losses during playoffs: 0
-Number of losses during overtime: 0
-Bumber of games started by goalie: 0
-Number of goals scored against goalie: 0
-Total number of shots faced by goalie: 0
-Number of saves by goalie: 0
-Save Percentage: 0.0
-Shutout Saves: 0
-Empty Net Goals: 0
-
-Player type: defense
-First Name: Frank
-Last Name: Corrado
-Age: 20
-Gender: male
-Height: 182.88
-Weight: 86.1826
-Month of Birth: March
-Day of Birth: 26
-Year of Birth: 1993
-Birthplace: Canada
-Martial Status: single
-Salary per year: 100000.0
-Years remaining on contract: 7
-Total salary: 100000.0
-Rating: 1
-Games played: 906
-Penalty Minutes: 72.0
-Number of penalties: 5
-Shooting Arm: right arm
-Jersey number: 26
-Total number of minutes on ice: 14563.0
-Rookie: false
-Plus/Minus: 172
-Average goals per season: 9.09375
-Average goal percentage per season: 12.3
-Average shots taken per season: 73.78125
-Average assists per season: 14.594
-Average penalty minutes per season: 10.0
-Average power play goals per season: 2.0
-Average shoot-out goals per season: 0.0
-Average number of shifts per game: 0.0
-Number of game-winning goals: 63
-Number of power play goals: 106
-Number of shoot-out goals: 0
-Number of overtime goals: 10
-Points: 758.0
-Faceoff win percentage: 50.0
-Shooting percentage: 5.0
+Plus/Minus: 24
+Average goals per game: 0.35
+Average shots taken per game: 2.48
+Average assists per game: 0.3
+Average number of shifts per game: 25.8
+Number of game-winning goals: 7
+Number of power play goals: 3
+Number of overtime goals: 0
+Points: 52.0
+Faceoff win percentage: 35.0
+Shooting percentage: 14.1
+Total Goals per Season: 28
+Total Shots per Season: 198
+Total Assists per Season: 24
 
 Player type: forward
 First Name: Andrew
@@ -438,29 +264,26 @@ Salary per year: 1000000.0
 Years remaining on contract: 2
 Total salary: 1000000.0
 Rating: 1
-Games played: 906
-Penalty Minutes: 72.0
-Number of penalties: 5
+Games played: 18
+Penalty Minutes: 6.0
 Shooting Arm: left arm
 Jersey number: 25
-Total number of minutes on ice: 14563.0
+Total number of minutes on ice: 172.5
 Rookie: false
-Plus/Minus: 172
-Average goals per season: 9.09375
-Average goal percentage per season: 12.3
-Average shots taken per season: 73.78125
-Average assists per season: 14.594
-Average penalty minutes per season: 10.0
-Average power play goals per season: 2.0
-Average shoot-out goals per season: 0.0
-Average number of shifts per game: 0.0
-Number of game-winning goals: 63
-Number of power play goals: 106
-Number of shoot-out goals: 0
-Number of overtime goals: 10
-Points: 758.0
-Faceoff win percentage: 50.0
-Shooting percentage: 5.0
+Plus/Minus: 2
+Average goals per game: 0.28
+Average shots taken per game: 1.5
+Average assists per game: 0.06
+Average number of shifts per game: 14.6
+Number of game-winning goals: 2
+Number of power play goals: 1
+Number of overtime goals: 2
+Points: 6.0
+Faceoff win percentage: 53.6
+Shooting percentage: 18.5
+Total Goals per Season: 5
+Total Shots per Season: 27
+Total Assists per Season: 1
 
 Player type: defense
 First Name: Alexandrer
@@ -478,149 +301,26 @@ Salary per year: 3250000.0
 Years remaining on contract: 9
 Total salary: 3250000.0
 Rating: 1
-Games played: 906
-Penalty Minutes: 72.0
-Number of penalties: 5
+Games played: 82
+Penalty Minutes: 34.0
 Shooting Arm: left arm
 Jersey number: 23
-Total number of minutes on ice: 14563.0
+Total number of minutes on ice: 1956.9
 Rookie: false
-Plus/Minus: 172
-Average goals per season: 9.09375
-Average goal percentage per season: 12.3
-Average shots taken per season: 73.78125
-Average assists per season: 14.594
-Average penalty minutes per season: 10.0
-Average power play goals per season: 2.0
-Average shoot-out goals per season: 0.0
-Average number of shifts per game: 0.0
-Number of game-winning goals: 63
-Number of power play goals: 106
-Number of shoot-out goals: 0
-Number of overtime goals: 10
-Points: 758.0
-Faceoff win percentage: 50.0
-Shooting percentage: 5.0
-
-Player type: defense
-First Name: Alexandrer
-Last Name: Edler
-Age: 27
-Gender: male
-Height: 190.5
-Weight: 97.5224
-Month of Birth: April
-Day of Birth: 21
-Year of Birth: 1986
-Birthplace: Sweden
-Martial Status: single
-Salary per year: 3250000.0
-Years remaining on contract: 9
-Total salary: 3250000.0
-Rating: 1
-Games played: 906
-Penalty Minutes: 72.0
-Number of penalties: 5
-Shooting Arm: left arm
-Jersey number: 23
-Total number of minutes on ice: 14563.0
-Rookie: false
-Plus/Minus: 172
-Average goals per season: 9.09375
-Average goal percentage per season: 12.3
-Average shots taken per season: 73.78125
-Average assists per season: 14.594
-Average penalty minutes per season: 10.0
-Average power play goals per season: 2.0
-Average shoot-out goals per season: 0.0
-Average number of shifts per game: 0.0
-Number of game-winning goals: 63
-Number of power play goals: 106
-Number of shoot-out goals: 0
-Number of overtime goals: 10
-Points: 758.0
-Faceoff win percentage: 50.0
-Shooting percentage: 5.0
-
-Player type: defense
-First Name: Jason
-Last Name: Garrison
-Age: 28
-Gender: male
-Height: 187.96
-Weight: 98.8831
-Month of Birth: November
-Day of Birth: 13
-Year of Birth: 1984
-Birthplace: Canada
-Martial Status: single
-Salary per year: 4600000.0
-Years remaining on contract: 2
-Total salary: 4600000.0
-Rating: 1
-Games played: 906
-Penalty Minutes: 72.0
-Number of penalties: 5
-Shooting Arm: left arm
-Jersey number: 5
-Total number of minutes on ice: 14563.0
-Rookie: false
-Plus/Minus: 172
-Average goals per season: 9.09375
-Average goal percentage per season: 12.3
-Average shots taken per season: 73.78125
-Average assists per season: 14.594
-Average penalty minutes per season: 10.0
-Average power play goals per season: 2.0
-Average shoot-out goals per season: 0.0
-Average number of shifts per game: 0.0
-Number of game-winning goals: 63
-Number of power play goals: 106
-Number of shoot-out goals: 0
-Number of overtime goals: 10
-Points: 758.0
-Faceoff win percentage: 50.0
-Shooting percentage: 5.0
-
-Player type: forward
-First Name: Brendan
-Last Name: Gaunce
-Age: 19
-Gender: male
-Height: 187.96
-Weight: 93.8936
-Month of Birth: March
-Day of Birth: 25
-Year of Birth: 1994
-Birthplace: Canada
-Martial Status: single
-Salary per year: 100000.0
-Years remaining on contract: 2
-Total salary: 100000.0
-Rating: 1
-Games played: 906
-Penalty Minutes: 72.0
-Number of penalties: 5
-Shooting Arm: left arm
-Jersey number: 50
-Total number of minutes on ice: 14563.0
-Rookie: true
-Plus/Minus: 172
-Average goals per season: 9.09375
-Average goal percentage per season: 12.3
-Average shots taken per season: 73.78125
-Average assists per season: 14.594
-Average penalty minutes per season: 10.0
-Average power play goals per season: 2.0
-Average shoot-out goals per season: 0.0
-Average number of shifts per game: 0.0
-Number of game-winning goals: 63
-Number of power play goals: 106
-Number of shoot-out goals: 0
-Number of overtime goals: 10
-Points: 758.0
-Faceoff win percentage: 50.0
-Shooting percentage: 5.0
+Plus/Minus: 0
+Average goals per game: 0.13
+Average shots taken per game: 2.78
+Average assists per game: 0.46
+Average number of shifts per game: 28.9
+Number of game-winning goals: 0
+Number of power play goals: 5
+Number of overtime goals: 0
+Points: 49.0
+Faceoff win percentage: 0.0
+Shooting percentage: 4.8
+Total Goals per Season: 11
+Total Shots per Season: 228
+Total Assists per Season: 38
 
 Player type: defense
 First Name: Dan
@@ -634,33 +334,30 @@ Day of Birth: 13
 Year of Birth: 1982
 Birthplace: Canada
 Martial Status: single
-Salary per year: 100000.0
-Years remaining on contract: 2
-Total salary: 100000.0
+Salary per year: 0.0
+Years remaining on contract: 0
+Total salary: 0.0
 Rating: 1
-Games played: 906
-Penalty Minutes: 72.0
-Number of penalties: 5
+Games played: 82
+Penalty Minutes: 46.0
 Shooting Arm: left arm
 Jersey number: 2
-Total number of minutes on ice: 14563.0
+Total number of minutes on ice: 1921.18
 Rookie: false
-Plus/Minus: 172
-Average goals per season: 9.09375
-Average goal percentage per season: 12.3
-Average shots taken per season: 73.78125
-Average assists per season: 14.594
-Average penalty minutes per season: 10.0
-Average power play goals per season: 2.0
-Average shoot-out goals per season: 0.0
-Average number of shifts per game: 0.0
-Number of game-winning goals: 63
-Number of power play goals: 106
-Number of shoot-out goals: 0
-Number of overtime goals: 10
-Points: 758.0
-Faceoff win percentage: 50.0
-Shooting percentage: 5.0
+Plus/Minus: 29
+Average goals per game: 0.049
+Average shots taken per game: 1.7
+Average assists per game: 0.4
+Average number of shifts per game: 28.8
+Number of game-winning goals: 0
+Number of power play goals: 1
+Number of overtime goals: 0
+Points: 37.0
+Faceoff win percentage: 0.0
+Shooting percentage: 2.9
+Total Goals per Season: 4
+Total Shots per Season: 140
+Total Assists per Season: 33
 
 Player type: defense
 First Name: Janinik
@@ -678,149 +375,26 @@ Salary per year: 1350000.0
 Years remaining on contract: 9
 Total salary: 1350000.0
 Rating: 1
-Games played: 906
-Penalty Minutes: 72.0
-Number of penalties: 5
+Games played: 82
+Penalty Minutes: 34.0
 Shooting Arm: left arm
 Jersey number: 2
-Total number of minutes on ice: 14563.0
+Total number of minutes on ice: 1221.5
 Rookie: false
-Plus/Minus: 172
-Average goals per season: 9.09375
-Average goal percentage per season: 12.3
-Average shots taken per season: 73.78125
-Average assists per season: 14.594
-Average penalty minutes per season: 10.0
-Average power play goals per season: 2.0
-Average shoot-out goals per season: 0.0
-Average number of shifts per game: 0.0
-Number of game-winning goals: 63
-Number of power play goals: 106
-Number of shoot-out goals: 0
-Number of overtime goals: 10
-Points: 758.0
-Faceoff win percentage: 50.0
-Shooting percentage: 5.0
-
-Player type: forward
-First Name: Chris
-Last Name: Higgins
-Age: 29
-Gender: male
-Height: 182.88
-Weight: 92.9864
-Month of Birth: May
-Day of Birth: 2
-Year of Birth: 1983
-Birthplace: United States
-Martial Status: single
-Salary per year: 1900000.0
-Years remaining on contract: 11
-Total salary: 1900000.0
-Rating: 1
-Games played: 906
-Penalty Minutes: 72.0
-Number of penalties: 5
-Shooting Arm: left arm
-Jersey number: 20
-Total number of minutes on ice: 14563.0
-Rookie: false
-Plus/Minus: 172
-Average goals per season: 9.09375
-Average goal percentage per season: 12.3
-Average shots taken per season: 73.78125
-Average assists per season: 14.594
-Average penalty minutes per season: 10.0
-Average power play goals per season: 2.0
-Average shoot-out goals per season: 0.0
-Average number of shifts per game: 0.0
-Number of game-winning goals: 63
-Number of power play goals: 106
-Number of shoot-out goals: 0
-Number of overtime goals: 10
-Points: 758.0
-Faceoff win percentage: 50.0
-Shooting percentage: 5.0
-
-Player type: defense
-First Name: Derek
-Last Name: Joslin
-Age: 26
-Gender: male
-Height: 185.42
-Weight: 95.2544
-Month of Birth: February
-Day of Birth: 17
-Year of Birth: 1987
-Birthplace: Canada
-Martial Status: single
-Salary per year: 1000000.0
-Years remaining on contract: 2
-Total salary: 1000000.0
-Rating: 1
-Games played: 906
-Penalty Minutes: 72.0
-Number of penalties: 5
-Shooting Arm: left arm
-Jersey number: 38
-Total number of minutes on ice: 14563.0
-Rookie: false
-Plus/Minus: 172
-Average goals per season: 9.09375
-Average goal percentage per season: 12.3
-Average shots taken per season: 73.78125
-Average assists per season: 14.594
-Average penalty minutes per season: 10.0
-Average power play goals per season: 2.0
-Average shoot-out goals per season: 0.0
-Average number of shifts per game: 0.0
-Number of game-winning goals: 63
-Number of power play goals: 106
-Number of shoot-out goals: 0
-Number of overtime goals: 10
-Points: 758.0
-Faceoff win percentage: 50.0
-Shooting percentage: 5.0
-
-Player type: defense
-First Name: Derek
-Last Name: Joslin
-Age: 26
-Gender: male
-Height: 185.42
-Weight: 95.2544
-Month of Birth: February
-Day of Birth: 17
-Year of Birth: 1987
-Birthplace: Canada
-Martial Status: single
-Salary per year: 1000000.0
-Years remaining on contract: 2
-Total salary: 1000000.0
-Rating: 1
-Games played: 906
-Penalty Minutes: 72.0
-Number of penalties: 5
-Shooting Arm: left arm
-Jersey number: 38
-Total number of minutes on ice: 14563.0
-Rookie: false
-Plus/Minus: 172
-Average goals per season: 9.09375
-Average goal percentage per season: 12.3
-Average shots taken per season: 73.78125
-Average assists per season: 14.594
-Average penalty minutes per season: 10.0
-Average power play goals per season: 2.0
-Average shoot-out goals per season: 0.0
-Average number of shifts per game: 0.0
-Number of game-winning goals: 63
-Number of power play goals: 106
-Number of shoot-out goals: 0
-Number of overtime goals: 10
-Points: 758.0
-Faceoff win percentage: 50.0
-Shooting percentage: 5.0
+Plus/Minus: 18
+Average goals per game: 0.195
+Average shots taken per game: 1.67
+Average assists per game: 0.28
+Average number of shifts per game: 22.3
+Number of game-winning goals: 1
+Number of power play goals: 0
+Number of overtime goals: 0
+Points: 39.0
+Faceoff win percentage: 41.4
+Shooting percentage: 11.7
+Total Goals per Season: 16
+Total Shots per Season: 137
+Total Assists per Season: 23
 
 Player type: forward
 First Name: Zack
@@ -838,29 +412,100 @@ Salary per year: 870000.0
 Years remaining on contract: 4
 Total salary: 870000.0
 Rating: 1
-Games played: 906
-Penalty Minutes: 72.0
-Number of penalties: 5
+Games played: 17
+Penalty Minutes: 31.0
 Shooting Arm: left arm
 Jersey number: 9
-Total number of minutes on ice: 14563.0
+Total number of minutes on ice: 174.8
+Rookie: true
+Plus/Minus: -1
+Average goals per game: 0.06
+Average shots taken per game: 1.06
+Average assists per game: 0.12
+Average number of shifts per game: 14.6
+Number of game-winning goals: 0
+Number of power play goals: 0
+Number of overtime goals: 0
+Points: 3.0
+Faceoff win percentage: 44.4
+Shooting percentage: 5.6
+Total Goals per Season: 1
+Total Shots per Season: 18
+Total Assists per Season: 2
+
+Player type: forward
+First Name: Cody
+Last Name: Hodgson
+Age: 23
+Gender: male
+Height: 182.88
+Weight: 87.9969
+Month of Birth: February
+Day of Birth: 18
+Year of Birth: 1990
+Birthplace: Canada
+Martial Status: single
+Salary per year: 0.0
+Years remaining on contract: 0
+Total salary: 0.0
+Rating: 0
+Games played: 63
+Penalty Minutes: 8.0
+Shooting Arm: right arm
+Jersey number: 19
+Total number of minutes on ice: 801.15
+Rookie: true
+Plus/Minus: 8
+Average goals per game: 0.25
+Average shots taken per game: 1.63
+Average assists per game: 0.27
+Average number of shifts per game: 18.6
+Number of game-winning goals: 2
+Number of power play goals: 5
+Number of overtime goals: 0
+Points: 33.0
+Faceoff win percentage: 42.8
+Shooting percentage: 15.5
+Total Goals per Season: 16
+Total Shots per Season: 103
+Total Assists per Season: 17
+
+Player type: forward
+First Name: Chris
+Last Name: Higgins
+Age: 29
+Gender: male
+Height: 182.88
+Weight: 92.9864
+Month of Birth: May
+Day of Birth: 2
+Year of Birth: 1983
+Birthplace: United States
+Martial Status: single
+Salary per year: 1900000.0
+Years remaining on contract: 11
+Total salary: 1900000.0
+Rating: 1
+Games played: 71
+Penalty Minutes: 16.0
+Shooting Arm: left arm
+Jersey number: 20
+Total number of minutes on ice: 1158.5
 Rookie: false
-Plus/Minus: 172
-Average goals per season: 9.09375
-Average goal percentage per season: 12.3
-Average shots taken per season: 73.78125
-Average assists per season: 14.594
-Average penalty minutes per season: 10.0
-Average power play goals per season: 2.0
-Average shoot-out goals per season: 0.0
-Average number of shifts per game: 0.0
-Number of game-winning goals: 63
-Number of power play goals: 106
-Number of shoot-out goals: 0
-Number of overtime goals: 10
-Points: 758.0
-Faceoff win percentage: 50.0
-Shooting percentage: 5.0
+Plus/Minus: 11
+Average goals per game: 0.25
+Average shots taken per game: 2.32
+Average assists per game: 0.35
+Average number of shifts per game: 23.5
+Number of game-winning goals: 4
+Number of power play goals: 1
+Number of overtime goals: 2
+Points: 43.0
+Faceoff win percentage: 40.0
+Shooting percentage: 10.9
+Total Goals per Season: 18
+Total Shots per Season: 165
+Total Assists per Season: 25
 
 Player type: forward
 First Name: Ryan
@@ -878,105 +523,26 @@ Salary per year: 5000000.0
 Years remaining on contract: 10
 Total salary: 5000000.0
 Rating: 1
-Games played: 906
-Penalty Minutes: 72.0
-Number of penalties: 5
+Games played: 77
+Penalty Minutes: 56.0
 Shooting Arm: left arm
 Jersey number: 17
-Total number of minutes on ice: 14563.0
+Total number of minutes on ice: 1547.0
 Rookie: false
-Plus/Minus: 172
-Average goals per season: 9.09375
-Average goal percentage per season: 12.3
-Average shots taken per season: 73.78125
-Average assists per season: 14.594
-Average penalty minutes per season: 10.0
-Average power play goals per season: 2.0
-Average shoot-out goals per season: 0.0
-Average number of shifts per game: 0.0
-Number of game-winning goals: 63
-Number of power play goals: 106
-Number of shoot-out goals: 0
-Number of overtime goals: 10
-Points: 758.0
-Faceoff win percentage: 50.0
-Shooting percentage: 5.0
-
-Player type: goalie
-First Name: Eddie
-Last Name: Lack
-Age: 25
-Gender: male
-Height: 193.04
-Weight: 84.8218
-Month of Birth: January
-Day of Birth: 5
-Year of Birth: 1988
-Birthplace: Sweden
-Martial Status: single
-Salary per year: 100000.0
-Years remaining on contract: 1
-Total salary: 100000.0
-Rating: 1
-Games played: 906
-Penalty Minutes: 72.0
-Number of penalties: 5
-Shooting Arm: left arm
-Jersey number: 31
-Total number of minutes on ice: 14563.0
-Rookie: false
-Number of wins: 0
-Numer of losses: 0
-Number of wins during playoffs: 0
-Number of losses during playoffs: 0
-Number of losses during overtime: 0
-Bumber of games started by goalie: 0
-Number of goals scored against goalie: 0
-Total number of shots faced by goalie: 0
-Number of saves by goalie: 0
-Save Percentage: 0.0
-Shutout Saves: 0
-Empty Net Goals: 0
-
-Player type: forward
-First Name: Kellan
-Last Name: Lain
-Age: 23
-Gender: male
-Height: 198.12
-Weight: 95.2544
-Month of Birth: August
-Day of Birth: 11
-Year of Birth: 1989
-Birthplace: Canada
-Martial Status: single
-Salary per year: 1000000.0
-Years remaining on contract: 1
-Total salary: 100000.0
-Rating: 1
-Games played: 906
-Penalty Minutes: 72.0
-Number of penalties: 5
-Shooting Arm: left arm
-Jersey number: 0
-Total number of minutes on ice: 14563.0
-Rookie: false
-Plus/Minus: 172
-Average goals per season: 9.09375
-Average goal percentage per season: 12.3
-Average shots taken per season: 73.78125
-Average assists per season: 14.594
-Average penalty minutes per season: 10.0
-Average power play goals per season: 2.0
-Average shoot-out goals per season: 0.0
-Average number of shifts per game: 0.0
-Number of game-winning goals: 63
-Number of power play goals: 106
-Number of shoot-out goals: 0
-Number of overtime goals: 10
-Points: 758.0
-Faceoff win percentage: 50.0
-Shooting percentage: 5.0
+Plus/Minus: 11
+Average goals per game: 0.29
+Average shots taken per game: 2.88
+Average assists per game: 0.35
+Average number of shifts per game: 25.8
+Number of game-winning goals: 1
+Number of power play goals: 8
+Number of overtime goals: 0
+Points: 49.0
+Faceoff win percentage: 53.6
+Shooting percentage: 9.9
+Total Goals per Season: 22
+Total Shots per Season: 222
+Total Assists per Season: 27
 
 Player type: forward
 First Name: Maxim
@@ -990,33 +556,30 @@ Day of Birth: 29
 Year of Birth: 1985
 Birthplace: Canada
 Martial Status: single
-Salary per year: 1000000.0
-Years remaining on contract: 2
-Total salary: 100000.0
+Salary per year: 0.0
+Years remaining on contract: 0
+Total salary: 0.0
 Rating: 1
-Games played: 906
-Penalty Minutes: 72.0
-Number of penalties: 5
+Games played: 82
+Penalty Minutes: 130.0
 Shooting Arm: left arm
 Jersey number: 40
-Total number of minutes on ice: 14563.0
+Total number of minutes on ice: 920.5
 Rookie: false
-Plus/Minus: 172
-Average goals per season: 9.09375
-Average goal percentage per season: 12.3
-Average shots taken per season: 73.78125
-Average assists per season: 14.594
-Average penalty minutes per season: 10.0
-Average power play goals per season: 2.0
-Average shoot-out goals per season: 0.0
-Average number of shifts per game: 0.0
-Number of game-winning goals: 63
-Number of power play goals: 106
-Number of shoot-out goals: 0
-Number of overtime goals: 10
-Points: 758.0
-Faceoff win percentage: 50.0
-Shooting percentage: 5.0
+Plus/Minus: -3
+Average goals per game: 0.11
+Average shots taken per game: 1.26
+Average assists per game: 0.122
+Average number of shifts per game: 17.6
+Number of game-winning goals: 0
+Number of power play goals: 0
+Number of overtime goals: 0
+Points: 19.0
+Faceoff win percentage: 52.1
+Shooting percentage: 8.7
+Total Goals per Season: 9
+Total Shots per Season: 103
+Total Assists per Season: 10
 
 Player type: goalie
 First Name: Roberto
@@ -1034,23 +597,22 @@ Salary per year: 5.333E7
 Years remaining on contract: 7
 Total salary: 5333000.0
 Rating: 1
-Games played: 906
-Penalty Minutes: 72.0
-Number of penalties: 5
+Games played: 55
+Penalty Minutes: 4.0
 Shooting Arm: left arm
 Jersey number: 1
-Total number of minutes on ice: 42887.0
+Total number of minutes on ice: 3162.5
 Rookie: false
-Number of wins: 348
-Numer of losses: 289
-Number of wins during playoffs: 32
-Number of losses during playoffs: 31
-Number of losses during overtime: 0
-Bumber of games started by goalie: 0
-Number of goals scored against goalie: 0
-Total number of shots faced by goalie: 0
-Number of saves by goalie: 0
-Save Percentage: 0.916
+Number of wins: 31
+Numer of losses: 14
+Number of wins during playoffs: 1
+Number of losses during playoffs: 2
+Number of losses during overtime: 8
+Number of games started by goalie: 54
+Number of goals scored against goalie: 127
+Total number of shots faced by goalie: 1577
+Number of saves by goalie: 1450
+Save Percentage: 0.919
 Shutout Saves: 62
 Empty Net Goals: 0
 
@@ -1070,149 +632,26 @@ Salary per year: 2500000.0
 Years remaining on contract: 3
 Total salary: 2500000.0
 Rating: 1
-Games played: 906
-Penalty Minutes: 72.0
-Number of penalties: 5
+Games played: 78
+Penalty Minutes: 14.0
 Shooting Arm: left arm
 Jersey number: 27
-Total number of minutes on ice: 14563.0
+Total number of minutes on ice: 963.0
 Rookie: false
-Plus/Minus: 172
-Average goals per season: 9.09375
-Average goal percentage per season: 12.3
-Average shots taken per season: 73.78125
-Average assists per season: 14.594
-Average penalty minutes per season: 10.0
-Average power play goals per season: 2.0
-Average shoot-out goals per season: 0.0
-Average number of shifts per game: 0.0
-Number of game-winning goals: 63
-Number of power play goals: 106
-Number of shoot-out goals: 0
-Number of overtime goals: 10
-Points: 758.0
-Faceoff win percentage: 50.0
-Shooting percentage: 5.0
-
-Player type: forward
-First Name: Alexandre
-Last Name: Mallet
-Age: 21
-Gender: male
-Height: 185.42
-Weight: 88.4505
-Month of Birth: May
-Day of Birth: 22
-Year of Birth: 1992
-Birthplace: Canada
-Martial Status: single
-Salary per year: 100000.0
-Years remaining on contract: 1
-Total salary: 100000.0
-Rating: 1
-Games played: 906
-Penalty Minutes: 72.0
-Number of penalties: 5
-Shooting Arm: left arm
-Jersey number: 78
-Total number of minutes on ice: 14563.0
-Rookie: false
-Plus/Minus: 172
-Average goals per season: 9.09375
-Average goal percentage per season: 12.3
-Average shots taken per season: 73.78125
-Average assists per season: 14.594
-Average penalty minutes per season: 10.0
-Average power play goals per season: 2.0
-Average shoot-out goals per season: 0.0
-Average number of shifts per game: 0.0
-Number of game-winning goals: 63
-Number of power play goals: 106
-Number of shoot-out goals: 0
-Number of overtime goals: 10
-Points: 758.0
-Faceoff win percentage: 50.0
-Shooting percentage: 5.0
-
-Player type: forward
-First Name: Steven
-Last Name: Pinizzotto
-Age: 29
-Gender: male
-Height: 185.42
-Weight: 90.7185
-Month of Birth: April
-Day of Birth: 26
-Year of Birth: 1984
-Birthplace: Canada
-Martial Status: single
-Salary per year: 600000.0
-Years remaining on contract: 2
-Total salary: 600000.0
-Rating: 1
-Games played: 906
-Penalty Minutes: 72.0
-Number of penalties: 5
-Shooting Arm: right arm
-Jersey number: 13
-Total number of minutes on ice: 14563.0
-Rookie: false
-Plus/Minus: 172
-Average goals per season: 9.09375
-Average goal percentage per season: 12.3
-Average shots taken per season: 73.78125
-Average assists per season: 14.594
-Average penalty minutes per season: 10.0
-Average power play goals per season: 2.0
-Average shoot-out goals per season: 0.0
-Average number of shifts per game: 0.0
-Number of game-winning goals: 63
-Number of power play goals: 106
-Number of shoot-out goals: 0
-Number of overtime goals: 10
-Points: 758.0
-Faceoff win percentage: 50.0
-Shooting percentage: 5.0
-
-Player type: forward
-First Name: Steven
-Last Name: Pinizzotto
-Age: 29
-Gender: male
-Height: 185.42
-Weight: 90.7185
-Month of Birth: April
-Day of Birth: 26
-Year of Birth: 1984
-Birthplace: Canada
-Martial Status: single
-Salary per year: 600000.0
-Years remaining on contract: 2
-Total salary: 600000.0
-Rating: 1
-Games played: 906
-Penalty Minutes: 72.0
-Number of penalties: 5
-Shooting Arm: right arm
-Jersey number: 13
-Total number of minutes on ice: 14563.0
-Rookie: false
-Plus/Minus: 172
-Average goals per season: 9.09375
-Average goal percentage per season: 12.3
-Average shots taken per season: 73.78125
-Average assists per season: 14.594
-Average penalty minutes per season: 10.0
-Average power play goals per season: 2.0
-Average shoot-out goals per season: 0.0
-Average number of shifts per game: 0.0
-Number of game-winning goals: 63
-Number of power play goals: 106
-Number of shoot-out goals: 0
-Number of overtime goals: 10
-Points: 758.0
-Faceoff win percentage: 50.0
-Shooting percentage: 5.0
+Plus/Minus: -11
+Average goals per game: 0.09
+Average shots taken per game: 0.77
+Average assists per game: 0.141
+Average number of shifts per game: 20.9
+Number of game-winning goals: 2
+Number of power play goals: 0
+Number of overtime goals: 9
+Points: 18.0
+Faceoff win percentage: 58.5
+Shooting percentage: 11.7
+Total Goals per Season: 7
+Total Shots per Season: 60
+Total Assists per Season: 11
 
 Player type: forward
 First Name: Mason
@@ -1230,69 +669,100 @@ Salary per year: 2750000.0
 Years remaining on contract: 8
 Total salary: 2750000.0
 Rating: 1
-Games played: 906
-Penalty Minutes: 72.0
-Number of penalties: 5
+Games played: 55
+Penalty Minutes: 18.0
 Shooting Arm: left arm
 Jersey number: 21
-Total number of minutes on ice: 14563.0
+Total number of minutes on ice: 857.25
 Rookie: false
-Plus/Minus: 172
-Average goals per season: 9.09375
-Average goal percentage per season: 12.3
-Average shots taken per season: 73.78125
-Average assists per season: 14.594
-Average penalty minutes per season: 10.0
-Average power play goals per season: 2.0
-Average shoot-out goals per season: 0.0
-Average number of shifts per game: 0.0
-Number of game-winning goals: 63
-Number of power play goals: 106
-Number of shoot-out goals: 0
-Number of overtime goals: 10
-Points: 758.0
-Faceoff win percentage: 50.0
-Shooting percentage: 5.0
+Plus/Minus: 4
+Average goals per game: 0.182
+Average shots taken per game: 125.0
+Average assists per game: 0.182
+Average number of shifts per game: 22.2
+Number of game-winning goals: 2
+Number of power play goals: 1
+Number of overtime goals: 0
+Points: 20.0
+Faceoff win percentage: 28.0
+Shooting percentage: 8.0
+Total Goals per Season: 10
+Total Shots per Season: 125
+Total Assists per Season: 10
 
-Player type: forward
-First Name: Derek
-Last Name: Roy
-Age: 30
+Player type: defense
+First Name: Aaron
+Last Name: Rome
+Age: 29
 Gender: male
-Height: 200.66
-Weight: 83.9146
-Month of Birth: May
-Day of Birth: 4
+Height: 185.42
+Weight: 98.8831
+Month of Birth: September
+Day of Birth: 27
 Year of Birth: 1983
 Birthplace: Canada
 Martial Status: single
-Salary per year: 100000.0
-Years remaining on contract: 1
-Total salary: 100000.0
+Salary per year: 0.0
+Years remaining on contract: 0
+Total salary: 0.0
 Rating: 1
-Games played: 906
-Penalty Minutes: 72.0
-Number of penalties: 5
+Games played: 43
+Penalty Minutes: 46.0
 Shooting Arm: left arm
-Jersey number: 15
-Total number of minutes on ice: 14563.0
+Jersey number: 27
+Total number of minutes on ice: 1956.9
 Rookie: false
-Plus/Minus: 172
-Average goals per season: 9.09375
-Average goal percentage per season: 12.3
-Average shots taken per season: 73.78125
-Average assists per season: 14.594
-Average penalty minutes per season: 10.0
-Average power play goals per season: 2.0
-Average shoot-out goals per season: 0.0
-Average number of shifts per game: 0.0
-Number of game-winning goals: 63
-Number of power play goals: 106
-Number of shoot-out goals: 0
-Number of overtime goals: 10
-Points: 758.0
-Faceoff win percentage: 50.0
-Shooting percentage: 5.0
+Plus/Minus: -4
+Average goals per game: 0.093
+Average shots taken per game: 0.98
+Average assists per game: 0.14
+Average number of shifts per game: 28.9
+Number of game-winning goals: 1
+Number of power play goals: 1
+Number of overtime goals: 0
+Points: 10.0
+Faceoff win percentage: 0.0
+Shooting percentage: 9.5
+Total Goals per Season: 4
+Total Shots per Season: 42
+Total Assists per Season: 6
+
+Player type: defense
+First Name: Sami
+Last Name: Salo
+Age: 38
+Gender: male
+Height: 190.5
+Weight: 97.5224
+Month of Birth: September
+Day of Birth: 2
+Year of Birth: 1974
+Birthplace: n/a
+Martial Status: single
+Salary per year: 0.0
+Years remaining on contract: 0
+Total salary: 0.0
+Rating: 1
+Games played: 69
+Penalty Minutes: 10.0
+Shooting Arm: left arm
+Jersey number: 6
+Total number of minutes on ice: 1414.5
+Rookie: false
+Plus/Minus: 7
+Average goals per game: 0.13
+Average shots taken per game: 1.97
+Average assists per game: 0.232
+Average number of shifts per game: 28.9
+Number of game-winning goals: 3
+Number of power play goals: 7
+Number of overtime goals: 1
+Points: 25.0
+Faceoff win percentage: 0.0
+Shooting percentage: 6.6
+Total Goals per Season: 9
+Total Shots per Season: 136
+Total Assists per Season: 16
 
 Player type: goalie
 First Name: Cory
@@ -1310,24 +780,23 @@ Salary per year: 4000000.0
 Years remaining on contract: 9
 Total salary: 4000000.0
 Rating: 1
-Games played: 906
-Penalty Minutes: 72.0
-Number of penalties: 5
+Games played: 33
+Penalty Minutes: 0.0
 Shooting Arm: left arm
 Jersey number: 35
-Total number of minutes on ice: 14563.0
-Rookie: true
-Number of wins: 0
-Numer of losses: 0
+Total number of minutes on ice: 1832.9
+Rookie: false
+Number of wins: 20
+Numer of losses: 8
 Number of wins during playoffs: 0
-Number of losses during playoffs: 0
-Number of losses during overtime: 0
-Bumber of games started by goalie: 0
-Number of goals scored against goalie: 0
-Total number of shots faced by goalie: 0
-Number of saves by goalie: 0
-Save Percentage: 0.0
-Shutout Saves: 0
+Number of losses during playoffs: 2
+Number of losses during overtime: 1
+Number of games started by goalie: 28
+Number of goals scored against goalie: 60
+Total number of shots faced by goalie: 945
+Number of saves by goalie: 885
+Save Percentage: 0.937
+Shutout Saves: 3
 Empty Net Goals: 0
 
 Player type: forward
@@ -1346,29 +815,26 @@ Salary per year: 6100000.0
 Years remaining on contract: 5
 Total salary: 6100000.0
 Rating: 1
-Games played: 906
-Penalty Minutes: 72.0
-Number of penalties: 5
+Games played: 72
+Penalty Minutes: 40.0
 Shooting Arm: left arm
 Jersey number: 22
-Total number of minutes on ice: 14563.0
+Total number of minutes on ice: 1350.0
 Rookie: false
-Plus/Minus: 172
-Average goals per season: 9.09375
-Average goal percentage per season: 12.3
-Average shots taken per season: 73.78125
-Average assists per season: 14.594
-Average penalty minutes per season: 10.0
-Average power play goals per season: 2.0
-Average shoot-out goals per season: 0.0
-Average number of shifts per game: 0.0
-Number of game-winning goals: 63
-Number of power play goals: 106
-Number of shoot-out goals: 0
-Number of overtime goals: 10
-Points: 758.0
-Faceoff win percentage: 50.0
-Shooting percentage: 5.0
+Plus/Minus: 14
+Average goals per game: 0.194
+Average shots taken per game: 3.18
+Average assists per game: 0.514
+Average number of shifts per game: 25.0
+Number of game-winning goals: 6
+Number of power play goals: 10
+Number of overtime goals: 0
+Points: 67.0
+Faceoff win percentage: 31.6
+Shooting percentage: 13.1
+Total Goals per Season: 30
+Total Shots per Season: 229
+Total Assists per Season: 37
 
 Player type: forward
 First Name: Henrick
@@ -1386,229 +852,26 @@ Salary per year: 6100000.0
 Years remaining on contract: 5
 Total salary: 6100000.0
 Rating: 1
-Games played: 906
-Penalty Minutes: 72.0
-Number of penalties: 5
+Games played: 82
+Penalty Minutes: 52.0
 Shooting Arm: left arm
 Jersey number: 33
-Total number of minutes on ice: 14563.0
+Total number of minutes on ice: 1558.0
 Rookie: false
-Plus/Minus: 172
-Average goals per season: 9.09375
-Average goal percentage per season: 12.3
-Average shots taken per season: 73.78125
-Average assists per season: 14.594
-Average penalty minutes per season: 10.0
-Average power play goals per season: 2.0
-Average shoot-out goals per season: 0.0
-Average number of shifts per game: 0.0
-Number of game-winning goals: 63
-Number of power play goals: 106
-Number of shoot-out goals: 0
-Number of overtime goals: 10
-Points: 758.0
-Faceoff win percentage: 50.0
-Shooting percentage: 5.0
-
-Player type: forward
-First Name: Henrick
-Last Name: Sedin
-Age: 32
-Gender: male
-Height: 187.96
-Weight: 85.2754
-Month of Birth: October
-Day of Birth: 26
-Year of Birth: 1980
-Birthplace: Sweden
-Martial Status: married
-Salary per year: 6100000.0
-Years remaining on contract: 5
-Total salary: 6100000.0
-Rating: 1
-Games played: 906
-Penalty Minutes: 72.0
-Number of penalties: 5
-Shooting Arm: left arm
-Jersey number: 33
-Total number of minutes on ice: 14563.0
-Rookie: false
-Plus/Minus: 172
-Average goals per season: 9.09375
-Average goal percentage per season: 12.3
-Average shots taken per season: 73.78125
-Average assists per season: 14.594
-Average penalty minutes per season: 10.0
-Average power play goals per season: 2.0
-Average shoot-out goals per season: 0.0
-Average number of shifts per game: 0.0
-Number of game-winning goals: 63
-Number of power play goals: 106
-Number of shoot-out goals: 0
-Number of overtime goals: 10
-Points: 758.0
-Faceoff win percentage: 50.0
-Shooting percentage: 5.0
-
-Player type: forward
-First Name: Henrick
-Last Name: Sedin
-Age: 32
-Gender: male
-Height: 187.96
-Weight: 85.2754
-Month of Birth: October
-Day of Birth: 26
-Year of Birth: 1980
-Birthplace: Sweden
-Martial Status: married
-Salary per year: 6100000.0
-Years remaining on contract: 5
-Total salary: 6100000.0
-Rating: 1
-Games played: 906
-Penalty Minutes: 72.0
-Number of penalties: 5
-Shooting Arm: left arm
-Jersey number: 33
-Total number of minutes on ice: 14563.0
-Rookie: false
-Plus/Minus: 172
-Average goals per season: 9.09375
-Average goal percentage per season: 12.3
-Average shots taken per season: 73.78125
-Average assists per season: 14.594
-Average penalty minutes per season: 10.0
-Average power play goals per season: 2.0
-Average shoot-out goals per season: 0.0
-Average number of shifts per game: 0.0
-Number of game-winning goals: 63
-Number of power play goals: 106
-Number of shoot-out goals: 0
-Number of overtime goals: 10
-Points: 758.0
-Faceoff win percentage: 50.0
-Shooting percentage: 5.0
-
-Player type: forward
-First Name: Tom
-Last Name: Sestito
-Age: 25
-Gender: male
-Height: 195.58
-Weight: 103.419
-Month of Birth: September
-Day of Birth: 28
-Year of Birth: 1980
-Birthplace: United States
-Martial Status: married
-Salary per year: 100000.0
-Years remaining on contract: 1
-Total salary: 100000.0
-Rating: 1
-Games played: 906
-Penalty Minutes: 72.0
-Number of penalties: 5
-Shooting Arm: left arm
-Jersey number: 29
-Total number of minutes on ice: 14563.0
-Rookie: false
-Plus/Minus: 172
-Average goals per season: 9.09375
-Average goal percentage per season: 12.3
-Average shots taken per season: 73.78125
-Average assists per season: 14.594
-Average penalty minutes per season: 10.0
-Average power play goals per season: 2.0
-Average shoot-out goals per season: 0.0
-Average number of shifts per game: 0.0
-Number of game-winning goals: 63
-Number of power play goals: 106
-Number of shoot-out goals: 0
-Number of overtime goals: 10
-Points: 758.0
-Faceoff win percentage: 50.0
-Shooting percentage: 5.0
-
-Player type: forward
-First Name: Christopher
-Last Name: Tanev
-Age: 23
-Gender: male
-Height: 187.96
-Weight: 83.9146
-Month of Birth: December
-Day of Birth: 20
-Year of Birth: 1989
-Birthplace: Canada
-Martial Status: married
-Salary per year: 900000.0
-Years remaining on contract: 3
-Total salary: 900000.0
-Rating: 1
-Games played: 906
-Penalty Minutes: 72.0
-Number of penalties: 5
-Shooting Arm: right arm
-Jersey number: 8
-Total number of minutes on ice: 14563.0
-Rookie: false
-Plus/Minus: 172
-Average goals per season: 9.09375
-Average goal percentage per season: 12.3
-Average shots taken per season: 73.78125
-Average assists per season: 14.594
-Average penalty minutes per season: 10.0
-Average power play goals per season: 2.0
-Average shoot-out goals per season: 0.0
-Average number of shifts per game: 0.0
-Number of game-winning goals: 63
-Number of power play goals: 106
-Number of shoot-out goals: 0
-Number of overtime goals: 10
-Points: 758.0
-Faceoff win percentage: 50.0
-Shooting percentage: 5.0
-
-Player type: forward
-First Name: Dale
-Last Name: Weise
-Age: 24
-Gender: male
-Height: 187.96
-Weight: 95.2544
-Month of Birth: August
-Day of Birth: 5
-Year of Birth: 1988
-Birthplace: Canada
-Martial Status: married
-Salary per year: 615000.0
-Years remaining on contract: 2
-Total salary: 615000.0
-Rating: 1
-Games played: 906
-Penalty Minutes: 72.0
-Number of penalties: 5
-Shooting Arm: right arm
-Jersey number: 8
-Total number of minutes on ice: 14563.0
-Rookie: false
-Plus/Minus: 172
-Average goals per season: 9.09375
-Average goal percentage per season: 12.3
-Average shots taken per season: 73.78125
-Average assists per season: 14.594
-Average penalty minutes per season: 10.0
-Average power play goals per season: 2.0
-Average shoot-out goals per season: 0.0
-Average number of shifts per game: 0.0
-Number of game-winning goals: 63
-Number of power play goals: 106
-Number of shoot-out goals: 0
-Number of overtime goals: 10
-Points: 758.0
-Faceoff win percentage: 50.0
-Shooting percentage: 5.0
+Plus/Minus: 23
+Average goals per game: 0.171
+Average shots taken per game: 1.34
+Average assists per game: 0.817
+Average number of shifts per game: 24.8
+Number of game-winning goals: 6
+Number of power play goals: 8
+Number of overtime goals: 0
+Points: 81.0
+Faceoff win percentage: 50.1
+Shooting percentage: 12.4
+Total Goals per Season: 14
+Total Shots per Season: 113
+Total Assists per Season: 67
 
 Coach type: head
 First Name: Alain
@@ -1661,14 +924,15 @@ Birthplace: Canada
 Martial Status: married
 
 Coach type: goaltender
-First Name: Boss
-Last Name: McBoss
-Age: 22
-Gender: female
-Height: 185.0
-Weight: 87.0
+First Name: Alphonse
+Last Name: Elric
+Age: 19
+Gender: male
+Height: 188.0
+Weight: 90.0
 Month of Birth: October
 Day of Birth: 10
 Year of Birth: 1990
-Birthplace: Canada
-Martial Status: divorced
+Birthplace: Germany
+Martial Status: single
+

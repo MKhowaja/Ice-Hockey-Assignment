@@ -1,6 +1,6 @@
 League: NHL
 
-Team Name: Montréal Canadiens
+Team Name: Montreal Canadiens
 Divisison: Northeast
 Conference: Eastern
 Payroll: 64.3
@@ -10,7 +10,7 @@ Games Lost: 35
 Total Goals Scored: 207
 Total Goals Scored Against: 214
 Number of Powerplay Opportunities: 301
-Number of Times Short Handed: 315
+Number of Short Times Handed: 315
 Total Number of Powerplay Goals: 43
 Total Number of Shorthanded Goals: 10
 Total Number of Powerplay Goals Against: 36
@@ -38,15 +38,15 @@ Day of Birth: 15
 Year of Birth: 1986
 Birthplace: Canada
 Martial Status: single
-Salary per year: 0
+Salary per year: 0.0
 Years remaining on contract: 0
-Total salary: 0
+Total salary: 0.0
 Rating: 0
 Games played: 39
-Penalty Minutes: 27
+Penalty Minutes: 27.0
 Shooting Arm: right arm
 Jersey number: 45
-Total number of minutes on ice: 365.20
+Total number of minutes on ice: 365.2
 Rookie: false
 Plus/Minus: -1
 Average goals per game: 0.05
@@ -56,12 +56,12 @@ Average number of shifts per game: 12.8
 Number of game-winning goals: 0
 Number of power play goals: 0
 Number of overtime goals: 0
-Points: 4
-Faceoff win percentage: 40
+Points: 4.0
+Faceoff win percentage: 40.0
 Shooting percentage: 5.9
-Total Goals: 2
-Total Shots: 34
-Total Assists: 2
+Total Goals per Season: 2
+Total Shots per Season: 34
+Total Assists per Season: 2
 
 Player type: forward
 First Name: Rene
@@ -75,12 +75,12 @@ Day of Birth: 10
 Year of Birth: 1981
 Birthplace: Canada
 Martial Status: single
-Salary per year: 0
+Salary per year: 0.0
 Years remaining on contract: 0
-Total salary: 0
+Total salary: 0.0
 Rating: 0
 Games played: 38
-Penalty Minutes: 27
+Penalty Minutes: 27.0
 Shooting Arm: left arm
 Jersey number: 17
 Total number of minutes on ice: 702.5
@@ -93,12 +93,12 @@ Average number of shifts per game: 23.3
 Number of game-winning goals: 0
 Number of power play goals: 0
 Number of overtime goals: 0
-Points: 8
+Points: 8.0
 Faceoff win percentage: 42.9
 Shooting percentage: 7.5
-Total Goals: 5
-Total Shots: 67
-Total Assists: 3
+Total Goals per Season: 5
+Total Shots per Season: 67
+Total Assists per Season: 3
 
 Player type: forward
 First Name: Mike
@@ -112,12 +112,12 @@ Day of Birth: 8
 Year of Birth: 1982
 Birthplace: Canada
 Martial Status: single
-Salary per year: 0
+Salary per year: 0.0
 Years remaining on contract: 0
-Total salary: 0
+Total salary: 0.0
 Rating: 0
 Games played: 38
-Penalty Minutes: 10
+Penalty Minutes: 10.0
 Shooting Arm: left arm
 Jersey number: 13
 Total number of minutes on ice: 677.2
@@ -130,12 +130,12 @@ Average number of shifts per game: 22.6
 Number of game-winning goals: 2
 Number of power play goals: 0
 Number of overtime goals: 0
-Points: 22
+Points: 22.0
 Faceoff win percentage: 34.5
 Shooting percentage: 8.1
-Total Goals: 9
-Total Shots: 111
-Total Assists: 13
+Total Goals per Season: 9
+Total Shots per Season: 111
+Total Assists per Season: 13
 
 Player type: defense
 First Name: Chris
@@ -149,30 +149,30 @@ Day of Birth: 9
 Year of Birth: 1984
 Birthplace: Canada
 Martial Status: single
-Salary per year: 0
+Salary per year: 0.0
 Years remaining on contract: 0
-Total salary: 0
+Total salary: 0.0
 Rating: 0
 Games played: 43
-Penalty Minutes: 8
+Penalty Minutes: 8.0
 Shooting Arm: left arm
 Jersey number: 17
 Total number of minutes on ice: 741.75
 Rookie: false
 Plus/Minus: -3
 Average goals per game: 0.05
-Average shots taken per game: 1
+Average shots taken per game: 1.0
 Average assists per game: 0.21
 Average number of shifts per game: 22.8
 Number of game-winning goals: 0
 Number of power play goals: 0
 Number of overtime goals: 0
-Points: 11
-Faceoff win percentage: 0
+Points: 11.0
+Faceoff win percentage: 0.0
 Shooting percentage: 4.7
-Total Goals: 2
-Total Shots: 43
-Total Assists: 9
+Total Goals per Season: 2
+Total Shots per Season: 43
+Total Assists per Season: 9
 
 Player type: forward
 First Name: Erik
@@ -186,12 +186,12 @@ Day of Birth: 6
 Year of Birth: 1978
 Birthplace: United States
 Martial Status: single
-Salary per year: 0
+Salary per year: 0.0
 Years remaining on contract: 0
-Total salary: 0
+Total salary: 0.0
 Rating: 0
 Games played: 82
-Penalty Minutes: 48
+Penalty Minutes: 48.0
 Shooting Arm: left arm
 Jersey number: 72
 Total number of minutes on ice: 1519.5
@@ -204,12 +204,12 @@ Average number of shifts per game: 23.4
 Number of game-winning goals: 6
 Number of power play goals: 11
 Number of overtime goals: 0
-Points: 61
+Points: 61.0
 Faceoff win percentage: 42.9
 Shooting percentage: 14.5
-Total Goals: 35
-Total Shots: 241
-Total Assists: 26
+Total Goals per Season: 35
+Total Shots per Season: 241
+Total Assists per Season: 26
 
 Player type: forward
 First Name: Mathieu
@@ -223,12 +223,12 @@ Day of Birth: 26
 Year of Birth: 1976
 Birthplace: Canada
 Martial Status: single
-Salary per year: 0
+Salary per year: 0.0
 Years remaining on contract: 0
-Total salary: 0
+Total salary: 0.0
 Rating: 0
 Games played: 61
-Penalty Minutes: 18
+Penalty Minutes: 18.0
 Shooting Arm: left arm
 Jersey number: 52
 Total number of minutes on ice: 739.9
@@ -241,12 +241,12 @@ Average number of shifts per game: 16.2
 Number of game-winning goals: 0
 Number of power play goals: 0
 Number of overtime goals: 0
-Points: 12
+Points: 12.0
 Faceoff win percentage: 31.6
-Shooting percentage: 605
-Total Goals: 5
-Total Shots: 77
-Total Assists: 7
+Shooting percentage: 605.0
+Total Goals per Season: 5
+Total Shots per Season: 77
+Total Assists per Season: 7
 
 Player type: forward
 First Name: David
@@ -260,30 +260,30 @@ Day of Birth: 14
 Year of Birth: 1986
 Birthplace: Canada
 Martial Status: single
-Salary per year: 0
+Salary per year: 0.0
 Years remaining on contract: 0
-Total salary: 0
+Total salary: 0.0
 Rating: 0
 Games played: 81
-Penalty Minutes: 24
+Penalty Minutes: 24.0
 Shooting Arm: left arm
 Jersey number: 51
 Total number of minutes on ice: 1490.2
 Rookie: false
 Plus/Minus: 10
-Average goals per game: 0.20
+Average goals per game: 0.2
 Average shots taken per game: 1.21
 Average assists per game: 0.54
 Average number of shifts per game: 16.2
 Number of game-winning goals: 0
 Number of power play goals: 0
 Number of overtime goals: 0
-Points: 60
+Points: 60.0
 Faceoff win percentage: 49.4
 Shooting percentage: 16.3
-Total Goals: 16
-Total Shots: 98
-Total Assists: 44
+Total Goals per Season: 16
+Total Shots per Season: 98
+Total Assists per Season: 44
 
 Player type: defense
 First Name: Raphael
@@ -297,30 +297,30 @@ Day of Birth: 9
 Year of Birth: 1986
 Birthplace: Switzerland
 Martial Status: single
-Salary per year: 0
+Salary per year: 0.0
 Years remaining on contract: 0
-Total salary: 0
+Total salary: 0.0
 Rating: 0
 Games played: 59
-Penalty Minutes: 30
+Penalty Minutes: 30.0
 Shooting Arm: right arm
 Jersey number: 61
-Total number of minutes on ice: 1062
+Total number of minutes on ice: 1062.0
 Rookie: true
 Plus/Minus: -7
 Average goals per game: 0.05
 Average shots taken per game: 1.03
 Average assists per game: 0.22
-Average number of shifts per game: 25
+Average number of shifts per game: 25.0
 Number of game-winning goals: 1
 Number of power play goals: 0
 Number of overtime goals: 0
-Points: 16
-Faceoff win percentage: 50
+Points: 16.0
+Faceoff win percentage: 50.0
 Shooting percentage: 4.9
-Total Goals: 3
-Total Shots: 61
-Total Assists: 13
+Total Goals per Season: 3
+Total Shots per Season: 61
+Total Assists per Season: 13
 
 Player type: forward
 First Name: Lars
@@ -334,30 +334,30 @@ Day of Birth: 8
 Year of Birth: 1989
 Birthplace: United States
 Martial Status: single
-Salary per year: 0
+Salary per year: 0.0
 Years remaining on contract: 0
-Total salary: 0
+Total salary: 0.0
 Rating: 0
 Games played: 79
-Penalty Minutes: 66
+Penalty Minutes: 66.0
 Shooting Arm: left arm
 Jersey number: 81
 Total number of minutes on ice: 1209.5
 Rookie: false
 Plus/Minus: -5
-Average goals per game: 0.20
+Average goals per game: 0.2
 Average shots taken per game: 1.63
 Average assists per game: 0.15
-Average number of shifts per game: 20
+Average number of shifts per game: 20.0
 Number of game-winning goals: 0
 Number of power play goals: 0
 Number of overtime goals: 0
-Points: 28
+Points: 28.0
 Faceoff win percentage: 46.6
 Shooting percentage: 12.4
-Total Goals: 16
-Total Shots: 129
-Total Assists: 12
+Total Goals per Season: 16
+Total Shots per Season: 129
+Total Assists per Season: 12
 
 Player type: defense
 First Name: Alexei
@@ -371,12 +371,12 @@ Day of Birth: 25
 Year of Birth: 1986
 Birthplace: Russia
 Martial Status: single
-Salary per year: 0
+Salary per year: 0.0
 Years remaining on contract: 0
-Total salary: 0
+Total salary: 0.0
 Rating: 0
 Games played: 67
-Penalty Minutes: 30
+Penalty Minutes: 30.0
 Shooting Arm: left arm
 Jersey number: 74
 Total number of minutes on ice: 1158.7
@@ -389,12 +389,12 @@ Average number of shifts per game: 23.4
 Number of game-winning goals: 0
 Number of power play goals: 0
 Number of overtime goals: 0
-Points: 7
-Faceoff win percentage: 0
+Points: 7.0
+Faceoff win percentage: 0.0
 Shooting percentage: 4.8
-Total Goals: 3
-Total Shots: 62
-Total Assists: 4
+Total Goals per Season: 3
+Total Shots per Season: 62
+Total Assists per Season: 4
 
 Player type: forward
 First Name: Blake
@@ -408,12 +408,12 @@ Day of Birth: 3
 Year of Birth: 1988
 Birthplace: United States
 Martial Status: single
-Salary per year: 0
+Salary per year: 0.0
 Years remaining on contract: 0
-Total salary: 0
+Total salary: 0.0
 Rating: 0
 Games played: 13
-Penalty Minutes: 10
+Penalty Minutes: 10.0
 Shooting Arm: left arm
 Jersey number: 57
 Total number of minutes on ice: 158.9
@@ -421,17 +421,17 @@ Rookie: true
 Plus/Minus: 2
 Average goals per game: 0.15
 Average shots taken per game: 1.31
-Average assists per game: 0
+Average assists per game: 0.0
 Average number of shifts per game: 16.3
 Number of game-winning goals: 0
 Number of power play goals: 0
 Number of overtime goals: 0
-Points: 2
-Faceoff win percentage: 25
+Points: 2.0
+Faceoff win percentage: 25.0
 Shooting percentage: 11.8
-Total Goals: 2
-Total Shots: 17
-Total Assists: 0
+Total Goals per Season: 2
+Total Shots per Season: 17
+Total Assists per Season: 0
 
 Player type: defense
 First Name: Josh
@@ -445,12 +445,12 @@ Day of Birth: 14
 Year of Birth: 1984
 Birthplace: Canada
 Martial Status: single
-Salary per year: 0
+Salary per year: 0.0
 Years remaining on contract: 0
-Total salary: 0
+Total salary: 0.0
 Rating: 0
 Games played: 82
-Penalty Minutes: 39
+Penalty Minutes: 39.0
 Shooting Arm: left arm
 Jersey number: 26
 Total number of minutes on ice: 1865.5
@@ -463,12 +463,12 @@ Average number of shifts per game: 29.4
 Number of game-winning goals: 1
 Number of power play goals: 0
 Number of overtime goals: 1
-Points: 16
-Faceoff win percentage: 0
+Points: 16.0
+Faceoff win percentage: 0.0
 Shooting percentage: 3.4
-Total Goals: 2
-Total Shots: 59
-Total Assists: 14
+Total Goals per Season: 2
+Total Shots per Season: 59
+Total Assists per Season: 14
 
 Player type: defense
 First Name: Tomas
@@ -480,14 +480,14 @@ Weight: 96.1616
 Month of Birth: March
 Day of Birth: 2
 Year of Birth: 1978
-Birthplace: Czeck Republic
+Birthplace: n/a
 Martial Status: single
-Salary per year: 0
+Salary per year: 0.0
 Years remaining on contract: 0
-Total salary: 0
+Total salary: 0.0
 Rating: 0
 Games played: 43
-Penalty Minutes: 10
+Penalty Minutes: 10.0
 Shooting Arm: left arm
 Jersey number: 22
 Total number of minutes on ice: 720.25
@@ -500,12 +500,12 @@ Average number of shifts per game: 20.8
 Number of game-winning goals: 0
 Number of power play goals: 1
 Number of overtime goals: 0
-Points: 22
-Faceoff win percentage: 0
+Points: 22.0
+Faceoff win percentage: 0.0
 Shooting percentage: 6.1
-Total Goals: 3
-Total Shots: 49
-Total Assists: 19
+Total Goals per Season: 3
+Total Shots per Season: 49
+Total Assists per Season: 19
 
 Player type: defense
 First Name: Andrei
@@ -514,35 +514,35 @@ Age: 34
 Gender: male
 Height: 182.88
 Weight: 92.5328
-Month of Birth: Decemeber
+Month of Birth: n/a
 Day of Birth: 20
 Year of Birth: 1978
 Birthplace: Russia
 Martial Status: single
-Salary per year: 0
+Salary per year: 0.0
 Years remaining on contract: 0
-Total salary: 0
+Total salary: 0.0
 Rating: 0
 Games played: 13
-Penalty Minutes: 4
+Penalty Minutes: 4.0
 Shooting Arm: left arm
 Jersey number: 79
-Total number of minutes on ice: 234
+Total number of minutes on ice: 234.0
 Rookie: false
 Plus/Minus: -4
-Average goals per game: 0
+Average goals per game: 0.0
 Average shots taken per game: 1.31
 Average assists per game: 0.23
 Average number of shifts per game: 24.2
 Number of game-winning goals: 0
 Number of power play goals: 0
 Number of overtime goals: 0
-Points: 3
-Faceoff win percentage: 0
-Shooting percentage: 0
-Total Goals: 0
-Total Shots: 17
-Total Assists: 3
+Points: 3.0
+Faceoff win percentage: 0.0
+Shooting percentage: 0.0
+Total Goals per Season: 0
+Total Shots per Season: 17
+Total Assists per Season: 3
 
 Player type: forward
 First Name: Max
@@ -556,12 +556,12 @@ Day of Birth: 20
 Year of Birth: 1988
 Birthplace: United States
 Martial Status: single
-Salary per year: 0
+Salary per year: 0.0
 Years remaining on contract: 0
-Total salary: 0
+Total salary: 0.0
 Rating: 0
 Games played: 79
-Penalty Minutes: 56
+Penalty Minutes: 56.0
 Shooting Arm: left arm
 Jersey number: 67
 Total number of minutes on ice: 1442.57
@@ -570,16 +570,16 @@ Plus/Minus: 2
 Average goals per game: 0.42
 Average shots taken per game: 3.62
 Average assists per game: 0.41
-Average number of shifts per game: 23
+Average number of shifts per game: 23.0
 Number of game-winning goals: 5
 Number of power play goals: 4
 Number of overtime goals: 1
-Points: 65
-Faceoff win percentage: 20
+Points: 65.0
+Faceoff win percentage: 20.0
 Shooting percentage: 11.5
-Total Goals: 33
-Total Shots: 286
-Total Assists: 32
+Total Goals per Season: 33
+Total Shots per Season: 286
+Total Assists per Season: 32
 
 Player type: forward
 First Name: Aaron
@@ -593,12 +593,12 @@ Day of Birth: 7
 Year of Birth: 1989
 Birthplace: United States
 Martial Status: single
-Salary per year: 0
+Salary per year: 0.0
 Years remaining on contract: 0
-Total salary: 0
+Total salary: 0.0
 Rating: 0
 Games played: 38
-Penalty Minutes: 8
+Penalty Minutes: 8.0
 Shooting Arm: right arm
 Jersey number: 17
 Total number of minutes on ice: 287.5
@@ -611,12 +611,12 @@ Average number of shifts per game: 10.2
 Number of game-winning goals: 0
 Number of power play goals: 0
 Number of overtime goals: 0
-Points: 5
-Faceoff win percentage: 0
+Points: 5.0
+Faceoff win percentage: 0.0
 Shooting percentage: 2.7
-Total Goals: 1
-Total Shots: 37
-Total Assists: 4
+Total Goals per Season: 1
+Total Shots per Season: 37
+Total Assists per Season: 4
 
 Player type: defense
 First Name: Frédéric
@@ -630,12 +630,12 @@ Day of Birth: 23
 Year of Birth: 1986
 Birthplace: Canada
 Martial Status: single
-Salary per year: 0
+Salary per year: 0.0
 Years remaining on contract: 0
-Total salary: 0
+Total salary: 0.0
 Rating: 0
 Games played: 17
-Penalty Minutes: 10
+Penalty Minutes: 10.0
 Shooting Arm: left arm
 Jersey number: 62
 Total number of minutes on ice: 246.5
@@ -648,12 +648,12 @@ Average number of shifts per game: 21.2
 Number of game-winning goals: 0
 Number of power play goals: 0
 Number of overtime goals: 0
-Points: 3
-Faceoff win percentage: 0
+Points: 3.0
+Faceoff win percentage: 0.0
 Shooting percentage: 9.1
-Total Goals: 1
-Total Shots: 11
-Total Assists: 2
+Total Goals per Season: 1
+Total Shots per Season: 11
+Total Assists per Season: 2
 
 Player type: forward
 First Name: Brad
@@ -667,30 +667,30 @@ Day of Birth: 28
 Year of Birth: 1984
 Birthplace: Canada
 Martial Status: single
-Salary per year: 0
+Salary per year: 0.0
 Years remaining on contract: 0
-Total salary: 0
+Total salary: 0.0
 Rating: 0
 Games played: 19
-Penalty Minutes: 48
-Shooting Arm: rightarm
+Penalty Minutes: 48.0
+Shooting Arm: left arm
 Jersey number: 25
 Total number of minutes on ice: 124.5
 Rookie: false
 Plus/Minus: 2
 Average goals per game: 0.05
 Average shots taken per game: 0.53
-Average assists per game: 0
+Average assists per game: 0.0
 Average number of shifts per game: 9.1
 Number of game-winning goals: 0
 Number of power play goals: 0
 Number of overtime goals: 0
-Points: 1
-Faceoff win percentage: 0
-Shooting percentage: 10
-Total Goals: 1
-Total Shots: 10
-Total Assists: 0
+Points: 1.0
+Faceoff win percentage: 0.0
+Shooting percentage: 10.0
+Total Goals per Season: 1
+Total Shots per Season: 10
+Total Assists per Season: 0
 
 Player type: defense
 First Name: P.K.
@@ -704,12 +704,12 @@ Day of Birth: 13
 Year of Birth: 1989
 Birthplace: Canada
 Martial Status: single
-Salary per year: 0
+Salary per year: 0.0
 Years remaining on contract: 0
-Total salary: 0
+Total salary: 0.0
 Rating: 0
 Games played: 81
-Penalty Minutes: 119
+Penalty Minutes: 119.0
 Shooting Arm: right arm
 Jersey number: 76
 Total number of minutes on ice: 1964.25
@@ -722,12 +722,12 @@ Average number of shifts per game: 29.9
 Number of game-winning goals: 0
 Number of power play goals: 5
 Number of overtime goals: 0
-Points: 36
-Faceoff win percentage: 0
+Points: 36.0
+Faceoff win percentage: 0.0
 Shooting percentage: 3.4
-Total Goals: 7
-Total Shots: 205
-Total Assists: 29
+Total Goals per Season: 7
+Total Shots per Season: 205
+Total Assists per Season: 29
 
 Player type: defense
 First Name: Yannick
@@ -741,15 +741,15 @@ Day of Birth: 23
 Year of Birth: 1988
 Birthplace: Switzerland
 Martial Status: single
-Salary per year: 0
+Salary per year: 0.0
 Years remaining on contract: 0
-Total salary: 0
+Total salary: 0.0
 Rating: 0
 Games played: 60
-Penalty Minutes: 30
+Penalty Minutes: 30.0
 Shooting Arm: right arm
 Jersey number: 68
-Total number of minutes on ice: 945
+Total number of minutes on ice: 945.0
 Rookie: false
 Plus/Minus: -7
 Average goals per game: 0.07
@@ -759,12 +759,12 @@ Average number of shifts per game: 21.4
 Number of game-winning goals: 0
 Number of power play goals: 4
 Number of overtime goals: 0
-Points: 18
-Faceoff win percentage: 0
+Points: 18.0
+Faceoff win percentage: 0.0
 Shooting percentage: 4.5
-Total Goals: 4
-Total Shots: 88
-Total Assists: 14
+Total Goals per Season: 4
+Total Shots per Season: 88
+Total Assists per Season: 14
 
 Player type: forward
 First Name: Ryan
@@ -778,30 +778,30 @@ Day of Birth: 17
 Year of Birth: 1988
 Birthplace: Canada
 Martial Status: single
-Salary per year: 0
+Salary per year: 0.0
 Years remaining on contract: 0
-Total salary: 0
+Total salary: 0.0
 Rating: 0
 Games played: 20
-Penalty Minutes: 61
+Penalty Minutes: 61.0
 Shooting Arm: right arm
 Jersey number: 53
 Total number of minutes on ice: 290.5
 Rookie: false
 Plus/Minus: -7
-Average goals per game: 0
+Average goals per game: 0.0
 Average shots taken per game: 0.6
 Average assists per game: 0.15
 Average number of shifts per game: 19.8
 Number of game-winning goals: 0
 Number of power play goals: 0
 Number of overtime goals: 0
-Points: 3
+Points: 3.0
 Faceoff win percentage: 49.2
-Shooting percentage: 0
-Total Goals: 0
-Total Shots: 12
-Total Assists: 3
+Shooting percentage: 0.0
+Total Goals per Season: 0
+Total Shots per Season: 12
+Total Assists per Season: 3
 
 Player type: goalie
 First Name: Carey
@@ -815,22 +815,22 @@ Day of Birth: 16
 Year of Birth: 1987
 Birthplace: Canada
 Martial Status: single
-Salary per year: 0
+Salary per year: 0.0
 Years remaining on contract: 0
-Total salary: 0
+Total salary: 0.0
 Rating: 0
 Games played: 65
-Penalty Minutes: 6
+Penalty Minutes: 6.0
 Shooting Arm: left arm
 Jersey number: 31
-Total number of minutes on ice: 3944
+Total number of minutes on ice: 3944.0
 Rookie: false
 Number of wins: 26
 Numer of losses: 28
 Number of wins during playoffs: 0
 Number of losses during playoffs: 0
 Number of losses during overtime: 11
-Nmber of games started by goalie: 65
+Number of games started by goalie: 65
 Number of goals scored against goalie: 160
 Total number of shots faced by goalie: 1914
 Number of saves by goalie: 1764
@@ -850,22 +850,22 @@ Day of Birth: 18
 Year of Birth: 1982
 Birthplace: Slovakia
 Martial Status: single
-Salary per year: 0
+Salary per year: 0.0
 Years remaining on contract: 0
-Total salary: 0
+Total salary: 0.0
 Rating: 1
 Games played: 17
-Penalty Minutes: 2
+Penalty Minutes: 2.0
 Shooting Arm: left arm
 Jersey number: 30
-Total number of minutes on ice: 1037
+Total number of minutes on ice: 1037.0
 Rookie: false
 Number of wins: 5
 Numer of losses: 7
 Number of wins during playoffs: 0
 Number of losses during playoffs: 0
 Number of losses during overtime: 5
-Nmber of games started by goalie: 17
+Number of games started by goalie: 17
 Number of goals scored against goalie: 44
 Total number of shots faced by goalie: 508
 Number of saves by goalie: 464
@@ -879,7 +879,7 @@ Last Name: Cunneywoth
 Age: 52
 Gender: male
 Height: 182.88
-Weight: 84
+Weight: 84.0
 Month of Birth: May
 Day of Birth: 10
 Year of Birth: 1961
@@ -902,8 +902,8 @@ First Name: Gerard
 Last Name: Gallant
 Age: 49
 Gender: male
-Height: 178
-Weight: 86
+Height: 178.0
+Weight: 86.0
 Month of Birth: September
 Day of Birth: 2
 Year of Birth: 1963
@@ -929,9 +929,10 @@ Last Name: Elric
 Age: 20
 Gender: male
 Height: 175.26
-Weight: 90
+Weight: 90.0
 Month of Birth: October
 Day of Birth: 10
 Year of Birth: 1899
 Birthplace: Germany
 Martial Status: married
+

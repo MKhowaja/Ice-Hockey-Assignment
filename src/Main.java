@@ -1,4 +1,5 @@
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
@@ -25,7 +26,7 @@ public class Main {
 		Stack<Team> teams = new Stack<Team>();
 		Stack<Player> players;
 		Stack<Coach> coaches;
-		
+
 		System.out.println("Welcome to H.P.A. - The Hockey Performance Analyzer.");
 		System.out.println("Press ENTER to continue.");
 		in.nextLine();
@@ -145,7 +146,7 @@ public class Main {
 				} while (classType.equals("forward")||classType.equals("defense")||classType.equals("goalie"));
 				teams.get(count).putplayersize(players.size());
 				players.copyInto(teams.get(count).getPlayers()); //copies stack into player array
-				
+
 				//loads coaches from text file
 				do {
 					x = br.readLine();
@@ -162,7 +163,7 @@ public class Main {
 					br.mark(1000); //stores this location in the memory so program can revisit this part of the stream later
 					x = br.readLine(); //checks if next line in the text file is end of file or not
 					br.reset();
-				} while (x != null);
+				} while (x != null && !x.equals(""));
 				teams.get(count).putcoachingstaffsize(coaches.size());
 				coaches.copyInto(teams.get(count).getCoachingstaff()); //copies stack into coach array
 				count++;
@@ -189,22 +190,24 @@ public class Main {
 			System.out.println("5 - Terminate the program.");
 			System.out.println("Select an operation: ");
 			option = in.nextInt();
-			boolean locationFound = false;
+			String folder;
+			File someFolder;
 			if (option == 1) {
-				for (int i = 0; i < teams.size(); i++) {
-					System.out.println("Enter location to save text file: ");
-					filepath = in.next()+"\\" + teams.get(i).getName() + ".txt";
-					try {
-						pw = new PrintWriter(new FileWriter(filepath));
-						locationFound = true;
-					}
-					catch (FileNotFoundException e) {
-						locationFound = false;
+				do {
+					in = new Scanner(System.in);
+					System.out.println("Enter location to save text files: ");
+					folder = in.nextLine();
+					someFolder = new File(folder); 
+					if (!someFolder.exists()||!someFolder.isDirectory()||!folder.substring(folder.length()-1).equals("\\"))
 						System.out.println("Location not found.");
-					}
+				} while (!someFolder.exists()||!someFolder.isDirectory()||!folder.substring(folder.length()-1).equals("\\"));
+				
+				for (int i = 0; i < teams.size(); i++) {
+					filepath =  folder + teams.get(i).getName() + ".txt";
+					pw = new PrintWriter(new FileWriter(filepath));
 					pw.println("League: NHL");
 					pw.println("");
-					teams.get(i).save(pw); //already skips line in method5
+					teams.get(i).save(pw); //already skips line in methods
 				}
 			}
 			else if (option == 5) {
