@@ -17,9 +17,6 @@ public class Goalie extends Player {
 	protected int shutouts; //Number of games where all the goals were blocked by the goalie and the goalie was playing for the entire duration of the game
 	protected int emptyNG; //Number of goals scored against while off ice for extra attack player
 	
-	//for our scoring system, we can have the main ones (ex. savepercent, etc. decide on bulk of rating
-	//then things like emptyNG and shutouts that can imply good decision-making/other factors can be like an "AIF"
-	
 	/**
    	* Constructs an object of type Goalie
    	*/
@@ -29,7 +26,7 @@ public class Goalie extends Player {
 			int wins, int loses, int winsP, int losesP, int losesOT, int gameStart, int goalA, int shotsOG, int saves, int shutouts, int emptyNG) { //goalie fields
 		
 		super(fname, lname, gender, height, weight, month, day, year, place, mStatus,//person fields
-				salaryPY, contractR, tSalary, gp, penaltyT, penaltyN, arm, number, //player fields
+				salaryPY, contractR, tSalary, gp, penaltyT, arm, number, //player fields
 				numMin, rookie); //more player fields
 		
 		this.wins = wins;
