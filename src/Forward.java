@@ -31,7 +31,7 @@ public class Forward extends Player {
 			int otGoals, /*points taken care of in constructor,*/double faceoffPercentage, double shootPercentage, int goals, int shots, int assists) {//more forward fields
 		
 		super(fname, lname, gender, height, weight, month, day, year, place, mStatus,//person fields
-				salaryPY, contractR, tSalary, gp, penaltyT, penaltyN, arm, number, //player fields
+				salaryPY, contractR, tSalary, gp, penaltyT, arm, number, //player fields
 				numMin, rookie); //more player fields
 		
 		this.plusMinus = plusMinus;
