@@ -10,7 +10,6 @@ abstract class Player extends Person {
 	protected int rating; //Temp for something awesome
 	protected int gp; //Games played
 	protected double penaltyT; //Time spent in penalties in minutes
-	protected int penaltyN; //Number of penalties
 	protected boolean arm; //Shooting arm: True if right arm
 	protected int number; //Jersey number
 	protected double numMin; //Total number of minutes the player has been on ice
@@ -20,7 +19,7 @@ abstract class Player extends Person {
    	* Constructs an object of type Player
 	*/
 	public Player(String fname, String lname, boolean gender, double height, double weight, int month, int day, int year, int place, int mStatus,//person fields
-			double salaryPY, int contractR, double tSalary, int gp, double penaltyT, int penaltyN, boolean arm, int number, double numMin,
+			double salaryPY, int contractR, double tSalary, int gp, double penaltyT, boolean arm, int number, double numMin,
 			boolean rookie) {//player fields
 
 		super(fname, lname, gender, height, weight, month, day, year, place, mStatus);
@@ -29,7 +28,6 @@ abstract class Player extends Person {
 		this.tSalary = tSalary;
 		this.gp = gp;
 		this.penaltyT = penaltyT;
-		this.penaltyN = penaltyN;
 		this.arm = arm;
 		this.number = number;
 		this.numMin = numMin;
@@ -83,9 +81,6 @@ abstract class Player extends Person {
 		penaltyT = Double.parseDouble(x.substring(x.indexOf(": ")+2,x.length()));
 
 		x = br.readLine();
-		penaltyN = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
-
-		x = br.readLine();
 		x = x.substring(x.indexOf(": ")+2,x.length());
 		if (x.equals("right arm"))
 			arm = true;
@@ -120,7 +115,6 @@ abstract class Player extends Person {
 		pw.println("Rating: "+rating);
 		pw.println("Games played: "+gp);
 		pw.println("Penalty Minutes: "+penaltyT);
-		pw.println("Number of penalties: "+penaltyN);
 		if (arm==true)
 			pw.println("Shooting Arm: right arm");
 		else
@@ -164,11 +158,6 @@ abstract class Player extends Person {
 			System.out.print("Enter the number of seconds "+fname+" has spent in the penalty box: ");
 			penaltyT=in.nextDouble();
 		} while (penaltyT<0); //Ensures the player has at least spent 0 seconds in the penalty box
-
-		do {
-			System.out.print("Enter the number of times "+fname+" has gone to the penalty box: ");
-			penaltyN=in.nextInt();
-		} while (penaltyN<0); //Ensures the player has at least been in the penalty box once
 
 		do {
 			System.out.print("Enter "+fname+"'s shooting arm (R/L): ");
@@ -257,14 +246,6 @@ abstract class Player extends Person {
 	}
 
 	/**
-	 * Returns number of penalties
-	 * @return the penaltyN
-	 */
-	public int getPenaltyN() {
-		return penaltyN;
-	}
-
-	/**
 	 * Returns true if right shooter and false if left shooter
 	 * @return arm of type boolean
 	 */
@@ -349,14 +330,6 @@ abstract class Player extends Person {
 	 */
 	public void putPenaltyT(double x) {
 		penaltyT = x;
-	}
-
-	/**
-	 * Stores number of penalties
-	 * @param x of type int
-	 */
-	public void putPenaltyN(int x) {
-		penaltyN = x;
 	}
 
 	/**
