@@ -144,6 +144,7 @@ public class Forward extends Player {
 		pw.println("Shooting percentage: "+shootPercentage);
 		pw.println("Total Goals per Season: "+goals);
 		pw.println("Total Shots per Season: "+shots);
+		pw.println("Total Assists per Season: "+assists);
 	}
 	
 	/**
