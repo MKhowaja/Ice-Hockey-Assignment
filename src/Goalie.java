@@ -396,6 +396,10 @@ public class Goalie extends Player {
 	 * calculates the rating of a goalie
 	 */
 	public void calculateRating() {
-		rating = (int)(savePercent*0.9 + numMin*0.005 + height*0.1 + wins*0.25 -loses*0.3 - 0.9*age - 0.9*penaltyT);
+		rating = (int)(savePercent*0.5 + numMin*0.01 + height*0.1 + wins*0.2 + winsP*0.4 -loses*0.4 - losesP*0.6 - 0.1*age - 0.9*penaltyT);
+		if (rookie = true)
+			rating = (int) (rating*0.8);
+		if (rating<40)
+			rating = 40;
 	}
 }
