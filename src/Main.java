@@ -263,7 +263,7 @@ public class Main {
 						else
 							sortingMethods.sortFNameD(jumboArray);
 						for (int i=0;i<jumboArray.length;i++)
-							System.out.println(jumboArray[i].getFName());
+							System.out.println(i+". "+jumboArray[i].getFName());
 					}
 
 					else if (option1 == 2) {
@@ -276,7 +276,7 @@ public class Main {
 						else
 							sortingMethods.sortLNameD(jumboArray);
 						for (int i=0;i<jumboArray.length;i++)
-							System.out.println(jumboArray[i].getLName());
+							System.out.println(i+". "+jumboArray[i].getLName());
 					}
 
 					else if (option1 == 3) {
@@ -289,7 +289,7 @@ public class Main {
 						else
 							sortingMethods.sortAgeD(jumboArray);
 						for (int i=0;i<jumboArray.length;i++)
-							System.out.println(jumboArray[i].getFName()+" "+jumboArray[i].getLName()+", age "+jumboArray[i].getAge());
+							System.out.println(i+". "+jumboArray[i].getFName()+" "+jumboArray[i].getLName()+", age "+jumboArray[i].getAge());
 					}
 
 					else if (option1 == 4) {
@@ -302,7 +302,7 @@ public class Main {
 						else
 							sortingMethods.sortHeightD(jumboArray);
 						for (int i=0;i<jumboArray.length;i++)
-							System.out.println(jumboArray[i].getFName()+" "+jumboArray[i].getLName()+", height: "+jumboArray[i].getHeight());
+							System.out.println(i+". "+jumboArray[i].getFName()+" "+jumboArray[i].getLName()+", height: "+jumboArray[i].getHeight());
 					}
 
 					else {
@@ -315,7 +315,7 @@ public class Main {
 						else
 							sortingMethods.sortWeightD(jumboArray);
 						for (int i=0;i<jumboArray.length;i++)
-							System.out.println(jumboArray[i].getFName()+" "+jumboArray[i].getLName()+", height: "+jumboArray[i].getHeight());
+							System.out.println(i+". "+jumboArray[i].getFName()+" "+jumboArray[i].getLName()+", height: "+jumboArray[i].getHeight());
 					}
 				}
 				else if (option1 >=6 && option1 <=13) {
@@ -338,7 +338,7 @@ public class Main {
 						else
 							sortingMethods.sortSalaryPYD(jumboArray);
 						for (int i=0;i<jumboArray.length;i++)
-							System.out.println(jumboArray[i].getFName()+", salary per year: $"+((Player)jumboArray[i]).getSalaryPY());
+							System.out.println(i+". "+jumboArray[i].getFName()+", salary per year: $"+((Player)jumboArray[i]).getSalaryPY());
 					}
 					
 					else if (option1 == 7) {
@@ -365,6 +365,61 @@ public class Main {
 							sortingMethods.sortRatingD(jumboArray);
 						for (int i=0;i<jumboArray.length;i++)
 							System.out.println(i+". "+jumboArray[i].getFName()+", salary per year: $"+((Player)jumboArray[i]).getSalaryPY());
+					}
+				}
+				
+				else if (option1 >=14 && option1 <=27) {
+					//create big array of forward/defense for all teams
+					jumbo = new Stack<Person>();
+					for (int i = 0; i<teams.size();i++) {
+						for (int j = 0; j<teams.get(i).getPlayers().length;j++) {
+							if (teams.get(i).getPlayer(j) instanceof Forward || teams.get(i).getPlayer(j) instanceof Defense)
+								jumbo.push(teams.get(i).getPlayer(j));
+						}
+					}
+					jumboArray = new Person[jumbo.size()];
+					jumbo.copyInto(jumboArray);
+					
+					if (option1 == 14) {
+						System.out.println("1 - Ascending order.");
+						System.out.println("2 - Descending order.");
+						System.out.println("Select an option: ");
+						option2 = in.nextInt();
+						if (option2 == 1)
+							sortingMethods.sortplusMinusA(jumboArray);
+						else
+							sortingMethods.sortplusMinusD(jumboArray);
+						for (int i=0;i<jumboArray.length;i++) {
+							if (jumboArray[i] instanceof Forward)
+								System.out.println(i+". "+jumboArray[i].getFName()+", salary per year: $"+((Forward)jumboArray[i]).getplusMinus());
+							else 
+								System.out.println(i+". "+jumboArray[i].getFName()+", salary per year: $"+((Defense)jumboArray[i]).getplusMinus());
+						}
+					}	
+				}
+				else {
+					jumbo = new Stack<Person>();
+					for (int i = 0; i<teams.size();i++) {
+						for (int j = 0; j<teams.get(i).getPlayers().length;j++) {
+							if (teams.get(i).getPlayer(j) instanceof Goalie)
+								jumbo.push(teams.get(i).getPlayer(j));
+						}
+					}
+					jumboArray = new Person[jumbo.size()];
+					jumbo.copyInto(jumboArray);
+					
+					if (option == 37) {
+						System.out.println("1 - Ascending order.");
+						System.out.println("2 - Descending order.");
+						System.out.println("Select an option: ");
+						option2 = in.nextInt();
+						if (option2 == 1)
+							sortingMethods.sortSavePA(jumboArray);
+						else
+							sortingMethods.sortSavePD(jumboArray);
+						for (int i=0;i<jumboArray.length;i++) {
+								System.out.println(i+". "+jumboArray[i].getFName()+", save percentage: $"+((Goalie)jumboArray[i]).getSavePercent());
+						}
 					}
 				}
 
