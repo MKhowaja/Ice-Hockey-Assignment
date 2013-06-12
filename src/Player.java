@@ -7,13 +7,14 @@ abstract class Player extends Person {
 	protected double salaryPY; //Salary per year
 	protected int contractR; //# of years remaining of contract 
 	protected double tSalary; //Total salary over entire contract length
-	protected int rating; //Temp for something awesome
+	protected int rating; //Overall rating of player
 	protected int gp; //Games played
 	protected double penaltyT; //Time spent in penalties in minutes
 	protected boolean arm; //Shooting arm: True if right arm
 	protected int number; //Jersey number
 	protected double numMin; //Total number of minutes the player has been on ice
 	protected boolean rookie; //If the player is a rookie (true if he/she is)
+	protected double costEfficiency; //Determines how efficient player is, calculated
 
 	/**
    	* Constructs an object of type Player
@@ -99,7 +100,6 @@ abstract class Player extends Person {
 			rookie = true;
 		else
 			rookie = false;
-
 	}
 
 	/**
@@ -277,6 +277,13 @@ abstract class Player extends Person {
 		return rookie;
 	}
 
+	/**
+	 * Calculates and returns cost efficiency
+	 */
+	public double getcostEfficiency(){
+		calculatecostEfficiency();
+		return costEfficiency;
+	}
 	//Mutators
 
 	/**
@@ -365,7 +372,16 @@ abstract class Player extends Person {
 		rookie = x;
 	}
 	
+	/**
+	 * Calculates rating in subclasses
+	 */
 	abstract public void calculateRating();
 	
+	/**
+	 * Calculates cost efficiency
+	 */
+	public void calculatecostEfficiency(){
+		costEfficiency = rating / salaryPY;
+	}
 	
 }
