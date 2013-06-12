@@ -1,4 +1,4 @@
-League: NHL
+﻿League: NHL
 
 Team Name: Montreal Canadiens
 Divisison: Northeast
@@ -49,10 +49,10 @@ Jersey number: 45
 Total number of minutes on ice: 365.2
 Rookie: false
 Plus/Minus: -1
-Average goals per game: 0.05
-Average shots taken per game: 0.87
-Average assists per game: 0.05
-Average number of shifts per game: 12.8
+Goals per game: 0.05
+Shots taken per game: 0.87
+Assists per game: 0.05
+Number of shifts per game: 12.8
 Number of game-winning goals: 0
 Number of power play goals: 0
 Number of overtime goals: 0
@@ -62,6 +62,7 @@ Shooting percentage: 5.9
 Total Goals per Season: 2
 Total Shots per Season: 34
 Total Assists per Season: 2
+Center: n
 
 Player type: forward
 First Name: Rene
@@ -86,10 +87,10 @@ Jersey number: 17
 Total number of minutes on ice: 702.5
 Rookie: false
 Plus/Minus: -16
-Average goals per game: 0.13
-Average shots taken per game: 1.79
-Average assists per game: 0.08
-Average number of shifts per game: 23.3
+Goals per game: 0.13
+Shots taken per game: 1.79
+Assists per game: 0.08
+Number of shifts per game: 23.3
 Number of game-winning goals: 0
 Number of power play goals: 0
 Number of overtime goals: 0
@@ -99,6 +100,7 @@ Shooting percentage: 7.5
 Total Goals per Season: 5
 Total Shots per Season: 67
 Total Assists per Season: 3
+Center: n
 
 Player type: forward
 First Name: Mike
@@ -123,10 +125,10 @@ Jersey number: 13
 Total number of minutes on ice: 677.2
 Rookie: false
 Plus/Minus: -6
-Average goals per game: 0.24
-Average shots taken per game: 2.92
-Average assists per game: 0.34
-Average number of shifts per game: 22.6
+Goals per game: 0.24
+Shots taken per game: 2.92
+Assists per game: 0.34
+Number of shifts per game: 22.6
 Number of game-winning goals: 2
 Number of power play goals: 0
 Number of overtime goals: 0
@@ -136,6 +138,7 @@ Shooting percentage: 8.1
 Total Goals per Season: 9
 Total Shots per Season: 111
 Total Assists per Season: 13
+Center: y
 
 Player type: defense
 First Name: Chris
@@ -160,10 +163,10 @@ Jersey number: 17
 Total number of minutes on ice: 741.75
 Rookie: false
 Plus/Minus: -3
-Average goals per game: 0.05
-Average shots taken per game: 1.0
-Average assists per game: 0.21
-Average number of shifts per game: 22.8
+Goals per game: 0.05
+Shots taken per game: 1.0
+Assists per game: 0.21
+Number of shifts per game: 22.8
 Number of game-winning goals: 0
 Number of power play goals: 0
 Number of overtime goals: 0
@@ -197,10 +200,10 @@ Jersey number: 72
 Total number of minutes on ice: 1519.5
 Rookie: false
 Plus/Minus: 11
-Average goals per game: 0.43
-Average shots taken per game: 2.94
-Average assists per game: 0.32
-Average number of shifts per game: 23.4
+Goals per game: 0.43
+Shots taken per game: 2.94
+Assists per game: 0.32
+Number of shifts per game: 23.4
 Number of game-winning goals: 6
 Number of power play goals: 11
 Number of overtime goals: 0
@@ -210,6 +213,7 @@ Shooting percentage: 14.5
 Total Goals per Season: 35
 Total Shots per Season: 241
 Total Assists per Season: 26
+Center: n
 
 Player type: forward
 First Name: Mathieu
@@ -234,10 +238,10 @@ Jersey number: 52
 Total number of minutes on ice: 739.9
 Rookie: false
 Plus/Minus: -4
-Average goals per game: 0.08
-Average shots taken per game: 1.26
-Average assists per game: 0.11
-Average number of shifts per game: 16.2
+Goals per game: 0.08
+Shots taken per game: 1.26
+Assists per game: 0.11
+Number of shifts per game: 16.2
 Number of game-winning goals: 0
 Number of power play goals: 0
 Number of overtime goals: 0
@@ -247,6 +251,7 @@ Shooting percentage: 605.0
 Total Goals per Season: 5
 Total Shots per Season: 77
 Total Assists per Season: 7
+Center: n
 
 Player type: forward
 First Name: David
@@ -271,10 +276,10 @@ Jersey number: 51
 Total number of minutes on ice: 1490.2
 Rookie: false
 Plus/Minus: 10
-Average goals per game: 0.2
-Average shots taken per game: 1.21
-Average assists per game: 0.54
-Average number of shifts per game: 16.2
+Goals per game: 0.2
+Shots taken per game: 1.21
+Assists per game: 0.54
+Number of shifts per game: 16.2
 Number of game-winning goals: 0
 Number of power play goals: 0
 Number of overtime goals: 0
@@ -284,6 +289,7 @@ Shooting percentage: 16.3
 Total Goals per Season: 16
 Total Shots per Season: 98
 Total Assists per Season: 44
+Center: y
 
 Player type: defense
 First Name: Raphael
@@ -308,10 +314,10 @@ Jersey number: 61
 Total number of minutes on ice: 1062.0
 Rookie: true
 Plus/Minus: -7
-Average goals per game: 0.05
-Average shots taken per game: 1.03
-Average assists per game: 0.22
-Average number of shifts per game: 25.0
+Goals per game: 0.05
+Shots taken per game: 1.03
+Assists per game: 0.22
+Number of shifts per game: 25.0
 Number of game-winning goals: 1
 Number of power play goals: 0
 Number of overtime goals: 0
@@ -345,10 +351,10 @@ Jersey number: 81
 Total number of minutes on ice: 1209.5
 Rookie: false
 Plus/Minus: -5
-Average goals per game: 0.2
-Average shots taken per game: 1.63
-Average assists per game: 0.15
-Average number of shifts per game: 20.0
+Goals per game: 0.2
+Shots taken per game: 1.63
+Assists per game: 0.15
+Number of shifts per game: 20.0
 Number of game-winning goals: 0
 Number of power play goals: 0
 Number of overtime goals: 0
@@ -358,6 +364,7 @@ Shooting percentage: 12.4
 Total Goals per Season: 16
 Total Shots per Season: 129
 Total Assists per Season: 12
+Center: y
 
 Player type: defense
 First Name: Alexei
@@ -382,10 +389,10 @@ Jersey number: 74
 Total number of minutes on ice: 1158.7
 Rookie: true
 Plus/Minus: -18
-Average goals per game: 0.04
-Average shots taken per game: 0.93
-Average assists per game: 0.06
-Average number of shifts per game: 23.4
+Goals per game: 0.04
+Shots taken per game: 0.93
+Assists per game: 0.06
+Number of shifts per game: 23.4
 Number of game-winning goals: 0
 Number of power play goals: 0
 Number of overtime goals: 0
@@ -419,10 +426,10 @@ Jersey number: 57
 Total number of minutes on ice: 158.9
 Rookie: true
 Plus/Minus: 2
-Average goals per game: 0.15
-Average shots taken per game: 1.31
-Average assists per game: 0.0
-Average number of shifts per game: 16.3
+Goals per game: 0.15
+Shots taken per game: 1.31
+Assists per game: 0.0
+Number of shifts per game: 16.3
 Number of game-winning goals: 0
 Number of power play goals: 0
 Number of overtime goals: 0
@@ -432,6 +439,7 @@ Shooting percentage: 11.8
 Total Goals per Season: 2
 Total Shots per Season: 17
 Total Assists per Season: 0
+Center: y
 
 Player type: defense
 First Name: Josh
@@ -456,10 +464,10 @@ Jersey number: 26
 Total number of minutes on ice: 1865.5
 Rookie: false
 Plus/Minus: 14
-Average goals per game: 0.02
-Average shots taken per game: 0.72
-Average assists per game: 0.17
-Average number of shifts per game: 29.4
+Goals per game: 0.02
+Shots taken per game: 0.72
+Assists per game: 0.17
+Number of shifts per game: 29.4
 Number of game-winning goals: 1
 Number of power play goals: 0
 Number of overtime goals: 1
@@ -493,10 +501,10 @@ Jersey number: 22
 Total number of minutes on ice: 720.25
 Rookie: false
 Plus/Minus: -6
-Average goals per game: 0.07
-Average shots taken per game: 1.14
-Average assists per game: 0.44
-Average number of shifts per game: 20.8
+Goals per game: 0.07
+Shots taken per game: 1.14
+Assists per game: 0.44
+Number of shifts per game: 20.8
 Number of game-winning goals: 0
 Number of power play goals: 1
 Number of overtime goals: 0
@@ -530,10 +538,10 @@ Jersey number: 79
 Total number of minutes on ice: 234.0
 Rookie: false
 Plus/Minus: -4
-Average goals per game: 0.0
-Average shots taken per game: 1.31
-Average assists per game: 0.23
-Average number of shifts per game: 24.2
+Goals per game: 0.0
+Shots taken per game: 1.31
+Assists per game: 0.23
+Number of shifts per game: 24.2
 Number of game-winning goals: 0
 Number of power play goals: 0
 Number of overtime goals: 0
@@ -567,10 +575,10 @@ Jersey number: 67
 Total number of minutes on ice: 1442.57
 Rookie: false
 Plus/Minus: 2
-Average goals per game: 0.42
-Average shots taken per game: 3.62
-Average assists per game: 0.41
-Average number of shifts per game: 23.0
+Goals per game: 0.42
+Shots taken per game: 3.62
+Assists per game: 0.41
+Number of shifts per game: 23.0
 Number of game-winning goals: 5
 Number of power play goals: 4
 Number of overtime goals: 1
@@ -580,6 +588,7 @@ Shooting percentage: 11.5
 Total Goals per Season: 33
 Total Shots per Season: 286
 Total Assists per Season: 32
+Center: n
 
 Player type: forward
 First Name: Aaron
@@ -604,10 +613,10 @@ Jersey number: 17
 Total number of minutes on ice: 287.5
 Rookie: true
 Plus/Minus: 1
-Average goals per game: 0.03
-Average shots taken per game: 0.97
-Average assists per game: 0.11
-Average number of shifts per game: 10.2
+Goals per game: 0.03
+Shots taken per game: 0.97
+Assists per game: 0.11
+Number of shifts per game: 10.2
 Number of game-winning goals: 0
 Number of power play goals: 0
 Number of overtime goals: 0
@@ -617,6 +626,7 @@ Shooting percentage: 2.7
 Total Goals per Season: 1
 Total Shots per Season: 37
 Total Assists per Season: 4
+Center: n
 
 Player type: defense
 First Name: Frédéric
@@ -641,10 +651,10 @@ Jersey number: 62
 Total number of minutes on ice: 246.5
 Rookie: true
 Plus/Minus: 3
-Average goals per game: 0.06
-Average shots taken per game: 0.65
-Average assists per game: 0.12
-Average number of shifts per game: 21.2
+Goals per game: 0.06
+Shots taken per game: 0.65
+Assists per game: 0.12
+Number of shifts per game: 21.2
 Number of game-winning goals: 0
 Number of power play goals: 0
 Number of overtime goals: 0
@@ -678,10 +688,10 @@ Jersey number: 25
 Total number of minutes on ice: 124.5
 Rookie: false
 Plus/Minus: 2
-Average goals per game: 0.05
-Average shots taken per game: 0.53
-Average assists per game: 0.0
-Average number of shifts per game: 9.1
+Goals per game: 0.05
+Shots taken per game: 0.53
+Assists per game: 0.0
+Number of shifts per game: 9.1
 Number of game-winning goals: 0
 Number of power play goals: 0
 Number of overtime goals: 0
@@ -691,6 +701,7 @@ Shooting percentage: 10.0
 Total Goals per Season: 1
 Total Shots per Season: 10
 Total Assists per Season: 0
+Center: n
 
 Player type: defense
 First Name: P.K.
@@ -715,10 +726,10 @@ Jersey number: 76
 Total number of minutes on ice: 1964.25
 Rookie: false
 Plus/Minus: -9
-Average goals per game: 0.09
-Average shots taken per game: 2.53
-Average assists per game: 0.36
-Average number of shifts per game: 29.9
+Goals per game: 0.09
+Shots taken per game: 2.53
+Assists per game: 0.36
+Number of shifts per game: 29.9
 Number of game-winning goals: 0
 Number of power play goals: 5
 Number of overtime goals: 0
@@ -752,10 +763,10 @@ Jersey number: 68
 Total number of minutes on ice: 945.0
 Rookie: false
 Plus/Minus: -7
-Average goals per game: 0.07
-Average shots taken per game: 1.47
-Average assists per game: 0.23
-Average number of shifts per game: 21.4
+Goals per game: 0.07
+Shots taken per game: 1.47
+Assists per game: 0.23
+Number of shifts per game: 21.4
 Number of game-winning goals: 0
 Number of power play goals: 4
 Number of overtime goals: 0
@@ -789,10 +800,10 @@ Jersey number: 53
 Total number of minutes on ice: 290.5
 Rookie: false
 Plus/Minus: -7
-Average goals per game: 0.0
-Average shots taken per game: 0.6
-Average assists per game: 0.15
-Average number of shifts per game: 19.8
+Goals per game: 0.0
+Shots taken per game: 0.6
+Assists per game: 0.15
+Number of shifts per game: 19.8
 Number of game-winning goals: 0
 Number of power play goals: 0
 Number of overtime goals: 0
@@ -802,6 +813,7 @@ Shooting percentage: 0.0
 Total Goals per Season: 0
 Total Shots per Season: 12
 Total Assists per Season: 3
+Center: y
 
 Player type: goalie
 First Name: Carey
@@ -935,4 +947,3 @@ Day of Birth: 10
 Year of Birth: 1899
 Birthplace: Germany
 Martial Status: married
-
