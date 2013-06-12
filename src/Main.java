@@ -236,7 +236,7 @@ public class Main {
 					System.out
 					.println("14. Plus/Minus\n15. Goals per game\n16. Shots taken per game\n17. Assists per game\n18. Number of shifts per game\n19. Number of game-winning goals\n20. Number of power play goals\n21. Number of overtime goals\n22. Points\n23. Faceoff win percentage\n24. Shooting percentage\n25. Total Goals per Season\n26. Total Shots per Season\n27. Total Assists per Season");
 					System.out
-					.println("28. Number of wins\n29. Numer of losses\n30. Number of wins during playoffs\n31. Number of losses during playoffs\n32. Number of losses during overtime\n33. Number of games started by goalie\n34. Number of goals scored against goalie\n35. Total number of shots faced by goalie\n36. Number of saves by goalie\n37. Save Percentage\n38. Shutout Saves\n39. Empty Net Goals");
+					.println("28. Number of wins\n29. Number of losses\n30. Number of wins during playoffs\n31. Number of losses during playoffs\n32. Number of losses during overtime\n33. Number of games started by goalie\n34. Number of goals scored against goalie\n35. Total number of shots faced by goalie\n36. Number of saves by goalie\n37. Save Percentage\n38. Shutout Saves\n39. Empty Net Goals");
 					System.out.println("Select an option: ");
 					option1 = in.nextInt();
 				} while (option1<1 || option1>40);
