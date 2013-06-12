@@ -5,10 +5,10 @@ import java.util.Scanner;
 
 public class Goalie extends Player {
 	protected int wins; //Number of wins
-	protected int loses; //Number of losses
+	protected int losses; //Number of losses
 	protected int winsP; //Number of wins during playoffs
-	protected int losesP; //Number of loses during playoffs
-	protected int losesOT; //Number of loses during overtime
+	protected int lossesP; //Number of losses during playoffs
+	protected int lossesOT; //Number of losses during overtime
 	protected int gameStart; //The number of games started by goalie
 	protected int goalA; //Number of goals scored against goalie
 	protected int shotsOG; //Total number of shots faced by goalie
@@ -23,17 +23,17 @@ public class Goalie extends Player {
 	public Goalie(String fname, String lname, boolean gender, double height, double weight, int month, int day, int year, int place, int mStatus,//person fields
 			double salaryPY, int contractR, double tSalary, int rating, int gp, double penaltyT, int penaltyN, boolean arm, int number, //player fields
 			double numMin, boolean rookie, //more player fields
-			int wins, int loses, int winsP, int losesP, int losesOT, int gameStart, int goalA, int shotsOG, int saves, int shutouts, int emptyNG) { //goalie fields
+			int wins, int losses, int winsP, int lossesP, int lossesOT, int gameStart, int goalA, int shotsOG, int saves, int shutouts, int emptyNG) { //goalie fields
 		
 		super(fname, lname, gender, height, weight, month, day, year, place, mStatus,//person fields
 				salaryPY, contractR, tSalary, gp, penaltyT, arm, number, //player fields
 				numMin, rookie); //more player fields
 		
 		this.wins = wins;
-		this.loses = loses;
+		this.losses = losses;
 		this.winsP = winsP;
-		this.losesP = losesP;
-		this.losesOT = losesOT;
+		this.lossesP = lossesP;
+		this.lossesOT = lossesOT;
 		this.gameStart = gameStart;
 		this.numMin = numMin;
 		this.goalA = goalA;
@@ -77,16 +77,16 @@ public class Goalie extends Player {
 		wins = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
 
 		x = br.readLine();
-		loses = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+		losses = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
 
 		x = br.readLine();
 		winsP = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
 
 		x = br.readLine();
-		losesP = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+		lossesP = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
 
 		x = br.readLine();
-		losesOT = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
+		lossesOT = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
 
 		x = br.readLine();
 		gameStart = Integer.parseInt(x.substring(x.indexOf(": ")+2,x.length()));
@@ -119,10 +119,10 @@ public class Goalie extends Player {
 		super.save(pw);
 		//Writes all goalie fields onto text file
 		pw.println("Number of wins: "+wins);
-		pw.println("Numer of losses: "+loses);
+		pw.println("Numer of losses: "+losses);
 		pw.println("Number of wins during playoffs: "+winsP);
-		pw.println("Number of losses during playoffs: "+losesP);
-		pw.println("Number of losses during overtime: "+losesOT);
+		pw.println("Number of losses during playoffs: "+lossesP);
+		pw.println("Number of losses during overtime: "+lossesOT);
 		pw.println("Number of games started by goalie: "+gameStart);
 		pw.println("Number of goals scored against goalie: "+goalA);
 		pw.println("Total number of shots faced by goalie: "+shotsOG);
@@ -146,8 +146,8 @@ public class Goalie extends Player {
 		
 		do {
 			System.out.print("Enter the number of times "+fname+" has lost: ");
-			loses=in.nextInt();
-		} while(loses<0); //Ensures the number of loses is above zero (valid)
+			losses=in.nextInt();
+		} while(losses<0); //Ensures the number of losses is above zero (valid)
 		
 		do {
 			System.out.print("Enter the number of times "+fname+" has won during playoffs: ");
@@ -156,13 +156,13 @@ public class Goalie extends Player {
 		
 		do {
 			System.out.print("Enter the number of times "+fname+" has lost during playoffs: ");
-			losesP=in.nextInt();
-		} while(losesP<0); //Ensures the number of loses during playoffs is above zero (valid)
+			lossesP=in.nextInt();
+		} while(lossesP<0); //Ensures the number of losses during playoffs is above zero (valid)
 		
 		do {
 			System.out.print("Enter the number of times "+fname+" has lost during overtime: ");
-			losesOT=in.nextInt();
-		} while(losesOT<0); //Ensures the number of loses during overtime is above zero (valid)
+			lossesOT=in.nextInt();
+		} while(lossesOT<0); //Ensures the number of losses during overtime is above zero (valid)
 		
 		do {
 			System.out.print("Enter the number of times "+fname+" has started at the beginning of a game: ");
@@ -185,7 +185,7 @@ public class Goalie extends Player {
 		} while(saves<0); //Ensures the number of saves goalie made is above zero (valid)
 		
 		do {
-			System.out.print("Enter the number of times "+fname+" was never scored against and played for the entire game: ");
+			System.out.print("Enter the number of "+fname+"'s shutouts: ");
 			shutouts=in.nextInt();
 		} while(shutouts<0); //Ensures the number of shutouts is above zero (valid)
 		
@@ -193,6 +193,7 @@ public class Goalie extends Player {
 			System.out.print("Enter the number of times "+fname+" was scored on while off the ice to add an extra attack player: ");
 			emptyNG=in.nextInt();
 		} while(emptyNG<0); //Ensures the the number of empty net goals is above zero (valid)
+		updateSavePercent();
 		in.close();
 	}
 	
@@ -207,10 +208,10 @@ public class Goalie extends Player {
 	
 	/**
 	 * Returns number of games losses
-	 * @return loses
+	 * @return losses
 	 */
 	public int getLoses(){
-		return loses;
+		return losses;
 	}
 	
 	/**
@@ -222,19 +223,19 @@ public class Goalie extends Player {
 	}
 	
 	/**
-	 * Returns number of games loses during playoffs
-	 * @return losesP
+	 * Returns number of games losses during playoffs
+	 * @return lossesP
 	 */
 	public int getLosesP(){
-		return losesP;
+		return lossesP;
 	}
 	
 	/**
-	 * Returns number of games loses during overtime
-	 * @return losesOT
+	 * Returns number of games losses during overtime
+	 * @return lossesOT
 	 */
 	public int getLosesOT(){
-		return losesOT;
+		return lossesOT;
 	}
 	
 	/**
@@ -304,11 +305,11 @@ public class Goalie extends Player {
 	}
 	
 	/**
-	 * Stores parameter to loses
+	 * Stores parameter to losses
 	 * @param x of type int
 	 */
 	public void putLoses(int x){
-		loses=x;
+		losses=x;
 	}
 	
 	/**
@@ -320,19 +321,19 @@ public class Goalie extends Player {
 	}
 	
 	/**
-	 * Stores parameter to losesP
+	 * Stores parameter to lossesP
 	 * @param x of type int
 	 */
 	public void putLosesP(int x){
-		losesP=x;
+		lossesP=x;
 	}
 	
 	/**
-	 * Stores parameter to losesOT
+	 * Stores parameter to lossesOT
 	 * @param x of type int
 	 */
 	public void putLosesOT(int x){
-		losesOT=x;
+		lossesOT=x;
 	}
 	
 	/**
@@ -396,7 +397,7 @@ public class Goalie extends Player {
 	 * calculates the rating of a goalie
 	 */
 	public void calculateRating() {
-		rating = (int)(savePercent*0.5 + numMin*0.01 + height*0.1 + wins*0.2 + winsP*0.4 -loses*0.4 - losesP*0.6 - 0.1*age - 0.9*penaltyT);
+		rating = (int)(savePercent*0.5 + numMin*0.01 + height*0.1 + wins*0.2 + winsP*0.4 -losses*0.4 - lossesP*0.6 - 0.1*age - 0.9*penaltyT);
 		if (rookie = true)
 			rating = (int) (rating*0.8);
 		if (rating<40)
