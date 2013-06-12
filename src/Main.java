@@ -208,6 +208,7 @@ public class Main {
 					pw.println("League: NHL");
 					pw.println("");
 					teams.get(i).save(pw); //already skips line in methods
+					pw.close();
 				}
 			}
 			else if (option == 5) {
