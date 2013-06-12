@@ -975,4 +975,13 @@ public class Team {
 	public void putcoachingstaffsize(int x){
 		coachingstaff = new Coach [x];
 	}
+	
+	public Coach getCoach(int index) {
+		return coachingstaff[index];
+	}
+	
+	public Player getPlayer(int index) {
+		return players[index];
+	}
+	
 }

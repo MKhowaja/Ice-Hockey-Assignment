@@ -179,17 +179,29 @@ public class Main {
 		} while (menuRunning);
 		br.close(); 
 
+		Person[] jumboArray; //temporary array
+		Stack<Person> jumbo; //temporary stack (to make life easier)
 		PrintWriter pw = null; //initializes printwriter
+		int option1; //temporarily holds option input for menu inside menu
 		System.out.println("Stage 2: Operations");
 		menuRunning = true;
 		do {
-			System.out.println("1 - Save teams onto a text file.");
-			System.out.println("2 - Sort a team."); //by stats that users specify
-			System.out.println("3 - Rank the teams.");
-			System.out.println("4 - Rank the players."); //make gigantic array of players and bubble sort according to rating
-			System.out.println("5 - Terminate the program.");
-			System.out.println("Select an operation: ");
-			option = in.nextInt();
+			do {
+				System.out.println("1 - Save teams onto a text file.");
+				System.out.println("2 - Sort a team."); //by stats that users specify
+				System.out.println("3 - Rank the teams.");
+				System.out.println("4 - Rank the players."); //make gigantic array of players and bubble sort according to rating
+				System.out
+				.println("5 - Use the Cost Efficiency System (C.E.S.) to rank players. ");
+				System.out
+				.println("6 - List all players within a certain age threshold.");
+				System.out.println("7 - List all right-handed players.");
+				System.out.println("8 - List all left-handed players.");
+				System.out.println("9 - List all the rookies.");
+				System.out.println("12 - Terminate the program.");
+				System.out.println("Select an operation: ");
+				option = in.nextInt();
+			} while (option < 1 || option > 12);
 			String folder;
 			File someFolder;
 			if (option == 1) {
@@ -201,7 +213,7 @@ public class Main {
 					if (!someFolder.exists()||!someFolder.isDirectory()||!folder.substring(folder.length()-1).equals("\\"))
 						System.out.println("Location not found.");
 				} while (!someFolder.exists()||!someFolder.isDirectory()||!folder.substring(folder.length()-1).equals("\\"));
-				
+
 				for (int i = 0; i < teams.size(); i++) {
 					filepath =  folder + teams.get(i).getName() + ".txt";
 					pw = new PrintWriter(new FileWriter(filepath));
@@ -211,7 +223,42 @@ public class Main {
 					pw.close();
 				}
 			}
-			else if (option == 5) {
+			else if (option == 2) {
+				do {
+					System.out.println("Player fields: ");
+					System.out
+					.println("1. First Name\n2. Last Name\n3. Age\n4. Height\n5. Weight");
+					System.out
+					.println("6. Salary per year\n7. Years remaining on contract\n8. Total salary\n9. Rating\n10. Games played\n11. Penalty Minutes\n12. Jersey number\n13. Total number of minutes on ice");
+					System.out
+					.println("14. Plus/Minus\n15. Goals per game\n16. Shots taken per game\n17. Assists per game\n18. Number of shifts per game\n19. Number of game-winning goals\n20. Number of power play goals\n21. Number of overtime goals\n22. Points\n23. Faceoff win percentage\n24. Shooting percentage\n25. Total Goals per Season\n26. Total Shots per Season\n27. Total Assists per Season");
+					System.out
+					.println("28. Number of wins\n29. Numer of losses\n30. Number of wins during playoffs\n31. Number of losses during playoffs\n32. Number of losses during overtime\n33. Number of games started by goalie\n34. Number of goals scored against goalie\n35. Total number of shots faced by goalie\n36. Number of saves by goalie\n37. Save Percentage\n38. Shutout Saves\n39. Empty Net Goals");
+					System.out.println("Select an option: ");
+					option1 = in.nextInt();
+				} while (option1<1 || option1>40);
+				if (option1 >=1 && option1 <=6) {
+					//create big array of coaches and players for all teams
+					jumbo = new Stack<Person>();
+					for (int i = 0; i<teams.size();i++) {
+						for (int j = 0; j<teams.get(i).getCoachingstaff().length;j++)
+							jumbo.push(teams.get(i).getCoach(j));
+						for (int j = 0; j<teams.get(i).getPlayers().length;j++) 
+							jumbo.push(teams.get(i).getPlayer(j));
+					}
+					jumboArray = new Person[jumbo.size()];
+					jumbo.copyInto(jumboArray);
+					sortingMethods.printandSortAge(jumboArray);
+
+
+
+
+
+				}
+
+
+			}
+			else if (option == 12) {
 				System.out.println("Terminating program.");
 				System.out.println("Thank you for using H.P.A.");
 				menuRunning = false;
