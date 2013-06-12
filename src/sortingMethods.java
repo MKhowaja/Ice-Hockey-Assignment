@@ -333,4 +333,103 @@ public class sortingMethods {
 			}
 		} while(swap==true);
 	}
+	/**
+	 * sorts jumbo according to plus/minus in descending order
+	 * @param jumbo
+	 */
+	public static void sortplusMinusD(Person[] jumbo) {
+		boolean swap;
+		Person temp;
+		do {
+			swap = false;
+			for (int i = 0;i<jumbo.length-1;i++) {
+				if (jumbo[i] instanceof Forward) {
+					if (compareDouble(((Forward)jumbo[i]).getplusMinus(),((Forward)jumbo[i+1]).getplusMinus())==-1) {
+						temp = jumbo[i];
+						jumbo[i] = jumbo[i+1];
+						jumbo[i+1] = temp;
+						swap = true;
+					}
+				}
+				else {
+					if (compareDouble(((Defense)jumbo[i]).getplusMinus(),((Defense)jumbo[i+1]).getplusMinus())==-1) {
+						temp = jumbo[i];
+						jumbo[i] = jumbo[i+1];
+						jumbo[i+1] = temp;
+						swap = true;
+					}
+				}
+			}
+		} while(swap==true);
+	}
+
+	/**
+	 * sorts jumbo according to plus/minus in descending order
+	 * @param jumbo
+	 */
+	public static void sortplusMinusA(Person[] jumbo) {
+		boolean swap;
+		Person temp;
+		do {
+			swap = false;
+			for (int i = 0;i<jumbo.length-1;i++) {
+				if (jumbo[i] instanceof Forward) {
+					if (compareDouble(((Forward)jumbo[i]).getplusMinus(),((Forward)jumbo[i+1]).getplusMinus())==1) {
+						temp = jumbo[i];
+						jumbo[i] = jumbo[i+1];
+						jumbo[i+1] = temp;
+						swap = true;
+					}
+				}
+				else {
+					if (compareDouble(((Defense)jumbo[i]).getplusMinus(),((Defense)jumbo[i+1]).getplusMinus())==1) {
+						temp = jumbo[i];
+						jumbo[i] = jumbo[i+1];
+						jumbo[i+1] = temp;
+						swap = true;
+					}
+				}
+			}
+		} while(swap==true);
+	}
+
+	/**
+	 * sorts jumbo according to salary per year in descending order
+	 * @param jumbo
+	 */
+	public static void sortSavePD(Person[] jumbo) {
+		boolean swap;
+		Person temp;
+		do {
+			swap = false;
+			for (int i = 0;i<jumbo.length-1;i++) {
+				if (compareDouble(((Goalie)jumbo[i]).getSavePercent(),((Goalie)jumbo[i+1]).getSavePercent())==-1) {
+					temp = jumbo[i];
+					jumbo[i] = jumbo[i+1];
+					jumbo[i+1] = temp;
+					swap = true;
+				}
+			}
+		} while(swap==true);
+	}
+	
+	/**
+	 * sorts jumbo according to salary per year in ascending order
+	 * @param jumbo
+	 */
+	public static void sortSavePA(Person[] jumbo) {
+		boolean swap;
+		Person temp;
+		do {
+			swap = false;
+			for (int i = 0;i<jumbo.length-1;i++) {
+				if (compareDouble(((Goalie)jumbo[i]).getSavePercent(),((Goalie)jumbo[i+1]).getSavePercent())==1) {
+					temp = jumbo[i];
+					jumbo[i] = jumbo[i+1];
+					jumbo[i+1] = temp;
+					swap = true;
+				}
+			}
+		} while(swap==true);
+	}
 }
