@@ -340,6 +340,32 @@ public class Main {
 						for (int i=0;i<jumboArray.length;i++)
 							System.out.println(jumboArray[i].getFName()+", salary per year: $"+((Player)jumboArray[i]).getSalaryPY());
 					}
+					
+					else if (option1 == 7) {
+						System.out.println("1 - Ascending order.");
+						System.out.println("2 - Descending order.");
+						System.out.println("Select an option: ");
+						option2 = in.nextInt();
+						if (option2 == 1)
+							sortingMethods.sortContractRA(jumboArray);
+						else
+							sortingMethods.sortContractRD(jumboArray);
+						for (int i=0;i<jumboArray.length;i++)
+							System.out.println(i+". "+jumboArray[i].getFName()+", salary per year: $"+((Player)jumboArray[i]).getSalaryPY());
+					}
+					
+					else if (option1 == 9) {
+						System.out.println("1 - Ascending order.");
+						System.out.println("2 - Descending order.");
+						System.out.println("Select an option: ");
+						option2 = in.nextInt();
+						if (option2 == 1)
+							sortingMethods.sortRatingA(jumboArray);
+						else
+							sortingMethods.sortRatingD(jumboArray);
+						for (int i=0;i<jumboArray.length;i++)
+							System.out.println(i+". "+jumboArray[i].getFName()+", salary per year: $"+((Player)jumboArray[i]).getSalaryPY());
+					}
 				}
 
 
