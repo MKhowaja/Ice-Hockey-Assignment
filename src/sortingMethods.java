@@ -1,4 +1,3 @@
-
 public class sortingMethods {
 	public static int compareInt(int x, int y) {
 		if (x>y)
@@ -247,6 +246,85 @@ public class sortingMethods {
 			swap = false;
 			for (int i = 0;i<jumbo.length-1;i++) {
 				if (compareDouble(((Player)jumbo[i]).getSalaryPY(),((Player)jumbo[i+1]).getSalaryPY())==-1) {
+					temp = jumbo[i];
+					jumbo[i] = jumbo[i+1];
+					jumbo[i+1] = temp;
+					swap = true;
+				}
+			}
+		} while(swap==true);
+	}
+	/**
+	 * sorts jumbo according to number of years remaining on contract in ascending order
+	 * @param jumbo
+	 */
+	public static void sortContractRA(Person[] jumbo) {
+		boolean swap;
+		Person temp;
+		do {
+			swap = false;
+			for (int i = 0;i<jumbo.length-1;i++) {
+				if (compareDouble(((Player)jumbo[i]).getcontractR(),((Player)jumbo[i+1]).getcontractR())==1) {
+					temp = jumbo[i];
+					jumbo[i] = jumbo[i+1];
+					jumbo[i+1] = temp;
+					swap = true;
+				}
+			}
+		} while(swap==true);
+	}
+	
+	/**
+	 * sorts jumbo according to number of years remaining on contract in descending order
+	 * @param jumbo
+	 */
+	public static void sortContractRD(Person[] jumbo) {
+		boolean swap;
+		Person temp;
+		do {
+			swap = false;
+			for (int i = 0;i<jumbo.length-1;i++) {
+				if (compareDouble(((Player)jumbo[i]).getcontractR(),((Player)jumbo[i+1]).getcontractR())==-1) {
+					temp = jumbo[i];
+					jumbo[i] = jumbo[i+1];
+					jumbo[i+1] = temp;
+					swap = true;
+				}
+			}
+		} while(swap==true);
+	}
+	
+	/**
+	 * sorts jumbo according to rating in ascending order
+	 * @param jumbo
+	 */
+	public static void sortRatingA(Person[] jumbo) {
+		boolean swap;
+		Person temp;
+		do {
+			swap = false;
+			for (int i = 0;i<jumbo.length-1;i++) {
+				if (compareDouble(((Player)jumbo[i]).getRating(),((Player)jumbo[i+1]).getRating())==1) {
+					temp = jumbo[i];
+					jumbo[i] = jumbo[i+1];
+					jumbo[i+1] = temp;
+					swap = true;
+				}
+			}
+		} while(swap==true);
+	}
+	
+	/**
+	 * sorts jumbo according to rating in descending order
+	 * @param jumbo
+	 */
+	public static void sortRatingD(Person[] jumbo) {
+		boolean swap;
+		Person temp;
+		do {
+			swap = false;
+			for (int i = 0;i<jumbo.length-1;i++) {
+				if (compareDouble(((Player)jumbo[i]).getRating(),((Player)jumbo[i+1]).getRating())==-1) {
 					temp = jumbo[i];
 					jumbo[i] = jumbo[i+1];
 					jumbo[i+1] = temp;
