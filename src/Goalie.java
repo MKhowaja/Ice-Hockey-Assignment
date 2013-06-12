@@ -396,7 +396,6 @@ public class Goalie extends Player {
 	 * calculates the rating of a goalie
 	 */
 	public void calculateRating() {
-		// TODO Auto-generated method stub
-		
+		rating = (int)(savePercent*0.9 + numMin*0.005 + height*0.1 + wins*0.25 -loses*0.3 - 0.9*age - 0.9*penaltyT);
 	}
 }
