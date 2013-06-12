@@ -9,6 +9,8 @@ import java.util.Scanner;
 import java.util.Stack;
 public class Main {
 
+
+
 	/**
 	 * @param args
 	 * @throws IOException 
@@ -183,6 +185,7 @@ public class Main {
 		Stack<Person> jumbo; //temporary stack (to make life easier)
 		PrintWriter pw = null; //initializes printwriter
 		int option1; //temporarily holds option input for menu inside menu
+		int option2; //temporarily holds option input for menu inside menu inside menu
 		System.out.println("Stage 2: Operations");
 		menuRunning = true;
 		do {
@@ -237,7 +240,8 @@ public class Main {
 					System.out.println("Select an option: ");
 					option1 = in.nextInt();
 				} while (option1<1 || option1>40);
-				if (option1 >=1 && option1 <=6) {
+
+				if (option1 >=1 && option1 <=5) {
 					//create big array of coaches and players for all teams
 					jumbo = new Stack<Person>();
 					for (int i = 0; i<teams.size();i++) {
@@ -248,16 +252,102 @@ public class Main {
 					}
 					jumboArray = new Person[jumbo.size()];
 					jumbo.copyInto(jumboArray);
-					sortingMethods.printandSortAge(jumboArray);
 
+					if (option1 == 1) {
+						System.out.println("1 - Ascending order (Z-A).");
+						System.out.println("2 - Descending order (A-Z).");
+						System.out.println("Select an option: ");
+						option2 = in.nextInt();
+						if (option2 == 1)
+							sortingMethods.sortFNameA(jumboArray);
+						else
+							sortingMethods.sortFNameD(jumboArray);
+						for (int i=0;i<jumboArray.length;i++)
+							System.out.println(jumboArray[i].getFName());
+					}
 
+					else if (option1 == 2) {
+						System.out.println("1 - Ascending order (Z-A).");
+						System.out.println("2 - Descending order (A-Z).");
+						System.out.println("Select an option: ");
+						option2 = in.nextInt();
+						if (option2 == 1)
+							sortingMethods.sortLNameA(jumboArray);
+						else
+							sortingMethods.sortLNameD(jumboArray);
+						for (int i=0;i<jumboArray.length;i++)
+							System.out.println(jumboArray[i].getLName());
+					}
 
+					else if (option1 == 3) {
+						System.out.println("1 - Ascending order.");
+						System.out.println("2 - Descending order.");
+						System.out.println("Select an option: ");
+						option2 = in.nextInt();
+						if (option2 == 1)
+							sortingMethods.sortAgeA(jumboArray);
+						else
+							sortingMethods.sortAgeD(jumboArray);
+						for (int i=0;i<jumboArray.length;i++)
+							System.out.println(jumboArray[i].getFName()+" "+jumboArray[i].getLName()+", age "+jumboArray[i].getAge());
+					}
 
+					else if (option1 == 4) {
+						System.out.println("1 - Ascending order.");
+						System.out.println("2 - Descending order.");
+						System.out.println("Select an option: ");
+						option2 = in.nextInt();
+						if (option2 == 1)
+							sortingMethods.sortHeightA(jumboArray);
+						else
+							sortingMethods.sortHeightD(jumboArray);
+						for (int i=0;i<jumboArray.length;i++)
+							System.out.println(jumboArray[i].getFName()+" "+jumboArray[i].getLName()+", height: "+jumboArray[i].getHeight());
+					}
 
+					else {
+						System.out.println("1 - Ascending order.");
+						System.out.println("2 - Descending order.");
+						System.out.println("Select an option: ");
+						option2 = in.nextInt();
+						if (option2 == 1)
+							sortingMethods.sortWeightA(jumboArray);
+						else
+							sortingMethods.sortWeightD(jumboArray);
+						for (int i=0;i<jumboArray.length;i++)
+							System.out.println(jumboArray[i].getFName()+" "+jumboArray[i].getLName()+", height: "+jumboArray[i].getHeight());
+					}
+				}
+				else if (option1 >=6 && option1 <=13) {
+					//create big array of players for all teams
+					jumbo = new Stack<Person>();
+					for (int i = 0; i<teams.size();i++) {
+						for (int j = 0; j<teams.get(i).getPlayers().length;j++) 
+							jumbo.push(teams.get(i).getPlayer(j));
+					}
+					jumboArray = new Person[jumbo.size()];
+					jumbo.copyInto(jumboArray);
+					
+					if (option1 == 6) {
+						System.out.println("1 - Ascending order.");
+						System.out.println("2 - Descending order.");
+						System.out.println("Select an option: ");
+						option2 = in.nextInt();
+						if (option2 == 1)
+							sortingMethods.sortSalaryPYA(jumboArray);
+						else
+							sortingMethods.sortSalaryPYD(jumboArray);
+						for (int i=0;i<jumboArray.length;i++)
+							System.out.println(jumboArray[i].getFName()+", salary per year: $"+((Player)jumboArray[i]).getSalaryPY());
+					}
 				}
 
 
+
 			}
+
+
+
 			else if (option == 12) {
 				System.out.println("Terminating program.");
 				System.out.println("Thank you for using H.P.A.");
