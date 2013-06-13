@@ -343,7 +343,7 @@ public class sortingMethods {
 		do {
 			swap = false;
 			for (int i = 0;i<jumbo.length-1;i++) {
-				if (jumbo[i] instanceof Forward) {
+				if (jumbo[i] instanceof Forward && jumbo[i+1] instanceof Forward) {
 					if (compareDouble(((Forward)jumbo[i]).getplusMinus(),((Forward)jumbo[i+1]).getplusMinus())==-1) {
 						temp = jumbo[i];
 						jumbo[i] = jumbo[i+1];
@@ -351,8 +351,24 @@ public class sortingMethods {
 						swap = true;
 					}
 				}
-				else {
+				else if (jumbo[i] instanceof Defense && jumbo[i+1] instanceof Defense){
 					if (compareDouble(((Defense)jumbo[i]).getplusMinus(),((Defense)jumbo[i+1]).getplusMinus())==-1) {
+						temp = jumbo[i];
+						jumbo[i] = jumbo[i+1];
+						jumbo[i+1] = temp;
+						swap = true;
+					}
+				}
+				else if (jumbo[i] instanceof Defense && jumbo[i+1] instanceof Forward){
+					if (compareDouble(((Defense)jumbo[i]).getplusMinus(),((Forward)jumbo[i+1]).getplusMinus())==-1) {
+						temp = jumbo[i];
+						jumbo[i] = jumbo[i+1];
+						jumbo[i+1] = temp;
+						swap = true;
+					}
+				}
+				else {
+					if (compareDouble(((Forward)jumbo[i]).getplusMinus(),((Defense)jumbo[i+1]).getplusMinus())==-1) {
 						temp = jumbo[i];
 						jumbo[i] = jumbo[i+1];
 						jumbo[i+1] = temp;
@@ -364,7 +380,7 @@ public class sortingMethods {
 	}
 
 	/**
-	 * sorts jumbo according to plus/minus in descending order
+	 * sorts jumbo according to plus/minus in ascending order
 	 * @param jumbo
 	 */
 	public static void sortplusMinusA(Person[] jumbo) {
@@ -373,7 +389,7 @@ public class sortingMethods {
 		do {
 			swap = false;
 			for (int i = 0;i<jumbo.length-1;i++) {
-				if (jumbo[i] instanceof Forward) {
+				if (jumbo[i] instanceof Forward && jumbo[i+1] instanceof Forward) {
 					if (compareDouble(((Forward)jumbo[i]).getplusMinus(),((Forward)jumbo[i+1]).getplusMinus())==1) {
 						temp = jumbo[i];
 						jumbo[i] = jumbo[i+1];
@@ -381,8 +397,24 @@ public class sortingMethods {
 						swap = true;
 					}
 				}
-				else {
+				else if (jumbo[i] instanceof Defense && jumbo[i+1] instanceof Defense){
 					if (compareDouble(((Defense)jumbo[i]).getplusMinus(),((Defense)jumbo[i+1]).getplusMinus())==1) {
+						temp = jumbo[i];
+						jumbo[i] = jumbo[i+1];
+						jumbo[i+1] = temp;
+						swap = true;
+					}
+				}
+				else if (jumbo[i] instanceof Defense && jumbo[i+1] instanceof Forward){
+					if (compareDouble(((Defense)jumbo[i]).getplusMinus(),((Forward)jumbo[i+1]).getplusMinus())==1) {
+						temp = jumbo[i];
+						jumbo[i] = jumbo[i+1];
+						jumbo[i+1] = temp;
+						swap = true;
+					}
+				}
+				else {
+					if (compareDouble(((Forward)jumbo[i]).getplusMinus(),((Defense)jumbo[i+1]).getplusMinus())==1) {
 						temp = jumbo[i];
 						jumbo[i] = jumbo[i+1];
 						jumbo[i+1] = temp;
