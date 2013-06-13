@@ -201,7 +201,7 @@ public class Main {
 				System.out.println("7 - List all right-handed players.");
 				System.out.println("8 - List all left-handed players.");
 				System.out.println("9 - List all the rookies.");
-				System.out.println("12 - Terminate the program.");
+				System.out.println("10 - Terminate the program.");
 				System.out.println("Select an operation: ");
 				option = in.nextInt();
 			} while (option < 1 || option > 12);
@@ -465,7 +465,9 @@ public class Main {
 					}
 				}
 			}
-			else if (option == 12) {
+			else if (option >=3 || option <= 9)
+				System.out.println("This feature is not available in the trial version.");
+			else if (option == 10) {
 				System.out.println("Terminating program.");
 				System.out.println("Thank you for using H.P.A.");
 				menuRunning = false;
